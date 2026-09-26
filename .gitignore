@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# project source package (not a virtualenv) - keep it
+!uav_inspection/env/

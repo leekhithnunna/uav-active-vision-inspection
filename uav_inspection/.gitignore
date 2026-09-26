@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# training outputs live in Google Drive, not in git
+runs/
+*.zip
+*.pt
+*.npz
+tb/
+# keep small result CSVs
+!results/*.csv

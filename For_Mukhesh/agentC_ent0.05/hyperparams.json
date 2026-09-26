@@ -1,0 +1,17 @@
+{
+  "learning_rate": 0.0007,
+  "gamma": 0.99,
+  "ent_coef": 0.05,
+  "n_steps": 8,
+  "vf_coef": 0.5,
+  "max_grad_norm": 0.5,
+  "policy_kwargs": "{'net_arch': [64, 64]}",
+  "steps": 60000,
+  "detector": "analytic",
+  "cache": null,
+  "nav_model": null,
+  "out": "/content/drive/MyDrive/RL_Project/files_coding/For_Mukhesh/agentC_ent0.05",
+  "seed": 0,
+  "lr": 0.0007,
+  "n_envs": 4
+}
