@@ -111,11 +111,24 @@ Scripts run anywhere with Python 3.10+ (developed on 3.12).
 │   │
 │   ├── results/                  baseline numbers, analytic detector (20 episodes each)
 │   │   ├── baselines_summary_analytic.csv          one row per (mode, policy): mean + std of every metric
+│   │   ├── baselines_summary_learned.csv           header only so far (real-image baselines not yet run)
 │   │   └── baseline_<mode>_<policy>_analytic.csv   per-episode rows (8 files)
 │   │
-│   ├── Yeseswini_AgentA.ipynb            Colab: env, baselines, Agent A + Part II analysis (CPU)
-│   ├── Mukhesh_Cache_AgentC.ipynb        Colab: detector cache (GPU) + Agent C
-│   ├── Leekhith_AgentB_Integration.ipynb Colab: Agent B + integration + team results
+│   ├── Yeseswini_AgentA.ipynb    Colab: env, baselines, Agent A + Part II analysis (CPU)
+│   ├── uav_inspection.zip        snapshot of this folder that the Colab notebooks unzip
+│   │
+│   ├── agentA/                   ★ main DQN run (200k steps, ε decay over 30 %)
+│   │   ├── agentA_final.zip      final DQN model
+│   │   ├── best/best_model.zip   best model by EvalCallback  ← use this one
+│   │   ├── checkpoints/          agentA_<N>_steps.zip every 25k steps (25k … 200k)
+│   │   ├── hyperparams.json, agentA_vs_baselines.csv
+│   │   ├── monitor_train.monitor.csv, monitor_eval.monitor.csv, eval/evaluations.npz, tb/
+│   │   ├── learning_curves.png   training return / success / episode length
+│   │   ├── eps_sensitivity.png   CO5: ε-decay 10 % vs 30 % vs 60 %
+│   │   ├── regret.png            CO4: cumulative regret vs best baseline
+│   │   └── trajectories.png      poster figure: DQN flight path vs raster
+│   ├── agentA_eps0.1/ agentA_eps0.3/ agentA_eps0.6/   CO5: ε-decay-fraction sensitivity (same layout)
+│   ├── agentA_learned/           empty; reserved for Agent A on real images (notebook Step 9)
 │   │
 │   └── docs/
 │       ├── LEEKHITH_GUIDE.md     Agent B MDP, integration plan, report/poster checklist
@@ -127,7 +140,7 @@ Scripts run anywhere with Python 3.10+ (developed on 3.12).
 │
 ├── For_Leekhith/                 ★ Leekhith's hand-off package + Agent B TRAINING OUTPUTS
 │   ├── START_HERE.md, LEEKHITH_GUIDE.md          copies of the docs above
-│   ├── Leekhith_AgentB_Integration.ipynb         the notebook as run in Colab (has an extra cell)
+│   ├── Leekhith_AgentB_Integration.ipynb         Colab: Agent B + integration + team results
 │   ├── uav_inspection.zip                        snapshot of uav_inspection/ that Colab unzips
 │   ├── results/                                  copy of the baseline CSVs
 │   ├── agentB/                   main PPO run (100k steps, ent 0.0, clip 0.2)
@@ -144,7 +157,8 @@ Scripts run anywhere with Python 3.10+ (developed on 3.12).
 │   └── agentB_clip0.1/ agentB_clip0.3/                    CO5: PPO clip-range sensitivity (same layout)
 │
 └── For_Mukhesh/                  ★ Mukhesh's hand-off package + DETECTOR + Agent C OUTPUTS
-    ├── START_HERE.md, MUKHESH_GUIDE.md, Mukhesh_Cache_AgentC.ipynb, uav_inspection.zip, results/
+    ├── Mukhesh_Cache_AgentC.ipynb   Colab: detector cache (GPU) + Agent C
+    ├── START_HERE.md, MUKHESH_GUIDE.md, uav_inspection.zip, results/
     ├── unet_deepcrack.pt         trained U-Net weights (PyTorch)
     ├── detector_cache.npz        ★ real-image uncertainty lookup table used by detector="learned"
     ├── detector_report.json      per-quality uncertainty / detect rate / IoU + calibrated thresholds
@@ -156,9 +170,15 @@ Scripts run anywhere with Python 3.10+ (developed on 3.12).
 
 **Why are there copies?** `For_Leekhith/` and `For_Mukhesh/` began as the zip packages sent to each
 teammate (code snapshot + guide + notebook). The training scripts then wrote each member's outputs
-into their own folder on Google Drive. **`uav_inspection/` is the canonical source code**; the
-`For_*` folders are the **experiment outputs**. Agent A's trained model lives in Yeseswini's Drive
-and is not in this workspace.
+into their own folder on Google Drive. **`uav_inspection/` is the canonical source code** (plus
+Agent A's outputs); the `For_*` folders hold Agent B's and Agent C's **experiment outputs** and each
+member's notebook.
+
+| Agent | Notebook | Trained models |
+|---|---|---|
+| A (DQN) | `uav_inspection/Yeseswini_AgentA.ipynb` | `uav_inspection/agentA*/` |
+| B (PPO) | `For_Leekhith/Leekhith_AgentB_Integration.ipynb` | `For_Leekhith/agentB*/` |
+| C (A2C) | `For_Mukhesh/Mukhesh_Cache_AgentC.ipynb` | `For_Mukhesh/agentC*/` |
 
 ---
 
@@ -283,15 +303,28 @@ Calibrated `success_unc` = 0.282. Altitude → quality map for real images `alt_
 
 All numbers are means over the **same 20 seeded bridges** with the analytic detector unless stated otherwise.
 
-### Agent A: DQN vs raster scans (from Yeseswini's run; model not in this repo)
+### Agent A: DQN vs raster scans (`uav_inspection/agentA/agentA_vs_baselines.csv`)
 | Metric | Raster mid | Raster low (dense) | **DQN** |
 |---|---|---|---|
 | Success | 0 % | 100 % | **100 %** |
-| Steps | 199 | 123 | **87.5 (−29 %)** |
-| Energy | 1.00 | 0.625 | **0.463 (−26 %)** |
-| Coverage | 100 % | 95 % | 99.8 % |
-| Defects found /26 | 20.9 | 23.5 | 22.0 |
+| Steps | 199 | 123 | **88.3 (−28 %)** |
+| Energy | 1.00 | 0.625 | **0.50 (−20 %)** |
+| Coverage | 100 % | 95.3 % | 99.9 % |
+| Mean uncertainty | 0.351 | 0.219 | 0.319 |
 | mIoU | 0.500 | 0.626 | 0.539 |
+| Return | 6.20 | 35.43 | 35.06 |
+
+The DQN reaches the same 100 % success as the dense raster with about 28 % fewer steps and 20 % less energy.
+It does just enough to meet the uncertainty threshold, so the raster's over-inspection keeps a better mIoU.
+
+**ε-decay sensitivity (CO5, `agentA_eps*/`)**: fraction of training over which ε decays 1.0 → 0.05.
+| ε-decay fraction | Return | Steps | Success | Energy | mIoU |
+|---|---|---|---|---|---|
+| 10 % | **37.8** | **74.7** | 100 % | **0.40** | **0.559** |
+| 30 % | 34.5 | 92.7 | 100 % | 0.52 | 0.552 |
+| 60 % | 28.1 | 120.7 | 80 % | 0.64 | 0.539 |
+
+Shorter exploration worked best here: a long ε schedule leaves too little time to exploit what was learned.
 
 ### Agent B: PPO (`For_Leekhith/agentB/agentB_vs_baselines.csv`)
 | Policy | Return | Steps | Success | Energy |
@@ -360,6 +393,7 @@ python scripts/build_detector_cache.py --data /content/deepcrack_data --out $DRI
 
 # 2. agents (CPU)
 python scripts/train_agent_a.py --steps 200000 --out $DRIVE/agentA                 # ~10 min
+python scripts/train_agent_a.py --eps_fraction 0.1 --out $DRIVE/agentA_eps0.1       # CO5 ε-decay study
 python scripts/train_agent_b.py --steps 100000 --out $DRIVE/agentB                 # ~2 min
 python scripts/train_agent_c.py --steps 100000 --out $DRIVE/agentC                 # ~4 min
 #    real-image variants
@@ -381,7 +415,7 @@ Or open the notebooks and run their numbered steps:
 
 Viewing the training logs:
 ```bash
-tensorboard --logdir For_Leekhith        # or For_Mukhesh
+tensorboard --logdir For_Leekhith        # or For_Mukhesh, or uav_inspection/agentA
 ```
 
 ---
