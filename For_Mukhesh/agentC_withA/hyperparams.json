@@ -1,0 +1,17 @@
+{
+  "learning_rate": 0.0007,
+  "gamma": 0.99,
+  "ent_coef": 0.01,
+  "n_steps": 8,
+  "vf_coef": 0.5,
+  "max_grad_norm": 0.5,
+  "policy_kwargs": "{'net_arch': [64, 64]}",
+  "steps": 100000,
+  "detector": "analytic",
+  "cache": null,
+  "nav_model": "/content/drive/MyDrive/RL_Project/files_coding/uav_inspection/agentA/best/best_model.zip",
+  "out": "/content/drive/MyDrive/RL_Project/files_coding/For_Mukhesh/agentC_withA",
+  "seed": 0,
+  "lr": 0.0007,
+  "n_envs": 4
+}

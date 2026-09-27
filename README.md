@@ -111,8 +111,8 @@ Scripts run anywhere with Python 3.10+ (developed on 3.12).
 │   │
 │   ├── results/                  baseline numbers, analytic detector (20 episodes each)
 │   │   ├── baselines_summary_analytic.csv          one row per (mode, policy): mean + std of every metric
-│   │   ├── baselines_summary_learned.csv           header only so far (real-image baselines not yet run)
-│   │   └── baseline_<mode>_<policy>_analytic.csv   per-episode rows (8 files)
+│   │   ├── baselines_summary_learned.csv           same, with the real-image (DeepCrack) detector
+│   │   └── baseline_<mode>_<policy>_<detector>.csv per-episode rows (8 analytic + 8 learned)
 │   │
 │   ├── Yeseswini_AgentA.ipynb    Colab: env, baselines, Agent A + Part II analysis (CPU)
 │   ├── uav_inspection.zip        snapshot of this folder that the Colab notebooks unzip
@@ -128,7 +128,7 @@ Scripts run anywhere with Python 3.10+ (developed on 3.12).
 │   │   ├── regret.png            CO4: cumulative regret vs best baseline
 │   │   └── trajectories.png      poster figure: DQN flight path vs raster
 │   ├── agentA_eps0.1/ agentA_eps0.3/ agentA_eps0.6/   CO5: ε-decay-fraction sensitivity (same layout)
-│   ├── agentA_learned/           empty; reserved for Agent A on real images (notebook Step 9)
+│   ├── agentA_learned/           Agent A on real images (500k steps, learned detector; notebook Step 9)
 │   │
 │   └── docs/
 │       ├── LEEKHITH_GUIDE.md     Agent B MDP, integration plan, report/poster checklist
@@ -154,7 +154,12 @@ Scripts run anywhere with Python 3.10+ (developed on 3.12).
 │   │   ├── eval/evaluations.npz      EvalCallback history (timesteps, rewards, lengths)
 │   │   └── tb/PPO_1/events...        TensorBoard log
 │   ├── agentB_ent0.0/  agentB_ent0.01/  agentB_ent0.05/   CO5: entropy-bonus sensitivity (same layout)
-│   └── agentB_clip0.1/ agentB_clip0.3/                    CO5: PPO clip-range sensitivity (same layout)
+│   ├── agentB_clip0.1/ agentB_clip0.3/                    CO5: PPO clip-range sensitivity (same layout)
+│   ├── agentB_learned/           Agent B on real-image uncertainty (notebook Step 10)
+│   └── full/                     ★ INTEGRATION: all three agents together (notebook Steps 8-9)
+│       ├── full_mode_results.csv 4 configs (all learned / all scripted / 2 ablations) x 20 bridges
+│       ├── demo_mission.txt      narrated end-to-end mission + final uncertainty map
+│       └── team_summary.png      energy + defects per config (team slides / poster)
 │
 └── For_Mukhesh/                  ★ Mukhesh's hand-off package + DETECTOR + Agent C OUTPUTS
     ├── Mukhesh_Cache_AgentC.ipynb   Colab: detector cache (GPU) + Agent C
@@ -165,7 +170,8 @@ Scripts run anywhere with Python 3.10+ (developed on 3.12).
     ├── detector_views.png        example patches at view qualities q0..q4
     ├── agentC/                   main A2C run (100k decisions, analytic detector) - same layout as agentB/
     ├── agentC_ent0.0/ agentC_ent0.01/ agentC_ent0.05/   CO5: entropy sensitivity
-    └── agentC_learned/           A2C trained with the real-image (learned) detector
+    ├── agentC_learned/           A2C trained with the real-image (learned) detector
+    └── agentC_withA/             A2C retrained with the trained Agent A inside "explore" (hierarchical)
 ```
 
 **Why are there copies?** `For_Leekhith/` and `For_Mukhesh/` began as the zip packages sent to each
@@ -351,17 +357,49 @@ PPO matches the privileged upper bound after about 2 min of training.
 A2C gets within about 7 % of the rule-based return while using **about half the energy and half the decisions**.
 It rarely chooses *Refine*, because under this reward refining costs energy and seldom confirms *new* defects.
 
-### Integration: full mode (from `docs/LEEKHITH_GUIDE.md` test run)
-| Config | Return | Coverage | Defects /26 | mIoU | Energy |
-|---|---|---|---|---|---|
-| All learned (C + A + B) | 39.3 | 0.96 | 20.6 | 0.504 | **0.49** |
-| All scripted | 42.8 | 1.00 | 22.6 | 0.597 | 0.95 |
-| C learned, A/B scripted | 41.1 | 1.00 | 21.6 | 0.520 | 0.45 |
-| Rule C, A + B learned | **43.9** | 1.00 | **23.1** | **0.618** | 0.94 |
+### Integration: all three agents together (`For_Leekhith/full/full_mode_results.csv`)
+All four configurations reach 100 % safe return on the same 20 bridges.
 
-The learned hierarchy uses about half the energy. Learned A + B under a rule supervisor gives the best
-defect count and mIoU. Agent C was trained with scripted sub-agents, so swapping in learned ones shifts
-its input distribution. The fix is to retrain C with `--nav_model`.
+| Config | Return | Decisions | Coverage | Defects /26 | mIoU | Energy |
+|---|---|---|---|---|---|---|
+| **All learned (C + A + B)** | 40.94 | **17.2** | 0.998 | 21.5 | 0.528 | **0.517** |
+| All scripted (rule + raster + approach) | 42.82 | 33.8 | 1.00 | 22.55 | 0.597 | 0.954 |
+| Ablation: C learned, A/B scripted | 39.84 | 19.3 | 1.00 | 20.95 | 0.500 | 0.510 |
+| Ablation: rule C, A + B learned | **44.84** | 32.1 | 0.999 | **23.55** | **0.623** | 0.925 |
+
+- The **fully learned hierarchy uses 46 % less energy** and half the decisions of the scripted system,
+  at the cost of about 1 defect per mission (21.5 vs 22.55).
+- **Learned A + B under a rule supervisor is the best overall**: highest return, most defects and best
+  mIoU, which shows that the learned navigator and refiner beat their scripted counterparts.
+- Agent C returns home early to save battery. It was trained with scripted sub-agents, so plugging in
+  learned ones shifts its input distribution. Retraining C with the learned Agent A inside it (below)
+  addresses this.
+
+`For_Leekhith/full/demo_mission.txt` is a narrated mission: C chooses Explore (→ Agent A) 15 times, finds
+24/26 defects at 100 % coverage and returns home with 46 % battery left (return 45.7).
+`team_summary.png` shows energy and defects per configuration.
+
+### Agent C retrained with the learned Agent A inside (`For_Mukhesh/agentC_withA/`)
+| Policy | Return | Decisions | Defects /26 | mIoU | Energy |
+|---|---|---|---|---|---|
+| A2C + learned Agent A | 43.68 | 29.9 | 22.95 | 0.589 | 0.844 |
+| rule_supervisor (same Agent A inside) | 44.64 | 32.2 | 23.45 | 0.625 | 0.926 |
+
+Trained with its real sub-agent, C explores longer (0.84 energy instead of 0.52) and gets within 2 % of
+the rule supervisor's return with about 9 % less energy.
+
+### Real images (DeepCrack detector, `detector="learned"`)
+| Agent | Learned policy | Best baseline | Takeaway |
+|---|---|---|---|
+| A: DQN (`uav_inspection/agentA_learned/`, 500k steps, 20 min) | return 15.3, **25 % success**, 151.6 steps, energy 0.91 | raster_low: return 33.8, 100 % success, 123 steps, energy 0.63 | much harder; the DQN did **not** beat the dense raster |
+| B: PPO (`For_Leekhith/agentB_learned/`) | return 5.32, **100 % success, 3.40 steps** | scripted upper bound: 5.32, 3.36 steps | matches the upper bound again |
+| C: A2C (`For_Mukhesh/agentC_learned/`) | return 41.1, energy **0.35**, 13.4 decisions | rule: return 41.3, energy 0.95 | same return with **63 % less energy** |
+
+The real-image uncertainty is weaker and noisier than the analytic formula, and a stricter calibrated
+threshold (`success_unc` 0.282 instead of 0.32) makes the navigation task harder. Agent A therefore
+learns coverage but rarely meets the uncertainty target within its budget. The analytic results remain
+the main Agent A result, and this run counts as sample-efficiency (CO4) evidence. Baselines for real
+images are in `uav_inspection/results/baselines_summary_learned.csv`.
 
 ### Baselines (`uav_inspection/results/baselines_summary_analytic.csv`)
 | Mode | Policy | Return | Steps | Success | Coverage | Energy |
@@ -452,11 +490,12 @@ by pull request.
 ---
 
 ## 10. Limitations and future work
-- The main results use the **analytic** detector; the real-image version is harder to learn.
+- The main results use the **analytic** detector. On real images Agent A reached only 25 % success
+  (vs 100 % for the dense raster); B and C transferred well.
 - The bridge is a 2-D grid with no wind, collisions or 3-D geometry.
 - Vanilla DQN (SB3 has no Double/Dueling) gives unstable evaluation, which is handled by keeping the best checkpoint.
 - Every run uses a single training seed; multiple seeds would give confidence intervals.
-- Agent C was trained with scripted sub-agents; retraining it with the learned A and B should close the integration gap.
+- The integration run uses the Agent C trained with scripted sub-agents; `agentC_withA` is not yet plugged into full mode.
 - Future work: Double/Dueling DQN, multi-seed runs, a 3-D simulator (AirSim), and a curriculum from the analytic to the real detector.
 
 ## 11. References
