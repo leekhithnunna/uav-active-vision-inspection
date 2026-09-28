@@ -1,0 +1,27 @@
+decision  0: Explore (-> Agent A)   reward  +5.99 | coverage 0.14 defects  4/26 battery 0.97
+decision  1: Explore (-> Agent A)   reward  +3.99 | coverage 0.26 defects  6/26 battery 0.94
+decision  2: Explore (-> Agent A)   reward  +1.99 | coverage 0.38 defects  7/26 battery 0.92
+decision  3: Explore (-> Agent A)   reward  +5.99 | coverage 0.52 defects 10/26 battery 0.89
+decision  4: Explore (-> Agent A)   reward  -0.02 | coverage 0.63 defects 10/26 battery 0.86
+decision  5: Explore (-> Agent A)   reward +13.98 | coverage 0.79 defects 17/26 battery 0.82
+decision  6: Explore (-> Agent A)   reward  -0.02 | coverage 0.87 defects 17/26 battery 0.78
+decision  7: Explore (-> Agent A)   reward  +3.98 | coverage 0.91 defects 19/26 battery 0.74
+decision  8: Explore (-> Agent A)   reward  +3.98 | coverage 0.96 defects 21/26 battery 0.70
+decision  9: Explore (-> Agent A)   reward  -0.01 | coverage 0.97 defects 21/26 battery 0.68
+decision 10: Explore (-> Agent A)   reward  +1.99 | coverage 1.00 defects 22/26 battery 0.65
+decision 11: Explore (-> Agent A)   reward  -0.01 | coverage 1.00 defects 22/26 battery 0.63
+decision 12: Explore (-> Agent A)   reward  -0.01 | coverage 1.00 defects 22/26 battery 0.60
+decision 13: Explore (-> Agent A)   reward  +3.99 | coverage 1.00 defects 24/26 battery 0.58
+decision 14: Explore (-> Agent A)   reward  -0.01 | coverage 1.00 defects 24/26 battery 0.55
+decision 15: Return home            reward  -0.05 | coverage 1.00 defects 24/26 battery 0.46
+MISSION END: return 45.73, safe return = True, mIoU = 0.509
+final map (U=UAV, .=unseen, digit=uncertainty x10):
+U323223223332222
+3232555353223255
+5522332223223122
+4552257313131132
+3551222133332123
+1131325255322114
+1112311025232584
+1111557555454554
+alt=low battery=0.46

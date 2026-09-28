@@ -88,6 +88,19 @@ Scripts run anywhere with Python 3.10+ (developed on 3.12).
 ├── README.md                     ← this file
 ├── YESESWINI_NEXT_STEPS.md       Yeseswini's remaining to-do list (copy of uav_inspection/docs/)
 │
+├── reports/                      ★ FINAL DELIVERABLES (slides, posters, per-member result packs)
+│   ├── Team08_RL_MiniProject.pptx          team presentation
+│   ├── Team08_UAV_Active_Vision_Poster.png team poster
+│   ├── Team_08_Working_Plan.pdf            project working plan
+│   ├── <Name>_Agent<X>_<ALGO>.pptx         individual slides (Yeseswini DQN, Leekhith PPO, Mukhesh A2C)
+│   ├── <Name>_UAV_Active_Vision_Poster.png individual posters
+│   └── Yeseswini/  Leekhith/  Mukhesh/     one pack per member:
+│       ├── README.md                       what they did + results write-up
+│       ├── plots/                          learning curves, vs-baselines bars, sensitivity, real-image plots
+│       ├── results/                        *_vs_baselines.csv, hyperparams, all-runs summary
+│       └── docs/ (Yeseswini)               Agent A report section (.tex) + slides/viva notes
+│
+│
 ├── uav_inspection/               ★ THE SOURCE CODE (the actual project package)
 │   ├── README.md                 design contract v1.1 (frozen spec of env, obs, actions, rewards)
 │   ├── START_HERE.md             who does what, in which order
