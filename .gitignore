@@ -219,3 +219,11 @@ __marimo__/
 
 # project source package (not a virtualenv) - keep it
 !uav_inspection/env/
+
+# ---- Live_Demo ----
+Live_Demo/.venv/
+Live_Demo/tmp/
+Live_Demo/**/__pycache__/
+Live_Demo/.pytest_cache/
+# backup GIFs are tracked while each is < 5 MB (make_backups.py reports sizes); add large ones here:
+# Live_Demo/backup/gifs/<name>.gif

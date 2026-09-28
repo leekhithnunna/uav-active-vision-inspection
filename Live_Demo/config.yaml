@@ -1,0 +1,66 @@
+# Live_Demo configuration - EVERY path used by the demo lives here.
+# Relative paths are resolved against `repo_root` (which itself is relative to this Live_Demo/ folder).
+# Environment variables (%USERPROFILE%, $TEMP, ~) are expanded.
+
+repo_root: ..                     # files_coding/
+uav_inspection: uav_inspection    # the shared env package (imported, never modified)
+
+defaults:
+  seed: 1000                      # the same seeded bridges the saved evaluations used (seed0=1000)
+  detector: analytic              # analytic | learned
+
+# ---------------------------------------------------------------- trained models (SB3 .zip)
+models:
+  analytic:
+    A: uav_inspection/agentA/best/best_model.zip          # DQN   (Yeseswini)
+    B: For_Leekhith/agentB/best/best_model.zip            # PPO   (Leekhith)
+    C: For_Mukhesh/agentC/best/best_model.zip             # A2C   (Mukhesh) - trained with scripted sub-agents
+    C_withA: For_Mukhesh/agentC_withA/best/best_model.zip # A2C trained with Agent A inside "Explore"
+  learned:
+    A: uav_inspection/agentA_learned/best/best_model.zip
+    B: For_Leekhith/agentB_learned/best/best_model.zip
+    C: For_Mukhesh/agentC_learned/best/best_model.zip
+
+# which Agent C drives the full mission (d7): C (matches full_mode_results.csv) or C_withA
+full_supervisor: C
+
+# ---------------------------------------------------------------- saved results (read-only)
+results:
+  A:
+    main: uav_inspection/agentA
+    learned: uav_inspection/agentA_learned
+    sensitivity: [uav_inspection/agentA_eps0.1, uav_inspection/agentA_eps0.3, uav_inspection/agentA_eps0.6]
+  B:
+    main: For_Leekhith/agentB
+    learned: For_Leekhith/agentB_learned
+    sensitivity: [For_Leekhith/agentB_ent0.0, For_Leekhith/agentB_ent0.01, For_Leekhith/agentB_ent0.05,
+                  For_Leekhith/agentB_clip0.1, For_Leekhith/agentB_clip0.3]
+  C:
+    main: For_Mukhesh/agentC
+    learned: For_Mukhesh/agentC_learned
+    withA: For_Mukhesh/agentC_withA
+    sensitivity: [For_Mukhesh/agentC_ent0.0, For_Mukhesh/agentC_ent0.01, For_Mukhesh/agentC_ent0.05]
+  full:
+    csv: For_Leekhith/full/full_mode_results.csv
+    mission: For_Leekhith/full/demo_mission.txt
+  baselines_summary:
+    analytic: uav_inspection/results/baselines_summary_analytic.csv
+    learned: uav_inspection/results/baselines_summary_learned.csv
+
+# ---------------------------------------------------------------- real-image detector
+detector:
+  cache: For_Mukhesh/detector_cache.npz
+  report: For_Mukhesh/detector_report.json
+  figure: For_Mukhesh/detector_views.png
+  unet: For_Mukhesh/unet_deepcrack.pt
+  unet_source: uav_inspection/scripts/build_detector_cache.py   # U-Net class is read from here (AST), not copied
+  deepcrack_dir: ${USERPROFILE}/data/DeepCrack/dataset           # test_img/ test_lab/ (outside Google Drive)
+  mc_passes: 10
+  n_patches: 3                                                   # 2 crack patches + 1 clean patch
+
+# ---------------------------------------------------------------- outputs (relative to Live_Demo/)
+output:
+  gifs: backup/gifs
+  frames: backup/frames
+  snapshots: backup/snapshots
+  tmp_train: ${TEMP}/uav_demo_burst   # d8 learning burst writes here - NEVER into the model folders
