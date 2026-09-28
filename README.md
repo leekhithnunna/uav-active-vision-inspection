@@ -100,6 +100,21 @@ Scripts run anywhere with Python 3.10+ (developed on 3.12).
 │       ├── results/                        *_vs_baselines.csv, hyperparams, all-runs summary
 │       └── docs/ (Yeseswini)               Agent A report section (.tex) + slides/viva notes
 │
+├── Live_Demo/                    ★ LIVE DEMONSTRATION of the trained agents (see Live_Demo/README.md)
+│   ├── run_demo.py               menu entry point: `python run_demo.py` (1-9) or `python run_demo.py 3`
+│   ├── config.yaml               every path (models, results, cache, DeepCrack); change `repo_root` only
+│   ├── requirements.txt          pinned, CPU-only packages (venv lives OUTSIDE Google Drive)
+│   ├── preflight_check.py        checklist to run before presenting
+│   ├── demo_core/                shared library (loading models, rendering, env helpers)
+│   ├── demos/d1..d9_*.py         env tour, Agent A step / vs raster, Agent B refine, detector views,
+│   │                             Agent C mission, full mission, learning burst, results dashboard
+│   ├── app/streamlit_app.py      browser version of the demos
+│   ├── scripts/make_backups.py   regenerates backup GIFs / key frames / result tables
+│   ├── backup/                   pre-rendered GIFs, frames and snapshots (fallback if live fails)
+│   ├── notebooks/                executed demo notebook
+│   ├── presenter_notes/          what each presenter says during each demo
+│   └── tests/                    headless pytest smoke tests
+│
 │
 ├── uav_inspection/               ★ THE SOURCE CODE (the actual project package)
 │   ├── README.md                 design contract v1.1 (frozen spec of env, obs, actions, rewards)
