@@ -1,0 +1,165 @@
+─────────────────────────────────────────────── d4_agentB_refine --save ────────────────────────────────────────────────
+─────────────────────────────────────────── DEMO 4 - Agent B view refinement ───────────────────────────────────────────
+                            Agent B - View Refiner (PPO) vs FixedOrbit baseline, same seeds                             
+ GUIDELINE 1  Environment started: InspectionEnv(mode='refine') - hover near ONE uncertain cell
+
+Target 1 (seed 1000): cell (2, 5), start d=0.83 angle=-0.28 lateral=+0.13  s=0.35
+ GUIDELINE 2  Observation (6 numbers)
+OBSERVATION  s_t                                                  
+┌────────────┬────────┬─────────┬──────────┬─────────┬───────────┐
+│ distance d │  angle │ lateral │ target u │ battery │ time left │
+├────────────┼────────┼─────────┼──────────┼─────────┼───────────┤
+│      0.832 │ -0.284 │   0.126 │    0.314 │   1.000 │     1.000 │
+└────────────┴────────┴─────────┴──────────┴─────────┴───────────┘
+ GUIDELINE 3  Continuous action space [-1, 1]^3: policy outputs a Gaussian per dimension
+POLICY OUTPUT  a ~ N(mu, sigma)             
+(deterministic demo: a = clip(mu))          
+┌────────────┬────────┬───────┬────────────┐
+│  dimension │     mu │ sigma │ executed a │
+├────────────┼────────┼───────┼────────────┤
+│ d distance │ -2.243 │ 0.578 │     -1.000 │
+│    d angle │ +1.317 │ 0.558 │     +1.000 │
+│  d lateral │ -0.542 │ 0.591 │     -0.542 │
+└────────────┴────────┴───────┴────────────┘
+SELECTED ACTION ->  [-1.00, +1.00, -0.54] 
+ GUIDELINE 4  Environment response: s = 0.58 -> view level q2, target uncertainty 0.31
+ GUIDELINE 5  Reward
+REWARD                                                  
+┌─────────────────────────────────────────────┬────────┐
+│ term                                        │  value │
+├─────────────────────────────────────────────┼────────┤
+│ target uncertainty reduced (0.31 -> 0.31)   │ +0.000 │
+│ action cost (0.01 x |a|)                    │ -0.015 │
+│ shaping 0.5 x (0.99 s' - s), s 0.35 -> 0.58 │ +0.113 │
+├─────────────────────────────────────────────┼────────┤
+│ total (env reward)                          │ +0.098 │
+└─────────────────────────────────────────────┴────────┘
+   terms sum to the env reward
+ GUIDELINE 2  Observation (6 numbers)
+OBSERVATION  s_t                                                  
+┌────────────┬────────┬─────────┬──────────┬─────────┬───────────┐
+│ distance d │  angle │ lateral │ target u │ battery │ time left │
+├────────────┼────────┼─────────┼──────────┼─────────┼───────────┤
+│      0.632 │ -0.084 │   0.017 │    0.314 │   0.992 │     0.967 │
+└────────────┴────────┴─────────┴──────────┴─────────┴───────────┘
+ GUIDELINE 3  Continuous action space [-1, 1]^3: policy outputs a Gaussian per dimension
+POLICY OUTPUT  a ~ N(mu, sigma)             
+(deterministic demo: a = clip(mu))          
+┌────────────┬────────┬───────┬────────────┐
+│  dimension │     mu │ sigma │ executed a │
+├────────────┼────────┼───────┼────────────┤
+│ d distance │ -2.260 │ 0.578 │     -1.000 │
+│    d angle │ +0.594 │ 0.558 │     +0.594 │
+│  d lateral │ -0.025 │ 0.591 │     -0.025 │
+└────────────┴────────┴───────┴────────────┘
+SELECTED ACTION ->  [-1.00, +0.59, -0.02] 
+ GUIDELINE 4  Environment response: s = 0.72 -> view level q3, target uncertainty 0.13
+ GUIDELINE 5  Reward
+REWARD                                                  
+┌─────────────────────────────────────────────┬────────┐
+│ term                                        │  value │
+├─────────────────────────────────────────────┼────────┤
+│ target uncertainty reduced (0.31 -> 0.13)   │ +0.181 │
+│ action cost (0.01 x |a|)                    │ -0.012 │
+│ shaping 0.5 x (0.99 s' - s), s 0.58 -> 0.72 │ +0.067 │
+├─────────────────────────────────────────────┼────────┤
+│ total (env reward)                          │ +0.236 │
+└─────────────────────────────────────────────┴────────┘
+   terms sum to the env reward
+ GUIDELINE 2  Observation (6 numbers)
+OBSERVATION  s_t                                                 
+┌────────────┬───────┬─────────┬──────────┬─────────┬───────────┐
+│ distance d │ angle │ lateral │ target u │ battery │ time left │
+├────────────┼───────┼─────────┼──────────┼─────────┼───────────┤
+│      0.432 │ 0.035 │   0.012 │    0.134 │   0.984 │     0.933 │
+└────────────┴───────┴─────────┴──────────┴─────────┴───────────┘
+ GUIDELINE 3  Continuous action space [-1, 1]^3: policy outputs a Gaussian per dimension
+POLICY OUTPUT  a ~ N(mu, sigma)             
+(deterministic demo: a = clip(mu))          
+┌────────────┬────────┬───────┬────────────┐
+│  dimension │     mu │ sigma │ executed a │
+├────────────┼────────┼───────┼────────────┤
+│ d distance │ -2.101 │ 0.578 │     -1.000 │
+│    d angle │ -0.157 │ 0.558 │     -0.157 │
+│  d lateral │ -0.016 │ 0.591 │     -0.016 │
+└────────────┴────────┴───────┴────────────┘
+SELECTED ACTION ->  [-1.00, -0.16, -0.02] 
+ GUIDELINE 4  Environment response: s = 0.86 -> view level q3, target uncertainty 0.13
+ GUIDELINE 5  Reward
+REWARD                                                  
+┌─────────────────────────────────────────────┬────────┐
+│ term                                        │  value │
+├─────────────────────────────────────────────┼────────┤
+│ target uncertainty reduced (0.13 -> 0.13)   │ +0.000 │
+│ action cost (0.01 x |a|)                    │ -0.010 │
+│ shaping 0.5 x (0.99 s' - s), s 0.72 -> 0.86 │ +0.062 │
+├─────────────────────────────────────────────┼────────┤
+│ total (env reward)                          │ +0.052 │
+└─────────────────────────────────────────────┴────────┘
+   terms sum to the env reward
+ GUIDELINE 2  Observation (6 numbers)
+OBSERVATION  s_t                                                 
+┌────────────┬───────┬─────────┬──────────┬─────────┬───────────┐
+│ distance d │ angle │ lateral │ target u │ battery │ time left │
+├────────────┼───────┼─────────┼──────────┼─────────┼───────────┤
+│      0.232 │ 0.004 │   0.009 │    0.134 │   0.976 │     0.900 │
+└────────────┴───────┴─────────┴──────────┴─────────┴───────────┘
+ GUIDELINE 3  Continuous action space [-1, 1]^3: policy outputs a Gaussian per dimension
+POLICY OUTPUT  a ~ N(mu, sigma)             
+(deterministic demo: a = clip(mu))          
+┌────────────┬────────┬───────┬────────────┐
+│  dimension │     mu │ sigma │ executed a │
+├────────────┼────────┼───────┼────────────┤
+│ d distance │ -1.921 │ 0.578 │     -1.000 │
+│    d angle │ -0.032 │ 0.558 │     -0.032 │
+│  d lateral │ -0.012 │ 0.591 │     -0.012 │
+└────────────┴────────┴───────┴────────────┘
+SELECTED ACTION ->  [-1.00, -0.03, -0.01] 
+ GUIDELINE 4  Environment response: s = 0.98 -> view level q4, target uncertainty 0.01
+ GUIDELINE 5  Reward
+REWARD                                                  
+┌─────────────────────────────────────────────┬────────┐
+│ term                                        │  value │
+├─────────────────────────────────────────────┼────────┤
+│ target uncertainty reduced (0.13 -> 0.01)   │ +0.124 │
+│ action cost (0.01 x |a|)                    │ -0.010 │
+│ shaping 0.5 x (0.99 s' - s), s 0.86 -> 0.98 │ +0.056 │
+│ success bonus (q = 4 reached)               │ +5.000 │
+├─────────────────────────────────────────────┼────────┤
+│ total (env reward)                          │ +5.169 │
+└─────────────────────────────────────────────┴────────┘
+   terms sum to the env reward
+
+Target 2 (seed 1001): cell (3, 0), start d=0.52 angle=+0.64 lateral=-0.27  s=0.35
+   step  1: a=[-1.00, -1.00, +1.00]  s=0.61 (q2)  target u=0.27  r=+0.367
+   step  2: a=[-1.00, -1.00, +0.44]  s=0.83 (q3)  target u=0.16  r=+0.200
+   step  3: a=[-1.00, -1.00, -0.01]  s=0.98 (q4)  target u=0.06  r=+5.157
+
+Target 3 (seed 1002): cell (4, 12), start d=0.65 angle=+0.95 lateral=+0.26  s=0.15
+   step  1: a=[-1.00, -1.00, -0.47]  s=0.38 (q2)  target u=0.29  r=+0.282
+   step  2: a=[-1.00, -1.00, -0.34]  s=0.60 (q2)  target u=0.29  r=+0.093
+   step  3: a=[-1.00, -1.00, -0.22]  s=0.81 (q3)  target u=0.12  r=+0.262
+   step  4: a=[-1.00, -1.00, -0.17]  s=0.93 (q4)  target u=0.01  r=+5.147
+ GUIDELINE 7  Trained policy on each target, animated next to the baseline
+saved agentB_refine.gif (0.3 MB, 60 frames, 27s)
+ GUIDELINE 8  Final performance (live, same seeds)
+Agent B vs FixedOrbit - live                                                             
+┌───────────┬──────────────────────────────┬───────┬─────────┬────────┬────────┬────────┐
+│ seed      │                       policy │ steps │ success │ best q │ energy │ return │
+├───────────┼──────────────────────────────┼───────┼─────────┼────────┼────────┼────────┤
+│ seed 1000 │ Agent B - View Refiner (PPO) │     4 │     yes │     q4 │  0.032 │  +5.56 │
+│ seed 1000 │          BASELINE FixedOrbit │    30 │      no │     q2 │  0.240 │  -2.36 │
+│ seed 1001 │ Agent B - View Refiner (PPO) │     3 │     yes │     q4 │  0.024 │  +5.73 │
+│ seed 1001 │          BASELINE FixedOrbit │    30 │      no │     q2 │  0.240 │  -2.09 │
+│ seed 1002 │ Agent B - View Refiner (PPO) │     4 │     yes │     q4 │  0.032 │  +5.78 │
+│ seed 1002 │          BASELINE FixedOrbit │    30 │      no │     q2 │  0.240 │  -2.17 │
+└───────────┴──────────────────────────────┴───────┴─────────┴────────┴────────┴────────┘
+Saved evaluation (mean of 50 seeded targets) - agentB_vs_baselines.csv      
+┌─────────────────────────────────┬─────────────┬─────────┬───────┬────────┐
+│ policy                          │      return │ success │ steps │ energy │
+├─────────────────────────────────┼─────────────┼─────────┼───────┼────────┤
+│ PPO (Agent B)                   │  5.7 +- 0.1 │    100% │   3.7 │  0.029 │
+│ fixed_orbit                     │ -2.3 +- 0.1 │      0% │  30.0 │  0.240 │
+│ random                          │ -2.0 +- 1.1 │      2% │  29.8 │  0.239 │
+│ scripted_approach (upper bound) │  5.7 +- 0.1 │    100% │   3.6 │  0.029 │
+└─────────────────────────────────┴─────────────┴─────────┴───────┴────────┘

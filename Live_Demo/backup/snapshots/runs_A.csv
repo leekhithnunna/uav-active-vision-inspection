@@ -1,0 +1,6 @@
+run,trained,setting,return,success,steps,energy,note
+main,200k,"analytic, eps_fraction=0.3",+35.06,100%,88.3,0.502,full run
+agentA_eps0.1,150k,"analytic, eps_fraction=0.1",+37.78,100%,74.7,0.397,short run: 150k steps (main: 200k)
+agentA_eps0.3,150k,"analytic, eps_fraction=0.3",+34.47,100%,92.7,0.520,short run: 150k steps (main: 200k)
+agentA_eps0.6,150k,"analytic, eps_fraction=0.6",+28.09,80%,120.7,0.637,short run: 150k steps (main: 200k)
+agentA_learned,500k,"learned, eps_fraction=0.3",+15.27,25%,151.6,0.909,full run

@@ -1,0 +1,24 @@
+────────────────────────────────────────── d8_learning_burst --save --agent C ──────────────────────────────────────────
+────────────────────────── DEMO 8 - Learning burst: A2C (Agent C - Mission Supervisor (A2C)) ───────────────────────────
+     2400 steps, fresh network, output -> C:\Users\leekh\AppData\Local\Temp\uav_demo_burst\agentC_burst_1790619326      
+ GUIDELINE 1  Fresh environment (mode='supervise') wrapped in a Monitor
+ GUIDELINE 6  A2C: every 8 decisions one actor-critic update (advantage = G - V)
+UPDATE step   160 | ep reward (mean) +13.0353 | value loss +384.8240 | policy loss +7.2165 | entropy loss -0.5965
+UPDATE step   320 | ep reward (mean) +15.0414 | value loss +0.8520 | policy loss +0.3313 | entropy loss -0.6609
+UPDATE step   480 | ep reward (mean) +18.0030 | value loss +0.3975 | policy loss -0.1391 | entropy loss -0.5593
+UPDATE step   640 | ep reward (mean) +19.6309 | value loss +0.6837 | policy loss -0.3493 | entropy loss -0.7098
+UPDATE step   800 | ep reward (mean) +21.2355 | value loss +32.6941 | policy loss +3.8058 | entropy loss -0.7329
+UPDATE step   960 | ep reward (mean) +22.8673 | value loss +2.1743 | policy loss -0.9487 | entropy loss -0.7755
+UPDATE step  1120 | ep reward (mean) +23.9883 | value loss +7.0067 | policy loss +2.5185 | entropy loss -0.7264
+UPDATE step  1280 | ep reward (mean) +24.5627 | value loss +3.8404 | policy loss -0.8187 | entropy loss -0.7423
+UPDATE step  1440 | ep reward (mean) +25.9558 | value loss +141.0956 | policy loss +6.2404 | entropy loss -0.7381
+UPDATE step  1600 | ep reward (mean) +26.6962 | value loss +71.2534 | policy loss +4.7136 | entropy loss -0.6603
+UPDATE step  1760 | ep reward (mean) +27.2935 | value loss +164.3373 | policy loss -6.7958 | entropy loss -0.5763
+UPDATE step  1920 | ep reward (mean) +28.0703 | value loss +1.2625 | policy loss -0.2748 | entropy loss -0.7305
+UPDATE step  2080 | ep reward (mean) +28.6692 | value loss +2.9254 | policy loss -0.7890 | entropy loss -0.7461
+UPDATE step  2240 | ep reward (mean) +28.9441 | value loss +4.5695 | policy loss +0.7160 | entropy loss -0.6846
+UPDATE step  2400 | ep reward (mean) +30.4860 | value loss +8.5058 | policy loss -2.1544 | entropy loss -0.4762
+trained 2400 steps in 17.8s; 106 episodes; 15 logged updates
+saved burst model -> C:\Users\leekh\AppData\Local\Temp\uav_demo_burst\agentC_burst_1790619326\agentC_burst.zip
+real trained models untouched: True
+This short run is NOT the trained agent: the real model trained for 100k steps (see demo 9 for its curves).

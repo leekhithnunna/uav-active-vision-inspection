@@ -1,0 +1,129 @@
+─────────────────────────────────────────────── d6_agentC_mission --save ───────────────────────────────────────────────
+───────────────────────────────────────── DEMO 6 - Agent C mission supervisor ──────────────────────────────────────────
+                                     Agent C - Mission Supervisor (A2C)   seed 1000                                     
+ GUIDELINE 1  Environment started: InspectionEnv(mode='supervise'); inside options: scripted RasterNav (explore) + 
+ApproachRefiner (refine) - exactly as Agent C was trained
+ GUIDELINE 2  Supervisor state before decision 0
+OBSERVATION  s_t (6 numbers in [0, 1])                                 
+┌─────────┬──────────┬────────┬────────────┬──────────────┬───────────┐
+│ battery │ coverage │ mean u │ found frac │ dist to base │ time used │
+├─────────┼──────────┼────────┼────────────┼──────────────┼───────────┤
+│   1.000 │    0.070 │  0.971 │      0.038 │        0.000 │     0.000 │
+└─────────┴──────────┴────────┴────────────┴──────────────┴───────────┘
+ GUIDELINE 3  Options and the selected option (A2C actor: pi(o | s))
+AVAILABLE OPTIONS                                           
+┌───┬────────────────────┬─────────┬───────────────────────┐
+│ # │ action             │ pi(o|s) │                       │
+├───┼────────────────────┼─────────┼───────────────────────┤
+│ 0 │ Explore -> Agent A │  +0.994 │ <-- selected (argmax) │
+│ 1 │ Refine -> Agent B  │  +0.005 │                       │
+│ 2 │ Return home        │  +0.000 │                       │
+└───┴────────────────────┴─────────┴───────────────────────┘
+SELECTED ACTION ->  EXPLORE 
+ GUIDELINE 4  Option executed (up to 5 navigator / 10 refiner sub-steps)
+ GUIDELINE 5  Reward and next state
+REWARD                                  
+┌─────────────────────────────┬────────┐
+│ term                        │  value │
+├─────────────────────────────┼────────┤
+│ new defects found (2.0 x 3) │ +6.000 │
+│ energy used (0.5 x 0.030)   │ -0.015 │
+├─────────────────────────────┼────────┤
+│ total (env reward)          │ +5.985 │
+└─────────────────────────────┴────────┘
+   terms sum to the env reward
+   battery 0.97 | coverage 12% | defects 4/26
+ GUIDELINE 2  Supervisor state before decision 1
+OBSERVATION  s_t (6 numbers in [0, 1])                                 
+┌─────────┬──────────┬────────┬────────────┬──────────────┬───────────┐
+│ battery │ coverage │ mean u │ found frac │ dist to base │ time used │
+├─────────┼──────────┼────────┼────────────┼──────────────┼───────────┤
+│   0.970 │    0.117 │  0.925 │      0.154 │        0.182 │     0.025 │
+└─────────┴──────────┴────────┴────────────┴──────────────┴───────────┘
+ GUIDELINE 3  Options and the selected option (A2C actor: pi(o | s))
+AVAILABLE OPTIONS                                           
+┌───┬────────────────────┬─────────┬───────────────────────┐
+│ # │ action             │ pi(o|s) │                       │
+├───┼────────────────────┼─────────┼───────────────────────┤
+│ 0 │ Explore -> Agent A │  +0.994 │ <-- selected (argmax) │
+│ 1 │ Refine -> Agent B  │  +0.006 │                       │
+│ 2 │ Return home        │  +0.000 │                       │
+└───┴────────────────────┴─────────┴───────────────────────┘
+SELECTED ACTION ->  EXPLORE 
+ GUIDELINE 4  Option executed (up to 5 navigator / 10 refiner sub-steps)
+ GUIDELINE 5  Reward and next state
+REWARD                                  
+┌─────────────────────────────┬────────┐
+│ term                        │  value │
+├─────────────────────────────┼────────┤
+│ new defects found (2.0 x 2) │ +4.000 │
+│ energy used (0.5 x 0.025)   │ -0.013 │
+├─────────────────────────────┼────────┤
+│ total (env reward)          │ +3.987 │
+└─────────────────────────────┴────────┘
+   terms sum to the env reward
+   battery 0.94 | coverage 23% | defects 6/26
+ GUIDELINE 2  Supervisor state before decision 2
+OBSERVATION  s_t (6 numbers in [0, 1])                                 
+┌─────────┬──────────┬────────┬────────────┬──────────────┬───────────┐
+│ battery │ coverage │ mean u │ found frac │ dist to base │ time used │
+├─────────┼──────────┼────────┼────────────┼──────────────┼───────────┤
+│   0.945 │    0.234 │  0.850 │      0.231 │        0.409 │     0.050 │
+└─────────┴──────────┴────────┴────────────┴──────────────┴───────────┘
+ GUIDELINE 3  Options and the selected option (A2C actor: pi(o | s))
+AVAILABLE OPTIONS                                           
+┌───┬────────────────────┬─────────┬───────────────────────┐
+│ # │ action             │ pi(o|s) │                       │
+├───┼────────────────────┼─────────┼───────────────────────┤
+│ 0 │ Explore -> Agent A │  +0.992 │ <-- selected (argmax) │
+│ 1 │ Refine -> Agent B  │  +0.007 │                       │
+│ 2 │ Return home        │  +0.001 │                       │
+└───┴────────────────────┴─────────┴───────────────────────┘
+SELECTED ACTION ->  EXPLORE 
+ GUIDELINE 4  Option executed (up to 5 navigator / 10 refiner sub-steps)
+ GUIDELINE 5  Reward and next state
+REWARD                                  
+┌─────────────────────────────┬────────┐
+│ term                        │  value │
+├─────────────────────────────┼────────┤
+│ new defects found (2.0 x 1) │ +2.000 │
+│ energy used (0.5 x 0.025)   │ -0.013 │
+├─────────────────────────────┼────────┤
+│ total (env reward)          │ +1.988 │
+└─────────────────────────────┴────────┘
+   terms sum to the env reward
+   battery 0.92 | coverage 35% | defects 7/26
+   decision  3: EXPLORE  r= +1.99  battery 0.89  coverage 47%  defects 8/26
+   decision  4: EXPLORE  r=+11.99  battery 0.87  coverage 59%  defects 14/26
+   decision  5: EXPLORE  r= +7.99  battery 0.84  coverage 70%  defects 18/26
+   decision  6: EXPLORE  r= +1.99  battery 0.82  coverage 80%  defects 19/26
+   decision  7: EXPLORE  r= +5.99  battery 0.79  coverage 88%  defects 22/26
+   decision  8: EXPLORE  r= +1.99  battery 0.77  coverage 95%  defects 23/26
+   decision  9: EXPLORE  r= +3.99  battery 0.74  coverage 100%  defects 25/26
+   decision 10: EXPLORE  r= -0.01  battery 0.72  coverage 100%  defects 25/26
+   decision 11: EXPLORE  r= -0.01  battery 0.69  coverage 100%  defects 25/26
+   decision 12: EXPLORE  r= -0.01  battery 0.67  coverage 100%  defects 25/26
+   decision 13: EXPLORE  r= -0.01  battery 0.64  coverage 100%  defects 25/26
+   decision 14: EXPLORE  r= -0.01  battery 0.62  coverage 100%  defects 25/26
+   decision 15: EXPLORE  r= -0.01  battery 0.59  coverage 100%  defects 25/26
+   decision 16: EXPLORE  r= -0.01  battery 0.57  coverage 100%  defects 25/26
+   decision 17: RETURN   r= -0.04  battery 0.49  coverage 100%  defects 25/26
+ GUIDELINE 7  Trained supervisor, full mission animated
+saved agentC_mission.gif (0.5 MB, 56 frames, 22s)
+ GUIDELINE 8  Final performance on this bridge (live) + saved 20-bridge evaluation
+   option counts: {'EXPLORE': 17, 'REFINE': 0, 'RETURN': 1}
+Seed 1000: live                                                                                        
+┌────────────────────────────────────┬───────────┬────────┬─────────┬────────┬──────────┬─────────────┐
+│ supervisor                         │ decisions │ return │ defects │ energy │ coverage │ safe return │
+├────────────────────────────────────┼───────────┼────────┼─────────┼────────┼──────────┼─────────────┤
+│ Agent C - Mission Supervisor (A2C) │        18 │ +47.74 │      25 │  0.510 │     100% │         yes │
+│ BASELINE RuleSupervisor            │        34 │ +49.52 │      26 │  0.962 │     100% │         yes │
+└────────────────────────────────────┴───────────┴────────┴─────────┴────────┴──────────┴─────────────┘
+Saved evaluation (mean of 20 seeded bridges) - agentC_vs_baselines.csv                       
+┌─────────────────┬─────────────┬─────────┬───────────┬──────────┬─────────┬───────┬────────┐
+│ policy          │      return │ success │ decisions │ coverage │ defects │  mIoU │ energy │
+├─────────────────┼─────────────┼─────────┼───────────┼──────────┼─────────┼───────┼────────┤
+│ A2C (Agent C)   │ 39.8 +- 3.4 │    100% │      19.2 │     100% │    20.9 │ 0.500 │  0.510 │
+│ rule_supervisor │ 42.8 +- 3.0 │    100% │      33.8 │     100% │    22.6 │ 0.597 │  0.954 │
+│ random          │  4.1 +- 9.1 │    100% │       3.0 │      16% │     3.0 │ 0.072 │  0.066 │
+└─────────────────┴─────────────┴─────────┴───────────┴──────────┴─────────┴───────┴────────┘

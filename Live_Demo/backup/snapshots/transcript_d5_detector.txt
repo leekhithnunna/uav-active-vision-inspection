@@ -1,0 +1,54 @@
+─────────────────────────────────────────────── d5_detector_views --save ───────────────────────────────────────────────
+───────────────────────────────────────────── DEMO 5 - Real-image detector ─────────────────────────────────────────────
+                               DeepCrack -> U-Net with MC-dropout -> per-cell uncertainty                               
+Saved detector report (detector_report.json: 1200 crack + 1800 clean TEST patches,
+10 MC passes)                                                                     
+┌───┬────────────┬───────────┬───────────┬─────────────┬───────────┬─────────────┐
+│ q │ resolution │ u (crack) │ u (clean) │ detect rate │ false pos │ IoU (crack) │
+├───┼────────────┼───────────┼───────────┼─────────────┼───────────┼─────────────┤
+│ 0 │       4 px │     0.601 │     0.321 │       39.8% │      0.9% │       0.193 │
+│ 1 │       8 px │     0.563 │     0.234 │       82.2% │      2.4% │       0.501 │
+│ 2 │      16 px │     0.543 │     0.179 │       92.8% │      4.8% │       0.644 │
+│ 3 │      32 px │     0.532 │     0.153 │       96.9% │      7.3% │       0.696 │
+│ 4 │      64 px │     0.526 │     0.140 │       98.2% │     12.5% │       0.717 │
+└───┴────────────┴───────────┴───────────┴─────────────┴───────────┴─────────────┘
+   env mapping (learned mode): altitude HIGH/MID/LOW -> q0/q1/q3;  q4 only through Agent B's refinement.
+ GUIDELINE 1  U-Net loaded from unet_deepcrack.pt; 3 patches from the DeepCrack TEST split
+CRACK patch 11218-3.jpg @(64,256)                         
+┌───┬──────┬──────────────────┬────────┬──────┬──────────┐
+│ q │  res │ entropy u (bits) │ MC std │  IoU │ detected │
+├───┼──────┼──────────────────┼────────┼──────┼──────────┤
+│ 0 │  4px │            0.099 │  0.019 │ 0.00 │       no │
+│ 1 │  8px │            0.128 │  0.017 │ 0.74 │      yes │
+│ 2 │ 16px │            0.126 │  0.019 │ 0.81 │      yes │
+│ 3 │ 32px │            0.107 │  0.015 │ 0.79 │      yes │
+│ 4 │ 64px │            0.121 │  0.019 │ 0.73 │      yes │
+└───┴──────┴──────────────────┴────────┴──────┴──────────┘
+CRACK patch IMG_6542-5.jpg @(448,256)                     
+┌───┬──────┬──────────────────┬────────┬──────┬──────────┐
+│ q │  res │ entropy u (bits) │ MC std │  IoU │ detected │
+├───┼──────┼──────────────────┼────────┼──────┼──────────┤
+│ 0 │  4px │            0.053 │  0.013 │ 0.00 │       no │
+│ 1 │  8px │            0.166 │  0.022 │ 0.70 │      yes │
+│ 2 │ 16px │            0.111 │  0.017 │ 0.80 │      yes │
+│ 3 │ 32px │            0.081 │  0.011 │ 0.91 │      yes │
+│ 4 │ 64px │            0.075 │  0.017 │ 0.85 │      yes │
+└───┴──────┴──────────────────┴────────┴──────┴──────────┘
+CLEAN patch 11247-1.jpg @(192,320)                        
+┌───┬──────┬──────────────────┬────────┬──────┬──────────┐
+│ q │  res │ entropy u (bits) │ MC std │  IoU │ detected │
+├───┼──────┼──────────────────┼────────┼──────┼──────────┤
+│ 0 │  4px │            0.058 │  0.014 │ 1.00 │       no │
+│ 1 │  8px │            0.008 │  0.001 │ 1.00 │       no │
+│ 2 │ 16px │            0.019 │  0.003 │ 1.00 │       no │
+│ 3 │ 32px │            0.011 │  0.001 │ 1.00 │       no │
+│ 4 │ 64px │            0.034 │  0.012 │ 1.00 │       no │
+└───┴──────┴──────────────────┴────────┴──────┴──────────┘
+ GUIDELINE 4  Same patch seen at q0 (far/high) ... q4 (Agent B's best view)
+saved detector.gif (0.5 MB, 17 frames, 7s)
+ GUIDELINE 8  What the saved evaluation says (detector_report.json)
+   Per patch, raw MC entropy is NOT monotone in q (51% of q-steps rise before fusion; at q0 the net can be confidently 
+wrong, IoU 0).
+   The cache therefore rank-normalises u and applies best-view fusion (running min over q).
+   Over 1200 crack patches: u 0.60 -> 0.53, detect rate 40% -> 98%, IoU 0.19 -> 0.72 from q0 to q4 (false positives 0.9%
+-> 12.5%).

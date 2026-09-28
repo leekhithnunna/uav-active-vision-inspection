@@ -1,0 +1,30 @@
+────────────────────────────────────────── d8_learning_burst --save --agent A ──────────────────────────────────────────
+─────────────────────────── DEMO 8 - Learning burst: DQN (Agent A - Viewpoint Planner (DQN)) ───────────────────────────
+     5000 steps, fresh network, output -> C:\Users\leekh\AppData\Local\Temp\uav_demo_burst\agentA_burst_1790619285      
+ GUIDELINE 1  Fresh environment (mode='navigate') wrapped in a Monitor
+ GUIDELINE 6  DQN: act epsilon-greedy, store (s,a,r,s') in replay, every 4 steps a TD update
+UPDATE step   304 | ep reward (mean) -12.8347 | epsilon +0.8845
+UPDATE step   601 | ep reward (mean) -24.2355 | epsilon +0.7716
+UPDATE step   901 | ep reward (mean) -22.7612 | epsilon +0.6576
+UPDATE step  1221 | ep reward (mean) -23.3189 | TD loss (Huber) +0.0388 | epsilon +0.5360
+UPDATE step  1544 | ep reward (mean) -18.8621 | TD loss (Huber) +0.0215 | epsilon +0.4133
+UPDATE step  1889 | ep reward (mean) -15.0776 | TD loss (Huber) +0.0126 | epsilon +0.2822
+UPDATE step  2252 | ep reward (mean) -12.0488 | TD loss (Huber) +0.0090 | epsilon +0.1442
+UPDATE step  2608 | ep reward (mean) -9.6818 | TD loss (Huber) +0.0122 | epsilon +0.0500
+UPDATE step  2959 | ep reward (mean) -7.9172 | TD loss (Huber) +0.0083 | epsilon +0.0500
+UPDATE step  3287 | ep reward (mean) -6.5829 | TD loss (Huber) +0.0079 | epsilon +0.0500
+UPDATE step  3648 | ep reward (mean) -5.5472 | TD loss (Huber) +0.0124 | epsilon +0.0500
+UPDATE step  4031 | ep reward (mean) -4.8363 | TD loss (Huber) +0.0156 | epsilon +0.0500
+UPDATE step  4394 | ep reward (mean) -4.1958 | TD loss (Huber) +0.0070 | epsilon +0.0500
+UPDATE step  4739 | ep reward (mean) -3.5826 | TD loss (Huber) +0.0065 | epsilon +0.0500
+DQN update on one sampled transition: loss = Huber(y - Q(s,a)), gradient step on      
+Q-network                                                                             
+┌────────┬───────┬──────┬────────────────────┬─────────────┬────────┬────────────────┐
+│ r      │ gamma │ done │ max Q_target(s',.) │ TD target y │ Q(s,a) │ TD error y - Q │
+├────────┼───────┼──────┼────────────────────┼─────────────┼────────┼────────────────┤
+│ -0.060 │ 0.995 │    0 │             +0.290 │      +0.228 │ +0.394 │         -0.166 │
+└────────┴───────┴──────┴────────────────────┴─────────────┴────────┴────────────────┘
+trained 5000 steps in 22.8s; 29 episodes; 11 logged updates
+saved burst model -> C:\Users\leekh\AppData\Local\Temp\uav_demo_burst\agentA_burst_1790619285\agentA_burst.zip
+real trained models untouched: True
+This short run is NOT the trained agent: the real model trained for 200k steps (see demo 9 for its curves).

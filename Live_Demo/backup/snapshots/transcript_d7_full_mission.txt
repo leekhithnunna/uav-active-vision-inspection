@@ -1,0 +1,105 @@
+──────────────────────────────────────────────── d7_full_mission --save ────────────────────────────────────────────────
+────────────────────────────────────────── DEMO 7 - Full hierarchical mission ──────────────────────────────────────────
+  supervisor: Agent C - Mission Supervisor (A2C) | explore: Agent A - Viewpoint Planner (DQN) | refine: Agent B - View  
+                                                     Refiner (PPO)                                                      
+ GUIDELINE 1  InspectionEnv(mode='full', nav_policy=Agent A, refine_policy=Agent B), seed 1000
+ GUIDELINE 2  Supervisor state before decision 0
+OBSERVATION  s_t (6 numbers in [0, 1])                                 
+┌─────────┬──────────┬────────┬────────────┬──────────────┬───────────┐
+│ battery │ coverage │ mean u │ found frac │ dist to base │ time used │
+├─────────┼──────────┼────────┼────────────┼──────────────┼───────────┤
+│   1.000 │    0.070 │  0.971 │      0.038 │        0.000 │     0.000 │
+└─────────┴──────────┴────────┴────────────┴──────────────┴───────────┘
+ GUIDELINE 3  Options and the selected option (A2C actor: pi(o | s))
+AVAILABLE OPTIONS                                           
+┌───┬────────────────────┬─────────┬───────────────────────┐
+│ # │ action             │ pi(o|s) │                       │
+├───┼────────────────────┼─────────┼───────────────────────┤
+│ 0 │ Explore -> Agent A │  +0.994 │ <-- selected (argmax) │
+│ 1 │ Refine -> Agent B  │  +0.005 │                       │
+│ 2 │ Return home        │  +0.000 │                       │
+└───┴────────────────────┴─────────┴───────────────────────┘
+SELECTED ACTION ->  EXPLORE 
+ GUIDELINE 4  Option executed (up to 5 navigator / 10 refiner sub-steps)
+ GUIDELINE 5  Reward and next state
+REWARD                                  
+┌─────────────────────────────┬────────┐
+│ term                        │  value │
+├─────────────────────────────┼────────┤
+│ new defects found (2.0 x 3) │ +6.000 │
+│ energy used (0.5 x 0.030)   │ -0.015 │
+├─────────────────────────────┼────────┤
+│ total (env reward)          │ +5.985 │
+└─────────────────────────────┴────────┘
+   terms sum to the env reward
+   battery 0.97 | coverage 14% | defects 4/26
+ GUIDELINE 2  Supervisor state before decision 1
+OBSERVATION  s_t (6 numbers in [0, 1])                                 
+┌─────────┬──────────┬────────┬────────────┬──────────────┬───────────┐
+│ battery │ coverage │ mean u │ found frac │ dist to base │ time used │
+├─────────┼──────────┼────────┼────────────┼──────────────┼───────────┤
+│   0.970 │    0.141 │  0.916 │      0.154 │        0.182 │     0.025 │
+└─────────┴──────────┴────────┴────────────┴──────────────┴───────────┘
+ GUIDELINE 3  Options and the selected option (A2C actor: pi(o | s))
+AVAILABLE OPTIONS                                           
+┌───┬────────────────────┬─────────┬───────────────────────┐
+│ # │ action             │ pi(o|s) │                       │
+├───┼────────────────────┼─────────┼───────────────────────┤
+│ 0 │ Explore -> Agent A │  +0.993 │ <-- selected (argmax) │
+│ 1 │ Refine -> Agent B  │  +0.006 │                       │
+│ 2 │ Return home        │  +0.000 │                       │
+└───┴────────────────────┴─────────┴───────────────────────┘
+SELECTED ACTION ->  EXPLORE 
+ GUIDELINE 4  Option executed (up to 5 navigator / 10 refiner sub-steps)
+ GUIDELINE 5  Reward and next state
+REWARD                                  
+┌─────────────────────────────┬────────┐
+│ term                        │  value │
+├─────────────────────────────┼────────┤
+│ new defects found (2.0 x 2) │ +4.000 │
+│ energy used (0.5 x 0.025)   │ -0.013 │
+├─────────────────────────────┼────────┤
+│ total (env reward)          │ +3.987 │
+└─────────────────────────────┴────────┘
+   terms sum to the env reward
+   battery 0.94 | coverage 26% | defects 6/26
+   decision  2: EXPLORE  r= +1.99  battery 0.92  coverage 38%  defects 7/26
+   decision  3: EXPLORE  r= +5.99  battery 0.89  coverage 52%  defects 10/26
+   decision  4: EXPLORE  r= -0.02  battery 0.86  coverage 63%  defects 10/26
+   decision  5: EXPLORE  r=+13.98  battery 0.82  coverage 79%  defects 17/26
+   decision  6: EXPLORE  r= -0.02  battery 0.78  coverage 87%  defects 17/26
+   decision  7: EXPLORE  r= +3.98  battery 0.74  coverage 91%  defects 19/26
+   decision  8: EXPLORE  r= +3.98  battery 0.70  coverage 96%  defects 21/26
+   decision  9: EXPLORE  r= -0.01  battery 0.68  coverage 97%  defects 21/26
+   decision 10: EXPLORE  r= +1.99  battery 0.65  coverage 100%  defects 22/26
+   decision 11: EXPLORE  r= -0.01  battery 0.63  coverage 100%  defects 22/26
+   decision 12: EXPLORE  r= -0.01  battery 0.60  coverage 100%  defects 22/26
+   decision 13: EXPLORE  r= +3.99  battery 0.58  coverage 100%  defects 24/26
+   decision 14: EXPLORE  r= -0.01  battery 0.55  coverage 100%  defects 24/26
+   decision 15: RETURN   r= -0.05  battery 0.46  coverage 100%  defects 24/26
+ GUIDELINE 7  All three trained agents working together, animated
+saved full_mission.gif (0.6 MB, 53 frames, 20s)
+ GUIDELINE 8  Final performance: learned hierarchy vs fully scripted system, same bridge
+   supervisor option counts: {'EXPLORE': 15, 'REFINE': 0, 'RETURN': 1}
+┌────────────────────────────────────────────────────── warning ───────────────────────────────────────────────────────┐
+│ The learned supervisor chose REFINE 0 times on this bridge, so Agent B was never called.                             │
+│ (It is the same on all 20 evaluation bridges: the trained A2C prefers EXPLORE -> RETURN.)                            │
+│ Agent B is shown in demo 4; `--supervisor rule` shows Agent B running inside the hierarchy.                          │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Seed 1000: live                                                                                                         
+┌──────────────────────────────────────┬──────────┬──────────┬────────┬─────────┬──────────┬────────┬───────┬──────────┐
+│                                      │          │      UAV │        │         │          │        │       │     safe │
+│ system                               │ decisio… │    moves │ return │ defects │ coverage │ energy │  mIoU │   return │
+├──────────────────────────────────────┼──────────┼──────────┼────────┼─────────┼──────────┼────────┼───────┼──────────┤
+│ Agent C - Mission Supervisor + A + B │       16 │       75 │ +45.73 │   24/26 │     100% │  0.540 │ 0.509 │      yes │
+│ ALL SCRIPTED (rule+raster+approach)  │       34 │      149 │ +49.52 │   26/26 │     100% │  0.962 │ 0.595 │      yes │
+└──────────────────────────────────────┴──────────┴──────────┴────────┴─────────┴──────────┴────────┴───────┴──────────┘
+Saved evaluation (mean of 20 seeded bridges) - full_mode_results.csv                                                 
+┌─────────────────────────────────────────┬─────────────┬─────────┬───────────┬──────────┬─────────┬───────┬────────┐
+│ config                                  │      return │ success │ decisions │ coverage │ defects │  mIoU │ energy │
+├─────────────────────────────────────────┼─────────────┼─────────┼───────────┼──────────┼─────────┼───────┼────────┤
+│ ALL LEARNED  (C + A + B)                │ 40.9 +- 3.4 │    100% │      17.2 │     100% │    21.5 │ 0.528 │  0.517 │
+│ ALL SCRIPTED (rule + raster + approach) │ 42.8 +- 3.0 │    100% │      33.8 │     100% │    22.6 │ 0.597 │  0.954 │
+│ ablation: C learned, A/B scripted       │ 39.8 +- 3.4 │    100% │      19.2 │     100% │    20.9 │ 0.500 │  0.510 │
+│ ablation: rule C, A + B learned         │ 44.8 +- 3.8 │    100% │      32.0 │     100% │    23.6 │ 0.623 │  0.925 │
+└─────────────────────────────────────────┴─────────────┴─────────┴───────────┴──────────┴─────────┴───────┴────────┘

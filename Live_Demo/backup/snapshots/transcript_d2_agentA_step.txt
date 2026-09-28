@@ -1,0 +1,219 @@
+───────────────────────────────────────────── d2_agentA_step --save --auto ─────────────────────────────────────────────
+──────────────────────────────────────────── DEMO 2 - Agent A step-through ─────────────────────────────────────────────
+                           Agent A - Viewpoint Planner (DQN)   seed 1000   detector analytic                            
+ GUIDELINE 1  Environment started: InspectionEnv(mode='navigate'), bridge seed 1000
+   model: L:\My Drive\RL_Project\files_coding\uav_inspection\agentA\best\best_model.zip
+ GUIDELINE 2  Current observation / state
+   observation = 118 numbers: 7x7 local window (visited, uncertainty) + 2x4 block summary + (row, col, altitude, 
+battery)
+┌──────── STATE  (t = 0) ────────┐
+│   position            [0, 0]   │
+│   altitude            HIGH     │
+│   battery             1.00     │
+│   coverage            7.0%     │
+│   mean uncertainty    0.971    │
+│   defects found       1/26     │
+└────────────────────────────────┘
+U54.............
+544.............
+775.............
+................
+................
+................
+................
+................
+alt=high battery=1.00
+ GUIDELINE 3  Available actions and the selected action (DQN picks argmax Q)
+AVAILABLE ACTIONS                                        
+┌───┬─────────────────┬─────────┬───────────────────────┐
+│ # │ action          │ Q(s, a) │                       │
+├───┼─────────────────┼─────────┼───────────────────────┤
+│ 0 │ North           │ +15.871 │                       │
+│ 1 │ South           │ +17.000 │ <-- selected (argmax) │
+│ 2 │ East            │ +16.848 │                       │
+│ 3 │ West            │ +15.948 │                       │
+│ 4 │ Climb (higher)  │ +16.137 │                       │
+│ 5 │ Descend (lower) │ +16.829 │                       │
+└───┴─────────────────┴─────────┴───────────────────────┘
+SELECTED ACTION ->  South 
+ GUIDELINE 4  Environment response
+   UAV now at [1, 0], altitude HIGH; 3 new cells seen, total uncertainty reduced by 1.243
+ GUIDELINE 5  Reward and next state
+REWARD                                       
+┌──────────────────────────────────┬────────┐
+│ term                             │  value │
+├──────────────────────────────────┼────────┤
+│ uncertainty reduced (0.2 x 1.24) │ +0.249 │
+│ step cost                        │ -0.010 │
+├──────────────────────────────────┼────────┤
+│ total (env reward)               │ +0.239 │
+└──────────────────────────────────┴────────┘
+   terms sum to the env reward
+┌──────── STATE  (t = 1) ────────┐
+│   position            [1, 0]   │
+│   altitude            HIGH     │
+│   battery             0.99     │
+│   coverage            9.4%     │
+│   mean uncertainty    0.961    │
+│   defects found       1/26     │
+└────────────────────────────────┘
+ GUIDELINE 3  Available actions and the selected action (DQN picks argmax Q)
+AVAILABLE ACTIONS                                        
+┌───┬─────────────────┬─────────┬───────────────────────┐
+│ # │ action          │ Q(s, a) │                       │
+├───┼─────────────────┼─────────┼───────────────────────┤
+│ 0 │ North           │ +16.585 │                       │
+│ 1 │ South           │ +16.704 │                       │
+│ 2 │ East            │ +16.790 │                       │
+│ 3 │ West            │ +15.758 │                       │
+│ 4 │ Climb (higher)  │ +16.067 │                       │
+│ 5 │ Descend (lower) │ +16.812 │ <-- selected (argmax) │
+└───┴─────────────────┴─────────┴───────────────────────┘
+SELECTED ACTION ->  Descend (lower) 
+ GUIDELINE 4  Environment response
+   UAV now at [1, 0], altitude MID; 0 new cells seen, total uncertainty reduced by 1.188
+ GUIDELINE 5  Reward and next state
+REWARD                                       
+┌──────────────────────────────────┬────────┐
+│ term                             │  value │
+├──────────────────────────────────┼────────┤
+│ uncertainty reduced (0.2 x 1.19) │ +0.238 │
+│ step cost                        │ -0.010 │
+├──────────────────────────────────┼────────┤
+│ total (env reward)               │ +0.228 │
+└──────────────────────────────────┴────────┘
+   terms sum to the env reward
+┌──────── STATE  (t = 2) ────────┐
+│   position            [1, 0]   │
+│   altitude            MID      │
+│   battery             0.98     │
+│   coverage            9.4%     │
+│   mean uncertainty    0.952    │
+│   defects found       3/26     │
+└────────────────────────────────┘
+ GUIDELINE 3  Available actions and the selected action (DQN picks argmax Q)
+AVAILABLE ACTIONS                                        
+┌───┬─────────────────┬─────────┬───────────────────────┐
+│ # │ action          │ Q(s, a) │                       │
+├───┼─────────────────┼─────────┼───────────────────────┤
+│ 0 │ North           │ +16.411 │                       │
+│ 1 │ South           │ +16.499 │                       │
+│ 2 │ East            │ +16.641 │ <-- selected (argmax) │
+│ 3 │ West            │ +15.623 │                       │
+│ 4 │ Climb (higher)  │ +16.630 │                       │
+│ 5 │ Descend (lower) │ +16.475 │                       │
+└───┴─────────────────┴─────────┴───────────────────────┘
+SELECTED ACTION ->  East 
+ GUIDELINE 4  Environment response
+   UAV now at [1, 1], altitude MID; 0 new cells seen, total uncertainty reduced by 0.583
+ GUIDELINE 5  Reward and next state
+REWARD                                       
+┌──────────────────────────────────┬────────┐
+│ term                             │  value │
+├──────────────────────────────────┼────────┤
+│ uncertainty reduced (0.2 x 0.58) │ +0.117 │
+│ step cost                        │ -0.010 │
+├──────────────────────────────────┼────────┤
+│ total (env reward)               │ +0.107 │
+└──────────────────────────────────┴────────┘
+   terms sum to the env reward
+┌──────── STATE  (t = 3) ────────┐
+│   position            [1, 1]   │
+│   altitude            MID      │
+│   battery             0.98     │
+│   coverage            9.4%     │
+│   mean uncertainty    0.947    │
+│   defects found       3/26     │
+└────────────────────────────────┘
+ GUIDELINE 7  Trained policy runs to the end of the episode
+t=  4  East                   r= +0.42  alt=MID  cov=11.7%  u=0.931  defects= 3/26  battery=0.97
+t=  5  East                   r= +0.37  alt=MID  cov=14.1%  u=0.916  defects= 4/26  battery=0.97
+t=  6  East                   r= +0.36  alt=MID  cov=16.4%  u=0.901  defects= 5/26  battery=0.96
+t=  7  East                   r= +0.35  alt=MID  cov=18.8%  u=0.888  defects= 6/26  battery=0.96
+t=  8  East                   r= +0.42  alt=MID  cov=21.1%  u=0.871  defects= 6/26  battery=0.95
+t=  9  East                   r= +0.37  alt=MID  cov=23.4%  u=0.856  defects= 6/26  battery=0.95
+t= 10  East                   r= +0.40  alt=MID  cov=25.8%  u=0.840  defects= 6/26  battery=0.94
+t= 11  East                   r= +0.42  alt=MID  cov=28.1%  u=0.823  defects= 6/26  battery=0.94
+t= 12  East                   r= +0.41  alt=MID  cov=30.5%  u=0.807  defects= 6/26  battery=0.93
+t= 13  East                   r= +0.40  alt=MID  cov=32.8%  u=0.791  defects= 6/26  battery=0.93
+t= 14  East                   r= +0.44  alt=MID  cov=35.2%  u=0.773  defects= 6/26  battery=0.92
+t= 15  East                   r= +0.37  alt=MID  cov=37.5%  u=0.759  defects= 7/26  battery=0.92
+t= 16  East                   r= +0.36  alt=MID  cov=39.8%  u=0.744  defects= 8/26  battery=0.91
+t= 17  South                  r= +0.41  alt=MID  cov=42.2%  u=0.728  defects= 8/26  battery=0.91
+t= 18  South                  r= +0.41  alt=MID  cov=44.5%  u=0.711  defects= 8/26  battery=0.90
+t= 19  Climb (higher)         r= +0.61  alt=HIGH cov=49.2%  u=0.687  defects= 8/26  battery=0.89
+t= 20  South                  r= +0.29  alt=HIGH cov=52.3%  u=0.676  defects=10/26  battery=0.89
+t= 21  South                  r= +0.39  alt=HIGH cov=55.5%  u=0.660  defects=10/26  battery=0.88
+t= 22  West                   r= +0.43  alt=HIGH cov=59.4%  u=0.643  defects=10/26  battery=0.88
+t= 23  West                   r= +0.50  alt=HIGH cov=63.3%  u=0.623  defects=10/26  battery=0.87
+t= 24  Descend (lower)        r= +0.32  alt=MID  cov=63.3%  u=0.610  defects=10/26  battery=0.86
+t= 25  West                   r= +0.11  alt=MID  cov=63.3%  u=0.606  defects=10/26  battery=0.86
+t= 26  West                   r= +0.30  alt=MID  cov=65.6%  u=0.594  defects=12/26  battery=0.85
+t= 27  Climb (higher)         r= +0.58  alt=HIGH cov=71.1%  u=0.571  defects=12/26  battery=0.84
+t= 28  West                   r= +0.37  alt=HIGH cov=75.0%  u=0.556  defects=13/26  battery=0.84
+t= 29  West                   r= +0.33  alt=HIGH cov=78.9%  u=0.542  defects=15/26  battery=0.83
+t= 30  Descend (lower)        r= +0.24  alt=MID  cov=78.9%  u=0.533  defects=17/26  battery=0.82
+t= 31  West                   r= +0.12  alt=MID  cov=78.9%  u=0.528  defects=17/26  battery=0.82
+t= 32  Climb (higher)         r= +0.48  alt=HIGH cov=82.8%  u=0.508  defects=17/26  battery=0.81
+t= 33  Descend (lower)        r= -0.06  alt=MID  cov=82.8%  u=0.508  defects=17/26  battery=0.80
+t= 34  West                   r= +0.12  alt=MID  cov=82.8%  u=0.504  defects=17/26  battery=0.79
+t= 35  Climb (higher)         r= +0.42  alt=HIGH cov=86.7%  u=0.487  defects=17/26  battery=0.78
+t= 36  Descend (lower)        r= -0.06  alt=MID  cov=86.7%  u=0.487  defects=17/26  battery=0.77
+t= 37  West                   r= +0.13  alt=MID  cov=86.7%  u=0.481  defects=18/26  battery=0.77
+t= 38  Climb (higher)         r= +0.42  alt=HIGH cov=90.6%  u=0.464  defects=18/26  battery=0.76
+t= 39  Descend (lower)        r= -0.06  alt=MID  cov=90.6%  u=0.464  defects=18/26  battery=0.75
+t= 40  West                   r= +0.12  alt=MID  cov=90.6%  u=0.459  defects=19/26  battery=0.74
+t= 41  Climb (higher)         r= +0.36  alt=HIGH cov=93.8%  u=0.445  defects=20/26  battery=0.73
+t= 42  North                  r= -0.06  alt=HIGH cov=93.8%  u=0.445  defects=20/26  battery=0.73
+t= 43  West                   r= +0.29  alt=HIGH cov=96.1%  u=0.433  defects=20/26  battery=0.72
+t= 44  Descend (lower)        r= +0.21  alt=MID  cov=96.1%  u=0.425  defects=21/26  battery=0.71
+t= 45  Descend (lower)        r= +0.02  alt=LOW  cov=96.1%  u=0.424  defects=21/26  battery=0.70
+t= 46  South                  r= +0.02  alt=LOW  cov=96.1%  u=0.422  defects=21/26  battery=0.70
+t= 47  South                  r= +0.04  alt=LOW  cov=96.1%  u=0.420  defects=21/26  battery=0.69
+t= 48  South                  r= +0.06  alt=LOW  cov=96.1%  u=0.418  defects=21/26  battery=0.69
+t= 49  West                   r= +0.04  alt=LOW  cov=96.1%  u=0.415  defects=21/26  battery=0.68
+t= 50  West                   r= +0.16  alt=LOW  cov=96.9%  u=0.409  defects=21/26  battery=0.68
+t= 51  West                   r= +0.16  alt=LOW  cov=97.7%  u=0.402  defects=21/26  battery=0.67
+t= 52  North                  r= +0.17  alt=LOW  cov=98.4%  u=0.395  defects=21/26  battery=0.67
+t= 53  North                  r= +0.16  alt=LOW  cov=99.2%  u=0.389  defects=21/26  battery=0.66
+t= 54  North                  r= +0.12  alt=LOW  cov=100.0%  u=0.383  defects=22/26  battery=0.66
+t= 55  South                  r= -0.06  alt=LOW  cov=100.0%  u=0.383  defects=22/26  battery=0.65
+t= 56  East                   r= +0.06  alt=LOW  cov=100.0%  u=0.381  defects=22/26  battery=0.65
+t= 57  South                  r= +0.06  alt=LOW  cov=100.0%  u=0.378  defects=22/26  battery=0.64
+t= 58  East                   r= +0.05  alt=LOW  cov=100.0%  u=0.375  defects=22/26  battery=0.64
+t= 59  East                   r= -0.06  alt=LOW  cov=100.0%  u=0.375  defects=22/26  battery=0.63
+t= 60  East                   r= +0.04  alt=LOW  cov=100.0%  u=0.374  defects=22/26  battery=0.63
+t= 61  East                   r= +0.02  alt=LOW  cov=100.0%  u=0.372  defects=22/26  battery=0.62
+t= 62  East                   r= +0.02  alt=LOW  cov=100.0%  u=0.371  defects=22/26  battery=0.62
+t= 63  East                   r= +0.03  alt=LOW  cov=100.0%  u=0.370  defects=22/26  battery=0.61
+t= 64  North                  r= +0.05  alt=LOW  cov=100.0%  u=0.367  defects=22/26  battery=0.61
+t= 65  North                  r= +0.02  alt=LOW  cov=100.0%  u=0.366  defects=22/26  battery=0.60
+t= 66  North                  r= +0.08  alt=LOW  cov=100.0%  u=0.362  defects=22/26  battery=0.60
+t= 67  East                   r= +0.05  alt=LOW  cov=100.0%  u=0.360  defects=22/26  battery=0.59
+t= 68  East                   r= +0.09  alt=LOW  cov=100.0%  u=0.356  defects=23/26  battery=0.59
+t= 69  East                   r= +0.06  alt=LOW  cov=100.0%  u=0.353  defects=23/26  battery=0.58
+t= 70  East                   r= +0.07  alt=LOW  cov=100.0%  u=0.350  defects=24/26  battery=0.58
+t= 71  East                   r= +0.07  alt=LOW  cov=100.0%  u=0.347  defects=24/26  battery=0.57
+t= 72  East                   r= +0.01  alt=LOW  cov=100.0%  u=0.346  defects=24/26  battery=0.57
+t= 73  South                  r= +0.03  alt=LOW  cov=100.0%  u=0.345  defects=24/26  battery=0.56
+t= 74  South                  r= +0.02  alt=LOW  cov=100.0%  u=0.344  defects=24/26  battery=0.56
+t= 75  East                   r= +0.06  alt=LOW  cov=100.0%  u=0.341  defects=24/26  battery=0.55
+t= 76  South                  r= +0.10  alt=LOW  cov=100.0%  u=0.336  defects=24/26  battery=0.55
+t= 77  South                  r= +0.07  alt=LOW  cov=100.0%  u=0.333  defects=24/26  battery=0.54
+t= 78  West                   r= +0.06  alt=LOW  cov=100.0%  u=0.330  defects=24/26  battery=0.54
+t= 79  West                   r= +0.07  alt=LOW  cov=100.0%  u=0.327  defects=24/26  battery=0.53
+t= 80  West                   r= +0.06  alt=LOW  cov=100.0%  u=0.325  defects=24/26  battery=0.53
+t= 81  West                   r= +0.06  alt=LOW  cov=100.0%  u=0.322  defects=24/26  battery=0.52
+t= 82  West                   r=+20.46  alt=LOW  cov=100.0%  u=0.319  defects=24/26  battery=0.52
+ GUIDELINE 8  Final performance of this episode (live) vs saved 20-episode evaluation
+Agent A - results (saved rows: mean of 20 seeded bridges,                        
+agentA_vs_baselines.csv)                                                         
+┌──────────────────────┬────────┬─────────┬───────┬──────────┬─────────┬────────┐
+│ run                  │ return │ success │ steps │ coverage │ defects │ energy │
+├──────────────────────┼────────┼─────────┼───────┼──────────┼─────────┼────────┤
+│ this episode (live)  │ +35.97 │    True │    82 │     100% │   24/26 │  0.480 │
+│ saved: DQN (Agent A) │ +35.06 │    100% │  88.3 │     100% │    21.8 │  0.502 │
+│ saved: raster_mid    │  +6.20 │      0% │ 199.0 │     100% │    20.9 │  1.000 │
+│ saved: raster_low    │ +35.43 │    100% │ 123.0 │      95% │    23.5 │  0.625 │
+└──────────────────────┴────────┴─────────┴───────┴──────────┴─────────┴────────┘
+Learning / update step (guideline 6): run demo 8 (live training burst).

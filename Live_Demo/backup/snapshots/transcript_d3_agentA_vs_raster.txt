@@ -1,0 +1,23 @@
+────────────────────────────────────────────── d3_agentA_vs_raster --save ──────────────────────────────────────────────
+────────────────────────────────────────────── DEMO 3 - Agent A vs raster ──────────────────────────────────────────────
+                                         same seed 1000 -> same bridge for both                                         
+ GUIDELINE 1  Two identical environments (navigate mode, seed 1000, detector analytic)
+ GUIDELINE 7  Trained policy vs scripted baseline, animated
+saved agentA_vs_raster.gif (0.6 MB, 70 frames, 21s)
+ GUIDELINE 8  Final performance on this bridge (live)
+Seed 1000: live results                                                                                 
+┌────────────────────────────────────┬───────┬────────┬──────────┬────────┬─────────┬─────────┬────────┐
+│ policy                             │ steps │ energy │ coverage │ mean u │ defects │ success │ return │
+├────────────────────────────────────┼───────┼────────┼──────────┼────────┼─────────┼─────────┼────────┤
+│ Agent A - Viewpoint Planner (DQN)  │    82 │  0.480 │     100% │  0.319 │   24/26 │     yes │ +35.97 │
+│ BASELINE Dense raster, LOW altitud │   123 │  0.625 │      95% │  0.219 │   26/26 │     yes │ +35.52 │
+└────────────────────────────────────┴───────┴────────┴──────────┴────────┴─────────┴─────────┴────────┘
+Agent A on this bridge: -33% steps, -23% energy vs dense raster  (defects found 24 vs 26)
+Saved evaluation (mean of 20 seeded bridges) - agentA_vs_baselines.csv                 
+┌───────────────┬─────────────┬─────────┬───────┬──────────┬─────────┬───────┬────────┐
+│ policy        │      return │ success │ steps │ coverage │ defects │  mIoU │ energy │
+├───────────────┼─────────────┼─────────┼───────┼──────────┼─────────┼───────┼────────┤
+│ DQN (Agent A) │ 35.1 +- 4.0 │    100% │  88.3 │     100% │    21.8 │ 0.539 │  0.502 │
+│ raster_mid    │  6.2 +- 0.1 │      0% │ 199.0 │     100% │    20.9 │ 0.500 │  1.000 │
+│ raster_low    │ 35.4 +- 0.1 │    100% │ 123.0 │      95% │    23.5 │ 0.626 │  0.625 │
+└───────────────┴─────────────┴─────────┴───────┴──────────┴─────────┴───────┴────────┘

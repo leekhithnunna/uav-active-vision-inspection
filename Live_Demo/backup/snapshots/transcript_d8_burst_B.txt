@@ -1,0 +1,32 @@
+────────────────────────────────────────── d8_learning_burst --save --agent B ──────────────────────────────────────────
+───────────────────────────── DEMO 8 - Learning burst: PPO (Agent B - View Refiner (PPO)) ──────────────────────────────
+     6144 steps, fresh network, output -> C:\Users\leekh\AppData\Local\Temp\uav_demo_burst\agentB_burst_1790619309      
+ GUIDELINE 1  Fresh environment (mode='refine') wrapped in a Monitor
+ GUIDELINE 6  PPO: collect 512 steps, then 10 epochs of clipped-surrogate updates
+UPDATE step   512 | ep reward (mean) -2.2129
+UPDATE step  1024 | ep reward (mean) -2.2207 | value loss +0.3808 | policy-gradient loss -0.0106 | entropy loss -4.2548 
+| policy std sigma +0.9970 | clip fraction +0.0469
+UPDATE step  1536 | ep reward (mean) -2.0258 | value loss +0.4371 | policy-gradient loss -0.0066 | entropy loss -4.2418 
+| policy std sigma +0.9920 | clip fraction +0.0314
+UPDATE step  2048 | ep reward (mean) -1.9225 | value loss +0.9487 | policy-gradient loss -0.0084 | entropy loss -4.2305 
+| policy std sigma +0.9901 | clip fraction +0.0703
+UPDATE step  2560 | ep reward (mean) -1.7119 | value loss +1.0511 | policy-gradient loss -0.0074 | entropy loss -4.2270 
+| policy std sigma +0.9908 | clip fraction +0.0270
+UPDATE step  3072 | ep reward (mean) -1.5133 | value loss +4.1929 | policy-gradient loss -0.0117 | entropy loss -4.2227 
+| policy std sigma +0.9854 | clip fraction +0.1346
+UPDATE step  3584 | ep reward (mean) -1.0049 | value loss +4.5631 | policy-gradient loss -0.0032 | entropy loss -4.2077 
+| policy std sigma +0.9818 | clip fraction +0.0336
+UPDATE step  4096 | ep reward (mean) -0.1545 | value loss +10.9010 | policy-gradient loss -0.0111 | entropy loss -4.1982
+| policy std sigma +0.9788 | clip fraction +0.0639
+UPDATE step  4608 | ep reward (mean) +0.6916 | value loss +15.3989 | policy-gradient loss -0.0148 | entropy loss -4.1883
+| policy std sigma +0.9761 | clip fraction +0.0615
+UPDATE step  5120 | ep reward (mean) +2.3822 | value loss +15.5367 | policy-gradient loss -0.0106 | entropy loss -4.1799
+| policy std sigma +0.9731 | clip fraction +0.0623
+UPDATE step  5632 | ep reward (mean) +3.4975 | value loss +14.9567 | policy-gradient loss -0.0101 | entropy loss -4.1694
+| policy std sigma +0.9686 | clip fraction +0.0512
+UPDATE step  6144 | ep reward (mean) +4.3165 | value loss +11.9134 | policy-gradient loss -0.0168 | entropy loss -4.1573
+| policy std sigma +0.9661 | clip fraction +0.1330
+trained 6144 steps in 16.4s; 262 episodes; 11 logged updates
+saved burst model -> C:\Users\leekh\AppData\Local\Temp\uav_demo_burst\agentB_burst_1790619309\agentB_burst.zip
+real trained models untouched: True
+This short run is NOT the trained agent: the real model trained for 100k steps (see demo 9 for its curves).

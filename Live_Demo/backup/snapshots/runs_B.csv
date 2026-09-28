@@ -1,0 +1,8 @@
+run,trained,setting,return,success,steps,energy,note
+main,100k,"analytic, ent=0.0, clip=0.2",+5.67,100%,3.7,0.029,full run
+agentB_ent0.0,60k,"analytic, ent=0.0, clip=0.2",+5.67,100%,3.7,0.029,short run: 60k steps (main: 100k)
+agentB_ent0.01,60k,"analytic, ent=0.01, clip=0.2",+5.67,100%,3.7,0.030,short run: 60k steps (main: 100k)
+agentB_ent0.05,60k,"analytic, ent=0.05, clip=0.2",+5.67,100%,3.6,0.029,short run: 60k steps (main: 100k)
+agentB_clip0.1,60k,"analytic, ent=0.0, clip=0.1",+5.67,100%,3.7,0.029,short run: 60k steps (main: 100k)
+agentB_clip0.3,60k,"analytic, ent=0.0, clip=0.3",+5.67,100%,3.7,0.029,short run: 60k steps (main: 100k)
+agentB_learned,100k,"learned, ent=0.0, clip=0.2",+5.32,100%,3.4,0.027,full run
