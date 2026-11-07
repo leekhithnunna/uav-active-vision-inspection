@@ -236,20 +236,20 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 7.5,results/sample_efficiency.csv,train_minutes,.1f,1.0,,"{""run"": ""C_withA""}",7.5
 "195,596",results/model_size.csv,parameters,",.0f",1.0,,"{""agent"": ""A""}",195596.0
 "1,565",results/model_size.csv,file_kb,",.0f",1.0,,"{""agent"": ""A""}",1565.4765625
-0.77,results/model_size.csv,latency_ms_median_1000,.2f,1.0,,"{""agent"": ""A""}",0.7661999989068136
-1.60,results/model_size.csv,latency_ms_p95_1000,.2f,1.0,,"{""agent"": ""A""}",1.5987100057827772
+0.51,results/model_size.csv,latency_ms_median_1000,.2f,1.0,,"{""agent"": ""A""}",0.5113499937579036
+0.91,results/model_size.csv,latency_ms_p95_1000,.2f,1.0,,"{""agent"": ""A""}",0.9110500097449402
 "9,479",results/model_size.csv,parameters,",.0f",1.0,,"{""agent"": ""B""}",9479.0
 147,results/model_size.csv,file_kb,",.0f",1.0,,"{""agent"": ""B""}",147.3271484375
-1.36,results/model_size.csv,latency_ms_median_1000,.2f,1.0,,"{""agent"": ""B""}",1.3570500013884157
-7.74,results/model_size.csv,latency_ms_p95_1000,.2f,1.0,,"{""agent"": ""B""}",7.742945001518813
+0.67,results/model_size.csv,latency_ms_median_1000,.2f,1.0,,"{""agent"": ""B""}",0.6668000060017221
+1.78,results/model_size.csv,latency_ms_p95_1000,.2f,1.0,,"{""agent"": ""B""}",1.780679992953082
 "9,476",results/model_size.csv,parameters,",.0f",1.0,,"{""agent"": ""C""}",9476.0
 109,results/model_size.csv,file_kb,",.0f",1.0,,"{""agent"": ""C""}",109.37109375
-1.49,results/model_size.csv,latency_ms_median_1000,.2f,1.0,,"{""agent"": ""C""}",1.4871500025037676
-4.05,results/model_size.csv,latency_ms_p95_1000,.2f,1.0,,"{""agent"": ""C""}",4.046235006535421
+0.99,results/model_size.csv,latency_ms_median_1000,.2f,1.0,,"{""agent"": ""C""}",0.9906999985105358
+2.02,results/model_size.csv,latency_ms_p95_1000,.2f,1.0,,"{""agent"": ""C""}",2.022005005710525
 "9,476",results/model_size.csv,parameters,",.0f",1.0,,"{""agent"": ""C_withA""}",9476.0
 109,results/model_size.csv,file_kb,",.0f",1.0,,"{""agent"": ""C_withA""}",109.3935546875
-1.51,results/model_size.csv,latency_ms_median_1000,.2f,1.0,,"{""agent"": ""C_withA""}",1.5099500014912337
-2.86,results/model_size.csv,latency_ms_p95_1000,.2f,1.0,,"{""agent"": ""C_withA""}",2.863829992566018
+0.94,results/model_size.csv,latency_ms_median_1000,.2f,1.0,,"{""agent"": ""C_withA""}",0.9383500000694768
+1.93,results/model_size.csv,latency_ms_p95_1000,.2f,1.0,,"{""agent"": ""C_withA""}",1.9286949966044624
 91.2,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",91.20833333333331
 123.0,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",123.0
 -26,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""A_steps_vs_raster_pct""}",-25.846883468834704
@@ -293,6 +293,12 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 6.50,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",6.498309100792341
 4.43,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",4.434421163813915
 3.91,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",3.9117755691545377
+4,results/multiseed_summary.csv,n_seeds,.0f,1.0,,"{""agent"": ""A""}",4.0
+36.202,results/multiseed_summary.csv,return_mean,.3f,1.0,,"{""agent"": ""A""}",36.20211270299633
+1.817,results/multiseed_summary.csv,return_std,.3f,1.0,,"{""agent"": ""A""}",1.8172305922194745
+2.892,results/multiseed_summary.csv,return_ci95,.3f,1.0,,"{""agent"": ""A""}",2.891619392028697
+99,results/multiseed_summary.csv,success_mean,.0f,100.0,,"{""agent"": ""A""}",98.75
+81.88,results/multiseed_summary.csv,steps_mean,.2f,1.0,,"{""agent"": ""A""}",81.8825
 4,results/multiseed_summary.csv,n_seeds,.0f,1.0,,"{""agent"": ""B""}",4.0
 5.675,results/multiseed_summary.csv,return_mean,.3f,1.0,,"{""agent"": ""B""}",5.674822512616551
 0.001,results/multiseed_summary.csv,return_std,.3f,1.0,,"{""agent"": ""B""}",0.0005092246591106
@@ -305,6 +311,18 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 0.437,results/multiseed_summary.csv,return_ci95,.3f,1.0,,"{""agent"": ""C""}",0.4373357574173166
 100,results/multiseed_summary.csv,success_mean,.0f,100.0,,"{""agent"": ""C""}",100.0
 18.20,results/multiseed_summary.csv,steps_mean,.2f,1.0,,"{""agent"": ""C""}",18.195
+33.649,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 0}",33.649311410399775
+1.289,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 0}",1.289405507444045
+96,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""A"", ""train_seed"": 0}",96.0
+36.674,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 1}",36.67426505202316
+0.482,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 1}",0.4822441857631012
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""A"", ""train_seed"": 1}",100.0
+36.534,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 2}",36.53437334201894
+0.688,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 2}",0.6878501320925345
+99,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""A"", ""train_seed"": 2}",99.0
+37.951,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 3}",37.95050100754344
+0.123,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 3}",0.1229678505875826
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""A"", ""train_seed"": 3}",100.0
 5.675,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""B"", ""train_seed"": 0}",5.674704538978887
 0.031,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""B"", ""train_seed"": 0}",0.0312515148209738
 100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""B"", ""train_seed"": 0}",100.0
@@ -333,6 +351,15 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 0.001,results/multiseed_summary.csv,return_std,.3f,1.0,,"{""agent"": ""B""}",0.0005092246591106
 40.40,results/multiseed_summary.csv,return_mean,.2f,1.0,,"{""agent"": ""C""}",40.39844999999999
 0.27,results/multiseed_summary.csv,return_std,.2f,1.0,,"{""agent"": ""C""}",0.2748425050824742
+36.20,results/multiseed_summary.csv,return_mean,.2f,1.0,,"{""agent"": ""A""}",36.20211270299633
+1.82,results/multiseed_summary.csv,return_std,.2f,1.0,,"{""agent"": ""A""}",1.8172305922194745
+99,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,min,"{""agent"": ""A"", ""source"": ""multiseed""}",99.0
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,max,"{""agent"": ""A"", ""source"": ""multiseed""}",100.0
+36.53,results/multiseed_per_seed.csv,heldout_return,.2f,1.0,min,"{""agent"": ""A"", ""source"": ""multiseed""}",36.53437334201894
+37.95,results/multiseed_per_seed.csv,heldout_return,.2f,1.0,max,"{""agent"": ""A"", ""source"": ""multiseed""}",37.95050100754344
+35.46,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",35.45929533993426
+96,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""A"", ""train_seed"": 0}",96.0
+33.65,results/multiseed_per_seed.csv,heldout_return,.2f,1.0,,"{""agent"": ""A"", ""train_seed"": 0}",33.649311410399775
 0.999,results/summary_A.csv,coverage_mean,.3f,1.0,,"{""policy"": ""DQN (Agent A)""}",0.99875
 0.489,results/summary_A.csv,pos_coverage_mean,.3f,1.0,,"{""policy"": ""DQN (Agent A)""}",0.488984375
 0.201,results/summary_A.csv,pose_coverage_mean,.3f,1.0,,"{""policy"": ""DQN (Agent A)""}",0.2009635416666666
@@ -881,6 +908,8 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 -15,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""A_energy_vs_raster_pct""}",-15.05600000000003
 96,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",96.0
 100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",100.0
+99,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,min,"{""agent"": ""A"", ""source"": ""multiseed""}",99.0
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,max,"{""agent"": ""A"", ""source"": ""multiseed""}",100.0
 100,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
 84,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",84.0
 20,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A, real-image trained)""}",20.0

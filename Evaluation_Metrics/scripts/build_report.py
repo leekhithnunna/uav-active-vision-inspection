@@ -283,13 +283,13 @@ def sec_metrics():
     h(2, "3. Metric definitions")
     defs = [
         ("Episode return", "G = sum_t r_t  (undiscounted sum of rewards in one episode)"),
-        ("Moving-average return", "MA_k(i) = (1/k) * sum_{j=i-k+1..i} G_j ,  k = 50 training episodes; band = +-1 std of the same window"),
+        ("Moving-average return", "MA_k(i) = (1/k) * sum_{j=i-k+1..i} G_j ,  k = 50 training episodes; band = ±1 std of the same window"),
         ("Success rate", "SR = (1/N) * sum_i 1[episode i successful]"),
         ("Episode length", "L = number of steps (A, B) or supervisor decisions (C); reported separately for successful and failed episodes"),
         ("Time to goal", "mean number of low-level environment steps until success, over successful episodes only"),
         ("Regret (per episode)", "regret_i = G_i(benchmark) - G_i(agent) on the same bridge i;  mean and cumulative sum over i"),
         ("Standard deviation", "s = sqrt( sum_i (x_i - mean)^2 / (N-1) )"),
-        ("95% confidence interval", "mean +- t_{0.975, N-1} * s / sqrt(N)   (Student t)"),
+        ("95% confidence interval", "mean ± t_{0.975, N-1} * s / sqrt(N)   (Student t)"),
         ("Robustness gap", "gap = metric(S0 nominal) - metric(perturbed scenario); positive = worse when perturbed"),
         ("Constraint-violation rate", "battery-empty rate = (1/N) * sum_i 1[battery_i <= 0];  OOB rate = 1000 * (out-of-bounds moves) / (low-level steps)"),
         ("Coverage", "fraction of the 128 cells seen at least once (task coverage);  position coverage = visited (row, col) / 128;  pose coverage = visited (altitude, row, col) / 384"),
@@ -305,7 +305,7 @@ def tab_success(groups):
     for g in groups:
         for pol in policies(g):
             rows.append([GTITLE[g], pol, s0p(g, pol, "success_rate"),
-                         f"+-{num(S0, 'success_ci95', '.0f', 100.0, group=g, policy=pol)} pp",
+                         f"±{num(S0, 'success_ci95', '.0f', 100.0, group=g, policy=pol)} pp",
                          s0(g, pol, "n_success", ".0f")])
     return rows
 
@@ -336,15 +336,15 @@ def sec_q1():
 def sec_q2():
     h(2, "Q2. How much reward does it collect, and is it learning?")
     qblock("How much return does each agent collect, and did training converge?",
-           "Episode return (mean, std, median, 95% CI); learning curves with a 50-episode moving average and +-1 std band.",
+           "Episode return (mean, std, median, 95% CI); learning curves with a 50-episode moving average and ±1 std band.",
            "G = sum_t r_t ;  MA_50(i) = mean(G_{i-49..i})")
     rows = []
     for g in GROUP_ORDER:
         for pol in policies(g):
             rows.append([GTITLE[g], pol, s0(g, pol, "return_mean"), s0(g, pol, "return_std"),
-                         s0(g, pol, "return_median"), f"+-{s0(g, pol, 'return_ci95')}"])
+                         s0(g, pol, "return_median"), f"±{s0(g, pol, 'return_ci95')}"])
     table(["Group", "Policy", "Mean return", "Std", "Median", "95% CI"], rows, f"Held-out return ({nfoot(S0)}).")
-    fig("01_learning_curves", "Learning curves (raw return, 50-episode moving average with +-1 std band, eval return, "
+    fig("01_learning_curves", "Learning curves (raw return, 50-episode moving average with ±1 std band, eval return, "
         "success rate, episode length).")
     fig("02_vs_baselines", "Mean held-out return with 95% CI, learned agents vs baselines.")
     p("**Insight.** "
@@ -424,7 +424,7 @@ def sec_q4():
     for g, pol in [("A", "DQN (Agent A)"), ("B", "PPO (Agent B)"), ("C", "A2C (Agent C)"), ("C_withA", "A2C (C_withA)"),
                    ("full", "ALL LEARNED (C + A + B)"), ("full", "ablation: rule C, A + B learned")]:
         b = _df(S0).set_index(["group", "policy"]).loc[(g, pol), "benchmark"]
-        rows.append([pol, f"{b} ({bench_kind[g]})", s0(g, pol, "regret_mean"), f"+-{s0(g, pol, 'regret_ci95')}",
+        rows.append([pol, f"{b} ({bench_kind[g]})", s0(g, pol, "regret_mean"), f"±{s0(g, pol, 'regret_ci95')}",
                      s0(g, pol, "regret_cumulative", ".1f")])
     table(["Agent", "Benchmark", "Mean regret", "95% CI", "Cumulative regret (100 bridges)"], rows,
           f"Regret on held-out bridges ({nfoot(S0)}). Positive = the benchmark collected more return.")
@@ -435,7 +435,7 @@ def sec_q4():
       f"The DQN loses {s0('A', 'DQN (Agent A)', 'regret_mean')} per episode to the dense raster, almost entirely from "
       f"its battery-empty failures. A2C trained with scripted sub-agents loses {s0('C', 'A2C (Agent C)', 'regret_mean')} "
       f"to the rule supervisor, but the A2C retrained with Agent A inside (C_withA) reduces this to "
-      f"{s0('C_withA', 'A2C (C_withA)', 'regret_mean')} (95% CI +-{s0('C_withA', 'A2C (C_withA)', 'regret_ci95')}, "
+      f"{s0('C_withA', 'A2C (C_withA)', 'regret_mean')} (95% CI ±{s0('C_withA', 'A2C (C_withA)', 'regret_ci95')}, "
       "so not significantly different from zero). A negative regret means beating the benchmark: the rule supervisor "
       f"with learned A and B beats the all-scripted system by {num(S0, 'regret_mean', '.2f', -1.0, group='full', policy='ablation: rule C, A + B learned')} "
       "per mission, which shows that the learned navigator and refiner are better than their scripted versions.")
@@ -444,8 +444,8 @@ def sec_q4():
 def sec_q5():
     h(2, "Q5. Is performance consistent?")
     qblock("How much does performance vary between bridges and between training seeds?",
-           "Standard deviation, 95% confidence interval, box plots; mean +- std across training seeds.",
-           "s = sqrt(sum (x - mean)^2 / (N-1)) ;  CI95 = mean +- t_{0.975,N-1} s / sqrt(N)")
+           "Standard deviation, 95% confidence interval, box plots; mean ± std across training seeds.",
+           "s = sqrt(sum (x - mean)^2 / (N-1)) ;  CI95 = mean ± t_{0.975,N-1} s / sqrt(N)")
     fig("05_boxplots_return", "Distribution of held-out episode returns per policy.")
     p("Per-bridge variability (std and 95% CI of the return) is listed in Table 3 (Q2). "
       f"The dense raster has almost no spread (std {s0('A', 'raster_low', 'return_std')}) because it flies the same "
@@ -456,26 +456,36 @@ def sec_q5():
         m = _df(MSS)
         rows = [[a, num(MSS, "n_seeds", ".0f", agent=a), m.set_index("agent").loc[a, "seeds"],
                  num(MSS, "return_mean", ".3f", agent=a), num(MSS, "return_std", ".3f", agent=a),
-                 f"+-{num(MSS, 'return_ci95', '.3f', agent=a)}", pct(MSS, "success_mean", agent=a),
+                 f"±{num(MSS, 'return_ci95', '.3f', agent=a)}", pct(MSS, "success_mean", agent=a),
                  num(MSS, "steps_mean", ".2f", agent=a)] for a in m.agent]
         table(["Agent", "Training seeds", "Seed ids", "Mean held-out return", "Std across seeds",
                "95% CI across seeds", "Mean success", "Mean length"], rows,
               "Across training seeds: each seed evaluated on the same 100 held-out bridges; seed 0 is the original run.")
         mp = _df(MSP)
         rows = [[r.agent, f"{int(r.train_seed)}", num(MSP, "heldout_return", ".3f", agent=r.agent, train_seed=r.train_seed),
-                 f"+-{num(MSP, 'heldout_return_ci95', '.3f', agent=r.agent, train_seed=r.train_seed)}",
+                 f"±{num(MSP, 'heldout_return_ci95', '.3f', agent=r.agent, train_seed=r.train_seed)}",
                  pct(MSP, "heldout_success", agent=r.agent, train_seed=r.train_seed)] for r in mp.itertuples()]
         table(["Agent", "Training seed", "Held-out return", "95% CI (over bridges)", "Success"], rows,
               "Per-seed held-out results (n = 100 bridges each).")
         fig("05b_boxplot_training_seeds", "Held-out return per training seed.")
-        fig("01b_learning_curves_multiseed", "Eval-return learning curves across training seeds (mean +- std).")
+        fig("01b_learning_curves_multiseed", "Eval-return learning curves across training seeds (mean ± std).")
         txt = ("**Insight.** Across training seeds the final performance is very stable: PPO "
-               f"{num(MSS, 'return_mean', '.3f', agent='B')} +- {num(MSS, 'return_std', '.3f', agent='B')} and A2C "
-               f"{num(MSS, 'return_mean', '.2f', agent='C')} +- {num(MSS, 'return_std', '.2f', agent='C')}, i.e. the "
+               f"{num(MSS, 'return_mean', '.3f', agent='B')} ± {num(MSS, 'return_std', '.3f', agent='B')} and A2C "
+               f"{num(MSS, 'return_mean', '.2f', agent='C')} ± {num(MSS, 'return_std', '.2f', agent='C')}, i.e. the "
                "difference between seeds is much smaller than the difference between bridges. ")
         if "A" in set(m.agent):
-            txt += (f"The DQN varies more between seeds ({num(MSS, 'return_mean', '.2f', agent='A')} +- "
-                    f"{num(MSS, 'return_std', '.2f', agent='A')}), as expected from its noisier learning curve. ")
+            txt += (f"The DQN varies more between seeds ({num(MSS, 'return_mean', '.2f', agent='A')} ± "
+                    f"{num(MSS, 'return_std', '.2f', agent='A')}), as expected from its noisier learning curve - and the "
+                    f"original seed-0 model is the weakest of the four. The extra seeds reach "
+                    f"{num(MSP, 'heldout_success', '.0f', 100.0, agg='min', suffix='%', agent='A', source='multiseed')}-"
+                    f"{num(MSP, 'heldout_success', '.0f', 100.0, agg='max', suffix='%', agent='A', source='multiseed')} "
+                    f"success and returns of {num(MSP, 'heldout_return', '.2f', agg='min', agent='A', source='multiseed')}-"
+                    f"{num(MSP, 'heldout_return', '.2f', agg='max', agent='A', source='multiseed')}, *above* the dense "
+                    f"raster ({s0('A', 'raster_low', 'return_mean')}), against "
+                    f"{num(MSP, 'heldout_success', '.0f', 100.0, suffix='%', agent='A', train_seed=0)} success and "
+                    f"{num(MSP, 'heldout_return', '.2f', agent='A', train_seed=0)} for seed 0. The single-seed conclusion "
+                    "in Q1-Q4 that the DQN is slightly less reliable than the raster is therefore a property of that one "
+                    "training run, not of the method. ")
         else:
             txt += "Agent A (DQN) was trained with a single seed only, so its seed-to-seed variability is not measured. "
         p(txt + "The seeds do differ in *how* Agent C reaches its return (Q6).")
@@ -678,7 +688,7 @@ def sec_q10():
               f"ent {num(SENS, 'ent_coef', 'g', run=r.run)}"
               + (f", clip {num(SENS, 'clip_range', 'g', run=r.run)}" if r.agent == "B" else ""))
         rows.append([r.run, hp, num(SENS, "steps_trained", ",.0f", run=r.run) + (" (short run)" if r.short_run else ""),
-                     num(SENS, "heldout_return", ".2f", run=r.run), f"+-{num(SENS, 'heldout_return_ci95', '.2f', run=r.run)}",
+                     num(SENS, "heldout_return", ".2f", run=r.run), f"±{num(SENS, 'heldout_return_ci95', '.2f', run=r.run)}",
                      pct(SENS, "heldout_success", run=r.run), num(SENS, "heldout_steps", ".1f", run=r.run)])
     table(["Run", "Setting", "Training steps", "Held-out return", "95% CI", "Success", "Length"], rows,
           "Hyperparameter sensitivity (CO5), every run evaluated on the 100 held-out bridges.")
@@ -707,10 +717,15 @@ def sec_findings():
         f"**Agent B (PPO) is solved:** {s0p('B', 'PPO (Agent B)', 'success_rate')} success, regret "
         f"{s0('B', 'PPO (Agent B)', 'regret_mean', '.3f')} against the privileged upper bound, robust to a hard start, real "
         "images, hyperparameters and training seeds.",
-        f"**Agent A (DQN) is more efficient but less reliable than the dense raster:** "
+        f"**Agent A (DQN) is more efficient than the dense raster; its reliability depends on the training seed:** "
         f"steps {der('A_steps_vs_raster_pct', '+.0f', '%')} and energy {der('A_energy_vs_raster_pct', '+.0f', '%')} on solved "
         f"bridges, but {s0p('A', 'DQN (Agent A)', 'success_rate')} vs {s0p('A', 'raster_low', 'success_rate')} success on "
-        "unseen bridges.",
+        "unseen bridges for the original model." + (
+            f" Three retrained seeds reach {num(MSP, 'heldout_success', '.0f', 100.0, agg='min', suffix='%', agent='A', source='multiseed')}"
+            f"-{num(MSP, 'heldout_success', '.0f', 100.0, agg='max', suffix='%', agent='A', source='multiseed')} success "
+            f"and a higher return than the raster, so the gap comes from the original training seed."
+            if (RESULTS / "multiseed_per_seed.csv").exists() and "A" in set(pd.read_csv(RESULTS / "multiseed_per_seed.csv").agent)
+            else ""),
         f"**Low battery favours the learned planner:** at 60% starting battery the raster fails "
         f"{sc('S4_battery0.6', 'A', 'raster_low', 'battery_empty_rate', '.0f', 100.0, '%')} of missions, the DQN succeeds in "
         f"{sc('S4_battery0.6', 'A', 'DQN (Agent A)', 'success_rate', '.0f', 100.0, '%')}.",

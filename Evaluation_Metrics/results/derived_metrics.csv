@@ -13,8 +13,8 @@ validation_pass,455.0,rows within 1%
 validation_policies,65.0,"distinct (run, policy)"
 validation_max_rel_pct,8.160396510644114e-09,max relative difference (%)
 validation_files,19.0,distinct saved result files checked
-tb_scalars,16594.0,TensorBoard scalar points read
-training_episodes,232540.0,training episodes read from monitor files
+tb_scalars,18466.0,TensorBoard scalar points read
+training_episodes,237825.0,training episodes read from monitor files
 scenario_rows,134.0,rows in scenario_summary.csv
 n_scenarios,8.0,scenarios evaluated (incl. S0)
 total_episodes,13400.0,episodes in all episodes_*.csv files
