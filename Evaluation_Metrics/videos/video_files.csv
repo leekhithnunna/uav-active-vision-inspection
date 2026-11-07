@@ -1,0 +1,11 @@
+clip,file,scenario,question,metric,duration_s,size_mb,render_s,slow_down
+V1_env_tour,videos/V1_env_tour.mp4,S0 nominal (seed 1000),What is the task and what do we measure?,"coverage, mean uncertainty, energy, return",32.6,0.33,7,3.07
+V2_agentA_vs_raster_seed1000,videos/V2_agentA_vs_raster_seed1000.mp4,"S0 nominal, training-eval bridge seed 1000",Does Agent A finish the inspection with fewer steps?,"steps, energy, success",32.6,0.49,5,3.55
+V3_agentA_vs_raster_heldout2005,videos/V3_agentA_vs_raster_heldout2005.mp4,"S0 nominal, held-out bridge seed 2005",Does Agent A generalise to an unseen bridge?,"success, steps, energy",32.6,0.5,5,3.55
+V4_agentA_real_images_seed2000,videos/V4_agentA_real_images_seed2000.mp4,"S1 real-image (DeepCrack) detector, held-out seed 2000",Does Agent A work with real-image uncertainty?,success (mean uncertainty must reach the calibrated 0.282),32.5,0.54,6,2.96
+V5_agentB_nominal_and_hardstart,videos/V5_agentB_nominal_and_hardstart.mp4,S0 nominal (seeds 2000-2001) + S5 hard start geometry (seed 2000),"Does PPO reach the best view (q=4), even from a hard start?","steps to q=4, return",32.5,0.34,7,2.5
+V6_agentC_mission_seed2000,videos/V6_agentC_mission_seed2000.mp4,"S0 nominal, held-out seed 2000",Which options does the A2C supervisor choose?,"option sequence (EXPLORE / REFINE / RETURN), defects, energy",32.6,0.38,7,3.34
+V7_full_mission_learned_vs_rule,videos/V7_full_mission_learned_vs_rule.mp4,"S0 nominal, held-out seed 2000, full mode",Do the three agents work together?,"defects found, energy, whether Agent B is ever called",32.6,0.75,9,1.22
+V8_detector_q0_to_q4,videos/V8_detector_q0_to_q4.mp4,real DeepCrack test patches,Why are real images harder?,uncertainty and detection at view quality q0..q4,32.6,0.38,4,3.53
+V9_agentA_density35_seed2013,videos/V9_agentA_density35_seed2013.mp4,"S2 defect density 35%, held-out seed 2013 (a DQN failure case)",Does Agent A cope with many more defects?,"success, battery",32.6,0.55,6,2.4
+V10_agentA_battery0.6_seed2000,videos/V10_agentA_battery0.6_seed2000.mp4,"S4 starting battery 0.6, held-out seed 2000",Is Agent A safe when the battery is low?,"battery-empty, success",32.5,0.48,4,3.66

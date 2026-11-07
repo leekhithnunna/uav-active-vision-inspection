@@ -3,3 +3,4 @@ __pycache__/
 .pytest_cache/
 results/logs/
 results/_skips_*.csv
+videos/raw/

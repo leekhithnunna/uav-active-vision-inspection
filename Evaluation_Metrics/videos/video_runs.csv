@@ -1,0 +1,23 @@
+clip,label,seed,return,steps,success,energy_used,coverage,mean_uncertainty,defects_found,defects_total,battery_empty
+V2_agentA_vs_raster_seed1000_part0,Agent A - Viewpoint Planner (DQN),1000,35.96518515977303,82,True,0.4800000000000004,1.0,0.3191205201763176,24,26,False
+V2_agentA_vs_raster_seed1000_part0,"BASELINE Dense raster, LOW altitude (1x1)",1000,35.52248050217001,123,True,0.6250000000000006,0.953125,0.2188355458639362,26,26,False
+V3_agentA_vs_raster_heldout2005_part0,Agent A - Viewpoint Planner (DQN),2005,30.32258396978891,118,True,0.6500000000000006,1.0,0.3197310960882137,22,26,False
+V3_agentA_vs_raster_heldout2005_part0,"BASELINE Dense raster, LOW altitude (1x1)",2005,35.57200323573896,123,True,0.6250000000000006,0.953125,0.2162381560120404,20,26,False
+V4_agentA_real_images_seed2000_part0,Agent A - Viewpoint Planner (DQN) [real-image detector],2000,10.111374013125848,150,False,1.0000000000000009,0.9921875,0.3262040317058563,25,26,True
+V4_agentA_real_images_seed2000_part0,"BASELINE Dense raster, LOW altitude (1x1)",2000,33.32597507089375,125,True,0.6350000000000006,0.96875,0.278758704662323,26,26,False
+V5_agentB_nominal_and_hardstart_part0,Agent B - View Refiner (PPO),2000,5.576763078045545,4,True,0.032,0.078125,0.9606288874544778,1,26,False
+V5_agentB_nominal_and_hardstart_part0,BASELINE FixedOrbit,2000,-2.3151601407152764,30,False,0.2400000000000002,0.078125,0.9629881470720744,1,26,False
+V5_agentB_nominal_and_hardstart_part0,Agent B - View Refiner (PPO),2001,5.794671876320049,4,True,0.032,0.078125,0.9581080672775036,1,26,False
+V5_agentB_nominal_and_hardstart_part0,BASELINE FixedOrbit,2001,-2.1015377079455955,30,False,0.2400000000000002,0.078125,0.9595698978645766,1,26,False
+V5_agentB_nominal_and_hardstart_part1,Agent B - View Refiner (PPO),2000,5.695642076580967,5,True,0.04,0.078125,0.9606288874544778,1,26,False
+V5_agentB_nominal_and_hardstart_part1,BASELINE FixedOrbit,2000,-2.3044111922383306,30,False,0.2400000000000002,0.078125,0.9629881470720744,1,26,False
+V6_agentC_mission_seed2000_part0,Agent C - Mission Supervisor (A2C),2000,43.74499999999997,18,True,0.5100000000000005,1.0,0.3500272550765652,23,26,False
+V6_agentC_mission_seed2000_part0,BASELINE RuleSupervisor,2000,45.52299999999996,34,True,0.9540000000000008,1.0,0.3106362095940045,24,26,False
+V7_full_mission_learned_vs_rule_part0,Agent C - Mission Supervisor (A2C),2000,41.73499999999997,18,True,0.5300000000000005,1.0,0.3653102860302256,22,26,False
+V7_full_mission_learned_vs_rule_part0,ALL SCRIPTED,2000,45.52299999999996,34,True,0.9540000000000008,1.0,0.3106362095940045,24,26,False
+V7_full_mission_learned_vs_rule_part1,RULE supervisor (scripted),2000,47.52999999999997,32,True,0.9400000000000008,1.0,0.2587544715344884,25,26,False
+V7_full_mission_learned_vs_rule_part1,ALL SCRIPTED,2000,45.52299999999996,34,True,0.9540000000000008,1.0,0.3106362095940045,24,26,False
+V9_agentA_density35_seed2013_part0,Agent A - Viewpoint Planner (DQN),2013,9.168615825806633,190,False,1.0000000000000009,1.0,0.3276547502016885,41,45,True
+V9_agentA_density35_seed2013_part0,"BASELINE Dense raster, LOW altitude (1x1)",2013,34.90251181303651,123,True,0.6250000000000006,0.953125,0.239221313200523,42,45,False
+V10_agentA_battery0.6_seed2000_part0,Agent A - Viewpoint Planner (DQN),2000,28.774180493929418,81,True,0.8450000000000004,1.0,0.3165830071603279,22,26,False
+V10_agentA_battery0.6_seed2000_part0,"BASELINE Dense raster, LOW altitude (1x1)",2000,17.24520713358144,118,False,1.0000000000000004,0.9140625,0.248574154048921,24,26,True
