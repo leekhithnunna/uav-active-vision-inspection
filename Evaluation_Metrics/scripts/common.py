@@ -213,9 +213,9 @@ def run_episode(env, pol, seed, record_cells=False):
     ret, done, n_act, t_pol = 0.0, False, 0, 0.0
     opts = [0, 0, 0]
     oob_steps = 0
-    visits = np.zeros((ie.H, ie.W), int) if record_cells else None
+    visits = np.zeros((3, ie.H, ie.W), int) if record_cells else None   # (altitude, row, col)
     if record_cells:
-        visits[tuple(base.pos)] += 1
+        visits[(base.alt, *base.pos)] += 1
     while not done:
         t0 = time.perf_counter()
         a = pol(obs)
@@ -227,7 +227,7 @@ def run_episode(env, pol, seed, record_cells=False):
         ret += r
         oob_steps += int(info["out_of_bounds"])
         if record_cells:
-            visits[tuple(base.pos)] += 1
+            visits[(base.alt, *base.pos)] += 1
         done = term or trunc
     row = {k: info[k] for k in KEYS if k in info}
     row.update({
@@ -243,7 +243,18 @@ def run_episode(env, pol, seed, record_cells=False):
     })
     if record_cells:
         row["_visits"] = visits
+        row.update(visitation_stats(visits))
     return row
+
+
+def visitation_stats(visits):
+    """State-space coverage and visitation entropy of one episode.
+    position coverage = visited (row, col) cells / 128; pose coverage = visited (alt, row, col) / 384;
+    visitation entropy = -sum p log p over (row, col) visit frequencies, normalised by log(128)."""
+    pos = visits.sum(axis=0).ravel().astype(float)
+    p = pos[pos > 0] / pos.sum()
+    return {"pos_coverage": float((pos > 0).mean()), "pose_coverage": float((visits > 0).mean()),
+            "visit_entropy": float(-(p * np.log(p)).sum() / np.log(pos.size))}
 
 
 def run_policy(env, pol, seed0=HELD_SEED0, n=HELD_N, record_cells=False):

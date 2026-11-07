@@ -2,13 +2,15 @@
 
 Held-out bridges: seeds 2000-2099 (100 episodes, never used by training or EvalCallback, which used
 seeds 1000-1049 / unseeded training envs). Learned policies are deterministic.
+  python evaluate_all.py            run every group
+  python evaluate_all.py A B        run only these groups (combined files are rebuilt from all episode files)
 Outputs (results/):
   episodes_<group>_S0_nominal.csv   one row per episode
   summary_<group>.csv               one row per policy (mean, std, median, 95% CI, success, regret, ...)
   summary_S0_all.csv                all groups together
   regret_episodes.csv               per-episode regret vs the stated benchmark
   violations.csv                    battery-empty rate and out-of-bounds moves per 1000 steps
-  visitation_A_S0.npz               Agent A mean cell-visitation counts per policy (8x16)
+  visitation_A_S0.npz               Agent A mean visitation counts per policy, shape (policy, altitude, row, col)
 """
 import sys
 import time
@@ -24,16 +26,22 @@ from suites import GROUPS, BENCHMARK, BENCHMARK_WHY, run_group, episodes_path, s
 SCEN = "S0_nominal"
 
 
-def main(groups=GROUPS):
-    RESULTS.mkdir(exist_ok=True)
-    t0 = time.time()
-    sums, regrets = [], []
+def run(groups):
     for g in groups:
         df, visits = run_group(g, SCEN, record_cells=(g == "A"))
         df.to_csv(episodes_path(g, SCEN), index=False)
         if visits:
             np.savez(RESULTS / "visitation_A_S0.npz", names=np.array(list(visits)),
                      visits=np.stack(list(visits.values())))
+
+
+def combine():
+    sums, regrets = [], []
+    for g in GROUPS:
+        p = episodes_path(g, SCEN)
+        if not p.exists():
+            continue
+        df = pd.read_csv(p)
         s = summarize_group(df)
         s.to_csv(RESULTS / f"summary_{g}.csv", index=False)
         sums.append(s)
@@ -50,6 +58,13 @@ def main(groups=GROUPS):
     pd.concat(regrets, ignore_index=True).to_csv(RESULTS / "regret_episodes.csv", index=False)
     allsum[["group", "policy", "n_episodes", "seeds", "battery_empty_rate", "oob_per_1000_steps",
             "low_level_steps_mean"]].to_csv(RESULTS / "violations.csv", index=False)
+
+
+def main(groups=GROUPS):
+    RESULTS.mkdir(exist_ok=True)
+    t0 = time.time()
+    run(groups)
+    combine()
     print(f"Phase 2 done in {(time.time() - t0) / 60:.1f} min")
 
 

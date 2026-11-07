@@ -90,6 +90,8 @@ def run_group(group, scenario, record_cells=False, log=print):
             "mean_uncertainty", "defects_found", "defects_total", "false_positives", "miou", "energy_used",
             "battery_left", "battery_empty", "out_of_bounds", "terminated", "truncated", "inference_ms",
             "n_explore", "n_refine", "n_return"]
+    if record_cells:
+        cols += ["pos_coverage", "pose_coverage", "visit_entropy"]
     return pd.DataFrame(rows)[cols], visits
 
 
@@ -98,7 +100,8 @@ def episodes_path(group, scenario):
 
 
 STAT_METRICS = ["return", "steps", "low_level_steps", "energy_used", "coverage", "mean_uncertainty",
-                "defects_found", "false_positives", "miou", "inference_ms"]
+                "defects_found", "false_positives", "miou", "inference_ms",
+                "pos_coverage", "pose_coverage", "visit_entropy"]
 
 
 def summarize_group(df):
@@ -111,6 +114,8 @@ def summarize_group(df):
         r = {"scenario": scen, "group": group, "policy": pol, "n_episodes": len(d),
              "seeds": f"{d['seed'].min()}-{d['seed'].max()}"}
         for m in STAT_METRICS:
+            if m not in d:
+                continue
             x = d[m].astype(float)
             r[f"{m}_mean"], r[f"{m}_std"] = x.mean(), x.std(ddof=1)
             r[f"{m}_median"], r[f"{m}_ci95"] = x.median(), ci95(x)
