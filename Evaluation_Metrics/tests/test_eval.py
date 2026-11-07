@@ -216,14 +216,39 @@ def test_video_runs_match_evaluation_csvs():
 
 
 # ------------------------------------------------------------------ nothing changed outside Evaluation_Metrics/
+# root files the merge into main is allowed to edit: README section 12 / map entry / section 6 fix / section 10
+# bullet, and appended .gitignore entries.  Every teammate folder stays read only.
+ALLOWED_ROOT_EDITS = {"README.md", ".gitignore"}
+
+
+def _outside(paths):
+    return [p for p in paths if not p.strip('"').startswith("Evaluation_Metrics/")
+            and p.strip('"') not in ALLOWED_ROOT_EDITS]
+
+
 def test_no_changes_outside_evaluation_metrics():
     dirty = [l[3:] for l in git("status", "--porcelain", "--untracked-files=all").splitlines()]
-    outside = [p for p in dirty if not p.strip('"').startswith("Evaluation_Metrics/")]
+    outside = _outside(dirty)
     assert not outside, f"working-tree changes outside Evaluation_Metrics/: {outside}"
     base = git("merge-base", "HEAD", "main").strip()
     committed = git("diff", "--name-only", base, "HEAD").splitlines()
-    outside = [p for p in committed if not p.startswith("Evaluation_Metrics/")]
+    outside = _outside(committed)
     assert not outside, f"committed changes outside Evaluation_Metrics/: {outside}"
+
+
+def test_root_readme_blocks_match_csvs():
+    out = subprocess.run([sys.executable, str(EM / "scripts" / "readme_section.py"), "--check"],
+                         capture_output=True, text=True)
+    assert out.returncode == 0, out.stdout + out.stderr
+
+
+def test_root_readme_agentc_learned_row_matches_csv():
+    row = next(l for l in (ROOT / "README.md").read_text(encoding="utf-8").splitlines()
+               if l.startswith("| A2C, learned detector"))
+    cells = [c.strip() for c in row.strip("|").split("|")][1:6]
+    c = pd.read_csv(ROOT / "For_Mukhesh/agentC_learned/agentC_vs_baselines.csv").set_index("policy").loc["A2C (Agent C)"]
+    for k, v in zip(["return_mean", "steps_mean", "defects_found_mean", "miou_mean", "energy_used_mean"], cells):
+        assert round(float(c[k]), len(v.split(".")[1])) == float(v), (k, v, c[k])
 
 
 def test_live_demo_untouched():

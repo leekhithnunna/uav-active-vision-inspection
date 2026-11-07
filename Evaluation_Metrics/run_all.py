@@ -58,6 +58,7 @@ def main():
     if a.start <= 7 and not a.skip_videos:
         run(7, "videos", [S / "make_videos.py"])
     if a.start <= 8:
+        run(8, "root README evaluation blocks", [S / "readme_section.py"])
         run(8, "known issues + report", [S / "known_issues.py"])
         run(8, "report", [S / "build_report.py"])
         run(8, "SUBMISSION folder", [S / "make_submission.py"])

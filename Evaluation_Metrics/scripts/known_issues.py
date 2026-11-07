@@ -34,15 +34,25 @@ def main():
     # 1. README vs CSV for A2C learned detector
     r = readme_row("| A2C, learned detector")
     c = csv_row(RUN_DIRS["C_learned"] / "agentC_vs_baselines.csv", "A2C (Agent C)")
-    out += ["## 1. Root README row 'A2C, learned detector' disagrees with the CSV", "",
+    keys = ["return_mean", "steps_mean", "defects_found_mean", "miou_mean", "energy_used_mean"]
+    # a README cell agrees when it equals the CSV value rounded to the README's own number of decimals
+    resolved = all(round(float(c[k]), len(v.split(".")[1]) if "." in v else 0) == float(v)
+                   for k, v in zip(keys, r[1:6]))
+    status = "RESOLVED: the README row now matches the CSV" if resolved else "the README row disagrees with the CSV"
+    out += [f"## 1. Root README row 'A2C, learned detector' vs the CSV ({status})", "",
             "| Source | Return | Decisions | Defects | mIoU | Energy |", "|---|---|---|---|---|---|",
             f"| README.md (section 6, Agent C table) | {r[1]} | {r[2]} | {r[3]} | {r[4]} | {r[5]} |",
             f"| For_Mukhesh/agentC_learned/agentC_vs_baselines.csv | {float(c['return_mean']):.2f} | "
             f"{float(c['steps_mean']):.2f} | {float(c['defects_found_mean']):.2f} | {float(c['miou_mean']):.3f} | "
-            f"{float(c['energy_used_mean']):.3f} |", "",
-            "Decision: the CSV is trusted (it is reproduced exactly by Phase 1, see results/validation.csv). "
-            "The README's own real-image table further down already uses the CSV values. The README row was "
-            "probably written from the first training run (see issue 2).", ""]
+            f"{float(c['energy_used_mean']):.3f} |", ""]
+    if resolved:
+        out += ["Resolved: the README row used to read 15.5 decisions and energy 0.40, probably from the first "
+                "training run (see issue 2). It was corrected to the CSV values when Evaluation_Metrics was merged "
+                "into main; the CSV is reproduced exactly by Phase 1 (see results/validation.csv).", ""]
+    else:
+        out += ["Decision: the CSV is trusted (it is reproduced exactly by Phase 1, see results/validation.csv). "
+                "The README's own real-image table further down already uses the CSV values. The README row was "
+                "probably written from the first training run (see issue 2).", ""]
 
     # 2. agentC_learned two TB runs
     d = RUN_DIRS["C_learned"]
