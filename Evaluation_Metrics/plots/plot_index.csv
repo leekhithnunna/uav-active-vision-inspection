@@ -1,0 +1,14 @@
+file,title,sources
+plots/01_learning_curves.png,"Learning curves: raw return, 50-episode moving average, ±1 std band, eval return, success rate and episode length",training_curves.csv; eval_curves.csv
+plots/02_vs_baselines.png,Mean held-out return with 95% CI: learned agents vs baselines,summary_S0_all.csv
+plots/03_success_and_length.png,Success rate and episode length (successful vs failed episodes separately),summary_S0_all.csv
+plots/04_exploration_schedules.png,"Exploration: ε schedule (DQN) and policy entropy (PPO, A2C)",tb_scalars.csv
+plots/05_boxplots_return.png,Box plots of held-out episode return per policy,episodes_A_S0_nominal.csv; episodes_B_S0_nominal.csv; episodes_C_S0_nominal.csv; episodes_full_S0_nominal.csv
+plots/06_robustness_gap.png,Robustness gap (return and success) per scenario,robustness_gap.csv
+plots/07_visitation_heatmaps.png,Agent A state-visitation heatmaps: DQN vs raster vs random,visitation_A_S0.npz; summary_A.csv
+plots/08_option_frequency.png,Agent C option-selection frequency (EXPLORE / REFINE / RETURN) per supervisor,scenario_summary.csv
+plots/09_training_diagnostics.png,"PPO / A2C / DQN training diagnostics (loss, entropy, KL, clip fraction, explained variance)",tb_scalars.csv
+plots/10_integration_ablation.png,Integration ablation: energy used vs defects found per configuration,summary_full.csv
+plots/11_regret.png,Mean per-episode regret of each learned agent vs its benchmark,summary_S0_all.csv
+plots/12_sensitivity.png,"Hyperparameter sensitivity of the three agents (held-out return, 95% CI)",sensitivity.csv
+plots/13_real_image_success.png,Success rate with the analytic vs real-image detector,scenario_summary.csv
