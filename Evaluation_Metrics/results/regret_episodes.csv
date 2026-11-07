@@ -1,0 +1,1301 @@
+group,policy,benchmark,benchmark_kind,seed,return,benchmark_return,regret
+A,DQN (Agent A),raster_low,best baseline (dense raster),2000,32.99168767145484,35.47838069778283,2.486693026327991
+A,DQN (Agent A),raster_low,best baseline (dense raster),2001,34.166278496469786,35.59451174504474,1.428233248574955
+A,DQN (Agent A),raster_low,best baseline (dense raster),2002,31.817448013190397,35.525656631344134,3.708208618153737
+A,DQN (Agent A),raster_low,best baseline (dense raster),2003,37.053581619591185,35.38298461041626,-1.6705970091749265
+A,DQN (Agent A),raster_low,best baseline (dense raster),2004,37.90965090423993,35.461656306163704,-2.447994598076228
+A,DQN (Agent A),raster_low,best baseline (dense raster),2005,30.32258396978891,35.57200323573896,5.249419265950053
+A,DQN (Agent A),raster_low,best baseline (dense raster),2006,36.68681049632152,35.52470858618335,-1.162101910138169
+A,DQN (Agent A),raster_low,best baseline (dense raster),2007,32.62278460975869,35.60365777189619,2.980873162137499
+A,DQN (Agent A),raster_low,best baseline (dense raster),2008,36.5335331219957,35.47807677470546,-1.0554563472902458
+A,DQN (Agent A),raster_low,best baseline (dense raster),2009,21.34253757586623,35.29565229080697,13.953114714940739
+A,DQN (Agent A),raster_low,best baseline (dense raster),2010,37.27009259202171,35.425356184967555,-1.8447364070541568
+A,DQN (Agent A),raster_low,best baseline (dense raster),2011,37.24993971845507,35.47920680921916,-1.7707329092359103
+A,DQN (Agent A),raster_low,best baseline (dense raster),2012,37.49221647078798,35.4589052291829,-2.0333112416050767
+A,DQN (Agent A),raster_low,best baseline (dense raster),2013,37.86269613680654,35.287501513013595,-2.575194623792946
+A,DQN (Agent A),raster_low,best baseline (dense raster),2014,37.0248131474712,35.42652915059199,-1.5982839968792106
+A,DQN (Agent A),raster_low,best baseline (dense raster),2015,36.30244885506111,35.55084046905755,-0.7516083860035607
+A,DQN (Agent A),raster_low,best baseline (dense raster),2016,36.7301909850917,35.33811492087665,-1.392076064215054
+A,DQN (Agent A),raster_low,best baseline (dense raster),2017,35.667745350102635,35.521061576954445,-0.14668377314819026
+A,DQN (Agent A),raster_low,best baseline (dense raster),2018,34.26275689135052,35.44115242416723,1.1783955328167082
+A,DQN (Agent A),raster_low,best baseline (dense raster),2019,37.89094231286455,35.42476545202044,-2.466176860844115
+A,DQN (Agent A),raster_low,best baseline (dense raster),2020,36.46525668838219,35.39806796595782,-1.067188722424369
+A,DQN (Agent A),raster_low,best baseline (dense raster),2021,36.30054138951512,35.35184758485072,-0.9486938046644013
+A,DQN (Agent A),raster_low,best baseline (dense raster),2022,37.204182963599365,35.437582747792106,-1.7666002158072587
+A,DQN (Agent A),raster_low,best baseline (dense raster),2023,35.72195161741602,35.40475949740244,-0.3171921200135799
+A,DQN (Agent A),raster_low,best baseline (dense raster),2024,32.0311721174469,35.46714081224689,3.435968694799989
+A,DQN (Agent A),raster_low,best baseline (dense raster),2025,36.30078272639493,35.43362009000115,-0.867162636393779
+A,DQN (Agent A),raster_low,best baseline (dense raster),2026,33.71706141731814,35.3421708803254,1.6251094630072558
+A,DQN (Agent A),raster_low,best baseline (dense raster),2027,36.762091049222654,35.45504539101387,-1.3070456582087857
+A,DQN (Agent A),raster_low,best baseline (dense raster),2028,37.440194777128774,35.553204910554165,-1.8869898665746092
+A,DQN (Agent A),raster_low,best baseline (dense raster),2029,36.447742024074174,35.326906494552304,-1.1208355295218695
+A,DQN (Agent A),raster_low,best baseline (dense raster),2030,37.38375697795257,35.518217720525655,-1.8655392574269172
+A,DQN (Agent A),raster_low,best baseline (dense raster),2031,30.892216430082527,35.463985748892185,4.5717693188096575
+A,DQN (Agent A),raster_low,best baseline (dense raster),2032,32.81620680278766,35.490592842564865,2.674386039777204
+A,DQN (Agent A),raster_low,best baseline (dense raster),2033,7.864201087086023,35.453354476046414,27.58915338896039
+A,DQN (Agent A),raster_low,best baseline (dense raster),2034,36.53267485953762,35.582993823935865,-0.9496810356017562
+A,DQN (Agent A),raster_low,best baseline (dense raster),2035,36.42721235423522,35.44654569757763,-0.9806666566575899
+A,DQN (Agent A),raster_low,best baseline (dense raster),2036,37.79672948556569,35.48628178209658,-2.3104477034691087
+A,DQN (Agent A),raster_low,best baseline (dense raster),2037,33.55896220896067,35.375953761293516,1.8169915523328442
+A,DQN (Agent A),raster_low,best baseline (dense raster),2038,8.40732897317105,35.5290401113441,27.121711138173055
+A,DQN (Agent A),raster_low,best baseline (dense raster),2039,37.41283915094293,35.56405054745353,-1.848788603489396
+A,DQN (Agent A),raster_low,best baseline (dense raster),2040,36.35361302337779,35.468877683596446,-0.8847353397813436
+A,DQN (Agent A),raster_low,best baseline (dense raster),2041,37.8437935668691,35.39909717519321,-2.4446963916758904
+A,DQN (Agent A),raster_low,best baseline (dense raster),2042,36.99056459669929,35.46828872079914,-1.5222758759001564
+A,DQN (Agent A),raster_low,best baseline (dense raster),2043,36.88935715156999,35.512283393487394,-1.3770737580825951
+A,DQN (Agent A),raster_low,best baseline (dense raster),2044,33.561785638962476,35.40417563367513,1.8423899947126543
+A,DQN (Agent A),raster_low,best baseline (dense raster),2045,36.145980765979374,35.489072372371425,-0.6569083936079494
+A,DQN (Agent A),raster_low,best baseline (dense raster),2046,36.28985531785369,35.39266891898886,-0.8971863988648323
+A,DQN (Agent A),raster_low,best baseline (dense raster),2047,34.82404840369359,35.496270141856456,0.6722217381628681
+A,DQN (Agent A),raster_low,best baseline (dense raster),2048,28.058837111760123,35.373047958095384,7.314210846335261
+A,DQN (Agent A),raster_low,best baseline (dense raster),2049,36.636456297999,35.541264948755554,-1.0951913492434429
+A,DQN (Agent A),raster_low,best baseline (dense raster),2050,36.4270039247506,35.3968898821022,-1.0301140426483997
+A,DQN (Agent A),raster_low,best baseline (dense raster),2051,19.3828447407409,35.5324056037288,16.149560862987897
+A,DQN (Agent A),raster_low,best baseline (dense raster),2052,36.674494846533086,35.54171682745292,-1.1327780190801633
+A,DQN (Agent A),raster_low,best baseline (dense raster),2053,36.385899561692135,35.31787172861302,-1.068027833079114
+A,DQN (Agent A),raster_low,best baseline (dense raster),2054,29.992820936684016,35.52355076706675,5.530729830382736
+A,DQN (Agent A),raster_low,best baseline (dense raster),2055,30.75450078551123,35.52336998040859,4.768869194897359
+A,DQN (Agent A),raster_low,best baseline (dense raster),2056,34.8260170599402,35.54979802645026,0.7237809665100627
+A,DQN (Agent A),raster_low,best baseline (dense raster),2057,37.913618479672294,35.46875689913231,-2.4448615805399854
+A,DQN (Agent A),raster_low,best baseline (dense raster),2058,36.94230743364264,35.520229275724944,-1.4220781579176958
+A,DQN (Agent A),raster_low,best baseline (dense raster),2059,34.76722988039499,35.49556813577587,0.7283382553808764
+A,DQN (Agent A),raster_low,best baseline (dense raster),2060,37.80007926073513,35.691031353265956,-2.1090479074691757
+A,DQN (Agent A),raster_low,best baseline (dense raster),2061,36.9635886737161,35.58154028852379,-1.3820483851923129
+A,DQN (Agent A),raster_low,best baseline (dense raster),2062,20.245089743560754,35.314332136842744,15.06924239328199
+A,DQN (Agent A),raster_low,best baseline (dense raster),2063,8.637383352374998,35.47499528526771,26.837611932892713
+A,DQN (Agent A),raster_low,best baseline (dense raster),2064,36.64032155027076,35.53129647989856,-1.1090250703722049
+A,DQN (Agent A),raster_low,best baseline (dense raster),2065,37.533302776936935,35.425993423597504,-2.1073093533394314
+A,DQN (Agent A),raster_low,best baseline (dense raster),2066,34.9666469118191,35.284002105935386,0.31735519411628843
+A,DQN (Agent A),raster_low,best baseline (dense raster),2067,37.5252414035658,35.380418361520384,-2.1448230420454166
+A,DQN (Agent A),raster_low,best baseline (dense raster),2068,35.35969478713897,35.5644782270946,0.20478343995562653
+A,DQN (Agent A),raster_low,best baseline (dense raster),2069,37.297411758196574,35.32916367417404,-1.9682480840225338
+A,DQN (Agent A),raster_low,best baseline (dense raster),2070,37.51992090726234,35.328990604008126,-2.1909303032542127
+A,DQN (Agent A),raster_low,best baseline (dense raster),2071,34.8761662304997,35.640428049448815,0.7642618189491159
+A,DQN (Agent A),raster_low,best baseline (dense raster),2072,19.186336462126214,35.594335900281465,16.40799943815525
+A,DQN (Agent A),raster_low,best baseline (dense raster),2073,37.2852575590594,35.546943733671704,-1.7383138253876993
+A,DQN (Agent A),raster_low,best baseline (dense raster),2074,35.12457597290771,35.38123077533059,0.2566548024228865
+A,DQN (Agent A),raster_low,best baseline (dense raster),2075,9.387966212141306,35.59910081464935,26.21113460250804
+A,DQN (Agent A),raster_low,best baseline (dense raster),2076,33.37768196472523,35.38608048881471,2.008398524089486
+A,DQN (Agent A),raster_low,best baseline (dense raster),2077,33.51151654741736,35.37355937249837,1.8620428250810122
+A,DQN (Agent A),raster_low,best baseline (dense raster),2078,34.06391117564468,35.49916500802644,1.4352538323817612
+A,DQN (Agent A),raster_low,best baseline (dense raster),2079,34.94218908913315,35.416751835643836,0.474562746510685
+A,DQN (Agent A),raster_low,best baseline (dense raster),2080,37.785096255404305,35.504484713262386,-2.2806115421419193
+A,DQN (Agent A),raster_low,best baseline (dense raster),2081,32.33171502706291,35.417449977527326,3.0857349504644134
+A,DQN (Agent A),raster_low,best baseline (dense raster),2082,37.46410445121167,35.47902346521426,-1.9850809859974063
+A,DQN (Agent A),raster_low,best baseline (dense raster),2083,37.26809259231899,35.4321910593489,-1.835901532970091
+A,DQN (Agent A),raster_low,best baseline (dense raster),2084,36.527117479171025,35.39019298463084,-1.1369244945401817
+A,DQN (Agent A),raster_low,best baseline (dense raster),2085,33.5517674763924,35.365514115848555,1.8137466394561557
+A,DQN (Agent A),raster_low,best baseline (dense raster),2086,31.87227976312536,35.34151701179796,3.469237248672602
+A,DQN (Agent A),raster_low,best baseline (dense raster),2087,29.60639490782198,35.50682299753002,5.9004280897080434
+A,DQN (Agent A),raster_low,best baseline (dense raster),2088,34.57919770708867,35.50456904272603,0.9253713356373652
+A,DQN (Agent A),raster_low,best baseline (dense raster),2089,37.755962634613915,35.60422408810963,-2.1517385465042835
+A,DQN (Agent A),raster_low,best baseline (dense raster),2090,31.91866141744668,35.36979302095244,3.4511316035057646
+A,DQN (Agent A),raster_low,best baseline (dense raster),2091,37.518785655723825,35.43867284257391,-2.080112813149917
+A,DQN (Agent A),raster_low,best baseline (dense raster),2092,37.91373529370957,35.43688247531728,-2.476852818392288
+A,DQN (Agent A),raster_low,best baseline (dense raster),2093,29.18128747308453,35.57843808138593,6.397150608301402
+A,DQN (Agent A),raster_low,best baseline (dense raster),2094,33.11020869111307,35.32299376867468,2.2127850775616054
+A,DQN (Agent A),raster_low,best baseline (dense raster),2095,35.72791035892023,35.45072752307786,-0.2771828358423676
+A,DQN (Agent A),raster_low,best baseline (dense raster),2096,37.11860342130598,35.448061172901774,-1.6705422484042032
+A,DQN (Agent A),raster_low,best baseline (dense raster),2097,22.812374006378647,35.42872526268105,12.616351256302401
+A,DQN (Agent A),raster_low,best baseline (dense raster),2098,37.3848498629489,35.46144280144424,-1.9234070615046548
+A,DQN (Agent A),raster_low,best baseline (dense raster),2099,36.913840662065276,35.3366803300909,-1.577160331974376
+A,raster_mid,raster_low,best baseline (dense raster),2000,6.238007747273704,35.47838069778283,29.240372950509126
+A,raster_mid,raster_low,best baseline (dense raster),2001,6.172952269286623,35.59451174504474,29.42155947575812
+A,raster_mid,raster_low,best baseline (dense raster),2002,6.3191095792134915,35.525656631344134,29.20654705213064
+A,raster_mid,raster_low,best baseline (dense raster),2003,6.2299905704675975,35.38298461041626,29.15299403994866
+A,raster_mid,raster_low,best baseline (dense raster),2004,6.1417585260680445,35.461656306163704,29.31989778009566
+A,raster_mid,raster_low,best baseline (dense raster),2005,6.241542005873384,35.57200323573896,29.330461229865577
+A,raster_mid,raster_low,best baseline (dense raster),2006,6.241187115351996,35.52470858618335,29.283521470831353
+A,raster_mid,raster_low,best baseline (dense raster),2007,6.260251249791019,35.60365777189619,29.34340652210517
+A,raster_mid,raster_low,best baseline (dense raster),2008,6.03809368711664,35.47807677470546,29.439983087588818
+A,raster_mid,raster_low,best baseline (dense raster),2009,6.2686635363421805,35.29565229080697,29.02698875446479
+A,raster_mid,raster_low,best baseline (dense raster),2010,6.395804076350507,35.425356184967555,29.029552108617047
+A,raster_mid,raster_low,best baseline (dense raster),2011,6.275204114758451,35.47920680921916,29.204002694460705
+A,raster_mid,raster_low,best baseline (dense raster),2012,6.23734279884364,35.4589052291829,29.22156243033926
+A,raster_mid,raster_low,best baseline (dense raster),2013,6.185784647692292,35.287501513013595,29.101716865321304
+A,raster_mid,raster_low,best baseline (dense raster),2014,6.012885500648579,35.42652915059199,29.41364364994341
+A,raster_mid,raster_low,best baseline (dense raster),2015,6.27205203323781,35.55084046905755,29.278788435819738
+A,raster_mid,raster_low,best baseline (dense raster),2016,6.167834704143838,35.33811492087665,29.17028021673281
+A,raster_mid,raster_low,best baseline (dense raster),2017,6.1978982914937495,35.521061576954445,29.323163285460694
+A,raster_mid,raster_low,best baseline (dense raster),2018,6.312439898009051,35.44115242416723,29.12871252615818
+A,raster_mid,raster_low,best baseline (dense raster),2019,6.169407251048235,35.42476545202044,29.255358200972204
+A,raster_mid,raster_low,best baseline (dense raster),2020,6.268191177076798,35.39806796595782,29.129876788881024
+A,raster_mid,raster_low,best baseline (dense raster),2021,6.031303991153229,35.35184758485072,29.320543593697487
+A,raster_mid,raster_low,best baseline (dense raster),2022,6.162808296546639,35.437582747792106,29.274774451245467
+A,raster_mid,raster_low,best baseline (dense raster),2023,6.210482789269562,35.40475949740244,29.194276708132875
+A,raster_mid,raster_low,best baseline (dense raster),2024,6.234088708613861,35.46714081224689,29.233052103633028
+A,raster_mid,raster_low,best baseline (dense raster),2025,6.1086092201514575,35.43362009000115,29.32501086984969
+A,raster_mid,raster_low,best baseline (dense raster),2026,6.300758654747521,35.3421708803254,29.041412225577876
+A,raster_mid,raster_low,best baseline (dense raster),2027,6.296536888416122,35.45504539101387,29.158508502597748
+A,raster_mid,raster_low,best baseline (dense raster),2028,6.303274742881704,35.553204910554165,29.24993016767246
+A,raster_mid,raster_low,best baseline (dense raster),2029,6.108951396025503,35.326906494552304,29.2179550985268
+A,raster_mid,raster_low,best baseline (dense raster),2030,6.192593891916542,35.518217720525655,29.325623828609114
+A,raster_mid,raster_low,best baseline (dense raster),2031,6.195643007586239,35.463985748892185,29.268342741305947
+A,raster_mid,raster_low,best baseline (dense raster),2032,6.101203165862637,35.490592842564865,29.38938967670223
+A,raster_mid,raster_low,best baseline (dense raster),2033,6.199138648849909,35.453354476046414,29.254215827196504
+A,raster_mid,raster_low,best baseline (dense raster),2034,6.364270134750365,35.582993823935865,29.218723689185502
+A,raster_mid,raster_low,best baseline (dense raster),2035,6.210768039373585,35.44654569757763,29.23577765820405
+A,raster_mid,raster_low,best baseline (dense raster),2036,6.1802442209674995,35.48628178209658,29.306037561129084
+A,raster_mid,raster_low,best baseline (dense raster),2037,6.293963524415957,35.375953761293516,29.08199023687756
+A,raster_mid,raster_low,best baseline (dense raster),2038,6.150168205300829,35.5290401113441,29.378871906043273
+A,raster_mid,raster_low,best baseline (dense raster),2039,6.214423912939662,35.56405054745353,29.34962663451387
+A,raster_mid,raster_low,best baseline (dense raster),2040,6.172589222407139,35.468877683596446,29.296288461189306
+A,raster_mid,raster_low,best baseline (dense raster),2041,6.258118179306075,35.39909717519321,29.14097899588714
+A,raster_mid,raster_low,best baseline (dense raster),2042,6.198739831692667,35.46828872079914,29.26954888910647
+A,raster_mid,raster_low,best baseline (dense raster),2043,6.332398108240481,35.512283393487394,29.17988528524691
+A,raster_mid,raster_low,best baseline (dense raster),2044,6.217878239407558,35.40417563367513,29.186297394267573
+A,raster_mid,raster_low,best baseline (dense raster),2045,6.243980460087101,35.489072372371425,29.245091912284323
+A,raster_mid,raster_low,best baseline (dense raster),2046,6.1895343604289375,35.39266891898886,29.203134558559924
+A,raster_mid,raster_low,best baseline (dense raster),2047,6.327001917101793,35.496270141856456,29.169268224754664
+A,raster_mid,raster_low,best baseline (dense raster),2048,6.282777310633567,35.373047958095384,29.090270647461818
+A,raster_mid,raster_low,best baseline (dense raster),2049,6.279079510517808,35.541264948755554,29.262185438237747
+A,raster_mid,raster_low,best baseline (dense raster),2050,6.126450161074743,35.3968898821022,29.270439721027458
+A,raster_mid,raster_low,best baseline (dense raster),2051,6.348177661518745,35.5324056037288,29.18422794221005
+A,raster_mid,raster_low,best baseline (dense raster),2052,6.302102301942255,35.54171682745292,29.239614525510667
+A,raster_mid,raster_low,best baseline (dense raster),2053,6.171935724548638,35.31787172861302,29.14593600406438
+A,raster_mid,raster_low,best baseline (dense raster),2054,6.209785671531735,35.52355076706675,29.313765095535018
+A,raster_mid,raster_low,best baseline (dense raster),2055,6.108095584132375,35.52336998040859,29.415274396276214
+A,raster_mid,raster_low,best baseline (dense raster),2056,6.208739087734452,35.54979802645026,29.34105893871581
+A,raster_mid,raster_low,best baseline (dense raster),2057,6.302846995584949,35.46875689913231,29.16590990354736
+A,raster_mid,raster_low,best baseline (dense raster),2058,6.32160247094704,35.520229275724944,29.198626804777902
+A,raster_mid,raster_low,best baseline (dense raster),2059,6.348280673404009,35.49556813577587,29.14728746237186
+A,raster_mid,raster_low,best baseline (dense raster),2060,6.363605302175234,35.691031353265956,29.327426051090722
+A,raster_mid,raster_low,best baseline (dense raster),2061,6.206733297392841,35.58154028852379,29.37480699113095
+A,raster_mid,raster_low,best baseline (dense raster),2062,6.195178337180457,35.314332136842744,29.119153799662286
+A,raster_mid,raster_low,best baseline (dense raster),2063,6.305697934300514,35.47499528526771,29.169297350967195
+A,raster_mid,raster_low,best baseline (dense raster),2064,6.19616963956453,35.53129647989856,29.335126840334027
+A,raster_mid,raster_low,best baseline (dense raster),2065,6.326548945150467,35.425993423597504,29.099444478447037
+A,raster_mid,raster_low,best baseline (dense raster),2066,6.233592506898221,35.284002105935386,29.050409599037167
+A,raster_mid,raster_low,best baseline (dense raster),2067,6.158088855292269,35.380418361520384,29.222329506228114
+A,raster_mid,raster_low,best baseline (dense raster),2068,6.284601436275895,35.5644782270946,29.2798767908187
+A,raster_mid,raster_low,best baseline (dense raster),2069,6.232308952301416,35.32916367417404,29.096854721872624
+A,raster_mid,raster_low,best baseline (dense raster),2070,6.128426901297795,35.328990604008126,29.200563702710333
+A,raster_mid,raster_low,best baseline (dense raster),2071,6.268333840904714,35.640428049448815,29.3720942085441
+A,raster_mid,raster_low,best baseline (dense raster),2072,6.176899714438114,35.594335900281465,29.41743618584335
+A,raster_mid,raster_low,best baseline (dense raster),2073,6.308879765065174,35.546943733671704,29.23806396860653
+A,raster_mid,raster_low,best baseline (dense raster),2074,6.281718646214286,35.38123077533059,29.099512129116306
+A,raster_mid,raster_low,best baseline (dense raster),2075,6.329039331121807,35.59910081464935,29.27006148352754
+A,raster_mid,raster_low,best baseline (dense raster),2076,6.165739147530739,35.38608048881471,29.220341341283973
+A,raster_mid,raster_low,best baseline (dense raster),2077,6.208655717931492,35.37355937249837,29.164903654566878
+A,raster_mid,raster_low,best baseline (dense raster),2078,6.238868468274088,35.49916500802644,29.26029653975235
+A,raster_mid,raster_low,best baseline (dense raster),2079,6.405936394451055,35.416751835643836,29.010815441192783
+A,raster_mid,raster_low,best baseline (dense raster),2080,6.176763231259305,35.504484713262386,29.32772148200308
+A,raster_mid,raster_low,best baseline (dense raster),2081,6.265727160549161,35.417449977527326,29.151722816978165
+A,raster_mid,raster_low,best baseline (dense raster),2082,6.200905100308601,35.47902346521426,29.27811836490566
+A,raster_mid,raster_low,best baseline (dense raster),2083,6.349718286284244,35.4321910593489,29.08247277306466
+A,raster_mid,raster_low,best baseline (dense raster),2084,6.119652515456941,35.39019298463084,29.270540469173902
+A,raster_mid,raster_low,best baseline (dense raster),2085,6.0784611045091586,35.365514115848555,29.287053011339395
+A,raster_mid,raster_low,best baseline (dense raster),2086,6.09068289019077,35.34151701179796,29.25083412160719
+A,raster_mid,raster_low,best baseline (dense raster),2087,6.278127615322529,35.50682299753002,29.228695382207494
+A,raster_mid,raster_low,best baseline (dense raster),2088,6.2009698667840905,35.50456904272603,29.30359917594194
+A,raster_mid,raster_low,best baseline (dense raster),2089,6.344631343433388,35.60422408810963,29.259592744676244
+A,raster_mid,raster_low,best baseline (dense raster),2090,6.2518827959879,35.36979302095244,29.117910224964543
+A,raster_mid,raster_low,best baseline (dense raster),2091,6.283609915191069,35.43867284257391,29.15506292738284
+A,raster_mid,raster_low,best baseline (dense raster),2092,6.194607459322481,35.43688247531728,29.242275015994803
+A,raster_mid,raster_low,best baseline (dense raster),2093,6.263130435029416,35.57843808138593,29.315307646356516
+A,raster_mid,raster_low,best baseline (dense raster),2094,6.187758511123577,35.32299376867468,29.135235257551102
+A,raster_mid,raster_low,best baseline (dense raster),2095,6.131350232678237,35.45072752307786,29.319377290399622
+A,raster_mid,raster_low,best baseline (dense raster),2096,6.1804300185054055,35.448061172901774,29.26763115439637
+A,raster_mid,raster_low,best baseline (dense raster),2097,6.301894001341739,35.42872526268105,29.12683126133931
+A,raster_mid,raster_low,best baseline (dense raster),2098,6.302608068225873,35.46144280144424,29.15883473321837
+A,raster_mid,raster_low,best baseline (dense raster),2099,6.049557157523457,35.3366803300909,29.287123172567444
+A,random,raster_low,best baseline (dense raster),2000,-22.594678535232035,35.47838069778283,58.07305923301487
+A,random,raster_low,best baseline (dense raster),2001,-27.327899500476686,35.59451174504474,62.92241124552143
+A,random,raster_low,best baseline (dense raster),2002,-31.399872663982016,35.525656631344134,66.92552929532616
+A,random,raster_low,best baseline (dense raster),2003,-27.550571239732747,35.38298461041626,62.933555850149006
+A,random,raster_low,best baseline (dense raster),2004,-46.574961287953165,35.461656306163704,82.03661759411688
+A,random,raster_low,best baseline (dense raster),2005,-35.39782123890102,35.57200323573896,70.96982447463998
+A,random,raster_low,best baseline (dense raster),2006,-36.88935409566473,35.52470858618335,72.41406268184808
+A,random,raster_low,best baseline (dense raster),2007,-25.008024990628613,35.60365777189619,60.6116827625248
+A,random,raster_low,best baseline (dense raster),2008,-26.311615282831724,35.47807677470546,61.78969205753718
+A,random,raster_low,best baseline (dense raster),2009,-17.891936484475174,35.29565229080697,53.187588775282144
+A,random,raster_low,best baseline (dense raster),2010,-22.303717052494306,35.425356184967555,57.72907323746186
+A,random,raster_low,best baseline (dense raster),2011,-17.33215992861489,35.47920680921916,52.81136673783405
+A,random,raster_low,best baseline (dense raster),2012,-19.30094820319588,35.4589052291829,54.75985343237878
+A,random,raster_low,best baseline (dense raster),2013,-37.867443323144656,35.287501513013595,73.15494483615825
+A,random,raster_low,best baseline (dense raster),2014,-17.632603857130213,35.42652915059199,53.0591330077222
+A,random,raster_low,best baseline (dense raster),2015,-46.57591018501895,35.55084046905755,82.12675065407649
+A,random,raster_low,best baseline (dense raster),2016,-35.076017350020315,35.33811492087665,70.41413227089697
+A,random,raster_low,best baseline (dense raster),2017,-29.69198142198333,35.521061576954445,65.21304299893777
+A,random,raster_low,best baseline (dense raster),2018,-35.92571996820256,35.44115242416723,71.36687239236979
+A,random,raster_low,best baseline (dense raster),2019,-32.37183553252367,35.42476545202044,67.79660098454411
+A,random,raster_low,best baseline (dense raster),2020,-32.0679995921734,35.39806796595782,67.46606755813121
+A,random,raster_low,best baseline (dense raster),2021,-13.551834922569347,35.35184758485072,48.903682507420065
+A,random,raster_low,best baseline (dense raster),2022,-22.639044865500964,35.437582747792106,58.07662761329307
+A,random,raster_low,best baseline (dense raster),2023,-29.570572634512544,35.40475949740244,64.97533213191498
+A,random,raster_low,best baseline (dense raster),2024,-20.782978694926374,35.46714081224689,56.25011950717327
+A,random,raster_low,best baseline (dense raster),2025,-15.224748139257958,35.43362009000115,50.65836822925911
+A,random,raster_low,best baseline (dense raster),2026,-27.75240258055334,35.3421708803254,63.094573460878735
+A,random,raster_low,best baseline (dense raster),2027,-26.201968279855755,35.45504539101387,61.657013670869624
+A,random,raster_low,best baseline (dense raster),2028,-29.735952962316606,35.553204910554165,65.28915787287077
+A,random,raster_low,best baseline (dense raster),2029,-19.524236904882333,35.326906494552304,54.85114339943463
+A,random,raster_low,best baseline (dense raster),2030,-15.697922653687392,35.518217720525655,51.21614037421305
+A,random,raster_low,best baseline (dense raster),2031,-26.29237525230423,35.463985748892185,61.75636100119641
+A,random,raster_low,best baseline (dense raster),2032,-30.346279309827693,35.490592842564865,65.83687215239256
+A,random,raster_low,best baseline (dense raster),2033,-41.596607317190504,35.453354476046414,77.04996179323692
+A,random,raster_low,best baseline (dense raster),2034,-23.4567407338866,35.582993823935865,59.03973455782247
+A,random,raster_low,best baseline (dense raster),2035,-22.15726213108088,35.44654569757763,57.60380782865852
+A,random,raster_low,best baseline (dense raster),2036,-25.87328881863668,35.48628178209658,61.359570600733264
+A,random,raster_low,best baseline (dense raster),2037,-17.78279667035916,35.375953761293516,53.15875043165268
+A,random,raster_low,best baseline (dense raster),2038,-20.791898675435146,35.5290401113441,56.32093878677925
+A,random,raster_low,best baseline (dense raster),2039,-30.960155597492356,35.56405054745353,66.5242061449459
+A,random,raster_low,best baseline (dense raster),2040,-32.03317102818047,35.468877683596446,67.50204871177692
+A,random,raster_low,best baseline (dense raster),2041,-19.880111646771134,35.39909717519321,55.279208821964346
+A,random,raster_low,best baseline (dense raster),2042,-25.831043174035628,35.46828872079914,61.299331894834765
+A,random,raster_low,best baseline (dense raster),2043,-28.55516231108165,35.512283393487394,64.06744570456904
+A,random,raster_low,best baseline (dense raster),2044,-58.82380330575134,35.40417563367513,94.22797893942646
+A,random,raster_low,best baseline (dense raster),2045,-16.85639137819245,35.489072372371425,52.34546375056387
+A,random,raster_low,best baseline (dense raster),2046,-28.800465743589157,35.39266891898886,64.19313466257802
+A,random,raster_low,best baseline (dense raster),2047,-20.097692860691197,35.496270141856456,55.59396300254765
+A,random,raster_low,best baseline (dense raster),2048,-20.52645001621567,35.373047958095384,55.89949797431105
+A,random,raster_low,best baseline (dense raster),2049,-30.99424115998325,35.541264948755554,66.5355061087388
+A,random,raster_low,best baseline (dense raster),2050,-29.004551128188677,35.3968898821022,64.40144101029088
+A,random,raster_low,best baseline (dense raster),2051,-35.714093786129325,35.5324056037288,71.24649938985812
+A,random,raster_low,best baseline (dense raster),2052,-33.72982814225843,35.54171682745292,69.27154496971136
+A,random,raster_low,best baseline (dense raster),2053,-28.263711442227493,35.31787172861302,63.58158317084052
+A,random,raster_low,best baseline (dense raster),2054,-31.143864329935788,35.52355076706675,66.66741509700253
+A,random,raster_low,best baseline (dense raster),2055,-27.37256283042593,35.52336998040859,62.89593281083452
+A,random,raster_low,best baseline (dense raster),2056,-31.4999211465139,35.54979802645026,67.04971917296416
+A,random,raster_low,best baseline (dense raster),2057,-31.47722477914073,35.46875689913231,66.94598167827304
+A,random,raster_low,best baseline (dense raster),2058,-24.791697548360133,35.520229275724944,60.31192682408508
+A,random,raster_low,best baseline (dense raster),2059,-28.355622749643192,35.49556813577587,63.85119088541906
+A,random,raster_low,best baseline (dense raster),2060,-27.621647217595136,35.691031353265956,63.312678570861095
+A,random,raster_low,best baseline (dense raster),2061,-35.87113836378296,35.58154028852379,71.45267865230676
+A,random,raster_low,best baseline (dense raster),2062,-41.40827359056921,35.314332136842744,76.72260572741195
+A,random,raster_low,best baseline (dense raster),2063,-18.398446901455383,35.47499528526771,53.873442186723096
+A,random,raster_low,best baseline (dense raster),2064,-28.86222795180077,35.53129647989856,64.39352443169932
+A,random,raster_low,best baseline (dense raster),2065,-31.081743952292072,35.425993423597504,66.50773737588958
+A,random,raster_low,best baseline (dense raster),2066,-34.106646755324896,35.284002105935386,69.39064886126027
+A,random,raster_low,best baseline (dense raster),2067,-22.13638223156129,35.380418361520384,57.51680059308167
+A,random,raster_low,best baseline (dense raster),2068,-23.99425046234183,35.5644782270946,59.55872868943643
+A,random,raster_low,best baseline (dense raster),2069,-21.327937139025465,35.32916367417404,56.657100813199506
+A,random,raster_low,best baseline (dense raster),2070,-25.190348991043376,35.328990604008126,60.519339595051505
+A,random,raster_low,best baseline (dense raster),2071,-27.058665884695372,35.640428049448815,62.69909393414419
+A,random,raster_low,best baseline (dense raster),2072,-46.0303630549332,35.594335900281465,81.62469895521465
+A,random,raster_low,best baseline (dense raster),2073,-29.280790928894977,35.546943733671704,64.82773466256668
+A,random,raster_low,best baseline (dense raster),2074,-61.227197137823524,35.38123077533059,96.60842791315412
+A,random,raster_low,best baseline (dense raster),2075,-31.973799842561622,35.59910081464935,67.57290065721097
+A,random,raster_low,best baseline (dense raster),2076,-28.61914898643757,35.38608048881471,64.00522947525228
+A,random,raster_low,best baseline (dense raster),2077,-11.106375860255891,35.37355937249837,46.47993523275426
+A,random,raster_low,best baseline (dense raster),2078,-31.826091069604818,35.49916500802644,67.32525607763125
+A,random,raster_low,best baseline (dense raster),2079,-11.740798665503563,35.416751835643836,47.1575505011474
+A,random,raster_low,best baseline (dense raster),2080,-49.22396818713708,35.504484713262386,84.72845290039947
+A,random,raster_low,best baseline (dense raster),2081,-22.048104500025378,35.417449977527326,57.4655544775527
+A,random,raster_low,best baseline (dense raster),2082,-26.80028608526086,35.47902346521426,62.27930955047512
+A,random,raster_low,best baseline (dense raster),2083,-30.5641873818309,35.4321910593489,65.9963784411798
+A,random,raster_low,best baseline (dense raster),2084,-15.705216569878832,35.39019298463084,51.09540955450967
+A,random,raster_low,best baseline (dense raster),2085,-36.18006192293505,35.365514115848555,71.54557603878361
+A,random,raster_low,best baseline (dense raster),2086,-30.14089061460938,35.34151701179796,65.48240762640734
+A,random,raster_low,best baseline (dense raster),2087,-24.27508565844421,35.50682299753002,59.781908655974235
+A,random,raster_low,best baseline (dense raster),2088,-25.934453585397684,35.50456904272603,61.439022628123716
+A,random,raster_low,best baseline (dense raster),2089,-22.47642852837431,35.60422408810963,58.080652616483945
+A,random,raster_low,best baseline (dense raster),2090,-22.93725432457905,35.36979302095244,58.307047345531494
+A,random,raster_low,best baseline (dense raster),2091,-28.444571039487702,35.43867284257391,63.883243882061606
+A,random,raster_low,best baseline (dense raster),2092,-17.242519086543535,35.43688247531728,52.679401561860814
+A,random,raster_low,best baseline (dense raster),2093,-5.819946049015312,35.57843808138593,41.39838413040125
+A,random,raster_low,best baseline (dense raster),2094,-23.171131090833168,35.32299376867468,58.49412485950785
+A,random,raster_low,best baseline (dense raster),2095,-33.74881165615626,35.45072752307786,69.19953917923412
+A,random,raster_low,best baseline (dense raster),2096,-22.146879467122023,35.448061172901774,57.59494064002379
+A,random,raster_low,best baseline (dense raster),2097,-17.034532022720192,35.42872526268105,52.46325728540124
+A,random,raster_low,best baseline (dense raster),2098,-31.199766697712466,35.46144280144424,66.66120949915671
+A,random,raster_low,best baseline (dense raster),2099,-13.498883706360123,35.3366803300909,48.835564036451025
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2000,5.576763078045545,5.5783335644709675,0.0015704864254226791
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2001,5.794671876320049,5.793585748205327,-0.0010861281147214186
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2002,5.527534604395717,5.539914202417224,0.012379598021507121
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2003,5.839891886864864,5.844552115221584,0.004660228356719642
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2004,5.586849522555974,5.588538706044927,0.0016891834889536383
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2005,5.795329131725499,5.797254002773457,0.0019248710479580211
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2006,5.748967023013796,5.748142707172487,-0.0008243158413083762
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2007,5.810216542205312,5.8122971262545375,0.002080584049225287
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2008,5.698854983166362,5.703123755068089,0.004268771901726254
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2009,5.5261357840439445,5.528209180345307,0.0020733963013626067
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2010,5.522445038784908,5.524344026879088,0.0018989880941804316
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2011,5.644741189696749,5.648267521408309,0.00352633171156036
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2012,5.64341911806854,5.649199482064587,0.0057803639960472
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2013,5.571527859992321,5.581787144734497,0.010259284742176078
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2014,5.515420396108123,5.515144393787662,-0.0002760023204606554
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2015,5.638318910460186,5.643494146916282,0.005175236456095966
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2016,5.51701361801665,5.518697682427277,0.001684064410627073
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2017,5.642743552545796,5.652541413317214,0.009797860771417533
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2018,5.606722123708637,5.610313327170969,0.0035912034623324374
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2019,5.771549353784125,5.7798437226695825,0.008294368885457537
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2020,5.547026668776813,5.556505105640794,0.009478436863981088
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2021,5.616039188650589,5.624240621348065,0.008201432697475752
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2022,5.654276682218726,5.656257608685832,0.0019809264671053484
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2023,5.668486676441951,5.672638289439005,0.004151612997054244
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2024,5.642896267729618,5.642966340785188,7.00730555696083e-05
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2025,5.78223223916035,5.78545518390335,0.0032229447430003333
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2026,5.7814689422024585,5.782384490756149,0.0009155485536904706
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2027,5.812137754384019,5.814917626609616,0.0027798722255969466
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2028,5.752490296802185,5.756507958630733,0.004017661828547681
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2029,5.499236901168347,5.499559058546655,0.0003221573783083187
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2030,5.540877578343983,5.543740865435239,0.0028632870912552733
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2031,5.7237729741290835,5.724508425386173,0.0007354512570891814
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2032,5.616269712223103,5.621469151956392,0.0051994397332890685
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2033,5.6067114183730125,5.6162260011112926,0.009514582738280097
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2034,5.419683602285652,5.423754000586072,0.004070398300420663
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2035,5.774597984820221,5.779888795505826,0.005290810685605329
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2036,5.709680634585046,5.713105745442049,0.0034251108570027
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2037,5.754954752540542,5.75946828733231,0.004513534791768414
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2038,5.7815142912246245,5.785957678872715,0.004443387648090713
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2039,5.618115605625015,5.622285084986752,0.0041694793617361725
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2040,5.805220533052699,5.810361607263105,0.005141074210405883
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2041,5.763734109619629,5.763707914155439,-2.619546419069252e-05
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2042,6.102430340921645,6.10766860053609,0.005238259614444907
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2043,5.83013954028504,5.786062450344376,-0.044077089940663505
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2044,5.745135083484337,5.7475985637184825,0.002463480234145443
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2045,5.417513204357512,5.418874722576624,0.0013615182191122344
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2046,5.811799823944801,5.813745343146258,0.0019455192014570244
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2047,5.57101862673561,5.580737513585079,0.009718886849469754
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2048,6.055043907435291,6.053418699976203,-0.0016252074590878962
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2049,5.9824617161594675,5.98628617668267,0.003824460523202511
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2050,5.61385509825652,5.615847469338826,0.001992371082305766
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2051,5.329241212406647,5.331842537995529,0.002601325588882375
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2052,5.784635760658384,5.7858905344379234,0.0012547737795394198
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2053,5.451660042515967,5.453874478352268,0.0022144358363007655
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2054,6.048715353496,6.055347019381449,0.006631665885448612
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2055,5.651486634233177,5.6596889175345675,0.008202283301390167
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2056,5.795575734989414,5.797313444930756,0.0017377099413424801
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2057,5.770067544699302,5.769910086453548,-0.00015745824575397194
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2058,5.991600971311948,6.000392067533605,0.008791096221656858
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2059,5.651118253747912,5.654393362480195,0.003275108732283094
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2060,5.586144936387964,5.586483929728694,0.00033899334073073106
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2061,5.798180966713224,5.798893624509442,0.00071265779621843
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2062,5.48174941975572,5.490613122391,0.008863702635280468
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2063,5.508449694014748,5.513866504527291,0.005416810512543613
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2064,5.588578274717499,5.593508379062582,0.0049301043450835635
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2065,5.817766788443581,5.824369378154197,0.006602589710615447
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2066,5.6192211801409,5.621083754956651,0.001862574815750584
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2067,5.661374377821501,5.667881775864329,0.006507398042828072
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2068,5.5413969301995305,5.546728517409829,0.005331587210298139
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2069,5.820315149983495,5.820049721011762,-0.00026542897173253976
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2070,5.402825100143462,5.405105607216268,0.002280507072805804
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2071,5.665910904240996,5.670748977646434,0.004838073405437626
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2072,5.535073957424974,5.5371000540907405,0.002026096665766808
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2073,5.353346968537797,5.355605417924602,0.0022584493868054167
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2074,5.548126393567491,5.5507078476172875,0.0025814540497961502
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2075,5.686510285209447,5.689513383341536,0.003003098132088766
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2076,5.578168900888524,5.578912789573073,0.0007438886845489989
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2077,6.069843042777535,6.070865702705142,0.0010226599276066395
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2078,5.743431727789025,5.744719476642701,0.0012877488536764403
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2079,5.67673904161661,5.68052652702055,0.0037874854039401384
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2080,5.817567099755586,5.817513022273269,-5.4077482317005376e-05
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2081,5.7484382314051174,5.751686917872414,0.00324868646729648
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2082,5.851932292471041,5.856315336426121,0.004383043955080268
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2083,5.730551124902899,5.7353789374404505,0.004827812537551601
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2084,5.490869345331782,5.4931644754207065,0.0022951300889246795
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2085,5.628207715618241,5.631694651552294,0.00348693593405347
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2086,5.5448657206178975,5.5576331130911925,0.012767392473294947
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2087,5.816274421130274,5.821214182992433,0.004939761862159386
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2088,5.667990327474985,5.671801291582499,0.0038109641075134704
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2089,5.681175782353529,5.687630817846307,0.006455035492777483
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2090,5.590835184834598,5.554200834614856,-0.036634350219741485
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2091,5.528903760167915,5.537441552268486,0.008537792100571373
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2092,5.483847131881328,5.480694030589821,-0.003153101291506921
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2093,5.792076149574084,5.794892135678393,0.0028159861043093315
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2094,5.423303774288504,5.428147394074707,0.004843619786202957
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2095,5.519021136869091,5.521225707454487,0.0022045705853965814
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2096,5.615950103470138,5.620765545352143,0.004815441882004556
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2097,5.942465011535406,5.947124680398226,0.004659668862820432
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2098,5.875435558975672,5.876423455179667,0.0009878962039948647
+B,PPO (Agent B),scripted_approach (upper bound),privileged upper bound (scripted approach),2099,5.583550727356722,5.565359304533837,-0.018191422822884995
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2000,-2.3151601407152764,5.5783335644709675,7.893493705186244
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2001,-2.1015377079455955,5.793585748205327,7.895123456150923
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2002,-2.337156382162978,5.539914202417224,7.877070584580202
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2003,-2.3292401447980935,5.844552115221584,8.173792260019678
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2004,-2.2911799046937893,5.588538706044927,7.879718610738717
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2005,-2.0917855963628056,5.797254002773457,7.889039599136263
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2006,-2.233755051465472,5.748142707172487,7.98189775863796
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2007,-2.303411516645859,5.8122971262545375,8.115708642900398
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2008,-2.1466360870912338,5.703123755068089,7.849759842159322
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2009,-2.3253924640529275,5.528209180345307,7.853601644398235
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2010,-2.309780170770018,5.524344026879088,7.834124197649107
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2011,-2.36528773517868,5.648267521408309,8.01355525658699
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2012,-2.198733583786878,5.649199482064587,7.847933065851465
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2013,-2.364052989331917,5.581787144734497,7.9458401340664135
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2014,-2.376828224562746,5.515144393787662,7.891972618350408
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2015,-2.3274565664480984,5.643494146916282,7.970950713364381
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2016,-2.3315553768463513,5.518697682427277,7.850253059273628
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2017,-2.3155801216959953,5.652541413317214,7.968121535013209
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2018,-2.3050450757924903,5.610313327170969,7.915358402963459
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2019,-2.3624380723035006,5.7798437226695825,8.142281794973083
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2020,-2.1331447035188633,5.556505105640794,7.689649809159658
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2021,-2.316408115237951,5.624240621348065,7.9406487365860166
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2022,-2.319234304457903,5.656257608685832,7.975491913143735
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2023,-2.1407033533582953,5.672638289439005,7.813341642797301
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2024,-2.1367151287146156,5.642966340785188,7.7796814694998035
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2025,-2.3118370455801487,5.78545518390335,8.097292229483498
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2026,-2.096434538028129,5.782384490756149,7.878819028784278
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2027,-2.1184104795832632,5.814917626609616,7.93332810619288
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2028,-2.098415368864718,5.756507958630733,7.854923327495451
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2029,-2.316865457631129,5.499559058546655,7.8164245161777846
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2030,-2.306785703316689,5.543740865435239,7.850526568751928
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2031,-2.3831708333902193,5.724508425386173,8.107679258776392
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2032,-2.3073640879547836,5.621469151956392,7.928833239911175
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2033,-2.3413110966658452,5.6162260011112926,7.957537097777138
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2034,-2.366679675639456,5.423754000586072,7.790433676225528
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2035,-2.3495045393003,5.779888795505826,8.129393334806126
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2036,-2.317581232978922,5.713105745442049,8.03068697842097
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2037,-2.1549212014713253,5.75946828733231,7.914389488803636
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2038,-2.3521161536317683,5.785957678872715,8.138073832504483
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2039,-2.3561358010477504,5.622285084986752,7.9784208860345025
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2040,-2.323902909023078,5.810361607263105,8.134264516286184
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2041,-2.29091094957338,5.763707914155439,8.05461886372882
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2042,-2.1220012189777577,6.10766860053609,8.229669819513848
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2043,-2.099676866409315,5.786062450344376,7.885739316753691
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2044,-2.319134907633066,5.7475985637184825,8.066733471351549
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2045,-2.3346705541447923,5.418874722576624,7.753545276721416
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2046,-2.307546102702618,5.813745343146258,8.121291445848875
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2047,-2.3421897672726706,5.580737513585079,7.92292728085775
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2048,-2.1304097321197166,6.053418699976203,8.18382843209592
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2049,-2.126214316931065,5.98628617668267,8.112500493613735
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2050,-2.32495695515124,5.615847469338826,7.940804424490066
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2051,-2.2577660005501166,5.331842537995529,7.5896085385456455
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2052,-2.317118551658072,5.7858905344379234,8.103009086095994
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2053,-2.325149168453285,5.453874478352268,7.779023646805553
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2054,-2.1762416293046996,6.055347019381449,8.231588648686149
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2055,-1.9796922415618383,5.6596889175345675,7.639381159096406
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2056,-2.3311570909224377,5.797313444930756,8.128470535853193
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2057,-2.066195848415213,5.769910086453548,7.836105934868761
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2058,-2.156051853511377,6.000392067533605,8.156443921044982
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2059,-2.1710443229851792,5.654393362480195,7.825437685465374
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2060,-2.283660520799041,5.586483929728694,7.870144450527736
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2061,-2.3523418512228833,5.798893624509442,8.151235475732324
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2062,-2.3737434177543624,5.490613122391,7.864356540145362
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2063,-2.3437357310018387,5.513866504527291,7.85760223552913
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2064,-2.3387289954681965,5.593508379062582,7.932237374530779
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2065,-2.169301881034272,5.824369378154197,7.993671259188469
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2066,-2.3611889640337567,5.621083754956651,7.982272718990407
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2067,-2.23937173366465,5.667881775864329,7.907253509528979
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2068,-2.3052032051980493,5.546728517409829,7.851931722607878
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2069,-2.3356721261540345,5.820049721011762,8.155721847165797
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2070,-2.3747753328471486,5.405105607216268,7.779880940063417
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2071,-2.1826989005586097,5.670748977646434,7.853447878205044
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2072,-2.353459810445662,5.5371000540907405,7.890559864536403
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2073,-2.378366784593025,5.355605417924602,7.733972202517627
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2074,-2.328800675692581,5.5507078476172875,7.879508523309869
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2075,-2.3223373097616364,5.689513383341536,8.011850693103172
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2076,-2.3282192522295304,5.578912789573073,7.907132041802603
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2077,-2.3086166449785233,6.070865702705142,8.379482347683664
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2078,-2.150586260638686,5.744719476642701,7.895305737281387
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2079,-2.2971577787250284,5.68052652702055,7.977684305745578
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2080,-2.3574934641336633,5.817513022273269,8.175006486406932
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2081,-2.3271351252470263,5.751686917872414,8.078822043119441
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2082,-2.146784761122416,5.856315336426121,8.003100097548536
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2083,-2.339374943281307,5.7353789374404505,8.074753880721758
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2084,-2.325011313485077,5.4931644754207065,7.8181757889057835
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2085,-2.307784210816026,5.631694651552294,7.93947886236832
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2086,-2.3250411026510074,5.5576331130911925,7.8826742157422
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2087,-2.322711190027295,5.821214182992433,8.143925373019728
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2088,-2.1759599340615856,5.671801291582499,7.847761225644085
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2089,-2.1981834124272153,5.687630817846307,7.885814230273522
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2090,-2.296205718235912,5.554200834614856,7.850406552850768
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2091,-2.347148299613384,5.537441552268486,7.88458985188187
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2092,-2.300034953858673,5.480694030589821,7.780728984448494
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2093,-2.068961951679137,5.794892135678393,7.86385408735753
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2094,-2.3283225403167878,5.428147394074707,7.756469934391495
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2095,-2.338171410227796,5.521225707454487,7.859397117682283
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2096,-2.0545154529249676,5.620765545352143,7.67528099827711
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2097,-2.3263670780841035,5.947124680398226,8.27349175848233
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2098,-2.310769513607025,5.876423455179667,8.187192968786693
+B,fixed_orbit,scripted_approach (upper bound),privileged upper bound (scripted approach),2099,-2.340249400222734,5.565359304533837,7.905608704756571
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2000,-2.1643083487358616,5.5783335644709675,7.742641913206829
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2001,-2.1084038925974466,5.793585748205327,7.901989640802774
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2002,-2.1450936743513838,5.539914202417224,7.685007876768608
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2003,-1.9450205483137963,5.844552115221584,7.78957266353538
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2004,-2.3469571330529226,5.588538706044927,7.93549583909785
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2005,-1.8830765221007286,5.797254002773457,7.6803305248741855
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2006,-1.9021123337687453,5.748142707172487,7.650255040941232
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2007,-2.0349341417698437,5.8122971262545375,7.847231268024381
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2008,-2.074164945233122,5.703123755068089,7.777288700301211
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2009,-2.384633807262448,5.528209180345307,7.912842987607755
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2010,-2.066198969344014,5.524344026879088,7.590542996223102
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2011,-2.274508121531552,5.648267521408309,7.922775642939861
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2012,-2.4397006128395065,5.649199482064587,8.088900094904094
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2013,-2.2713270985408736,5.581787144734497,7.85311424327537
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2014,-2.3520808184972815,5.515144393787662,7.867225212284944
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2015,-2.2692671924259122,5.643494146916282,7.912761339342195
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2016,-2.45937938520965,5.518697682427277,7.978077067636927
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2017,-2.2580945533216,5.652541413317214,7.9106359666388135
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2018,-1.9605505882737468,5.610313327170969,7.570863915444716
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2019,-1.9367828373827407,5.7798437226695825,7.716626560052323
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2020,-2.4233992448164456,5.556505105640794,7.97990435045724
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2021,-2.166634504877031,5.624240621348065,7.790875126225096
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2022,-2.0509226536195415,5.656257608685832,7.707180262305373
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2023,5.412213918846545,5.672638289439005,0.26042437059246026
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2024,-2.0456484610716914,5.642966340785188,7.688614801856879
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2025,-1.7187328625354727,5.78545518390335,7.504188046438823
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2026,-2.425389789418743,5.782384490756149,8.207774280174892
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2027,-1.8860944976512788,5.814917626609616,7.701012124260895
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2028,-2.068060312333563,5.756507958630733,7.824568270964296
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2029,-2.3029859818252207,5.499559058546655,7.802545040371876
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2030,5.490351639054503,5.543740865435239,0.05338922638073562
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2031,-2.3513499133996794,5.724508425386173,8.075858338785853
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2032,-2.1921498900211094,5.621469151956392,7.813619041977502
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2033,-2.3466971316313607,5.6162260011112926,7.962923132742653
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2034,-2.346505332366413,5.423754000586072,7.770259332952485
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2035,-2.2507150449311206,5.779888795505826,8.030603840436946
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2036,-2.258612769776267,5.713105745442049,7.971718515218316
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2037,-1.7131743451510055,5.75946828733231,7.472642632483316
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2038,-2.4622864544731,5.785957678872715,8.248244133345814
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2039,-2.058844624122187,5.622285084986752,7.681129709108939
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2040,-2.203093967411058,5.810361607263105,8.013455574674163
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2041,-1.7012181460180942,5.763707914155439,7.464926060173533
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2042,-1.7247184376021003,6.10766860053609,7.83238703813819
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2043,-2.3382592651688094,5.786062450344376,8.124321715513187
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2044,-2.2960921310968696,5.7475985637184825,8.043690694815352
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2045,-2.439076638814546,5.418874722576624,7.85795136139117
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2046,-2.008331562148214,5.813745343146258,7.822076905294471
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2047,-2.0383142256461166,5.580737513585079,7.619051739231196
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2048,-2.3164316752460885,6.053418699976203,8.369850375222292
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2049,-1.9948843018119,5.98628617668267,7.98117047849457
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2050,-2.4068713836535616,5.615847469338826,8.022718852992387
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2051,-2.554903524715484,5.331842537995529,7.886746062711013
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2052,-2.188146280671874,5.7858905344379234,7.974036815109797
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2053,-2.3946350127450313,5.453874478352268,7.8485094910973
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2054,-2.2973830456762836,6.055347019381449,8.352730065057733
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2055,-1.900371474155464,5.6596889175345675,7.5600603916900315
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2056,-1.8947307667208495,5.797313444930756,7.692044211651606
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2057,-1.7644689382878425,5.769910086453548,7.534379024741391
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2058,-1.9767642761058049,6.000392067533605,7.97715634363941
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2059,-2.1448007346591447,5.654393362480195,7.79919409713934
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2060,-2.300042867894798,5.586483929728694,7.8865267976234925
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2061,-1.935880126049326,5.798893624509442,7.734773750558768
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2062,-2.440570356171171,5.490613122391,7.931183478562171
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2063,-2.108658515462547,5.513866504527291,7.622525019989839
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2064,-2.307883844461021,5.593508379062582,7.901392223523603
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2065,-1.6322868559088723,5.824369378154197,7.456656234063069
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2066,-1.8331174365697345,5.621083754956651,7.454201191526385
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2067,-1.920084102655027,5.667881775864329,7.5879658785193556
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2068,-2.094893928831878,5.546728517409829,7.641622446241707
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2069,-2.215286252195566,5.820049721011762,8.035335973207328
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2070,-2.324952935972721,5.405105607216268,7.7300585431889886
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2071,-1.8797471471670275,5.670748977646434,7.550496124813462
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2072,-2.321177574650961,5.5371000540907405,7.8582776287417015
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2073,-2.458066681427079,5.355605417924602,7.813672099351681
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2074,-2.143243470890992,5.5507078476172875,7.6939513185082795
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2075,-2.32713895815491,5.689513383341536,8.016652341496446
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2076,-2.117126619891126,5.578912789573073,7.696039409464198
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2077,-1.5977415853438144,6.070865702705142,7.668607288048956
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2078,-2.3790490440697436,5.744719476642701,8.123768520712446
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2079,-2.276252124488354,5.68052652702055,7.956778651508904
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2080,-1.8216480188572164,5.817513022273269,7.639161041130485
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2081,-1.9083742999257212,5.751686917872414,7.660061217798135
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2082,-2.349767555465352,5.856315336426121,8.206082891891473
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2083,-2.363817484865913,5.7353789374404505,8.099196422306363
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2084,-2.0422291229727505,5.4931644754207065,7.535393598393457
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2085,-2.084159480078146,5.631694651552294,7.71585413163044
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2086,-1.9677589413359868,5.5576331130911925,7.525392054427179
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2087,-2.3631044431264687,5.821214182992433,8.184318626118902
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2088,-2.1402602705323512,5.671801291582499,7.812061562114851
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2089,-2.328851174749566,5.687630817846307,8.016481992595873
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2090,-2.0550591142306045,5.554200834614856,7.609259948845461
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2091,-2.3582758612720047,5.537441552268486,7.895717413540491
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2092,-2.3221393936387895,5.480694030589821,7.802833424228611
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2093,-2.2753271623244293,5.794892135678393,8.070219298002822
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2094,-2.04956847657516,5.428147394074707,7.477715870649867
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2095,-2.3176309650192466,5.521225707454487,7.838856672473733
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2096,-2.2938259555165104,5.620765545352143,7.914591500868653
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2097,-2.2960112741473835,5.947124680398226,8.24313595454561
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2098,-2.0133193811854198,5.876423455179667,7.889742836365087
+B,random,scripted_approach (upper bound),privileged upper bound (scripted approach),2099,-2.3987273972798735,5.565359304533837,7.964086701813711
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2000,43.74499999999997,45.52299999999996,1.7779999999999916
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2001,39.744999999999976,45.522999999999975,5.777999999999999
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2002,37.744999999999976,39.52299999999996,1.7779999999999845
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2003,43.744999999999976,43.52299999999997,-0.2220000000000084
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2004,41.74499999999997,39.514999999999965,-2.230000000000004
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2005,43.74499999999997,45.51899999999996,1.7739999999999938
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2006,43.744999999999976,41.52299999999997,-2.2220000000000084
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2007,37.74499999999997,41.52699999999995,3.7819999999999823
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2008,39.74499999999997,45.52699999999996,5.781999999999989
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2009,33.744999999999976,35.52299999999996,1.7779999999999845
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2010,31.74500000000001,39.51899999999997,7.773999999999958
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2011,41.74499999999997,43.52699999999997,1.7820000000000036
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2012,45.744999999999976,47.51899999999996,1.7739999999999867
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2013,41.74499999999997,45.52299999999996,3.7779999999999916
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2014,43.74499999999996,43.52699999999996,-0.21800000000000352
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2015,39.74499999999997,41.51899999999996,1.7739999999999938
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2016,39.74499999999997,41.51499999999997,1.7700000000000031
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2017,31.74500000000001,35.520999999999965,3.7759999999999536
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2018,35.744999999999976,39.522999999999975,3.7779999999999987
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2019,35.744999999999976,43.526999999999965,7.781999999999989
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2020,37.74499999999997,39.524999999999956,1.779999999999987
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2021,45.74499999999997,45.51899999999997,-0.2259999999999991
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2022,43.74499999999997,47.51899999999996,3.773999999999994
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2023,37.744999999999976,45.51899999999997,7.773999999999994
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2024,41.74499999999997,43.522999999999975,1.7780000000000058
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2025,41.74499999999997,39.52899999999996,-2.216000000000008
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2026,35.744999999999976,41.514999999999965,5.769999999999989
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2027,45.74499999999997,45.526999999999965,-0.21800000000000352
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2028,37.74499999999997,39.52299999999996,1.7779999999999916
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2029,43.74499999999996,45.52299999999996,1.7779999999999987
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2030,47.74499999999997,51.52699999999996,3.7819999999999894
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2031,43.74499999999997,47.52299999999997,3.7779999999999987
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2032,41.744999999999976,43.51899999999997,1.7739999999999938
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2033,33.72499999999997,41.52699999999997,7.802
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2034,35.74499999999997,37.51499999999996,1.769999999999989
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2035,35.74499999999997,37.522999999999975,1.7780000000000058
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2036,37.74499999999997,39.52899999999996,1.7839999999999918
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2037,37.74499999999997,41.52699999999997,3.7820000000000036
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2038,43.74499999999997,45.526999999999965,1.7819999999999965
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2039,47.74499999999997,45.51899999999996,-2.226000000000006
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2040,41.74499999999997,41.51899999999997,-0.2259999999999991
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2041,45.744999999999976,43.51899999999997,-2.226000000000006
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2042,33.72499999999997,39.52699999999997,5.802
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2043,41.74499999999997,45.52299999999996,3.7779999999999916
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2044,37.744999999999976,43.526999999999965,5.781999999999989
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2045,37.74499999999997,41.52699999999996,3.7819999999999894
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2046,45.74499999999997,45.526999999999965,-0.21800000000000352
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2047,31.72500000000001,33.52299999999997,1.7979999999999592
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2048,45.74499999999997,47.52299999999996,1.7779999999999916
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2049,45.744999999999976,47.52299999999997,1.7779999999999916
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2050,41.74499999999996,47.526999999999944,5.781999999999982
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2051,39.74499999999997,37.526999999999965,-2.2180000000000035
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2052,39.74499999999997,45.518999999999956,5.773999999999987
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2053,41.74499999999997,41.51899999999997,-0.2259999999999991
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2054,33.72499999999997,41.51499999999997,7.789999999999999
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2055,43.74499999999997,49.52499999999995,5.77999999999998
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2056,39.744999999999976,39.520999999999965,-0.22400000000001086
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2057,41.74499999999997,43.51899999999997,1.774000000000001
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2058,47.744999999999976,49.51499999999996,1.7699999999999818
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2059,35.74499999999997,39.52299999999996,3.7779999999999916
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2060,25.72500000000001,27.523000000000014,1.7980000000000054
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2061,45.744999999999976,45.52699999999996,-0.21800000000001774
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2062,37.744999999999976,43.52699999999997,5.7819999999999965
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2063,33.744999999999976,41.52699999999997,7.7819999999999965
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2064,35.744999999999976,41.518999999999956,5.77399999999998
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2065,33.744999999999976,37.526999999999965,3.7819999999999894
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2066,39.744999999999976,43.52299999999996,3.7779999999999845
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2067,39.74499999999996,41.52299999999996,1.7779999999999987
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2068,41.744999999999976,45.51899999999997,3.773999999999994
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2069,45.744999999999976,47.51899999999997,1.7739999999999938
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2070,37.744999999999976,39.52899999999997,1.7839999999999918
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2071,33.744999999999976,33.51899999999998,-0.2259999999999991
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2072,43.74499999999997,47.52299999999997,3.7779999999999987
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2073,39.744999999999976,45.51499999999997,5.769999999999996
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2074,45.74499999999997,45.52299999999996,-0.2220000000000084
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2075,39.74499999999997,41.522999999999975,1.7780000000000058
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2076,43.74499999999996,45.518999999999956,1.7739999999999938
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2077,35.744999999999976,41.51899999999998,5.774000000000001
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2078,37.74499999999997,43.514999999999965,5.769999999999996
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2079,41.74499999999997,41.514999999999965,-0.23000000000000398
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2080,41.74499999999997,41.52699999999997,-0.21799999999999642
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2081,37.74499999999997,43.514999999999965,5.769999999999996
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2082,29.70000000000001,33.52300000000001,3.8230000000000004
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2083,39.74499999999997,41.51899999999997,1.774000000000001
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2084,35.744999999999976,37.51899999999997,1.7739999999999938
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2085,39.74499999999997,45.52299999999997,5.777999999999999
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2086,35.74499999999997,39.514999999999965,3.769999999999996
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2087,49.74499999999997,49.52299999999997,-0.2220000000000013
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2088,39.74499999999997,41.522999999999975,1.7780000000000058
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2089,45.74499999999997,47.51499999999995,1.7699999999999818
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2090,39.74499999999997,41.52099999999996,1.7759999999999891
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2091,41.74499999999996,43.51899999999997,1.774000000000008
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2092,39.74499999999997,41.52699999999997,1.7820000000000036
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2093,35.74499999999997,41.526999999999965,5.7819999999999965
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2094,43.74499999999997,43.52699999999996,-0.21800000000001063
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2095,43.74499999999997,47.52299999999996,3.7779999999999916
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2096,37.74499999999997,39.52299999999997,1.7779999999999987
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2097,39.74499999999997,41.526999999999965,1.7819999999999965
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2098,41.74499999999997,43.51899999999997,1.774000000000001
+C,A2C (Agent C),rule_supervisor,hand-written rule supervisor,2099,41.74499999999997,43.52299999999997,1.7779999999999987
+C,random,rule_supervisor,hand-written rule supervisor,2000,0.0,45.52299999999996,45.52299999999996
+C,random,rule_supervisor,hand-written rule supervisor,2001,23.881000000000004,45.522999999999975,21.64199999999997
+C,random,rule_supervisor,hand-written rule supervisor,2002,-0.01200000000000001,39.52299999999996,39.53499999999996
+C,random,rule_supervisor,hand-written rule supervisor,2003,1.972,43.52299999999997,41.550999999999966
+C,random,rule_supervisor,hand-written rule supervisor,2004,0.0,39.514999999999965,39.514999999999965
+C,random,rule_supervisor,hand-written rule supervisor,2005,3.952,45.51899999999996,41.566999999999965
+C,random,rule_supervisor,hand-written rule supervisor,2006,-0.025000000000000022,41.52299999999997,41.547999999999966
+C,random,rule_supervisor,hand-written rule supervisor,2007,0.0,41.52699999999995,41.52699999999995
+C,random,rule_supervisor,hand-written rule supervisor,2008,1.9589999999999999,45.52699999999996,43.567999999999955
+C,random,rule_supervisor,hand-written rule supervisor,2009,5.963,35.52299999999996,29.55999999999996
+C,random,rule_supervisor,hand-written rule supervisor,2010,0.0,39.51899999999997,39.51899999999997
+C,random,rule_supervisor,hand-written rule supervisor,2011,0.0,43.52699999999997,43.52699999999997
+C,random,rule_supervisor,hand-written rule supervisor,2012,5.95,47.51899999999996,41.56899999999996
+C,random,rule_supervisor,hand-written rule supervisor,2013,35.83,45.52299999999996,9.692999999999962
+C,random,rule_supervisor,hand-written rule supervisor,2014,-0.06500000000000006,43.52699999999996,43.591999999999956
+C,random,rule_supervisor,hand-written rule supervisor,2015,1.972,41.51899999999996,39.54699999999996
+C,random,rule_supervisor,hand-written rule supervisor,2016,0.0,41.51499999999997,41.51499999999997
+C,random,rule_supervisor,hand-written rule supervisor,2017,0.0,35.520999999999965,35.520999999999965
+C,random,rule_supervisor,hand-written rule supervisor,2018,1.984,39.522999999999975,37.53899999999997
+C,random,rule_supervisor,hand-written rule supervisor,2019,0.0,43.526999999999965,43.526999999999965
+C,random,rule_supervisor,hand-written rule supervisor,2020,1.984,39.524999999999956,37.540999999999954
+C,random,rule_supervisor,hand-written rule supervisor,2021,0.0,45.51899999999997,45.51899999999997
+C,random,rule_supervisor,hand-written rule supervisor,2022,0.0,47.51899999999996,47.51899999999996
+C,random,rule_supervisor,hand-written rule supervisor,2023,1.984,45.51899999999997,43.53499999999997
+C,random,rule_supervisor,hand-written rule supervisor,2024,3.9669999999999996,43.522999999999975,39.555999999999976
+C,random,rule_supervisor,hand-written rule supervisor,2025,0.0,39.52899999999996,39.52899999999996
+C,random,rule_supervisor,hand-written rule supervisor,2026,7.915000000000001,41.514999999999965,33.599999999999966
+C,random,rule_supervisor,hand-written rule supervisor,2027,0.0,45.526999999999965,45.526999999999965
+C,random,rule_supervisor,hand-written rule supervisor,2028,1.9749999999999999,39.52299999999996,37.54799999999996
+C,random,rule_supervisor,hand-written rule supervisor,2029,1.968,45.52299999999996,43.554999999999964
+C,random,rule_supervisor,hand-written rule supervisor,2030,17.938,51.52699999999996,33.588999999999956
+C,random,rule_supervisor,hand-written rule supervisor,2031,3.956,47.52299999999997,43.566999999999965
+C,random,rule_supervisor,hand-written rule supervisor,2032,-0.041000000000000036,43.51899999999997,43.55999999999997
+C,random,rule_supervisor,hand-written rule supervisor,2033,5.95,41.52699999999997,35.57699999999997
+C,random,rule_supervisor,hand-written rule supervisor,2034,5.918,37.51499999999996,31.59699999999996
+C,random,rule_supervisor,hand-written rule supervisor,2035,-0.01200000000000001,37.522999999999975,37.534999999999975
+C,random,rule_supervisor,hand-written rule supervisor,2036,9.95,39.52899999999996,29.57899999999996
+C,random,rule_supervisor,hand-written rule supervisor,2037,0.0,41.52699999999997,41.52699999999997
+C,random,rule_supervisor,hand-written rule supervisor,2038,11.95,45.526999999999965,33.57699999999997
+C,random,rule_supervisor,hand-written rule supervisor,2039,7.943,45.51899999999996,37.575999999999965
+C,random,rule_supervisor,hand-written rule supervisor,2040,-0.016000000000000014,41.51899999999997,41.53499999999997
+C,random,rule_supervisor,hand-written rule supervisor,2041,0.0,43.51899999999997,43.51899999999997
+C,random,rule_supervisor,hand-written rule supervisor,2042,0.0,39.52699999999997,39.52699999999997
+C,random,rule_supervisor,hand-written rule supervisor,2043,3.9749999999999996,45.52299999999996,41.54799999999996
+C,random,rule_supervisor,hand-written rule supervisor,2044,1.9469999999999998,43.526999999999965,41.57999999999996
+C,random,rule_supervisor,hand-written rule supervisor,2045,1.9749999999999999,41.52699999999996,39.55199999999996
+C,random,rule_supervisor,hand-written rule supervisor,2046,7.9430000000000005,45.526999999999965,37.58399999999997
+C,random,rule_supervisor,hand-written rule supervisor,2047,-0.025000000000000022,33.52299999999997,33.547999999999966
+C,random,rule_supervisor,hand-written rule supervisor,2048,0.0,47.52299999999996,47.52299999999996
+C,random,rule_supervisor,hand-written rule supervisor,2049,0.0,47.52299999999997,47.52299999999997
+C,random,rule_supervisor,hand-written rule supervisor,2050,11.975,47.526999999999944,35.55199999999994
+C,random,rule_supervisor,hand-written rule supervisor,2051,0.0,37.526999999999965,37.526999999999965
+C,random,rule_supervisor,hand-written rule supervisor,2052,11.886,45.518999999999956,33.63299999999995
+C,random,rule_supervisor,hand-written rule supervisor,2053,0.0,41.51899999999997,41.51899999999997
+C,random,rule_supervisor,hand-written rule supervisor,2054,3.952,41.51499999999997,37.562999999999974
+C,random,rule_supervisor,hand-written rule supervisor,2055,11.925999999999998,49.52499999999995,37.59899999999995
+C,random,rule_supervisor,hand-written rule supervisor,2056,-0.02400000000000002,39.520999999999965,39.544999999999966
+C,random,rule_supervisor,hand-written rule supervisor,2057,1.984,43.51899999999997,41.53499999999997
+C,random,rule_supervisor,hand-written rule supervisor,2058,5.963000000000001,49.51499999999996,43.55199999999996
+C,random,rule_supervisor,hand-written rule supervisor,2059,0.0,39.52299999999996,39.52299999999996
+C,random,rule_supervisor,hand-written rule supervisor,2060,-0.08100000000000018,27.523000000000014,27.604000000000013
+C,random,rule_supervisor,hand-written rule supervisor,2061,3.9339999999999997,45.52699999999996,41.59299999999996
+C,random,rule_supervisor,hand-written rule supervisor,2062,0.0,43.52699999999997,43.52699999999997
+C,random,rule_supervisor,hand-written rule supervisor,2063,0.0,41.52699999999997,41.52699999999997
+C,random,rule_supervisor,hand-written rule supervisor,2064,0.0,41.518999999999956,41.518999999999956
+C,random,rule_supervisor,hand-written rule supervisor,2065,0.0,37.526999999999965,37.526999999999965
+C,random,rule_supervisor,hand-written rule supervisor,2066,-0.07500000000000007,43.52299999999996,43.59799999999996
+C,random,rule_supervisor,hand-written rule supervisor,2067,0.0,41.52299999999996,41.52299999999996
+C,random,rule_supervisor,hand-written rule supervisor,2068,0.0,45.51899999999997,45.51899999999997
+C,random,rule_supervisor,hand-written rule supervisor,2069,0.0,47.51899999999997,47.51899999999997
+C,random,rule_supervisor,hand-written rule supervisor,2070,0.0,39.52899999999997,39.52899999999997
+C,random,rule_supervisor,hand-written rule supervisor,2071,0.0,33.51899999999998,33.51899999999998
+C,random,rule_supervisor,hand-written rule supervisor,2072,-0.050000000000000044,47.52299999999997,47.572999999999965
+C,random,rule_supervisor,hand-written rule supervisor,2073,1.9749999999999999,45.51499999999997,43.53999999999997
+C,random,rule_supervisor,hand-written rule supervisor,2074,0.0,45.52299999999996,45.52299999999996
+C,random,rule_supervisor,hand-written rule supervisor,2075,0.0,41.522999999999975,41.522999999999975
+C,random,rule_supervisor,hand-written rule supervisor,2076,1.9429999999999998,45.518999999999956,43.57599999999996
+C,random,rule_supervisor,hand-written rule supervisor,2077,1.988,41.51899999999998,39.53099999999998
+C,random,rule_supervisor,hand-written rule supervisor,2078,-0.01200000000000001,43.514999999999965,43.526999999999965
+C,random,rule_supervisor,hand-written rule supervisor,2079,7.908999999999999,41.514999999999965,33.605999999999966
+C,random,rule_supervisor,hand-written rule supervisor,2080,0.0,41.52699999999997,41.52699999999997
+C,random,rule_supervisor,hand-written rule supervisor,2081,1.9749999999999999,43.514999999999965,41.539999999999964
+C,random,rule_supervisor,hand-written rule supervisor,2082,0.0,33.52300000000001,33.52300000000001
+C,random,rule_supervisor,hand-written rule supervisor,2083,11.886,41.51899999999997,29.63299999999997
+C,random,rule_supervisor,hand-written rule supervisor,2084,0.0,37.51899999999997,37.51899999999997
+C,random,rule_supervisor,hand-written rule supervisor,2085,1.9749999999999999,45.52299999999997,43.547999999999966
+C,random,rule_supervisor,hand-written rule supervisor,2086,0.0,39.514999999999965,39.514999999999965
+C,random,rule_supervisor,hand-written rule supervisor,2087,9.922,49.52299999999997,39.60099999999997
+C,random,rule_supervisor,hand-written rule supervisor,2088,0.0,41.522999999999975,41.522999999999975
+C,random,rule_supervisor,hand-written rule supervisor,2089,19.925,47.51499999999995,27.58999999999995
+C,random,rule_supervisor,hand-written rule supervisor,2090,1.9629999999999999,41.52099999999996,39.55799999999996
+C,random,rule_supervisor,hand-written rule supervisor,2091,0.0,43.51899999999997,43.51899999999997
+C,random,rule_supervisor,hand-written rule supervisor,2092,7.934,41.52699999999997,33.592999999999975
+C,random,rule_supervisor,hand-written rule supervisor,2093,1.886,41.526999999999965,39.64099999999996
+C,random,rule_supervisor,hand-written rule supervisor,2094,0.0,43.52699999999996,43.52699999999996
+C,random,rule_supervisor,hand-written rule supervisor,2095,5.9590000000000005,47.52299999999996,41.56399999999996
+C,random,rule_supervisor,hand-written rule supervisor,2096,17.905,39.52299999999997,21.617999999999967
+C,random,rule_supervisor,hand-written rule supervisor,2097,23.905,41.526999999999965,17.621999999999964
+C,random,rule_supervisor,hand-written rule supervisor,2098,1.9749999999999999,43.51899999999997,41.54399999999997
+C,random,rule_supervisor,hand-written rule supervisor,2099,-0.016000000000000014,43.52299999999997,43.538999999999966
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2000,47.57499999999994,47.52999999999997,-0.04499999999996618
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2001,41.56499999999994,45.55899999999996,3.994000000000021
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2002,39.54499999999994,39.552999999999976,0.008000000000038199
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2003,47.59499999999995,49.54799999999997,1.9530000000000243
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2004,47.63499999999995,45.54499999999997,-2.089999999999975
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2005,43.564999999999955,37.53899999999997,-6.025999999999982
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2006,41.55499999999994,41.54799999999997,-0.006999999999969475
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2007,43.56999999999995,41.53199999999996,-2.0379999999999896
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2008,49.56999999999994,47.54899999999996,-2.0209999999999866
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2009,41.53499999999994,39.52999999999997,-2.004999999999967
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2010,41.59999999999996,41.52099999999997,-0.07899999999998641
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2011,51.60999999999995,49.52699999999998,-2.08299999999997
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2012,49.629999999999946,47.51599999999997,-2.113999999999976
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2013,51.599999999999945,47.55399999999996,-4.045999999999985
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2014,49.61499999999995,49.557999999999964,-0.05699999999998795
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2015,39.60999999999994,41.53099999999997,1.9210000000000278
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2016,43.569999999999936,41.53599999999998,-2.0339999999999563
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2017,45.589999999999954,35.561999999999976,-10.027999999999977
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2018,47.57499999999996,41.539999999999964,-6.034999999999997
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2019,45.61999999999995,43.541999999999966,-2.0779999999999816
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2020,47.61999999999994,43.55999999999996,-4.059999999999981
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2021,49.58999999999995,49.554999999999964,-0.03499999999998238
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2022,41.59999999999994,47.524999999999956,5.9250000000000185
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2023,49.58499999999995,45.55999999999997,-4.024999999999984
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2024,45.58499999999995,45.537999999999975,-0.04699999999997573
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2025,45.61499999999995,45.528999999999954,-0.08599999999999852
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2026,41.55499999999994,41.52099999999997,-0.0339999999999705
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2027,43.59499999999994,47.55699999999997,3.9620000000000246
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2028,43.61999999999995,37.52499999999997,-6.0949999999999775
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2029,43.61499999999995,47.53999999999997,3.9250000000000185
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2030,51.584999999999944,49.53299999999996,-2.0519999999999854
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2031,49.57499999999995,49.54199999999998,-0.03299999999997283
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2032,41.62499999999994,43.54299999999997,1.9180000000000277
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2033,33.519999999999975,45.53199999999998,12.012000000000008
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2034,41.55499999999995,45.53599999999999,3.981000000000037
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2035,41.60499999999995,43.55399999999997,1.9490000000000194
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2036,49.614999999999945,41.52399999999997,-8.090999999999973
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2037,43.56499999999995,47.52399999999997,3.9590000000000245
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2038,43.539999999999935,47.531999999999975,3.99200000000004
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2039,47.57999999999995,47.55499999999996,-0.024999999999991473
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2040,45.59999999999995,49.54599999999997,3.9460000000000193
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2041,47.614999999999945,51.52499999999996,3.910000000000018
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2042,43.57999999999995,43.556999999999974,-0.02299999999997482
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2043,41.614999999999945,45.539999999999964,3.9250000000000185
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2044,45.554999999999936,47.53799999999997,1.9830000000000325
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2045,47.61499999999995,41.551999999999985,-6.062999999999967
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2046,45.56999999999994,45.56199999999997,-0.00799999999997425
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2047,37.559999999999974,45.54799999999997,7.9879999999999995
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2048,49.559999999999945,47.518999999999956,-2.0409999999999897
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2049,45.599999999999945,41.513999999999974,-4.08599999999997
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2050,45.55999999999994,47.561999999999955,2.0020000000000167
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2051,37.53499999999993,45.527999999999956,7.993000000000023
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2052,47.58999999999995,45.55599999999996,-2.0339999999999847
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2053,39.55999999999995,41.554999999999964,1.9950000000000117
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2054,37.53999999999998,49.560999999999964,12.020999999999987
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2055,49.59499999999995,47.556999999999974,-2.0379999999999754
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2056,45.599999999999945,43.545999999999964,-2.0539999999999807
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2057,39.564999999999955,45.52599999999998,5.961000000000027
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2058,47.58499999999995,47.546999999999976,-0.03799999999997539
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2059,41.569999999999986,39.527999999999984,-2.0420000000000016
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2060,39.629999999999974,39.52799999999998,-0.10199999999999676
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2061,47.62499999999995,43.53399999999998,-4.090999999999973
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2062,41.56999999999993,47.54999999999998,5.980000000000054
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2063,39.529999999999944,41.51899999999997,1.9890000000000256
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2064,47.56999999999996,47.550999999999966,-0.018999999999991246
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2065,47.60499999999995,49.52199999999996,1.9170000000000158
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2066,43.54999999999995,41.517999999999965,-2.0319999999999823
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2067,41.60499999999994,41.51899999999997,-0.0859999999999701
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2068,45.604999999999954,47.53499999999997,1.930000000000014
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2069,49.56999999999994,49.533999999999985,-0.03599999999995873
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2070,45.56999999999995,41.53399999999997,-4.03599999999998
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2071,37.61499999999997,43.50999999999998,5.89500000000001
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2072,39.52999999999993,43.544999999999966,4.015000000000036
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2073,49.60499999999995,43.535999999999966,-6.068999999999981
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2074,51.61999999999995,49.55499999999997,-2.0649999999999764
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2075,37.52499999999994,43.55299999999998,6.028000000000041
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2076,49.62499999999994,45.52399999999996,-4.100999999999985
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2077,43.55999999999995,43.52499999999997,-0.03499999999998238
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2078,37.60499999999995,33.52199999999996,-4.082999999999984
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2079,43.57999999999994,45.540999999999976,1.961000000000034
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2080,43.60499999999994,37.56799999999998,-6.0369999999999635
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2081,33.579999999999984,41.53699999999998,7.956999999999994
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2082,45.56999999999996,43.51999999999998,-2.049999999999976
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2083,47.61999999999995,43.53899999999998,-4.0809999999999675
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2084,43.57999999999994,43.55499999999998,-0.024999999999963052
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2085,47.56999999999995,51.53399999999996,3.964000000000013
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2086,45.59499999999995,43.53099999999998,-2.0639999999999716
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2087,43.544999999999945,45.55299999999997,2.008000000000024
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2088,47.57499999999995,49.54799999999998,1.9730000000000274
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2089,47.57999999999994,47.520999999999965,-0.05899999999997618
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2090,45.574999999999974,45.52299999999997,-0.05200000000000671
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2091,41.559999999999945,41.54799999999997,-0.011999999999972033
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2092,43.559999999999945,45.52199999999998,1.9620000000000317
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2093,35.56499999999996,41.53699999999996,5.972000000000001
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2094,45.554999999999936,43.54399999999996,-2.0109999999999744
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2095,49.57499999999995,47.54899999999997,-2.025999999999982
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2096,43.56999999999994,39.54299999999997,-4.026999999999973
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2097,39.57999999999994,45.546999999999976,5.967000000000034
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2098,47.57999999999995,41.543999999999976,-6.035999999999973
+C_withA,A2C (C_withA),rule_supervisor (Agent A inside),rule supervisor with the same Agent A inside,2099,45.56999999999995,49.53299999999998,3.9630000000000294
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2000,41.73499999999997,45.52299999999996,3.7879999999999896
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2001,39.71999999999998,45.522999999999975,5.802999999999997
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2002,39.73499999999997,39.52299999999996,-0.2120000000000104
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2003,49.75499999999998,43.52299999999997,-6.2320000000000135
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2004,45.774999999999984,39.514999999999965,-6.260000000000019
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2005,43.72999999999998,45.51899999999996,1.7889999999999802
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2006,43.75499999999998,41.52299999999997,-2.2320000000000135
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2007,37.719999999999985,41.52699999999995,3.8069999999999666
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2008,39.73499999999998,45.52699999999996,5.79199999999998
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2009,39.71499999999998,35.52299999999996,-4.1920000000000215
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2010,35.75499999999999,39.51899999999997,3.7639999999999816
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2011,43.759999999999984,43.52699999999997,-0.2330000000000112
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2012,45.76499999999998,47.51899999999996,1.7539999999999836
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2013,47.76999999999998,45.52299999999996,-2.247000000000021
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2014,45.75499999999998,43.52699999999996,-2.228000000000023
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2015,41.75999999999998,41.51899999999996,-0.24100000000001387
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2016,41.754999999999974,41.51499999999997,-0.240000000000002
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2017,37.75499999999998,35.520999999999965,-2.234000000000016
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2018,37.714999999999996,39.522999999999975,1.8079999999999785
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2019,39.75999999999998,43.526999999999965,3.766999999999989
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2020,45.754999999999974,39.524999999999956,-6.230000000000018
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2021,43.73999999999998,45.51899999999997,1.7789999999999893
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2022,41.75999999999998,47.51899999999996,5.758999999999986
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2023,41.74499999999998,45.51899999999997,3.7739999999999867
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2024,43.749999999999986,43.522999999999975,-0.22700000000001097
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2025,43.76999999999998,39.52899999999996,-4.241000000000021
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2026,39.72499999999998,41.514999999999965,1.789999999999985
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2027,41.76499999999998,45.526999999999965,3.7619999999999862
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2028,39.75999999999998,39.52299999999996,-0.2370000000000161
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2029,41.73499999999999,45.52299999999996,3.7879999999999683
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2030,47.774999999999984,51.52699999999996,3.751999999999974
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2031,41.73999999999998,47.52299999999997,5.782999999999987
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2032,37.729999999999976,43.51899999999997,5.788999999999994
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2033,33.695000000000014,41.52699999999997,7.831999999999958
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2034,39.749999999999986,37.51499999999996,-2.235000000000028
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2035,39.75499999999998,37.522999999999975,-2.2320000000000064
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2036,37.77499999999998,39.52899999999996,1.7539999999999836
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2037,39.70999999999998,41.52699999999997,1.816999999999993
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2038,43.714999999999975,45.526999999999965,1.8119999999999905
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2039,47.764999999999986,45.51899999999996,-2.2460000000000235
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2040,45.73999999999999,41.51899999999997,-4.221000000000018
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2041,45.76999999999998,43.51899999999997,-2.251000000000012
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2042,43.73999999999999,39.52699999999997,-4.213000000000015
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2043,41.759999999999984,45.52299999999996,3.762999999999977
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2044,39.69999999999997,43.526999999999965,3.826999999999998
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2045,43.749999999999986,41.52699999999996,-2.2230000000000274
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2046,45.76999999999998,45.526999999999965,-0.24300000000001631
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2047,33.705000000000005,33.52299999999997,-0.1820000000000377
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2048,41.74999999999998,47.52299999999996,5.772999999999982
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2049,47.75999999999998,47.52299999999997,-0.23700000000000898
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2050,45.75999999999998,47.526999999999944,1.7669999999999675
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2051,37.729999999999976,37.526999999999965,-0.20300000000001006
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2052,43.75499999999998,45.518999999999956,1.7639999999999745
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2053,41.75999999999999,41.51899999999997,-0.24100000000002098
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2054,33.72500000000001,41.51499999999997,7.789999999999964
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2055,45.75499999999998,49.52499999999995,3.7699999999999676
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2056,39.744999999999976,39.520999999999965,-0.22400000000001086
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2057,39.73999999999999,43.51899999999997,3.778999999999982
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2058,45.759999999999984,49.51499999999996,3.754999999999974
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2059,31.725000000000016,39.52299999999996,7.797999999999945
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2060,31.765,27.523000000000014,-4.241999999999987
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2061,43.749999999999986,45.52699999999996,1.7769999999999726
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2062,41.74499999999997,43.52699999999997,1.7820000000000036
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2063,39.71499999999998,41.52699999999997,1.8119999999999905
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2064,37.74499999999999,41.518999999999956,3.7739999999999654
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2065,45.764999999999986,37.526999999999965,-8.23800000000002
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2066,37.72499999999999,43.52299999999996,5.797999999999973
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2067,39.75499999999998,41.52299999999996,1.7679999999999794
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2068,43.72999999999999,45.51899999999997,1.7889999999999802
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2069,45.75999999999998,47.51899999999997,1.7589999999999932
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2070,43.764999999999986,39.52899999999997,-4.236000000000018
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2071,33.709999999999994,33.51899999999998,-0.1910000000000167
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2072,39.70999999999997,47.52299999999997,7.812999999999995
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2073,41.75499999999998,45.51499999999997,3.759999999999991
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2074,45.714999999999975,45.52299999999996,-0.19200000000001438
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2075,33.73999999999998,41.522999999999975,7.782999999999994
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2076,41.70999999999997,45.518999999999956,3.8089999999999833
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2077,43.72999999999999,41.51899999999998,-2.2110000000000127
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2078,35.71499999999998,43.514999999999965,7.799999999999983
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2079,37.70499999999998,41.514999999999965,3.809999999999988
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2080,41.75999999999998,41.52699999999997,-0.2330000000000041
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2081,31.725000000000005,43.514999999999965,11.78999999999996
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2082,39.754999999999995,33.52300000000001,-6.231999999999985
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2083,41.75499999999998,41.51899999999997,-0.2360000000000113
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2084,41.759999999999984,37.51899999999997,-4.241000000000014
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2085,41.71499999999999,45.52299999999997,3.8079999999999785
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2086,37.729999999999976,39.514999999999965,1.7849999999999895
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2087,43.729999999999976,49.52299999999997,5.792999999999992
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2088,43.72999999999999,41.522999999999975,-2.207000000000015
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2089,45.76999999999998,47.51499999999995,1.744999999999969
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2090,35.72500000000001,41.52099999999996,5.79599999999995
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2091,43.764999999999986,43.51899999999997,-0.24600000000001643
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2092,41.74499999999999,41.52699999999997,-0.21800000000001774
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2093,33.739999999999974,41.526999999999965,7.786999999999992
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2094,43.714999999999975,43.52699999999996,-0.1880000000000166
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2095,47.75499999999999,47.52299999999996,-0.23200000000002774
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2096,37.739999999999974,39.52299999999997,1.7829999999999941
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2097,39.75499999999998,41.526999999999965,1.7719999999999843
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2098,45.76999999999998,43.51899999999997,-2.251000000000012
+full,ALL LEARNED (C + A + B),ALL SCRIPTED (rule + raster + approach),all-scripted system,2099,43.749999999999986,43.52299999999997,-0.22700000000001808
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2000,43.74499999999997,45.52299999999996,1.7779999999999916
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2001,39.744999999999976,45.522999999999975,5.777999999999999
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2002,37.744999999999976,39.52299999999996,1.7779999999999845
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2003,43.744999999999976,43.52299999999997,-0.2220000000000084
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2004,41.74499999999997,39.514999999999965,-2.230000000000004
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2005,43.74499999999997,45.51899999999996,1.7739999999999938
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2006,43.744999999999976,41.52299999999997,-2.2220000000000084
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2007,37.74499999999997,41.52699999999995,3.7819999999999823
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2008,39.74499999999997,45.52699999999996,5.781999999999989
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2009,33.744999999999976,35.52299999999996,1.7779999999999845
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2010,31.74500000000001,39.51899999999997,7.773999999999958
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2011,41.74499999999997,43.52699999999997,1.7820000000000036
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2012,45.744999999999976,47.51899999999996,1.7739999999999867
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2013,41.74499999999997,45.52299999999996,3.7779999999999916
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2014,43.74499999999996,43.52699999999996,-0.21800000000000352
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2015,39.74499999999997,41.51899999999996,1.7739999999999938
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2016,39.74499999999997,41.51499999999997,1.7700000000000031
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2017,31.74500000000001,35.520999999999965,3.7759999999999536
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2018,35.744999999999976,39.522999999999975,3.7779999999999987
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2019,35.744999999999976,43.526999999999965,7.781999999999989
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2020,37.74499999999997,39.524999999999956,1.779999999999987
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2021,45.74499999999997,45.51899999999997,-0.2259999999999991
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2022,43.74499999999997,47.51899999999996,3.773999999999994
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2023,37.744999999999976,45.51899999999997,7.773999999999994
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2024,41.74499999999997,43.522999999999975,1.7780000000000058
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2025,41.74499999999997,39.52899999999996,-2.216000000000008
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2026,35.744999999999976,41.514999999999965,5.769999999999989
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2027,45.74499999999997,45.526999999999965,-0.21800000000000352
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2028,37.74499999999997,39.52299999999996,1.7779999999999916
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2029,43.74499999999996,45.52299999999996,1.7779999999999987
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2030,47.74499999999997,51.52699999999996,3.7819999999999894
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2031,43.74499999999997,47.52299999999997,3.7779999999999987
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2032,41.744999999999976,43.51899999999997,1.7739999999999938
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2033,33.72499999999997,41.52699999999997,7.802
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2034,35.74499999999997,37.51499999999996,1.769999999999989
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2035,35.74499999999997,37.522999999999975,1.7780000000000058
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2036,37.74499999999997,39.52899999999996,1.7839999999999918
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2037,37.74499999999997,41.52699999999997,3.7820000000000036
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2038,43.74499999999997,45.526999999999965,1.7819999999999965
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2039,47.74499999999997,45.51899999999996,-2.226000000000006
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2040,41.74499999999997,41.51899999999997,-0.2259999999999991
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2041,45.744999999999976,43.51899999999997,-2.226000000000006
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2042,33.72499999999997,39.52699999999997,5.802
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2043,41.74499999999997,45.52299999999996,3.7779999999999916
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2044,37.744999999999976,43.526999999999965,5.781999999999989
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2045,37.74499999999997,41.52699999999996,3.7819999999999894
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2046,45.74499999999997,45.526999999999965,-0.21800000000000352
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2047,31.72500000000001,33.52299999999997,1.7979999999999592
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2048,45.74499999999997,47.52299999999996,1.7779999999999916
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2049,45.744999999999976,47.52299999999997,1.7779999999999916
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2050,41.74499999999996,47.526999999999944,5.781999999999982
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2051,39.74499999999997,37.526999999999965,-2.2180000000000035
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2052,39.74499999999997,45.518999999999956,5.773999999999987
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2053,41.74499999999997,41.51899999999997,-0.2259999999999991
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2054,33.72499999999997,41.51499999999997,7.789999999999999
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2055,43.74499999999997,49.52499999999995,5.77999999999998
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2056,39.744999999999976,39.520999999999965,-0.22400000000001086
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2057,41.74499999999997,43.51899999999997,1.774000000000001
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2058,47.744999999999976,49.51499999999996,1.7699999999999818
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2059,35.74499999999997,39.52299999999996,3.7779999999999916
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2060,25.72500000000001,27.523000000000014,1.7980000000000054
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2061,45.744999999999976,45.52699999999996,-0.21800000000001774
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2062,37.744999999999976,43.52699999999997,5.7819999999999965
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2063,33.744999999999976,41.52699999999997,7.7819999999999965
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2064,35.744999999999976,41.518999999999956,5.77399999999998
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2065,33.744999999999976,37.526999999999965,3.7819999999999894
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2066,39.744999999999976,43.52299999999996,3.7779999999999845
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2067,39.74499999999996,41.52299999999996,1.7779999999999987
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2068,41.744999999999976,45.51899999999997,3.773999999999994
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2069,45.744999999999976,47.51899999999997,1.7739999999999938
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2070,37.744999999999976,39.52899999999997,1.7839999999999918
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2071,33.744999999999976,33.51899999999998,-0.2259999999999991
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2072,43.74499999999997,47.52299999999997,3.7779999999999987
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2073,39.744999999999976,45.51499999999997,5.769999999999996
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2074,45.74499999999997,45.52299999999996,-0.2220000000000084
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2075,39.74499999999997,41.522999999999975,1.7780000000000058
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2076,43.74499999999996,45.518999999999956,1.7739999999999938
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2077,35.744999999999976,41.51899999999998,5.774000000000001
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2078,37.74499999999997,43.514999999999965,5.769999999999996
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2079,41.74499999999997,41.514999999999965,-0.23000000000000398
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2080,41.74499999999997,41.52699999999997,-0.21799999999999642
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2081,37.74499999999997,43.514999999999965,5.769999999999996
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2082,29.70000000000001,33.52300000000001,3.8230000000000004
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2083,39.74499999999997,41.51899999999997,1.774000000000001
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2084,35.744999999999976,37.51899999999997,1.7739999999999938
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2085,39.74499999999997,45.52299999999997,5.777999999999999
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2086,35.74499999999997,39.514999999999965,3.769999999999996
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2087,49.74499999999997,49.52299999999997,-0.2220000000000013
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2088,39.74499999999997,41.522999999999975,1.7780000000000058
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2089,45.74499999999997,47.51499999999995,1.7699999999999818
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2090,39.74499999999997,41.52099999999996,1.7759999999999891
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2091,41.74499999999996,43.51899999999997,1.774000000000008
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2092,39.74499999999997,41.52699999999997,1.7820000000000036
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2093,35.74499999999997,41.526999999999965,5.7819999999999965
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2094,43.74499999999997,43.52699999999996,-0.21800000000001063
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2095,43.74499999999997,47.52299999999996,3.7779999999999916
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2096,37.74499999999997,39.52299999999997,1.7779999999999987
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2097,39.74499999999997,41.526999999999965,1.7819999999999965
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2098,41.74499999999997,43.51899999999997,1.774000000000001
+full,"ablation: C learned, A/B scripted",ALL SCRIPTED (rule + raster + approach),all-scripted system,2099,41.74499999999997,43.52299999999997,1.7779999999999987
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2000,47.52999999999997,45.52299999999996,-2.007000000000012
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2001,45.55899999999996,45.522999999999975,-0.03599999999998715
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2002,41.528999999999975,39.52299999999996,-2.0060000000000144
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2003,49.54799999999997,43.52299999999997,-6.025000000000006
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2004,45.54499999999997,39.514999999999965,-6.030000000000008
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2005,37.53899999999997,45.51899999999996,7.97999999999999
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2006,41.54799999999997,41.52299999999997,-0.025000000000005684
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2007,41.53199999999996,41.52699999999995,-0.005000000000009663
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2008,47.54899999999996,45.52699999999996,-2.0219999999999985
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2009,37.55299999999997,35.52299999999996,-2.0300000000000082
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2010,41.52099999999997,39.51899999999997,-2.0020000000000024
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2011,49.52699999999998,43.52699999999997,-6.000000000000007
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2012,47.51199999999997,47.51899999999996,0.006999999999990791
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2013,47.55399999999996,45.52299999999996,-2.030999999999999
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2014,49.557999999999964,43.52699999999996,-6.031000000000006
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2015,41.526999999999965,41.51899999999996,-0.008000000000002672
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2016,41.53599999999998,41.51499999999997,-0.0210000000000079
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2017,35.55799999999997,35.520999999999965,-0.03700000000000614
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2018,41.539999999999964,39.522999999999975,-2.016999999999989
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2019,43.541999999999966,43.526999999999965,-0.015000000000000568
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2020,43.55999999999996,39.524999999999956,-4.035000000000004
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2021,49.55099999999996,45.51899999999997,-4.031999999999989
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2022,47.524999999999956,47.51899999999996,-0.005999999999993122
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2023,45.55599999999997,45.51899999999997,-0.036999999999999034
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2024,45.537999999999975,43.522999999999975,-2.0150000000000006
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2025,45.540999999999954,39.52899999999996,-6.011999999999993
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2026,39.52199999999997,41.514999999999965,1.992999999999995
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2027,43.54999999999997,45.526999999999965,1.9769999999999968
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2028,37.52499999999997,39.52299999999996,1.9979999999999905
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2029,47.53999999999997,45.52299999999996,-2.01700000000001
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2030,49.53299999999996,51.52699999999996,1.9939999999999998
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2031,49.537999999999975,47.52299999999997,-2.0150000000000077
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2032,43.538999999999966,43.51899999999997,-0.01999999999999602
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2033,45.53199999999998,41.52699999999997,-4.00500000000001
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2034,45.53599999999999,37.51499999999996,-8.02100000000003
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2035,43.55399999999997,37.522999999999975,-6.030999999999992
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2036,41.52399999999997,39.52899999999996,-1.9950000000000117
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2037,47.52399999999997,41.52699999999997,-5.997
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2038,45.53399999999997,45.526999999999965,-0.007000000000005002
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2039,47.55499999999996,45.51899999999996,-2.0359999999999943
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2040,49.54599999999997,41.51899999999997,-8.027000000000001
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2041,51.520999999999965,43.51899999999997,-8.001999999999995
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2042,43.556999999999974,39.52699999999997,-4.030000000000001
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2043,45.55599999999996,45.52299999999996,-0.03300000000000125
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2044,47.53799999999997,43.526999999999965,-4.011000000000003
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2045,41.551999999999985,41.52699999999996,-0.025000000000027
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2046,43.52799999999996,45.526999999999965,1.9990000000000023
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2047,45.54799999999997,33.52299999999997,-12.025000000000006
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2048,45.539999999999964,47.52299999999996,1.982999999999997
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2049,41.54499999999997,47.52299999999997,5.977999999999994
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2050,47.561999999999955,47.526999999999944,-0.0350000000000108
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2051,45.52499999999996,37.526999999999965,-7.9979999999999976
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2052,45.55599999999996,45.518999999999956,-0.03700000000000614
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2053,41.550999999999966,41.51899999999997,-0.031999999999996476
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2054,49.55699999999997,41.51499999999997,-8.041999999999994
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2055,47.556999999999974,49.52499999999995,1.967999999999975
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2056,39.52299999999996,39.520999999999965,-0.001999999999995339
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2057,45.52199999999998,43.51899999999997,-2.003000000000007
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2058,47.546999999999976,49.51499999999996,1.9679999999999822
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2059,39.527999999999984,39.52299999999996,-0.005000000000023874
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2060,39.52799999999998,27.523000000000014,-12.004999999999963
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2061,43.53399999999998,45.52699999999996,1.9929999999999808
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2062,47.54999999999998,43.52699999999997,-4.02300000000001
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2063,41.51899999999997,41.52699999999997,0.008000000000002672
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2064,47.550999999999966,41.518999999999956,-6.032000000000011
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2065,49.52199999999996,37.526999999999965,-11.994999999999997
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2066,41.51399999999997,43.52299999999996,2.0089999999999932
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2067,41.51999999999997,41.52299999999996,0.0029999999999930083
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2068,47.53499999999997,45.51899999999997,-2.0159999999999982
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2069,49.52999999999999,47.51899999999997,-2.011000000000017
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2070,41.52999999999997,39.52899999999997,-2.0010000000000048
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2071,43.52599999999998,33.51899999999998,-10.007000000000005
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2072,43.54099999999997,47.52299999999997,3.9819999999999993
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2073,43.535999999999966,45.51499999999997,1.9790000000000063
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2074,49.561999999999976,45.52299999999996,-4.039000000000016
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2075,43.55299999999998,41.522999999999975,-2.0300000000000082
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2076,45.52399999999996,45.518999999999956,-0.005000000000002558
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2077,43.52499999999997,41.51899999999998,-2.005999999999993
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2078,33.52199999999996,43.514999999999965,9.993000000000002
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2079,45.540999999999976,41.514999999999965,-4.0260000000000105
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2080,37.55499999999998,41.52699999999997,3.971999999999994
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2081,41.53699999999998,43.514999999999965,1.9779999999999873
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2082,43.51999999999998,33.52300000000001,-9.996999999999971
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2083,43.53899999999998,41.51899999999997,-2.0200000000000102
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2084,43.52099999999998,37.51899999999997,-6.0020000000000095
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2085,49.54999999999997,45.52299999999997,-4.027000000000001
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2086,41.54299999999998,39.514999999999965,-2.028000000000013
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2087,45.55299999999997,49.52299999999997,3.969999999999999
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2088,49.53899999999998,41.522999999999975,-8.016000000000005
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2089,47.520999999999965,47.51499999999995,-0.006000000000014438
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2090,45.53399999999996,41.52099999999996,-4.013000000000005
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2091,41.54799999999997,43.51899999999997,1.9709999999999965
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2092,43.53299999999997,41.52699999999997,-2.0060000000000002
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2093,41.53699999999996,41.526999999999965,-0.00999999999999801
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2094,43.535999999999966,43.52699999999996,-0.009000000000007446
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2095,47.54899999999997,47.52299999999996,-0.02600000000001046
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2096,39.54299999999997,39.52299999999997,-0.020000000000003126
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2097,45.54299999999997,41.526999999999965,-4.016000000000005
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2098,41.53999999999998,43.51899999999997,1.978999999999992
+full,"ablation: rule C, A + B learned",ALL SCRIPTED (rule + raster + approach),all-scripted system,2099,49.53299999999998,43.52299999999997,-6.010000000000012
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2000,47.57499999999994,45.52299999999996,-2.0519999999999783
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2001,41.56499999999994,45.522999999999975,3.958000000000034
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2002,39.54499999999994,39.52299999999996,-0.02199999999997715
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2003,47.59499999999995,43.52299999999997,-4.071999999999981
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2004,47.63499999999995,39.514999999999965,-8.119999999999983
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2005,43.564999999999955,45.51899999999996,1.9540000000000077
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2006,41.55499999999994,41.52299999999997,-0.03199999999997516
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2007,43.56999999999995,41.52699999999995,-2.0429999999999993
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2008,49.56999999999994,45.52699999999996,-4.042999999999985
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2009,41.53499999999994,35.52299999999996,-6.011999999999979
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2010,41.59999999999996,39.51899999999997,-2.080999999999989
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2011,51.60999999999995,43.52699999999997,-8.082999999999977
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2012,49.629999999999946,47.51899999999996,-2.110999999999983
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2013,51.599999999999945,45.52299999999996,-6.076999999999984
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2014,49.61499999999995,43.52699999999996,-6.087999999999994
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2015,39.60999999999994,41.51899999999996,1.9090000000000202
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2016,43.569999999999936,41.51499999999997,-2.054999999999964
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2017,45.589999999999954,35.520999999999965,-10.068999999999988
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2018,47.57499999999996,39.522999999999975,-8.051999999999985
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2019,45.61999999999995,43.526999999999965,-2.092999999999982
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2020,47.61999999999994,39.524999999999956,-8.094999999999985
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2021,49.58999999999995,45.51899999999997,-4.070999999999977
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2022,41.59999999999994,47.51899999999996,5.919000000000025
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2023,49.58499999999995,45.51899999999997,-4.065999999999981
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2024,45.58499999999995,43.522999999999975,-2.0619999999999763
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2025,45.61499999999995,39.52899999999996,-6.085999999999991
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2026,41.55499999999994,41.514999999999965,-0.03999999999997783
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2027,43.59499999999994,45.526999999999965,1.9320000000000235
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2028,43.61999999999995,39.52299999999996,-4.096999999999987
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2029,43.61499999999995,45.52299999999996,1.9080000000000084
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2030,51.584999999999944,51.52699999999996,-0.05799999999998562
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2031,49.57499999999995,47.52299999999997,-2.0519999999999854
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2032,41.62499999999994,43.51899999999997,1.8940000000000268
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2033,33.519999999999975,41.52699999999997,8.006999999999998
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2034,41.55499999999995,37.51499999999996,-4.039999999999992
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2035,41.60499999999995,37.522999999999975,-4.081999999999972
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2036,49.614999999999945,39.52899999999996,-10.085999999999984
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2037,43.56499999999995,41.52699999999997,-2.0379999999999754
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2038,43.539999999999935,45.526999999999965,1.9870000000000303
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2039,47.57999999999995,45.51899999999996,-2.0609999999999857
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2040,45.59999999999995,41.51899999999997,-4.080999999999982
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2041,47.614999999999945,43.51899999999997,-4.095999999999975
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2042,43.57999999999995,39.52699999999997,-4.052999999999976
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2043,41.614999999999945,45.52299999999996,3.9080000000000155
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2044,45.554999999999936,43.526999999999965,-2.0279999999999703
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2045,47.61499999999995,41.52699999999996,-6.087999999999994
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2046,45.56999999999994,45.526999999999965,-0.042999999999977945
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2047,37.559999999999974,33.52299999999997,-4.037000000000006
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2048,49.559999999999945,47.52299999999996,-2.036999999999985
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2049,45.599999999999945,47.52299999999997,1.9230000000000231
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2050,45.55999999999994,47.526999999999944,1.9670000000000059
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2051,37.53499999999993,37.526999999999965,-0.007999999999967145
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2052,47.58999999999995,45.518999999999956,-2.070999999999991
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2053,39.55999999999995,41.51899999999997,1.9590000000000174
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2054,37.53999999999998,41.51499999999997,3.9749999999999943
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2055,49.59499999999995,49.52499999999995,-0.07000000000000028
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2056,45.599999999999945,39.520999999999965,-6.078999999999979
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2057,39.564999999999955,43.51899999999997,3.954000000000015
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2058,47.58499999999995,49.51499999999996,1.9300000000000068
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2059,41.569999999999986,39.52299999999996,-2.0470000000000255
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2060,39.629999999999974,27.523000000000014,-12.10699999999996
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2061,47.62499999999995,45.52699999999996,-2.097999999999992
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2062,41.56999999999993,43.52699999999997,1.9570000000000434
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2063,39.529999999999944,41.52699999999997,1.9970000000000283
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2064,47.56999999999996,41.518999999999956,-6.051000000000002
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2065,47.60499999999995,37.526999999999965,-10.077999999999982
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2066,43.54999999999995,43.52299999999996,-0.026999999999986812
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2067,41.60499999999994,41.52299999999996,-0.08199999999997942
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2068,45.604999999999954,45.51899999999997,-0.08599999999998431
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2069,49.56999999999994,47.51899999999997,-2.0509999999999735
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2070,45.56999999999995,39.52899999999997,-6.040999999999983
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2071,37.61499999999997,33.51899999999998,-4.095999999999989
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2072,39.52999999999993,47.52299999999997,7.993000000000038
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2073,49.60499999999995,45.51499999999997,-4.089999999999975
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2074,51.61999999999995,45.52299999999996,-6.096999999999987
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2075,37.52499999999994,41.522999999999975,3.998000000000033
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2076,49.62499999999994,45.518999999999956,-4.105999999999987
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2077,43.55999999999995,41.51899999999998,-2.0409999999999755
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2078,37.60499999999995,43.514999999999965,5.910000000000018
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2079,43.57999999999994,41.514999999999965,-2.0649999999999764
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2080,43.60499999999994,41.52699999999997,-2.0779999999999674
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2081,33.579999999999984,43.514999999999965,9.934999999999981
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2082,45.56999999999996,33.52300000000001,-12.046999999999947
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2083,47.61999999999995,41.51899999999997,-6.100999999999978
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2084,43.57999999999994,37.51899999999997,-6.0609999999999715
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2085,47.56999999999995,45.52299999999997,-2.046999999999983
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2086,45.59499999999995,39.514999999999965,-6.079999999999984
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2087,43.544999999999945,49.52299999999997,5.978000000000023
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2088,47.57499999999995,41.522999999999975,-6.051999999999978
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2089,47.57999999999994,47.51499999999995,-0.06499999999999062
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2090,45.574999999999974,41.52099999999996,-4.054000000000016
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2091,41.559999999999945,43.51899999999997,1.9590000000000245
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2092,43.559999999999945,41.52699999999997,-2.032999999999973
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2093,35.56499999999996,41.526999999999965,5.962000000000003
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2094,45.554999999999936,43.52699999999996,-2.0279999999999774
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2095,49.57499999999995,47.52299999999996,-2.0519999999999925
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2096,43.56999999999994,39.52299999999997,-4.046999999999976
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2097,39.57999999999994,41.526999999999965,1.947000000000024
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2098,47.57999999999995,43.51899999999997,-4.060999999999979
+full,C_withA + A + B (extra),ALL SCRIPTED (rule + raster + approach),all-scripted system,2099,45.56999999999995,43.52299999999997,-2.046999999999983

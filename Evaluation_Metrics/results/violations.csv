@@ -1,0 +1,19 @@
+group,policy,n_episodes,seeds,battery_empty_rate,oob_per_1000_steps,low_level_steps_mean
+A,DQN (Agent A),100,2000-2099,0.04,0.0,95.1
+A,raster_low,100,2000-2099,0.0,0.0,123.0
+A,raster_mid,100,2000-2099,1.0,0.0,199.0
+A,random,100,2000-2099,1.0,191.6083916083916,150.15
+B,PPO (Agent B),100,2000-2099,0.0,0.0,3.56
+B,fixed_orbit,100,2000-2099,0.0,0.0,30.0
+B,random,100,2000-2099,0.0,0.0,29.73
+B,scripted_approach (upper bound),100,2000-2099,0.0,0.0,3.52
+C,A2C (Agent C),100,2000-2099,0.0,0.0,91.2
+C,rule_supervisor,100,2000-2099,0.0,0.0,148.39
+C,random,100,2000-2099,0.0,0.0,7.07
+C_withA,A2C (C_withA),100,2000-2099,0.0,0.0,144.0
+C_withA,rule_supervisor (Agent A inside),100,2000-2099,0.0,0.0,140.83
+full,ALL LEARNED (C + A + B),100,2000-2099,0.0,0.0,81.1
+full,ALL SCRIPTED (rule + raster + approach),100,2000-2099,0.0,0.0,148.39
+full,"ablation: C learned, A/B scripted",100,2000-2099,0.0,0.0,91.2
+full,"ablation: rule C, A + B learned",100,2000-2099,0.0,0.0,140.55
+full,C_withA + A + B (extra),100,2000-2099,0.0,0.0,144.0
