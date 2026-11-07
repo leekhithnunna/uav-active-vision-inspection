@@ -1,0 +1,1018 @@
+line,number,traced_to,context
+3,08,team number (Team 08),"**Team 08** - 22AIE401 Reinforcement Learning - Yeseswini (Agent A, DQN), Leekhith (Agent B, PPO; integration and metric"
+9,8,result/constant registry (results/derived_metrics.csv:value),A drone inspects an 8 x 16 grid of bridge-surface cells for cracks. Three cooperating agents share one Gymnasium environ
+9,16,result/constant registry (results/robustness_gap.csv:success_gap),A drone inspects an 8 x 16 grid of bridge-surface cells for cracks. Three cooperating agents share one Gymnasium environ
+13,2000,result/constant registry (py:HELD_SEED0:),- **Held-out bridges:** seeds 2000-2099 (100 episodes per policy and scenario). Training used unseeded vectorised enviro
+13,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),- **Held-out bridges:** seeds 2000-2099 (100 episodes per policy and scenario). Training used unseeded vectorised enviro
+13,1000,result/constant registry (py:METHOD['oob_per']:),- **Held-out bridges:** seeds 2000-2099 (100 episodes per policy and scenario). Training used unseeded vectorised enviro
+15,455,result/constant registry (results/derived_metrics.csv:value),"- **Validation first:** before any new evaluation, every saved result was re-computed on the original seeds with : 455 o"
+15,455,result/constant registry (results/derived_metrics.csv:value),"- **Validation first:** before any new evaluation, every saved result was re-computed on the original seeds with : 455 o"
+15,65,result/constant registry (results/derived_metrics.csv:value),"- **Validation first:** before any new evaluation, every saved result was re-computed on the original seeds with : 455 o"
+15,7,result/constant registry (results/derived_metrics.csv:value),"- **Validation first:** before any new evaluation, every saved result was re-computed on the original seeds with : 455 o"
+15,19,result/constant registry (results/derived_metrics.csv:value),"- **Validation first:** before any new evaluation, every saved result was re-computed on the original seeds with : 455 o"
+15,1,result/constant registry (py:METHOD['band_std']:),"- **Validation first:** before any new evaluation, every saved result was re-computed on the original seeds with : 455 o"
+15,0.00,result/constant registry (results/robustness_gap.csv:return_gap),"- **Validation first:** before any new evaluation, every saved result was re-computed on the original seeds with : 455 o"
+16,0.32,result/constant registry (results/robustness_gap.csv:return_gap),"- **Detectors:** analytic (default, success threshold mean uncertainty <= 0.32) and real-image DeepCrack cache (calibrat"
+16,0.282,"result/constant registry (py:np.load(CACHE)[""success_unc""]:)","- **Detectors:** analytic (default, success threshold mean uncertainty <= 0.32) and real-image DeepCrack cache (calibrat"
+17,1,result/constant registry (py:METHOD['band_std']:),"- **Training seeds:** every original run used training seed 0. Extra seeds (1, 2, 3) were trained for the multi-seed ana"
+17,2,result/constant registry (py:ie.W_DEF_C:),"- **Training seeds:** every original run used training seed 0. Extra seeds (1, 2, 3) were trained for the multi-seed ana"
+17,3,result/constant registry (results/scenario_summary.csv:success_rate),"- **Training seeds:** every original run used training seed 0. Extra seeds (1, 2, 3) were trained for the multi-seed ana"
+19,13400,result/constant registry (results/derived_metrics.csv:value),- **Scale:** 13400 evaluation episodes in total over 8 scenarios.
+19,8,result/constant registry (results/derived_metrics.csv:value),- **Scale:** 13400 evaluation episodes in total over 8 scenarios.
+27,200,result/constant registry (py:ie.MAX_STEPS['navigate']:),| A (navigate) | 200 steps | coverage >= 0.95 and mean uncertainty <= threshold |
+27,0.95,result/constant registry (results/summary_A.csv:pos_coverage_mean),| A (navigate) | 200 steps | coverage >= 0.95 and mean uncertainty <= threshold |
+28,30,result/constant registry (py:json.load(open(RUN_DIRS['A'] / 'hyperparams.json'))['exploration_fraction']:),| B (refine) | 30 steps | best view reached (view quality q = 4) |
+28,4,result/constant registry (results/robustness_gap.csv:success_gap),| B (refine) | 30 steps | best view reached (view quality q = 4) |
+29,40,result/constant registry (py:ie.MAX_STEPS['supervise']:),| C (supervise / full) | 40 decisions | RETURN chosen with battery > 0 (safe return) |
+29,0,result/constant registry (results/sensitivity.csv:ent_coef),| C (supervise / full) | 40 decisions | RETURN chosen with battery > 0 (safe return) |
+44,95,result/constant registry (py:METHOD['ci_level']:),| 95% confidence interval |  |
+60,95,result/constant registry (py:METHOD['ci_level']:),**Metric.** Success rate (with 95% CI).
+64,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Success rate on held-out bridges (n = 100 episodes per policy, held-out seeds 2000-2099).*"
+64,2000,result/constant registry (py:HELD_SEED0:),"* . Success rate on held-out bridges (n = 100 episodes per policy, held-out seeds 2000-2099).*"
+66,95,result/constant registry (py:METHOD['ci_level']:),| Group | Policy | Success rate | 95% CI | Successful episodes |
+68,96,result/constant registry (results/summary_S0_all.csv:success_rate),"| Agent A (DQN, navigate) | DQN (Agent A) | 96% | ±4 pp | 96 |"
+68,4,result/constant registry (results/robustness_gap.csv:success_gap),"| Agent A (DQN, navigate) | DQN (Agent A) | 96% | ±4 pp | 96 |"
+68,96,result/constant registry (results/summary_S0_all.csv:success_rate),"| Agent A (DQN, navigate) | DQN (Agent A) | 96% | ±4 pp | 96 |"
+69,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent A (DQN, navigate) | raster_low | 100% | ±0 pp | 100 |"
+69,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent A (DQN, navigate) | raster_low | 100% | ±0 pp | 100 |"
+69,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent A (DQN, navigate) | raster_low | 100% | ±0 pp | 100 |"
+70,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent A (DQN, navigate) | raster_mid | 0% | ±0 pp | 0 |"
+70,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent A (DQN, navigate) | raster_mid | 0% | ±0 pp | 0 |"
+70,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent A (DQN, navigate) | raster_mid | 0% | ±0 pp | 0 |"
+71,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent A (DQN, navigate) | random | 0% | ±0 pp | 0 |"
+71,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent A (DQN, navigate) | random | 0% | ±0 pp | 0 |"
+71,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent A (DQN, navigate) | random | 0% | ±0 pp | 0 |"
+72,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent B (PPO, refine) | PPO (Agent B) | 100% | ±0 pp | 100 |"
+72,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent B (PPO, refine) | PPO (Agent B) | 100% | ±0 pp | 100 |"
+72,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent B (PPO, refine) | PPO (Agent B) | 100% | ±0 pp | 100 |"
+73,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent B (PPO, refine) | fixed_orbit | 0% | ±0 pp | 0 |"
+73,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent B (PPO, refine) | fixed_orbit | 0% | ±0 pp | 0 |"
+73,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent B (PPO, refine) | fixed_orbit | 0% | ±0 pp | 0 |"
+74,2,result/constant registry (py:ie.W_DEF_C:),"| Agent B (PPO, refine) | random | 2% | ±3 pp | 2 |"
+74,3,result/constant registry (results/scenario_summary.csv:success_rate),"| Agent B (PPO, refine) | random | 2% | ±3 pp | 2 |"
+74,2,result/constant registry (py:ie.W_DEF_C:),"| Agent B (PPO, refine) | random | 2% | ±3 pp | 2 |"
+75,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 100% | ±0 pp | 100 |"
+75,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 100% | ±0 pp | 100 |"
+75,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 100% | ±0 pp | 100 |"
+76,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent C (A2C, supervise) | A2C (Agent C) | 100% | ±0 pp | 100 |"
+76,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent C (A2C, supervise) | A2C (Agent C) | 100% | ±0 pp | 100 |"
+76,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent C (A2C, supervise) | A2C (Agent C) | 100% | ±0 pp | 100 |"
+77,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent C (A2C, supervise) | rule_supervisor | 100% | ±0 pp | 100 |"
+77,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent C (A2C, supervise) | rule_supervisor | 100% | ±0 pp | 100 |"
+77,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent C (A2C, supervise) | rule_supervisor | 100% | ±0 pp | 100 |"
+78,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent C (A2C, supervise) | random | 100% | ±0 pp | 100 |"
+78,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent C (A2C, supervise) | random | 100% | ±0 pp | 100 |"
+78,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent C (A2C, supervise) | random | 100% | ±0 pp | 100 |"
+79,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| Agent C trained with Agent A inside | A2C (C_withA) | 100% | ±0 pp | 100 |
+79,0,result/constant registry (results/sensitivity.csv:ent_coef),| Agent C trained with Agent A inside | A2C (C_withA) | 100% | ±0 pp | 100 |
+79,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| Agent C trained with Agent A inside | A2C (C_withA) | 100% | ±0 pp | 100 |
+80,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| Agent C trained with Agent A inside | rule_supervisor (Agent A inside) | 100% | ±0 pp | 100 |
+80,0,result/constant registry (results/sensitivity.csv:ent_coef),| Agent C trained with Agent A inside | rule_supervisor (Agent A inside) | 100% | ±0 pp | 100 |
+80,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| Agent C trained with Agent A inside | rule_supervisor (Agent A inside) | 100% | ±0 pp | 100 |
+81,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| Integration (full mode) | ALL LEARNED (C + A + B) | 100% | ±0 pp | 100 |
+81,0,result/constant registry (results/sensitivity.csv:ent_coef),| Integration (full mode) | ALL LEARNED (C + A + B) | 100% | ±0 pp | 100 |
+81,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| Integration (full mode) | ALL LEARNED (C + A + B) | 100% | ±0 pp | 100 |
+82,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| Integration (full mode) | ALL SCRIPTED (rule + raster + approach) | 100% | ±0 pp | 100 |
+82,0,result/constant registry (results/sensitivity.csv:ent_coef),| Integration (full mode) | ALL SCRIPTED (rule + raster + approach) | 100% | ±0 pp | 100 |
+82,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| Integration (full mode) | ALL SCRIPTED (rule + raster + approach) | 100% | ±0 pp | 100 |
+83,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Integration (full mode) | ablation: C learned, A/B scripted | 100% | ±0 pp | 100 |"
+83,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Integration (full mode) | ablation: C learned, A/B scripted | 100% | ±0 pp | 100 |"
+83,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Integration (full mode) | ablation: C learned, A/B scripted | 100% | ±0 pp | 100 |"
+84,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Integration (full mode) | ablation: rule C, A + B learned | 100% | ±0 pp | 100 |"
+84,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Integration (full mode) | ablation: rule C, A + B learned | 100% | ±0 pp | 100 |"
+84,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Integration (full mode) | ablation: rule C, A + B learned | 100% | ±0 pp | 100 |"
+85,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| Integration (full mode) | C_withA + A + B (extra) | 100% | ±0 pp | 100 |
+85,0,result/constant registry (results/sensitivity.csv:ent_coef),| Integration (full mode) | C_withA + A + B (extra) | 100% | ±0 pp | 100 |
+85,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| Integration (full mode) | C_withA + A + B (extra) | 100% | ±0 pp | 100 |
+91,96,result/constant registry (results/summary_S0_all.csv:success_rate),"**Insight.** Agent A (DQN) succeeds on 96% of the unseen bridges, against 100% for the dense raster. On the 20 original "
+91,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"**Insight.** Agent A (DQN) succeeds on 96% of the unseen bridges, against 100% for the dense raster. On the 20 original "
+91,20,result/constant registry (results/scenario_summary.csv:success_rate),"**Insight.** Agent A (DQN) succeeds on 96% of the unseen bridges, against 100% for the dense raster. On the 20 original "
+91,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"**Insight.** Agent A (DQN) succeeds on 96% of the unseen bridges, against 100% for the dense raster. On the 20 original "
+91,4,result/constant registry (results/robustness_gap.csv:success_gap),"**Insight.** Agent A (DQN) succeeds on 96% of the unseen bridges, against 100% for the dense raster. On the 20 original "
+91,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"**Insight.** Agent A (DQN) succeeds on 96% of the unseen bridges, against 100% for the dense raster. On the 20 original "
+91,0,result/constant registry (results/sensitivity.csv:ent_coef),"**Insight.** Agent A (DQN) succeeds on 96% of the unseen bridges, against 100% for the dense raster. On the 20 original "
+91,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"**Insight.** Agent A (DQN) succeeds on 96% of the unseen bridges, against 100% for the dense raster. On the 20 original "
+93,1000,result/constant registry (py:METHOD['oob_per']:),"**Video evidence.**  (  nominal, training-eval bridge seed 1000);  (  nominal, held-out bridge seed 2005);  (  nominal ("
+93,2005,video clip definition (make_videos.CLIPS),"**Video evidence.**  (  nominal, training-eval bridge seed 1000);  (  nominal, held-out bridge seed 2005);  (  nominal ("
+93,2000,result/constant registry (py:HELD_SEED0:),"**Video evidence.**  (  nominal, training-eval bridge seed 1000);  (  nominal, held-out bridge seed 2005);  (  nominal ("
+93,2000,result/constant registry (py:HELD_SEED0:),"**Video evidence.**  (  nominal, training-eval bridge seed 1000);  (  nominal, held-out bridge seed 2005);  (  nominal ("
+99,95,result/constant registry (py:METHOD['ci_level']:),"**Metric.** Episode return (mean, std, median, 95% CI); learning curves with a 50-episode moving average and ±1 std band"
+99,50,result/constant registry (py:METHOD['ma_window']:),"**Metric.** Episode return (mean, std, median, 95% CI); learning curves with a 50-episode moving average and ±1 std band"
+99,1,result/constant registry (py:METHOD['band_std']:),"**Metric.** Episode return (mean, std, median, 95% CI); learning curves with a 50-episode moving average and ±1 std band"
+103,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Held-out return (n = 100 episodes per policy, held-out seeds 2000-2099).*"
+103,2000,result/constant registry (py:HELD_SEED0:),"* . Held-out return (n = 100 episodes per policy, held-out seeds 2000-2099).*"
+105,95,result/constant registry (py:METHOD['ci_level']:),| Group | Policy | Mean return | Std | Median | 95% CI |
+107,33.65,result/constant registry (results/sensitivity.csv:heldout_return),"| Agent A (DQN, navigate) | DQN (Agent A) | 33.65 | 6.50 | 36.30 | ±1.29 |"
+107,6.50,result/constant registry (results/summary_S0_all.csv:return_std),"| Agent A (DQN, navigate) | DQN (Agent A) | 33.65 | 6.50 | 36.30 | ±1.29 |"
+107,36.30,result/constant registry (results/summary_S0_all.csv:return_median),"| Agent A (DQN, navigate) | DQN (Agent A) | 33.65 | 6.50 | 36.30 | ±1.29 |"
+107,1.29,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| Agent A (DQN, navigate) | DQN (Agent A) | 33.65 | 6.50 | 36.30 | ±1.29 |"
+108,35.46,result/constant registry (results/scenario_summary.csv:return_mean),"| Agent A (DQN, navigate) | raster_low | 35.46 | 0.09 | 35.46 | ±0.02 |"
+108,0.09,result/constant registry (results/robustness_gap.csv:return_gap),"| Agent A (DQN, navigate) | raster_low | 35.46 | 0.09 | 35.46 | ±0.02 |"
+108,35.46,result/constant registry (results/scenario_summary.csv:return_mean),"| Agent A (DQN, navigate) | raster_low | 35.46 | 0.09 | 35.46 | ±0.02 |"
+108,0.02,result/constant registry (results/robustness_gap.csv:return_gap),"| Agent A (DQN, navigate) | raster_low | 35.46 | 0.09 | 35.46 | ±0.02 |"
+109,6.23,result/constant registry (results/summary_S0_all.csv:return_median),"| Agent A (DQN, navigate) | raster_mid | 6.23 | 0.08 | 6.23 | ±0.02 |"
+109,0.08,result/constant registry (results/summary_S0_all.csv:return_std),"| Agent A (DQN, navigate) | raster_mid | 6.23 | 0.08 | 6.23 | ±0.02 |"
+109,6.23,result/constant registry (results/summary_S0_all.csv:return_median),"| Agent A (DQN, navigate) | raster_mid | 6.23 | 0.08 | 6.23 | ±0.02 |"
+109,0.02,result/constant registry (results/robustness_gap.csv:return_gap),"| Agent A (DQN, navigate) | raster_mid | 6.23 | 0.08 | 6.23 | ±0.02 |"
+110,9.21,result/constant registry (results/summary_S0_all.csv:return_std),"| Agent A (DQN, navigate) | random | -27.54 | 9.21 | -27.46 | ±1.83 |"
+110,1.83,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| Agent A (DQN, navigate) | random | -27.54 | 9.21 | -27.46 | ±1.83 |"
+111,5.67,result/constant registry (results/sensitivity.csv:heldout_return),"| Agent B (PPO, refine) | PPO (Agent B) | 5.67 | 0.16 | 5.65 | ±0.03 |"
+111,0.16,result/constant registry (results/summary_S0_all.csv:return_std),"| Agent B (PPO, refine) | PPO (Agent B) | 5.67 | 0.16 | 5.65 | ±0.03 |"
+111,5.65,result/constant registry (results/summary_S0_all.csv:return_median),"| Agent B (PPO, refine) | PPO (Agent B) | 5.67 | 0.16 | 5.65 | ±0.03 |"
+111,0.03,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| Agent B (PPO, refine) | PPO (Agent B) | 5.67 | 0.16 | 5.65 | ±0.03 |"
+112,0.10,result/constant registry (py:SCENARIOS['S3_noise0.10']['noise']:),"| Agent B (PPO, refine) | fixed_orbit | -2.27 | 0.10 | -2.32 | ±0.02 |"
+112,0.02,result/constant registry (results/robustness_gap.csv:return_gap),"| Agent B (PPO, refine) | fixed_orbit | -2.27 | 0.10 | -2.32 | ±0.02 |"
+113,1.09,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| Agent B (PPO, refine) | random | -2.00 | 1.09 | -2.18 | ±0.22 |"
+113,0.22,result/constant registry (results/summary_S0_all.csv:regret_mean),"| Agent B (PPO, refine) | random | -2.00 | 1.09 | -2.18 | ±0.22 |"
+114,5.68,result/constant registry (results/sensitivity.csv:heldout_return),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 5.68 | 0.16 | 5.66 | ±0.03 |"
+114,0.16,result/constant registry (results/summary_S0_all.csv:return_std),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 5.68 | 0.16 | 5.66 | ±0.03 |"
+114,5.66,result/constant registry (results/summary_S0_all.csv:return_median),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 5.68 | 0.16 | 5.66 | ±0.03 |"
+114,0.03,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 5.68 | 0.16 | 5.66 | ±0.03 |"
+115,40.02,result/constant registry (results/sensitivity.csv:heldout_return),"| Agent C (A2C, supervise) | A2C (Agent C) | 40.02 | 4.43 | 39.74 | ±0.88 |"
+115,4.43,result/constant registry (results/summary_S0_all.csv:return_std),"| Agent C (A2C, supervise) | A2C (Agent C) | 40.02 | 4.43 | 39.74 | ±0.88 |"
+115,39.74,result/constant registry (results/summary_S0_all.csv:return_median),"| Agent C (A2C, supervise) | A2C (Agent C) | 40.02 | 4.43 | 39.74 | ±0.88 |"
+115,0.88,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| Agent C (A2C, supervise) | A2C (Agent C) | 40.02 | 4.43 | 39.74 | ±0.88 |"
+116,42.62,result/constant registry (results/summary_S0_all.csv:return_mean),"| Agent C (A2C, supervise) | rule_supervisor | 42.62 | 3.91 | 43.51 | ±0.78 |"
+116,3.91,result/constant registry (results/summary_S0_all.csv:return_std),"| Agent C (A2C, supervise) | rule_supervisor | 42.62 | 3.91 | 43.51 | ±0.78 |"
+116,43.51,result/constant registry (results/summary_S0_all.csv:return_median),"| Agent C (A2C, supervise) | rule_supervisor | 42.62 | 3.91 | 43.51 | ±0.78 |"
+116,0.78,result/constant registry (results/summary_S0_all.csv:return_ci95),"| Agent C (A2C, supervise) | rule_supervisor | 42.62 | 3.91 | 43.51 | ±0.78 |"
+117,3.55,result/constant registry (results/summary_S0_all.csv:return_mean),"| Agent C (A2C, supervise) | random | 3.55 | 6.20 | 0.00 | ±1.23 |"
+117,6.20,result/constant registry (results/summary_S0_all.csv:return_std),"| Agent C (A2C, supervise) | random | 3.55 | 6.20 | 0.00 | ±1.23 |"
+117,0.00,result/constant registry (results/robustness_gap.csv:return_gap),"| Agent C (A2C, supervise) | random | 3.55 | 6.20 | 0.00 | ±1.23 |"
+117,1.23,result/constant registry (results/summary_S0_all.csv:return_ci95),"| Agent C (A2C, supervise) | random | 3.55 | 6.20 | 0.00 | ±1.23 |"
+118,44.50,result/constant registry (results/summary_S0_all.csv:return_mean),| Agent C trained with Agent A inside | A2C (C_withA) | 44.50 | 4.11 | 45.56 | ±0.81 |
+118,4.11,result/constant registry (results/summary_S0_all.csv:return_std),| Agent C trained with Agent A inside | A2C (C_withA) | 44.50 | 4.11 | 45.56 | ±0.81 |
+118,45.56,result/constant registry (results/summary_S0_all.csv:return_median),| Agent C trained with Agent A inside | A2C (C_withA) | 44.50 | 4.11 | 45.56 | ±0.81 |
+118,0.81,result/constant registry (results/summary_S0_all.csv:regret_ci95),| Agent C trained with Agent A inside | A2C (C_withA) | 44.50 | 4.11 | 45.56 | ±0.81 |
+119,44.72,result/constant registry (results/summary_S0_all.csv:return_mean),| Agent C trained with Agent A inside | rule_supervisor (Agent A inside) | 44.72 | 3.60 | 45.53 | ±0.71 |
+119,3.60,result/constant registry (results/summary_S0_all.csv:return_std),| Agent C trained with Agent A inside | rule_supervisor (Agent A inside) | 44.72 | 3.60 | 45.53 | ±0.71 |
+119,45.53,result/constant registry (results/summary_S0_all.csv:return_median),| Agent C trained with Agent A inside | rule_supervisor (Agent A inside) | 44.72 | 3.60 | 45.53 | ±0.71 |
+119,0.71,result/constant registry (results/summary_S0_all.csv:return_ci95),| Agent C trained with Agent A inside | rule_supervisor (Agent A inside) | 44.72 | 3.60 | 45.53 | ±0.71 |
+120,41.34,result/constant registry (results/summary_S0_all.csv:return_mean),| Integration (full mode) | ALL LEARNED (C + A + B) | 41.34 | 4.01 | 41.75 | ±0.80 |
+120,4.01,result/constant registry (results/summary_S0_all.csv:return_std),| Integration (full mode) | ALL LEARNED (C + A + B) | 41.34 | 4.01 | 41.75 | ±0.80 |
+120,41.75,result/constant registry (results/summary_S0_all.csv:return_median),| Integration (full mode) | ALL LEARNED (C + A + B) | 41.34 | 4.01 | 41.75 | ±0.80 |
+120,0.80,result/constant registry (results/summary_S0_all.csv:regret_ci95),| Integration (full mode) | ALL LEARNED (C + A + B) | 41.34 | 4.01 | 41.75 | ±0.80 |
+121,42.62,result/constant registry (results/summary_S0_all.csv:return_mean),| Integration (full mode) | ALL SCRIPTED (rule + raster + approach) | 42.62 | 3.91 | 43.51 | ±0.78 |
+121,3.91,result/constant registry (results/summary_S0_all.csv:return_std),| Integration (full mode) | ALL SCRIPTED (rule + raster + approach) | 42.62 | 3.91 | 43.51 | ±0.78 |
+121,43.51,result/constant registry (results/summary_S0_all.csv:return_median),| Integration (full mode) | ALL SCRIPTED (rule + raster + approach) | 42.62 | 3.91 | 43.51 | ±0.78 |
+121,0.78,result/constant registry (results/summary_S0_all.csv:return_ci95),| Integration (full mode) | ALL SCRIPTED (rule + raster + approach) | 42.62 | 3.91 | 43.51 | ±0.78 |
+122,40.02,result/constant registry (results/sensitivity.csv:heldout_return),"| Integration (full mode) | ablation: C learned, A/B scripted | 40.02 | 4.43 | 39.74 | ±0.88 |"
+122,4.43,result/constant registry (results/summary_S0_all.csv:return_std),"| Integration (full mode) | ablation: C learned, A/B scripted | 40.02 | 4.43 | 39.74 | ±0.88 |"
+122,39.74,result/constant registry (results/summary_S0_all.csv:return_median),"| Integration (full mode) | ablation: C learned, A/B scripted | 40.02 | 4.43 | 39.74 | ±0.88 |"
+122,0.88,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| Integration (full mode) | ablation: C learned, A/B scripted | 40.02 | 4.43 | 39.74 | ±0.88 |"
+123,44.50,result/constant registry (results/summary_S0_all.csv:return_mean),"| Integration (full mode) | ablation: rule C, A + B learned | 44.50 | 3.61 | 45.52 | ±0.72 |"
+123,3.61,result/constant registry (results/summary_S0_all.csv:return_std),"| Integration (full mode) | ablation: rule C, A + B learned | 44.50 | 3.61 | 45.52 | ±0.72 |"
+123,45.52,result/constant registry (results/summary_S0_all.csv:return_median),"| Integration (full mode) | ablation: rule C, A + B learned | 44.50 | 3.61 | 45.52 | ±0.72 |"
+123,0.72,result/constant registry (results/summary_S0_all.csv:return_ci95),"| Integration (full mode) | ablation: rule C, A + B learned | 44.50 | 3.61 | 45.52 | ±0.72 |"
+124,44.50,result/constant registry (results/summary_S0_all.csv:return_mean),| Integration (full mode) | C_withA + A + B (extra) | 44.50 | 4.11 | 45.56 | ±0.81 |
+124,4.11,result/constant registry (results/summary_S0_all.csv:return_std),| Integration (full mode) | C_withA + A + B (extra) | 44.50 | 4.11 | 45.56 | ±0.81 |
+124,45.56,result/constant registry (results/summary_S0_all.csv:return_median),| Integration (full mode) | C_withA + A + B (extra) | 44.50 | 4.11 | 45.56 | ±0.81 |
+124,0.81,result/constant registry (results/summary_S0_all.csv:regret_ci95),| Integration (full mode) | C_withA + A + B (extra) | 44.50 | 4.11 | 45.56 | ±0.81 |
+128,50,result/constant registry (py:METHOD['ma_window']:),"* . Learning curves (raw return, 50-episode moving average with ±1 std band, eval return, success rate, episode length)."
+128,1,result/constant registry (py:METHOD['band_std']:),"* . Learning curves (raw return, 50-episode moving average with ±1 std band, eval return, success rate, episode length)."
+132,95,result/constant registry (py:METHOD['ci_level']:),"* . Mean held-out return with 95% CI, learned agents vs baselines.*"
+134,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),**Insight.** All three learning curves rise and flatten. PPO converges fastest: its evaluation success first reaches 100
+134,5000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),**Insight.** All three learning curves rise and flatten. PPO converges fastest: its evaluation success first reaches 100
+134,5.67,result/constant registry (results/sensitivity.csv:heldout_return),**Insight.** All three learning curves rise and flatten. PPO converges fastest: its evaluation success first reaches 100
+134,5.68,result/constant registry (results/sensitivity.csv:heldout_return),**Insight.** All three learning curves rise and flatten. PPO converges fastest: its evaluation success first reaches 100
+134,40.02,result/constant registry (results/sensitivity.csv:heldout_return),**Insight.** All three learning curves rise and flatten. PPO converges fastest: its evaluation success first reaches 100
+134,42.62,result/constant registry (results/summary_S0_all.csv:return_mean),**Insight.** All three learning curves rise and flatten. PPO converges fastest: its evaluation success first reaches 100
+134,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),**Insight.** All three learning curves rise and flatten. PPO converges fastest: its evaluation success first reaches 100
+134,140000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),**Insight.** All three learning curves rise and flatten. PPO converges fastest: its evaluation success first reaches 100
+134,36.89,result/constant registry (results/sample_efficiency.csv:best_eval_return),**Insight.** All three learning curves rise and flatten. PPO converges fastest: its evaluation success first reaches 100
+134,33.65,result/constant registry (results/sensitivity.csv:heldout_return),**Insight.** All three learning curves rise and flatten. PPO converges fastest: its evaluation success first reaches 100
+134,35.46,result/constant registry (results/scenario_summary.csv:return_mean),**Insight.** All three learning curves rise and flatten. PPO converges fastest: its evaluation success first reaches 100
+136,1000,result/constant registry (py:METHOD['oob_per']:),"**Video evidence.**  (  nominal, training-eval bridge seed 1000)."
+146,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Efficiency on held-out bridges (n = 100 episodes per policy, held-out seeds 2000-2099). Length is in steps for A/B a"
+146,2000,result/constant registry (py:HELD_SEED0:),"* . Efficiency on held-out bridges (n = 100 episodes per policy, held-out seeds 2000-2099). Length is in steps for A/B a"
+150,91.2,result/constant registry (results/summary_S0_all.csv:low_level_steps_mean),"| Agent A (DQN, navigate) | DQN (Agent A) | 91.2 | 188.5 | 91.2 | 0.531 |"
+150,188.5,result/constant registry (results/summary_S0_all.csv:steps_fail_mean),"| Agent A (DQN, navigate) | DQN (Agent A) | 91.2 | 188.5 | 91.2 | 0.531 |"
+150,91.2,result/constant registry (results/summary_S0_all.csv:low_level_steps_mean),"| Agent A (DQN, navigate) | DQN (Agent A) | 91.2 | 188.5 | 91.2 | 0.531 |"
+150,0.531,result/constant registry (results/summary_S0_all.csv:energy_used_mean),"| Agent A (DQN, navigate) | DQN (Agent A) | 91.2 | 188.5 | 91.2 | 0.531 |"
+151,123.0,result/constant registry (results/summary_S0_all.csv:steps_success_mean),"| Agent A (DQN, navigate) | raster_low | 123.0 | - | 123.0 | 0.625 |"
+151,123.0,result/constant registry (results/summary_S0_all.csv:steps_success_mean),"| Agent A (DQN, navigate) | raster_low | 123.0 | - | 123.0 | 0.625 |"
+151,0.625,result/constant registry (results/summary_S0_all.csv:energy_used_mean),"| Agent A (DQN, navigate) | raster_low | 123.0 | - | 123.0 | 0.625 |"
+152,199.0,result/constant registry (results/summary_S0_all.csv:steps_fail_mean),"| Agent A (DQN, navigate) | raster_mid | - | 199.0 | - | 1.000 |"
+152,1.000,result/constant registry (results/summary_A.csv:coverage_mean),"| Agent A (DQN, navigate) | raster_mid | - | 199.0 | - | 1.000 |"
+153,150.2,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent A (DQN, navigate) | random | - | 150.2 | - | 1.001 |"
+153,1.001,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent A (DQN, navigate) | random | - | 150.2 | - | 1.001 |"
+154,3.6,result/constant registry (results/sensitivity.csv:heldout_steps),"| Agent B (PPO, refine) | PPO (Agent B) | 3.6 | - | 3.6 | 0.028 |"
+154,3.6,result/constant registry (results/sensitivity.csv:heldout_steps),"| Agent B (PPO, refine) | PPO (Agent B) | 3.6 | - | 3.6 | 0.028 |"
+154,0.028,result/constant registry (results/summary_S0_all.csv:energy_used_mean),"| Agent B (PPO, refine) | PPO (Agent B) | 3.6 | - | 3.6 | 0.028 |"
+155,30.0,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent B (PPO, refine) | fixed_orbit | - | 30.0 | - | 0.240 |"
+155,0.240,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent B (PPO, refine) | fixed_orbit | - | 30.0 | - | 0.240 |"
+156,16.5,result/constant registry (results/summary_S0_all.csv:time_to_goal_mean),"| Agent B (PPO, refine) | random | 16.5 | 30.0 | 16.5 | 0.238 |"
+156,30.0,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent B (PPO, refine) | random | 16.5 | 30.0 | 16.5 | 0.238 |"
+156,16.5,result/constant registry (results/summary_S0_all.csv:time_to_goal_mean),"| Agent B (PPO, refine) | random | 16.5 | 30.0 | 16.5 | 0.238 |"
+156,0.238,result/constant registry (results/summary_S0_all.csv:energy_used_mean),"| Agent B (PPO, refine) | random | 16.5 | 30.0 | 16.5 | 0.238 |"
+157,3.5,result/constant registry (results/sensitivity.csv:heldout_steps),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 3.5 | - | 3.5 | 0.028 |"
+157,3.5,result/constant registry (results/sensitivity.csv:heldout_steps),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 3.5 | - | 3.5 | 0.028 |"
+157,0.028,result/constant registry (results/summary_S0_all.csv:energy_used_mean),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 3.5 | - | 3.5 | 0.028 |"
+158,19.2,result/constant registry (results/sensitivity.csv:heldout_steps),"| Agent C (A2C, supervise) | A2C (Agent C) | 19.2 | - | 91.2 | 0.513 |"
+158,91.2,result/constant registry (results/summary_S0_all.csv:low_level_steps_mean),"| Agent C (A2C, supervise) | A2C (Agent C) | 19.2 | - | 91.2 | 0.513 |"
+158,0.513,result/constant registry (results/summary_S0_all.csv:energy_used_mean),"| Agent C (A2C, supervise) | A2C (Agent C) | 19.2 | - | 91.2 | 0.513 |"
+159,33.7,result/constant registry (results/summary_S0_all.csv:steps_mean),"| Agent C (A2C, supervise) | rule_supervisor | 33.7 | - | 148.4 | 0.956 |"
+159,148.4,result/constant registry (results/summary_S0_all.csv:low_level_steps_mean),"| Agent C (A2C, supervise) | rule_supervisor | 33.7 | - | 148.4 | 0.956 |"
+159,0.956,result/constant registry (results/summary_S0_all.csv:energy_used_mean),"| Agent C (A2C, supervise) | rule_supervisor | 33.7 | - | 148.4 | 0.956 |"
+160,2.6,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent C (A2C, supervise) | random | 2.6 | - | 7.1 | 0.062 |"
+160,7.1,result/constant registry (results/summary_S0_all.csv:time_to_goal_mean),"| Agent C (A2C, supervise) | random | 2.6 | - | 7.1 | 0.062 |"
+160,0.062,result/constant registry (results/summary_S0_all.csv:energy_used_mean),"| Agent C (A2C, supervise) | random | 2.6 | - | 7.1 | 0.062 |"
+161,29.8,result/constant registry (results/summary_S0_all.csv:steps_mean),| Agent C trained with Agent A inside | A2C (C_withA) | 29.8 | - | 144.0 | 0.835 |
+161,144.0,result/constant registry (results/summary_S0_all.csv:low_level_steps_mean),| Agent C trained with Agent A inside | A2C (C_withA) | 29.8 | - | 144.0 | 0.835 |
+161,0.835,result/constant registry (results/summary_S0_all.csv:energy_used_mean),| Agent C trained with Agent A inside | A2C (C_withA) | 29.8 | - | 144.0 | 0.835 |
+162,32.1,result/constant registry (results/summary_S0_all.csv:steps_success_mean),| Agent C trained with Agent A inside | rule_supervisor (Agent A inside) | 32.1 | - | 140.8 | 0.922 |
+162,140.8,result/constant registry (results/summary_S0_all.csv:time_to_goal_mean),| Agent C trained with Agent A inside | rule_supervisor (Agent A inside) | 32.1 | - | 140.8 | 0.922 |
+162,0.922,result/constant registry (results/summary_S0_all.csv:energy_used_mean),| Agent C trained with Agent A inside | rule_supervisor (Agent A inside) | 32.1 | - | 140.8 | 0.922 |
+164,0,result/constant registry (results/sensitivity.csv:ent_coef),"* . Sample efficiency and training time (from training logs, training seed 0; each eval point is the EvalCallback mean o"
+166,80,result/constant registry (results/scenario_summary.csv:success_rate),"| Run | Training steps | Steps to 80% eval success | Steps to 100% eval success | Training time (min, Colab) |"
+166,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Run | Training steps | Steps to 80% eval success | Steps to 100% eval success | Training time (min, Colab) |"
+168,200000,result/constant registry (results/sensitivity.csv:steps_trained),"| A | 200,000 | 100,000 | 140,000 | 5.7 |"
+168,100000,result/constant registry (results/sensitivity.csv:steps_trained),"| A | 200,000 | 100,000 | 140,000 | 5.7 |"
+168,140000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),"| A | 200,000 | 100,000 | 140,000 | 5.7 |"
+168,5.7,result/constant registry (results/sample_efficiency.csv:train_minutes),"| A | 200,000 | 100,000 | 140,000 | 5.7 |"
+169,500000,result/constant registry (results/sample_efficiency.csv:steps_trained),"| A_learned | 500,000 | never | never | 20.4 |"
+169,20.4,result/constant registry (results/sample_efficiency.csv:train_minutes),"| A_learned | 500,000 | never | never | 20.4 |"
+170,100000,result/constant registry (results/sensitivity.csv:steps_trained),"| B | 100,000 | 5,000 | 5,000 | 2.1 |"
+170,5000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),"| B | 100,000 | 5,000 | 5,000 | 2.1 |"
+170,5000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),"| B | 100,000 | 5,000 | 5,000 | 2.1 |"
+170,2.1,result/constant registry (results/sample_efficiency.csv:train_minutes),"| B | 100,000 | 5,000 | 5,000 | 2.1 |"
+171,100000,result/constant registry (results/sensitivity.csv:steps_trained),"| B_learned | 100,000 | 5,000 | 10,000 | 2.1 |"
+171,5000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),"| B_learned | 100,000 | 5,000 | 10,000 | 2.1 |"
+171,10000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),"| B_learned | 100,000 | 5,000 | 10,000 | 2.1 |"
+171,2.1,result/constant registry (results/sample_efficiency.csv:train_minutes),"| B_learned | 100,000 | 5,000 | 10,000 | 2.1 |"
+172,100000,result/constant registry (results/sensitivity.csv:steps_trained),"| C | 100,000 | 10,000 | 10,000 | 3.5 |"
+172,10000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),"| C | 100,000 | 10,000 | 10,000 | 3.5 |"
+172,10000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),"| C | 100,000 | 10,000 | 10,000 | 3.5 |"
+172,3.5,result/constant registry (results/sensitivity.csv:heldout_steps),"| C | 100,000 | 10,000 | 10,000 | 3.5 |"
+173,100000,result/constant registry (results/sensitivity.csv:steps_trained),"| C_learned | 100,000 | 10,000 | 10,000 | 3.8 |"
+173,10000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),"| C_learned | 100,000 | 10,000 | 10,000 | 3.8 |"
+173,10000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),"| C_learned | 100,000 | 10,000 | 10,000 | 3.8 |"
+173,3.8,result/constant registry (results/sample_efficiency.csv:train_minutes),"| C_learned | 100,000 | 10,000 | 10,000 | 3.8 |"
+174,100000,result/constant registry (results/sensitivity.csv:steps_trained),"| C_withA | 100,000 | 20,000 | 30,000 | 7.5 |"
+174,20000,result/constant registry (results/sample_efficiency.csv:steps_to_80pct_success),"| C_withA | 100,000 | 20,000 | 30,000 | 7.5 |"
+174,30000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),"| C_withA | 100,000 | 20,000 | 30,000 | 7.5 |"
+174,7.5,result/constant registry (results/sample_efficiency.csv:train_minutes),"| C_withA | 100,000 | 20,000 | 30,000 | 7.5 |"
+176,1000,result/constant registry (py:METHOD['oob_per']:),"* . Model size and inference latency (1000 deterministic predict() calls, single CPU thread).*"
+180,195596,result/constant registry (results/model_size.csv:parameters),"| A | DQN | 195,596 | 1,565 | 0.51 | 0.91 |"
+180,1565,result/constant registry (results/model_size.csv:file_kb),"| A | DQN | 195,596 | 1,565 | 0.51 | 0.91 |"
+180,0.51,result/constant registry (results/model_size.csv:latency_ms_median_1000),"| A | DQN | 195,596 | 1,565 | 0.51 | 0.91 |"
+180,0.91,result/constant registry (results/model_size.csv:latency_ms_p95_1000),"| A | DQN | 195,596 | 1,565 | 0.51 | 0.91 |"
+181,9479,result/constant registry (results/model_size.csv:parameters),"| B | PPO | 9,479 | 147 | 0.67 | 1.78 |"
+181,147,result/constant registry (results/model_size.csv:file_kb),"| B | PPO | 9,479 | 147 | 0.67 | 1.78 |"
+181,0.67,result/constant registry (results/model_size.csv:latency_ms_median_1000),"| B | PPO | 9,479 | 147 | 0.67 | 1.78 |"
+181,1.78,result/constant registry (results/model_size.csv:latency_ms_p95_1000),"| B | PPO | 9,479 | 147 | 0.67 | 1.78 |"
+182,9476,result/constant registry (results/model_size.csv:parameters),"| C | A2C | 9,476 | 109 | 0.99 | 2.02 |"
+182,109,result/constant registry (results/model_size.csv:file_kb),"| C | A2C | 9,476 | 109 | 0.99 | 2.02 |"
+182,0.99,result/constant registry (results/model_size.csv:latency_ms_median_1000),"| C | A2C | 9,476 | 109 | 0.99 | 2.02 |"
+182,2.02,result/constant registry (results/model_size.csv:latency_ms_p95_1000),"| C | A2C | 9,476 | 109 | 0.99 | 2.02 |"
+183,9476,result/constant registry (results/model_size.csv:parameters),"| C_withA | A2C | 9,476 | 109 | 0.94 | 1.93 |"
+183,109,result/constant registry (results/model_size.csv:file_kb),"| C_withA | A2C | 9,476 | 109 | 0.94 | 1.93 |"
+183,0.94,result/constant registry (results/model_size.csv:latency_ms_median_1000),"| C_withA | A2C | 9,476 | 109 | 0.94 | 1.93 |"
+183,1.93,result/constant registry (results/model_size.csv:latency_ms_p95_1000),"| C_withA | A2C | 9,476 | 109 | 0.94 | 1.93 |"
+185,91.2,result/constant registry (results/summary_S0_all.csv:low_level_steps_mean),"**Insight.** On the bridges that both solve, the DQN needs 91.2 steps against 123.0 for the dense raster (change -26%) a"
+185,123.0,result/constant registry (results/summary_S0_all.csv:steps_success_mean),"**Insight.** On the bridges that both solve, the DQN needs 91.2 steps against 123.0 for the dense raster (change -26%) a"
+185,188.5,result/constant registry (results/summary_S0_all.csv:steps_fail_mean),"**Insight.** On the bridges that both solve, the DQN needs 91.2 steps against 123.0 for the dense raster (change -26%) a"
+185,3.56,result/constant registry (results/summary_S0_all.csv:steps_success_mean),"**Insight.** On the bridges that both solve, the DQN needs 91.2 steps against 123.0 for the dense raster (change -26%) a"
+185,3.52,result/constant registry (results/summary_S0_all.csv:steps_success_mean),"**Insight.** On the bridges that both solve, the DQN needs 91.2 steps against 123.0 for the dense raster (change -26%) a"
+185,5000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),"**Insight.** On the bridges that both solve, the DQN needs 91.2 steps against 123.0 for the dense raster (change -26%) a"
+185,140000,result/constant registry (results/sample_efficiency.csv:steps_to_100pct_success),"**Insight.** On the bridges that both solve, the DQN needs 91.2 steps against 123.0 for the dense raster (change -26%) a"
+185,80,result/constant registry (results/scenario_summary.csv:success_rate),"**Insight.** On the bridges that both solve, the DQN needs 91.2 steps against 123.0 for the dense raster (change -26%) a"
+185,500000,result/constant registry (results/sample_efficiency.csv:steps_trained),"**Insight.** On the bridges that both solve, the DQN needs 91.2 steps against 123.0 for the dense raster (change -26%) a"
+191,95,result/constant registry (py:METHOD['ci_level']:),"**Metric.** Per-episode regret against an explicitly stated benchmark (mean, 95% CI, cumulative)."
+195,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Regret on held-out bridges (n = 100 episodes per policy, held-out seeds 2000-2099). Positive = the benchmark collect"
+195,2000,result/constant registry (py:HELD_SEED0:),"* . Regret on held-out bridges (n = 100 episodes per policy, held-out seeds 2000-2099). Positive = the benchmark collect"
+197,95,result/constant registry (py:METHOD['ci_level']:),| Agent | Benchmark | Mean regret | 95% CI | Cumulative regret (100 bridges) |
+197,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| Agent | Benchmark | Mean regret | 95% CI | Cumulative regret (100 bridges) |
+199,1.81,result/constant registry (results/summary_S0_all.csv:regret_mean),| DQN (Agent A) | raster_low (best baseline (dense raster)) | 1.81 | ±1.29 | 181.0 |
+199,1.29,result/constant registry (results/sensitivity.csv:heldout_return_ci95),| DQN (Agent A) | raster_low (best baseline (dense raster)) | 1.81 | ±1.29 | 181.0 |
+199,181.0,result/constant registry (results/summary_S0_all.csv:regret_cumulative),| DQN (Agent A) | raster_low (best baseline (dense raster)) | 1.81 | ±1.29 | 181.0 |
+200,0.00,result/constant registry (results/robustness_gap.csv:return_gap),| PPO (Agent B) | scripted_approach (upper bound) (privileged upper bound) | 0.00 | ±0.00 | 0.3 |
+200,0.00,result/constant registry (results/robustness_gap.csv:return_gap),| PPO (Agent B) | scripted_approach (upper bound) (privileged upper bound) | 0.00 | ±0.00 | 0.3 |
+200,0.3,result/constant registry (results/sensitivity.csv:clip_range),| PPO (Agent B) | scripted_approach (upper bound) (privileged upper bound) | 0.00 | ±0.00 | 0.3 |
+201,2.60,result/constant registry (results/summary_S0_all.csv:regret_mean),| A2C (Agent C) | rule_supervisor (rule supervisor) | 2.60 | ±0.50 | 259.9 |
+201,0.50,result/constant registry (results/summary_S0_all.csv:regret_ci95),| A2C (Agent C) | rule_supervisor (rule supervisor) | 2.60 | ±0.50 | 259.9 |
+201,259.9,result/constant registry (results/summary_S0_all.csv:regret_cumulative),| A2C (Agent C) | rule_supervisor (rule supervisor) | 2.60 | ±0.50 | 259.9 |
+202,0.22,result/constant registry (results/summary_S0_all.csv:regret_mean),| A2C (C_withA) | rule_supervisor (Agent A inside) (rule supervisor with the same Agent A) | 0.22 | ±0.81 | 21.7 |
+202,0.81,result/constant registry (results/summary_S0_all.csv:regret_ci95),| A2C (C_withA) | rule_supervisor (Agent A inside) (rule supervisor with the same Agent A) | 0.22 | ±0.81 | 21.7 |
+202,21.7,result/constant registry (results/summary_S0_all.csv:regret_cumulative),| A2C (C_withA) | rule_supervisor (Agent A inside) (rule supervisor with the same Agent A) | 0.22 | ±0.81 | 21.7 |
+203,1.28,result/constant registry (results/summary_S0_all.csv:regret_mean),| ALL LEARNED (C + A + B) | ALL SCRIPTED (rule + raster + approach) (all-scripted system) | 1.28 | ±0.75 | 127.9 |
+203,0.75,result/constant registry (results/derived_metrics.csv:value),| ALL LEARNED (C + A + B) | ALL SCRIPTED (rule + raster + approach) (all-scripted system) | 1.28 | ±0.75 | 127.9 |
+203,127.9,result/constant registry (results/summary_S0_all.csv:regret_cumulative),| ALL LEARNED (C + A + B) | ALL SCRIPTED (rule + raster + approach) (all-scripted system) | 1.28 | ±0.75 | 127.9 |
+204,0.80,result/constant registry (results/summary_S0_all.csv:regret_ci95),"| ablation: rule C, A + B learned | ALL SCRIPTED (rule + raster + approach) (all-scripted system) | -1.88 | ±0.80 | -187"
+210,0.003,result/constant registry (results/summary_S0_all.csv:regret_mean),"**Insight.** PPO's regret against the privileged upper bound is 0.003 return per episode, so it has effectively learned "
+210,1.81,result/constant registry (results/summary_S0_all.csv:regret_mean),"**Insight.** PPO's regret against the privileged upper bound is 0.003 return per episode, so it has effectively learned "
+210,2.60,result/constant registry (results/summary_S0_all.csv:regret_mean),"**Insight.** PPO's regret against the privileged upper bound is 0.003 return per episode, so it has effectively learned "
+210,0.22,result/constant registry (results/summary_S0_all.csv:regret_mean),"**Insight.** PPO's regret against the privileged upper bound is 0.003 return per episode, so it has effectively learned "
+210,95,result/constant registry (py:METHOD['ci_level']:),"**Insight.** PPO's regret against the privileged upper bound is 0.003 return per episode, so it has effectively learned "
+210,0.81,result/constant registry (results/summary_S0_all.csv:regret_ci95),"**Insight.** PPO's regret against the privileged upper bound is 0.003 return per episode, so it has effectively learned "
+210,1.88,result/constant registry (results/summary_S0_all.csv:regret_mean),"**Insight.** PPO's regret against the privileged upper bound is 0.003 return per episode, so it has effectively learned "
+216,95,result/constant registry (py:METHOD['ci_level']:),"**Metric.** Standard deviation, 95% confidence interval, box plots; mean ± std across training seeds."
+224,95,result/constant registry (py:METHOD['ci_level']:),Per-bridge variability (std and 95% CI of the return) is listed in   ( ). The dense raster has almost no spread (std 0.0
+224,0.09,result/constant registry (results/robustness_gap.csv:return_gap),Per-bridge variability (std and 95% CI of the return) is listed in   ( ). The dense raster has almost no spread (std 0.0
+224,6.50,result/constant registry (results/summary_S0_all.csv:return_std),Per-bridge variability (std and 95% CI of the return) is listed in   ( ). The dense raster has almost no spread (std 0.0
+224,4.43,result/constant registry (results/summary_S0_all.csv:return_std),Per-bridge variability (std and 95% CI of the return) is listed in   ( ). The dense raster has almost no spread (std 0.0
+224,3.91,result/constant registry (results/summary_S0_all.csv:return_std),Per-bridge variability (std and 95% CI of the return) is listed in   ( ). The dense raster has almost no spread (std 0.0
+226,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),* . Across training seeds: each seed evaluated on the same 100 held-out bridges; seed 0 is the original run.*
+226,0,result/constant registry (results/sensitivity.csv:ent_coef),* . Across training seeds: each seed evaluated on the same 100 held-out bridges; seed 0 is the original run.*
+228,95,result/constant registry (py:METHOD['ci_level']:),| Agent | Training seeds | Seed ids | Mean held-out return | Std across seeds | 95% CI across seeds | Mean success | Mea
+230,4,result/constant registry (results/robustness_gap.csv:success_gap),| A | 4 | 0 1 2 3 | 36.202 | 1.817 | ±2.892 | 99% | 81.88 |
+230,0,result/constant registry (results/sensitivity.csv:ent_coef),| A | 4 | 0 1 2 3 | 36.202 | 1.817 | ±2.892 | 99% | 81.88 |
+230,1,result/constant registry (py:METHOD['band_std']:),| A | 4 | 0 1 2 3 | 36.202 | 1.817 | ±2.892 | 99% | 81.88 |
+230,2,result/constant registry (py:ie.W_DEF_C:),| A | 4 | 0 1 2 3 | 36.202 | 1.817 | ±2.892 | 99% | 81.88 |
+230,3,result/constant registry (results/scenario_summary.csv:success_rate),| A | 4 | 0 1 2 3 | 36.202 | 1.817 | ±2.892 | 99% | 81.88 |
+230,36.202,result/constant registry (results/multiseed_summary.csv:return_mean),| A | 4 | 0 1 2 3 | 36.202 | 1.817 | ±2.892 | 99% | 81.88 |
+230,1.817,result/constant registry (results/multiseed_summary.csv:return_std),| A | 4 | 0 1 2 3 | 36.202 | 1.817 | ±2.892 | 99% | 81.88 |
+230,2.892,result/constant registry (results/multiseed_summary.csv:return_ci95),| A | 4 | 0 1 2 3 | 36.202 | 1.817 | ±2.892 | 99% | 81.88 |
+230,99,result/constant registry (results/multiseed_per_seed.csv:heldout_success),| A | 4 | 0 1 2 3 | 36.202 | 1.817 | ±2.892 | 99% | 81.88 |
+230,81.88,result/constant registry (results/multiseed_summary.csv:steps_mean),| A | 4 | 0 1 2 3 | 36.202 | 1.817 | ±2.892 | 99% | 81.88 |
+231,4,result/constant registry (results/robustness_gap.csv:success_gap),| B | 4 | 0 1 2 3 | 5.675 | 0.001 | ±0.001 | 100% | 3.62 |
+231,0,result/constant registry (results/sensitivity.csv:ent_coef),| B | 4 | 0 1 2 3 | 5.675 | 0.001 | ±0.001 | 100% | 3.62 |
+231,1,result/constant registry (py:METHOD['band_std']:),| B | 4 | 0 1 2 3 | 5.675 | 0.001 | ±0.001 | 100% | 3.62 |
+231,2,result/constant registry (py:ie.W_DEF_C:),| B | 4 | 0 1 2 3 | 5.675 | 0.001 | ±0.001 | 100% | 3.62 |
+231,3,result/constant registry (results/scenario_summary.csv:success_rate),| B | 4 | 0 1 2 3 | 5.675 | 0.001 | ±0.001 | 100% | 3.62 |
+231,5.675,result/constant registry (results/multiseed_summary.csv:return_mean),| B | 4 | 0 1 2 3 | 5.675 | 0.001 | ±0.001 | 100% | 3.62 |
+231,0.001,result/constant registry (results/multiseed_summary.csv:return_std),| B | 4 | 0 1 2 3 | 5.675 | 0.001 | ±0.001 | 100% | 3.62 |
+231,0.001,result/constant registry (results/multiseed_summary.csv:return_std),| B | 4 | 0 1 2 3 | 5.675 | 0.001 | ±0.001 | 100% | 3.62 |
+231,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| B | 4 | 0 1 2 3 | 5.675 | 0.001 | ±0.001 | 100% | 3.62 |
+231,3.62,result/constant registry (results/multiseed_summary.csv:steps_mean),| B | 4 | 0 1 2 3 | 5.675 | 0.001 | ±0.001 | 100% | 3.62 |
+232,4,result/constant registry (results/robustness_gap.csv:success_gap),| C | 4 | 0 1 2 3 | 40.398 | 0.275 | ±0.437 | 100% | 18.20 |
+232,0,result/constant registry (results/sensitivity.csv:ent_coef),| C | 4 | 0 1 2 3 | 40.398 | 0.275 | ±0.437 | 100% | 18.20 |
+232,1,result/constant registry (py:METHOD['band_std']:),| C | 4 | 0 1 2 3 | 40.398 | 0.275 | ±0.437 | 100% | 18.20 |
+232,2,result/constant registry (py:ie.W_DEF_C:),| C | 4 | 0 1 2 3 | 40.398 | 0.275 | ±0.437 | 100% | 18.20 |
+232,3,result/constant registry (results/scenario_summary.csv:success_rate),| C | 4 | 0 1 2 3 | 40.398 | 0.275 | ±0.437 | 100% | 18.20 |
+232,40.398,result/constant registry (results/multiseed_summary.csv:return_mean),| C | 4 | 0 1 2 3 | 40.398 | 0.275 | ±0.437 | 100% | 18.20 |
+232,0.275,result/constant registry (results/multiseed_summary.csv:return_std),| C | 4 | 0 1 2 3 | 40.398 | 0.275 | ±0.437 | 100% | 18.20 |
+232,0.437,result/constant registry (results/multiseed_summary.csv:return_ci95),| C | 4 | 0 1 2 3 | 40.398 | 0.275 | ±0.437 | 100% | 18.20 |
+232,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| C | 4 | 0 1 2 3 | 40.398 | 0.275 | ±0.437 | 100% | 18.20 |
+232,18.20,result/constant registry (results/multiseed_summary.csv:steps_mean),| C | 4 | 0 1 2 3 | 40.398 | 0.275 | ±0.437 | 100% | 18.20 |
+234,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Per-seed held-out results (n = 100 bridges each, seeds 2000-2099).*"
+234,2000,result/constant registry (py:HELD_SEED0:),"* . Per-seed held-out results (n = 100 bridges each, seeds 2000-2099).*"
+236,95,result/constant registry (py:METHOD['ci_level']:),| Agent | Training seed | Held-out return | 95% CI (over bridges) | Success |
+238,0,result/constant registry (results/sensitivity.csv:ent_coef),| A | 0 | 33.649 | ±1.289 | 96% |
+238,33.649,result/constant registry (results/multiseed_per_seed.csv:heldout_return),| A | 0 | 33.649 | ±1.289 | 96% |
+238,1.289,result/constant registry (results/multiseed_per_seed.csv:heldout_return_ci95),| A | 0 | 33.649 | ±1.289 | 96% |
+238,96,result/constant registry (results/summary_S0_all.csv:success_rate),| A | 0 | 33.649 | ±1.289 | 96% |
+239,1,result/constant registry (py:METHOD['band_std']:),| A | 1 | 36.674 | ±0.482 | 100% |
+239,36.674,result/constant registry (results/multiseed_per_seed.csv:heldout_return),| A | 1 | 36.674 | ±0.482 | 100% |
+239,0.482,result/constant registry (results/multiseed_per_seed.csv:heldout_return_ci95),| A | 1 | 36.674 | ±0.482 | 100% |
+239,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A | 1 | 36.674 | ±0.482 | 100% |
+240,2,result/constant registry (py:ie.W_DEF_C:),| A | 2 | 36.534 | ±0.688 | 99% |
+240,36.534,result/constant registry (results/multiseed_per_seed.csv:heldout_return),| A | 2 | 36.534 | ±0.688 | 99% |
+240,0.688,result/constant registry (results/multiseed_per_seed.csv:heldout_return_ci95),| A | 2 | 36.534 | ±0.688 | 99% |
+240,99,result/constant registry (results/multiseed_per_seed.csv:heldout_success),| A | 2 | 36.534 | ±0.688 | 99% |
+241,3,result/constant registry (results/scenario_summary.csv:success_rate),| A | 3 | 37.951 | ±0.123 | 100% |
+241,37.951,result/constant registry (results/multiseed_per_seed.csv:heldout_return),| A | 3 | 37.951 | ±0.123 | 100% |
+241,0.123,result/constant registry (results/multiseed_per_seed.csv:heldout_return_ci95),| A | 3 | 37.951 | ±0.123 | 100% |
+241,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A | 3 | 37.951 | ±0.123 | 100% |
+242,0,result/constant registry (results/sensitivity.csv:ent_coef),| B | 0 | 5.675 | ±0.031 | 100% |
+242,5.675,result/constant registry (results/multiseed_summary.csv:return_mean),| B | 0 | 5.675 | ±0.031 | 100% |
+242,0.031,result/constant registry (results/multiseed_per_seed.csv:heldout_return_ci95),| B | 0 | 5.675 | ±0.031 | 100% |
+242,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| B | 0 | 5.675 | ±0.031 | 100% |
+243,1,result/constant registry (py:METHOD['band_std']:),| B | 1 | 5.675 | ±0.031 | 100% |
+243,5.675,result/constant registry (results/multiseed_summary.csv:return_mean),| B | 1 | 5.675 | ±0.031 | 100% |
+243,0.031,result/constant registry (results/multiseed_per_seed.csv:heldout_return_ci95),| B | 1 | 5.675 | ±0.031 | 100% |
+243,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| B | 1 | 5.675 | ±0.031 | 100% |
+244,2,result/constant registry (py:ie.W_DEF_C:),| B | 2 | 5.674 | ±0.031 | 100% |
+244,5.674,result/constant registry (results/multiseed_per_seed.csv:heldout_return),| B | 2 | 5.674 | ±0.031 | 100% |
+244,0.031,result/constant registry (results/multiseed_per_seed.csv:heldout_return_ci95),| B | 2 | 5.674 | ±0.031 | 100% |
+244,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| B | 2 | 5.674 | ±0.031 | 100% |
+245,3,result/constant registry (results/scenario_summary.csv:success_rate),| B | 3 | 5.675 | ±0.031 | 100% |
+245,5.675,result/constant registry (results/multiseed_summary.csv:return_mean),| B | 3 | 5.675 | ±0.031 | 100% |
+245,0.031,result/constant registry (results/multiseed_per_seed.csv:heldout_return_ci95),| B | 3 | 5.675 | ±0.031 | 100% |
+245,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| B | 3 | 5.675 | ±0.031 | 100% |
+246,0,result/constant registry (results/sensitivity.csv:ent_coef),| C | 0 | 40.024 | ±0.880 | 100% |
+246,40.024,result/constant registry (results/multiseed_per_seed.csv:heldout_return),| C | 0 | 40.024 | ±0.880 | 100% |
+246,0.880,result/constant registry (results/multiseed_per_seed.csv:heldout_return_ci95),| C | 0 | 40.024 | ±0.880 | 100% |
+246,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| C | 0 | 40.024 | ±0.880 | 100% |
+247,1,result/constant registry (py:METHOD['band_std']:),| C | 1 | 40.668 | ±0.861 | 100% |
+247,40.668,result/constant registry (results/multiseed_per_seed.csv:heldout_return),| C | 1 | 40.668 | ±0.861 | 100% |
+247,0.861,result/constant registry (results/multiseed_per_seed.csv:heldout_return_ci95),| C | 1 | 40.668 | ±0.861 | 100% |
+247,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| C | 1 | 40.668 | ±0.861 | 100% |
+248,2,result/constant registry (py:ie.W_DEF_C:),| C | 2 | 40.515 | ±0.853 | 100% |
+248,40.515,result/constant registry (results/multiseed_per_seed.csv:heldout_return),| C | 2 | 40.515 | ±0.853 | 100% |
+248,0.853,result/constant registry (results/multiseed_per_seed.csv:heldout_return_ci95),| C | 2 | 40.515 | ±0.853 | 100% |
+248,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| C | 2 | 40.515 | ±0.853 | 100% |
+249,3,result/constant registry (results/scenario_summary.csv:success_rate),| C | 3 | 40.388 | ±0.860 | 100% |
+249,40.388,result/constant registry (results/multiseed_per_seed.csv:heldout_return),| C | 3 | 40.388 | ±0.860 | 100% |
+249,0.860,result/constant registry (results/multiseed_per_seed.csv:heldout_return_ci95),| C | 3 | 40.388 | ±0.860 | 100% |
+249,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| C | 3 | 40.388 | ±0.860 | 100% |
+259,5.675,result/constant registry (results/multiseed_summary.csv:return_mean),"**Insight.** Across training seeds the final performance is very stable: PPO 5.675 ± 0.001 and A2C 40.40 ± 0.27, i.e. th"
+259,0.001,result/constant registry (results/multiseed_summary.csv:return_std),"**Insight.** Across training seeds the final performance is very stable: PPO 5.675 ± 0.001 and A2C 40.40 ± 0.27, i.e. th"
+259,40.40,result/constant registry (results/multiseed_summary.csv:return_mean),"**Insight.** Across training seeds the final performance is very stable: PPO 5.675 ± 0.001 and A2C 40.40 ± 0.27, i.e. th"
+259,0.27,result/constant registry (results/multiseed_summary.csv:return_std),"**Insight.** Across training seeds the final performance is very stable: PPO 5.675 ± 0.001 and A2C 40.40 ± 0.27, i.e. th"
+259,36.20,result/constant registry (results/multiseed_summary.csv:return_mean),"**Insight.** Across training seeds the final performance is very stable: PPO 5.675 ± 0.001 and A2C 40.40 ± 0.27, i.e. th"
+259,1.82,result/constant registry (results/multiseed_summary.csv:return_std),"**Insight.** Across training seeds the final performance is very stable: PPO 5.675 ± 0.001 and A2C 40.40 ± 0.27, i.e. th"
+259,99,result/constant registry (results/multiseed_per_seed.csv:heldout_success),"**Insight.** Across training seeds the final performance is very stable: PPO 5.675 ± 0.001 and A2C 40.40 ± 0.27, i.e. th"
+259,36.53,result/constant registry (results/multiseed_per_seed.csv:heldout_return),"**Insight.** Across training seeds the final performance is very stable: PPO 5.675 ± 0.001 and A2C 40.40 ± 0.27, i.e. th"
+259,35.46,result/constant registry (results/scenario_summary.csv:return_mean),"**Insight.** Across training seeds the final performance is very stable: PPO 5.675 ± 0.001 and A2C 40.40 ± 0.27, i.e. th"
+259,96,result/constant registry (results/summary_S0_all.csv:success_rate),"**Insight.** Across training seeds the final performance is very stable: PPO 5.675 ± 0.001 and A2C 40.40 ± 0.27, i.e. th"
+259,33.65,result/constant registry (results/sensitivity.csv:heldout_return),"**Insight.** Across training seeds the final performance is very stable: PPO 5.675 ± 0.001 and A2C 40.40 ± 0.27, i.e. th"
+273,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Agent A state-space coverage and visitation entropy, mean over held-out episodes (n = 100 episodes per policy, held-"
+273,2000,result/constant registry (py:HELD_SEED0:),"* . Agent A state-space coverage and visitation entropy, mean over held-out episodes (n = 100 episodes per policy, held-"
+277,0.999,result/constant registry (results/summary_A.csv:coverage_mean),| DQN (Agent A) | 0.999 | 0.489 | 0.201 | 0.799 |
+277,0.489,result/constant registry (results/summary_A.csv:pos_coverage_mean),| DQN (Agent A) | 0.999 | 0.489 | 0.201 | 0.799 |
+277,0.201,result/constant registry (results/summary_A.csv:pose_coverage_mean),| DQN (Agent A) | 0.999 | 0.489 | 0.201 | 0.799 |
+277,0.799,result/constant registry (results/summary_A.csv:visit_entropy_mean),| DQN (Agent A) | 0.999 | 0.489 | 0.201 | 0.799 |
+278,0.953,result/constant registry (results/summary_A.csv:pos_coverage_mean),| raster_low | 0.953 | 0.953 | 0.323 | 0.988 |
+278,0.953,result/constant registry (results/summary_A.csv:pos_coverage_mean),| raster_low | 0.953 | 0.953 | 0.323 | 0.988 |
+278,0.323,result/constant registry (results/summary_A.csv:pose_coverage_mean),| raster_low | 0.953 | 0.953 | 0.323 | 0.988 |
+278,0.988,result/constant registry (results/summary_A.csv:visit_entropy_mean),| raster_low | 0.953 | 0.953 | 0.323 | 0.988 |
+279,1.000,result/constant registry (results/summary_A.csv:coverage_mean),| raster_mid | 1.000 | 0.391 | 0.133 | 0.790 |
+279,0.391,result/constant registry (results/summary_A.csv:pos_coverage_mean),| raster_mid | 1.000 | 0.391 | 0.133 | 0.790 |
+279,0.133,result/constant registry (results/summary_A.csv:pose_coverage_mean),| raster_mid | 1.000 | 0.391 | 0.133 | 0.790 |
+279,0.790,result/constant registry (results/summary_A.csv:visit_entropy_mean),| raster_mid | 1.000 | 0.391 | 0.133 | 0.790 |
+280,0.510,result/constant registry (results/summary_A.csv:coverage_mean),| random | 0.510 | 0.263 | 0.166 | 0.659 |
+280,0.263,result/constant registry (results/summary_A.csv:pos_coverage_mean),| random | 0.510 | 0.263 | 0.166 | 0.659 |
+280,0.166,result/constant registry (results/summary_A.csv:pose_coverage_mean),| random | 0.510 | 0.263 | 0.166 | 0.659 |
+280,0.659,result/constant registry (results/summary_A.csv:visit_entropy_mean),| random | 0.510 | 0.263 | 0.166 | 0.659 |
+286,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Option-selection frequency (share of decisions, n = 100 episodes per policy, held-out seeds 2000-2099).*"
+286,2000,result/constant registry (py:HELD_SEED0:),"* . Option-selection frequency (share of decisions, n = 100 episodes per policy, held-out seeds 2000-2099).*"
+290,94.8,result/constant registry (results/summary_S0_all.csv:freq_explore),"| Agent C (A2C, supervise) | A2C (Agent C) | 94.8% | 0.0% | 5.2% |"
+290,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),"| Agent C (A2C, supervise) | A2C (Agent C) | 94.8% | 0.0% | 5.2% |"
+290,5.2,result/constant registry (results/summary_S0_all.csv:freq_return),"| Agent C (A2C, supervise) | A2C (Agent C) | 94.8% | 0.0% | 5.2% |"
+291,65.5,result/constant registry (results/summary_S0_all.csv:freq_explore),"| Agent C (A2C, supervise) | rule_supervisor | 65.5% | 31.5% | 3.0% |"
+291,31.5,result/constant registry (results/summary_S0_all.csv:freq_refine),"| Agent C (A2C, supervise) | rule_supervisor | 65.5% | 31.5% | 3.0% |"
+291,3.0,result/constant registry (results/summary_S0_all.csv:freq_return),"| Agent C (A2C, supervise) | rule_supervisor | 65.5% | 31.5% | 3.0% |"
+292,31.2,result/constant registry (results/summary_S0_all.csv:freq_refine),"| Agent C (A2C, supervise) | random | 31.2% | 30.8% | 38.0% |"
+292,30.8,result/constant registry (results/summary_S0_all.csv:freq_refine),"| Agent C (A2C, supervise) | random | 31.2% | 30.8% | 38.0% |"
+292,38.0,result/constant registry (results/summary_S0_all.csv:freq_return),"| Agent C (A2C, supervise) | random | 31.2% | 30.8% | 38.0% |"
+293,96.6,result/constant registry (results/summary_S0_all.csv:freq_explore),| Agent C trained with Agent A inside | A2C (C_withA) | 96.6% | 0.0% | 3.4% |
+293,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| Agent C trained with Agent A inside | A2C (C_withA) | 96.6% | 0.0% | 3.4% |
+293,3.4,result/constant registry (results/summary_S0_all.csv:freq_return),| Agent C trained with Agent A inside | A2C (C_withA) | 96.6% | 0.0% | 3.4% |
+294,65.6,result/constant registry (results/summary_S0_all.csv:freq_explore),| Agent C trained with Agent A inside | rule_supervisor (Agent A inside) | 65.6% | 31.2% | 3.1% |
+294,31.2,result/constant registry (results/summary_S0_all.csv:freq_refine),| Agent C trained with Agent A inside | rule_supervisor (Agent A inside) | 65.6% | 31.2% | 3.1% |
+294,3.1,result/constant registry (results/summary_S0_all.csv:freq_return),| Agent C trained with Agent A inside | rule_supervisor (Agent A inside) | 65.6% | 31.2% | 3.1% |
+295,94.2,result/constant registry (results/summary_S0_all.csv:freq_explore),| Integration (full mode) | ALL LEARNED (C + A + B) | 94.2% | 0.0% | 5.8% |
+295,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| Integration (full mode) | ALL LEARNED (C + A + B) | 94.2% | 0.0% | 5.8% |
+295,5.8,result/constant registry (results/summary_S0_all.csv:freq_return),| Integration (full mode) | ALL LEARNED (C + A + B) | 94.2% | 0.0% | 5.8% |
+296,65.5,result/constant registry (results/summary_S0_all.csv:freq_explore),| Integration (full mode) | ALL SCRIPTED (rule + raster + approach) | 65.5% | 31.5% | 3.0% |
+296,31.5,result/constant registry (results/summary_S0_all.csv:freq_refine),| Integration (full mode) | ALL SCRIPTED (rule + raster + approach) | 65.5% | 31.5% | 3.0% |
+296,3.0,result/constant registry (results/summary_S0_all.csv:freq_return),| Integration (full mode) | ALL SCRIPTED (rule + raster + approach) | 65.5% | 31.5% | 3.0% |
+297,94.8,result/constant registry (results/summary_S0_all.csv:freq_explore),"| Integration (full mode) | ablation: C learned, A/B scripted | 94.8% | 0.0% | 5.2% |"
+297,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),"| Integration (full mode) | ablation: C learned, A/B scripted | 94.8% | 0.0% | 5.2% |"
+297,5.2,result/constant registry (results/summary_S0_all.csv:freq_return),"| Integration (full mode) | ablation: C learned, A/B scripted | 94.8% | 0.0% | 5.2% |"
+298,65.6,result/constant registry (results/summary_S0_all.csv:freq_explore),"| Integration (full mode) | ablation: rule C, A + B learned | 65.6% | 31.3% | 3.1% |"
+298,31.3,result/constant registry (results/summary_S0_all.csv:freq_refine),"| Integration (full mode) | ablation: rule C, A + B learned | 65.6% | 31.3% | 3.1% |"
+298,3.1,result/constant registry (results/summary_S0_all.csv:freq_return),"| Integration (full mode) | ablation: rule C, A + B learned | 65.6% | 31.3% | 3.1% |"
+299,96.6,result/constant registry (results/summary_S0_all.csv:freq_explore),| Integration (full mode) | C_withA + A + B (extra) | 96.6% | 0.0% | 3.4% |
+299,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| Integration (full mode) | C_withA + A + B (extra) | 96.6% | 0.0% | 3.4% |
+299,3.4,result/constant registry (results/summary_S0_all.csv:freq_return),| Integration (full mode) | C_withA + A + B (extra) | 96.6% | 0.0% | 3.4% |
+305,1.0,result/constant registry (py:json.load(open(RUN_DIRS['A'] / 'hyperparams.json'))['exploration_initial_eps']:),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,0.05,result/constant registry (results/sensitivity.csv:ent_coef),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,30,result/constant registry (py:json.load(open(RUN_DIRS['A'] / 'hyperparams.json'))['exploration_fraction']:),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,4.24,result/constant registry (results/tb_scalars.csv:value),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,0.66,result/constant registry (results/tb_scalars.csv:value),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,0.999,result/constant registry (results/summary_A.csv:coverage_mean),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,0.49,result/constant registry (results/summary_A.csv:pos_coverage_mean),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,0.95,result/constant registry (results/summary_A.csv:pos_coverage_mean),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,31.5,result/constant registry (results/summary_S0_all.csv:freq_refine),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,2,result/constant registry (py:ie.W_DEF_C:),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,0.5,result/constant registry (py:ie.W_ENERGY_C:),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,1,result/constant registry (py:METHOD['band_std']:),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,2,result/constant registry (py:ie.W_DEF_C:),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,3,result/constant registry (results/scenario_summary.csv:success_rate),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,18.0,result/constant registry (results/derived_metrics.csv:value),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,14.1,result/constant registry (results/derived_metrics.csv:value),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+305,37.5,result/constant registry (results/derived_metrics.csv:value),**Insight.** The DQN's epsilon falls linearly from 1.0 to 0.05 over the first 30% of training; PPO's entropy falls stead
+307,2000,result/constant registry (py:HELD_SEED0:),"**Video evidence.**  (  nominal, held-out seed 2000);  (  nominal, training-eval bridge seed 1000)."
+307,1000,result/constant registry (py:METHOD['oob_per']:),"**Video evidence.**  (  nominal, held-out seed 2000);  (  nominal, training-eval bridge seed 1000)."
+313,1000,result/constant registry (py:METHOD['oob_per']:),**Metric.** Battery-empty rate (% of episodes) and out-of-bounds moves per 1000 low-level steps.
+317,0.6,result/constant registry (results/sensitivity.csv:eps_fraction),"* . Constraint violations, nominal battery vs starting battery 0.6 (n = 100 episodes per policy, held-out seeds 2000-209"
+317,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Constraint violations, nominal battery vs starting battery 0.6 (n = 100 episodes per policy, held-out seeds 2000-209"
+317,2000,result/constant registry (py:HELD_SEED0:),"* . Constraint violations, nominal battery vs starting battery 0.6 (n = 100 episodes per policy, held-out seeds 2000-209"
+319,1000,result/constant registry (py:METHOD['oob_per']:),| Scenario | Policy | Battery-empty rate | OOB moves / 1000 steps | Success |
+321,4,result/constant registry (results/robustness_gap.csv:success_gap),| S0_nominal | DQN (Agent A) | 4% | 0.0 | 96% |
+321,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S0_nominal | DQN (Agent A) | 4% | 0.0 | 96% |
+321,96,result/constant registry (results/summary_S0_all.csv:success_rate),| S0_nominal | DQN (Agent A) | 4% | 0.0 | 96% |
+322,0,result/constant registry (results/sensitivity.csv:ent_coef),| S0_nominal | raster_low | 0% | 0.0 | 100% |
+322,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S0_nominal | raster_low | 0% | 0.0 | 100% |
+322,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S0_nominal | raster_low | 0% | 0.0 | 100% |
+323,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S0_nominal | raster_mid | 100% | 0.0 | 0% |
+323,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S0_nominal | raster_mid | 100% | 0.0 | 0% |
+323,0,result/constant registry (results/sensitivity.csv:ent_coef),| S0_nominal | raster_mid | 100% | 0.0 | 0% |
+324,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S0_nominal | random | 100% | 191.6 | 0% |
+324,191.6,result/constant registry (results/scenario_summary.csv:oob_per_1000_steps),| S0_nominal | random | 100% | 191.6 | 0% |
+324,0,result/constant registry (results/sensitivity.csv:ent_coef),| S0_nominal | random | 100% | 191.6 | 0% |
+325,0,result/constant registry (results/sensitivity.csv:ent_coef),| S0_nominal | A2C (Agent C) | 0% | 0.0 | 100% |
+325,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S0_nominal | A2C (Agent C) | 0% | 0.0 | 100% |
+325,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S0_nominal | A2C (Agent C) | 0% | 0.0 | 100% |
+326,0,result/constant registry (results/sensitivity.csv:ent_coef),| S0_nominal | rule_supervisor | 0% | 0.0 | 100% |
+326,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S0_nominal | rule_supervisor | 0% | 0.0 | 100% |
+326,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S0_nominal | rule_supervisor | 0% | 0.0 | 100% |
+327,0,result/constant registry (results/sensitivity.csv:ent_coef),| S0_nominal | A2C (C_withA) | 0% | 0.0 | 100% |
+327,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S0_nominal | A2C (C_withA) | 0% | 0.0 | 100% |
+327,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S0_nominal | A2C (C_withA) | 0% | 0.0 | 100% |
+328,0,result/constant registry (results/sensitivity.csv:ent_coef),| S0_nominal | ALL LEARNED (C + A + B) | 0% | 0.0 | 100% |
+328,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S0_nominal | ALL LEARNED (C + A + B) | 0% | 0.0 | 100% |
+328,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S0_nominal | ALL LEARNED (C + A + B) | 0% | 0.0 | 100% |
+329,0,result/constant registry (results/sensitivity.csv:ent_coef),| S0_nominal | ALL SCRIPTED (rule + raster + approach) | 0% | 0.0 | 100% |
+329,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S0_nominal | ALL SCRIPTED (rule + raster + approach) | 0% | 0.0 | 100% |
+329,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S0_nominal | ALL SCRIPTED (rule + raster + approach) | 0% | 0.0 | 100% |
+330,17,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S4_battery0.6 | DQN (Agent A) | 17% | 0.0 | 84% |
+330,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S4_battery0.6 | DQN (Agent A) | 17% | 0.0 | 84% |
+330,84,result/constant registry (results/scenario_summary.csv:success_rate),| S4_battery0.6 | DQN (Agent A) | 17% | 0.0 | 84% |
+331,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S4_battery0.6 | raster_low | 100% | 0.0 | 0% |
+331,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S4_battery0.6 | raster_low | 100% | 0.0 | 0% |
+331,0,result/constant registry (results/sensitivity.csv:ent_coef),| S4_battery0.6 | raster_low | 100% | 0.0 | 0% |
+332,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S4_battery0.6 | raster_mid | 100% | 0.0 | 0% |
+332,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S4_battery0.6 | raster_mid | 100% | 0.0 | 0% |
+332,0,result/constant registry (results/sensitivity.csv:ent_coef),| S4_battery0.6 | raster_mid | 100% | 0.0 | 0% |
+333,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S4_battery0.6 | random | 100% | 211.8 | 0% |
+333,211.8,result/constant registry (results/scenario_summary.csv:oob_per_1000_steps),| S4_battery0.6 | random | 100% | 211.8 | 0% |
+333,0,result/constant registry (results/sensitivity.csv:ent_coef),| S4_battery0.6 | random | 100% | 211.8 | 0% |
+334,0,result/constant registry (results/sensitivity.csv:ent_coef),| S4_battery0.6 | A2C (Agent C) | 0% | 0.0 | 100% |
+334,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S4_battery0.6 | A2C (Agent C) | 0% | 0.0 | 100% |
+334,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S4_battery0.6 | A2C (Agent C) | 0% | 0.0 | 100% |
+335,0,result/constant registry (results/sensitivity.csv:ent_coef),| S4_battery0.6 | rule_supervisor | 0% | 0.0 | 100% |
+335,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S4_battery0.6 | rule_supervisor | 0% | 0.0 | 100% |
+335,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S4_battery0.6 | rule_supervisor | 0% | 0.0 | 100% |
+336,24,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S4_battery0.6 | A2C (C_withA) | 24% | 0.0 | 76% |
+336,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S4_battery0.6 | A2C (C_withA) | 24% | 0.0 | 76% |
+336,76,result/constant registry (results/scenario_summary.csv:success_rate),| S4_battery0.6 | A2C (C_withA) | 24% | 0.0 | 76% |
+337,0,result/constant registry (results/sensitivity.csv:ent_coef),| S4_battery0.6 | ALL LEARNED (C + A + B) | 0% | 0.0 | 100% |
+337,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S4_battery0.6 | ALL LEARNED (C + A + B) | 0% | 0.0 | 100% |
+337,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S4_battery0.6 | ALL LEARNED (C + A + B) | 0% | 0.0 | 100% |
+338,0,result/constant registry (results/sensitivity.csv:ent_coef),| S4_battery0.6 | ALL SCRIPTED (rule + raster + approach) | 0% | 0.0 | 100% |
+338,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| S4_battery0.6 | ALL SCRIPTED (rule + raster + approach) | 0% | 0.0 | 100% |
+338,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| S4_battery0.6 | ALL SCRIPTED (rule + raster + approach) | 0% | 0.0 | 100% |
+340,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),"**Insight.** None of the learned policies ever leaves the flight area (DQN 0.0 out-of-bounds moves per 1000 steps), whil"
+340,1000,result/constant registry (py:METHOD['oob_per']:),"**Insight.** None of the learned policies ever leaves the flight area (DQN 0.0 out-of-bounds moves per 1000 steps), whil"
+340,192,result/constant registry (results/scenario_summary.csv:oob_per_1000_steps),"**Insight.** None of the learned policies ever leaves the flight area (DQN 0.0 out-of-bounds moves per 1000 steps), whil"
+340,1000,result/constant registry (py:METHOD['oob_per']:),"**Insight.** None of the learned policies ever leaves the flight area (DQN 0.0 out-of-bounds moves per 1000 steps), whil"
+340,60,result/constant registry (py:SCENARIOS['S4_battery0.6']['start_battery'] * 100:),"**Insight.** None of the learned policies ever leaves the flight area (DQN 0.0 out-of-bounds moves per 1000 steps), whil"
+340,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"**Insight.** None of the learned policies ever leaves the flight area (DQN 0.0 out-of-bounds moves per 1000 steps), whil"
+340,0,result/constant registry (results/sensitivity.csv:ent_coef),"**Insight.** None of the learned policies ever leaves the flight area (DQN 0.0 out-of-bounds moves per 1000 steps), whil"
+340,0.625,result/constant registry (results/summary_S0_all.csv:energy_used_mean),"**Insight.** None of the learned policies ever leaves the flight area (DQN 0.0 out-of-bounds moves per 1000 steps), whil"
+340,84,result/constant registry (results/scenario_summary.csv:success_rate),"**Insight.** None of the learned policies ever leaves the flight area (DQN 0.0 out-of-bounds moves per 1000 steps), whil"
+340,17,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"**Insight.** None of the learned policies ever leaves the flight area (DQN 0.0 out-of-bounds moves per 1000 steps), whil"
+340,24,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"**Insight.** None of the learned policies ever leaves the flight area (DQN 0.0 out-of-bounds moves per 1000 steps), whil"
+342,0.6,result/constant registry (results/sensitivity.csv:eps_fraction),"**Video evidence.**  (  starting battery 0.6, held-out seed 2000)."
+342,2000,result/constant registry (py:HELD_SEED0:),"**Video evidence.**  (  starting battery 0.6, held-out seed 2000)."
+352,2000,result/constant registry (py:HELD_SEED0:),"* . Varying task environments (all on held-out seeds 2000-2099, n = 100 episodes per policy).*"
+352,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Varying task environments (all on held-out seeds 2000-2099, n = 100 episodes per policy).*"
+356,20,result/constant registry (results/scenario_summary.csv:success_rate),"| S0_nominal | analytic detector, 20% defects, battery 1.0 |"
+356,1.0,result/constant registry (py:json.load(open(RUN_DIRS['A'] / 'hyperparams.json'))['exploration_initial_eps']:),"| S0_nominal | analytic detector, 20% defects, battery 1.0 |"
+358,10,result/constant registry (py:METHOD['diag_window']:),| S2_density10 | defect density 10% |
+359,35,scenario definition (common.SCENARIOS),| S2_density35 | defect density 35% |
+360,0.05,result/constant registry (results/sensitivity.csv:ent_coef),| S3_noise0.05 | uncertainty-feature noise sigma=0.05 |
+361,0.10,result/constant registry (py:SCENARIOS['S3_noise0.10']['noise']:),| S3_noise0.10 | uncertainty-feature noise sigma=0.10 |
+362,0.6,result/constant registry (results/sensitivity.csv:eps_fraction),| S4_battery0.6 | starting battery 0.6 |
+365,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Success rate per scenario (n = 100 episodes per policy and scenario, held-out seeds 2000-2099; '-' = not applicable)"
+365,2000,result/constant registry (py:HELD_SEED0:),"* . Success rate per scenario (n = 100 episodes per policy and scenario, held-out seeds 2000-2099; '-' = not applicable)"
+369,96,result/constant registry (results/summary_S0_all.csv:success_rate),| DQN (Agent A) | 96% | 3% | 100% | 80% | 100% | 100% | 84% | - |
+369,3,result/constant registry (results/scenario_summary.csv:success_rate),| DQN (Agent A) | 96% | 3% | 100% | 80% | 100% | 100% | 84% | - |
+369,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| DQN (Agent A) | 96% | 3% | 100% | 80% | 100% | 100% | 84% | - |
+369,80,result/constant registry (results/scenario_summary.csv:success_rate),| DQN (Agent A) | 96% | 3% | 100% | 80% | 100% | 100% | 84% | - |
+369,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| DQN (Agent A) | 96% | 3% | 100% | 80% | 100% | 100% | 84% | - |
+369,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| DQN (Agent A) | 96% | 3% | 100% | 80% | 100% | 100% | 84% | - |
+369,84,result/constant registry (results/scenario_summary.csv:success_rate),| DQN (Agent A) | 96% | 3% | 100% | 80% | 100% | 100% | 84% | - |
+370,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| raster_low | 100% | 100% | 100% | 100% | 100% | 100% | 0% | - |
+370,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| raster_low | 100% | 100% | 100% | 100% | 100% | 100% | 0% | - |
+370,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| raster_low | 100% | 100% | 100% | 100% | 100% | 100% | 0% | - |
+370,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| raster_low | 100% | 100% | 100% | 100% | 100% | 100% | 0% | - |
+370,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| raster_low | 100% | 100% | 100% | 100% | 100% | 100% | 0% | - |
+370,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| raster_low | 100% | 100% | 100% | 100% | 100% | 100% | 0% | - |
+370,0,result/constant registry (results/sensitivity.csv:ent_coef),| raster_low | 100% | 100% | 100% | 100% | 100% | 100% | 0% | - |
+371,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| PPO (Agent B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+371,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| PPO (Agent B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+371,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| PPO (Agent B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+371,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| PPO (Agent B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+371,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| PPO (Agent B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+371,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| PPO (Agent B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+371,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| PPO (Agent B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+371,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| PPO (Agent B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+372,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| scripted_approach (upper bound) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+372,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| scripted_approach (upper bound) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+372,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| scripted_approach (upper bound) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+372,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| scripted_approach (upper bound) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+372,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| scripted_approach (upper bound) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+372,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| scripted_approach (upper bound) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+372,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| scripted_approach (upper bound) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+372,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| scripted_approach (upper bound) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | 100% |
+373,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A2C (Agent C) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+373,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A2C (Agent C) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+373,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A2C (Agent C) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+373,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A2C (Agent C) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+373,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A2C (Agent C) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+373,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A2C (Agent C) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+373,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A2C (Agent C) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+374,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| rule_supervisor | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+374,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| rule_supervisor | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+374,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| rule_supervisor | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+374,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| rule_supervisor | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+374,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| rule_supervisor | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+374,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| rule_supervisor | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+374,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| rule_supervisor | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+375,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A2C (C_withA) | 100% | 100% | 100% | 98% | 100% | 100% | 76% | - |
+375,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A2C (C_withA) | 100% | 100% | 100% | 98% | 100% | 100% | 76% | - |
+375,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A2C (C_withA) | 100% | 100% | 100% | 98% | 100% | 100% | 76% | - |
+375,98,result/constant registry (results/scenario_summary.csv:success_rate),| A2C (C_withA) | 100% | 100% | 100% | 98% | 100% | 100% | 76% | - |
+375,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A2C (C_withA) | 100% | 100% | 100% | 98% | 100% | 100% | 76% | - |
+375,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| A2C (C_withA) | 100% | 100% | 100% | 98% | 100% | 100% | 76% | - |
+375,76,result/constant registry (results/scenario_summary.csv:success_rate),| A2C (C_withA) | 100% | 100% | 100% | 98% | 100% | 100% | 76% | - |
+376,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL LEARNED (C + A + B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+376,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL LEARNED (C + A + B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+376,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL LEARNED (C + A + B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+376,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL LEARNED (C + A + B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+376,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL LEARNED (C + A + B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+376,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL LEARNED (C + A + B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+376,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL LEARNED (C + A + B) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+377,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL SCRIPTED (rule + raster + approach) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+377,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL SCRIPTED (rule + raster + approach) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+377,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL SCRIPTED (rule + raster + approach) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+377,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL SCRIPTED (rule + raster + approach) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+377,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL SCRIPTED (rule + raster + approach) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+377,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL SCRIPTED (rule + raster + approach) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+377,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),| ALL SCRIPTED (rule + raster + approach) | 100% | 100% | 100% | 100% | 100% | 100% | 100% | - |
+379,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Mean return per scenario (n = 100 episodes per policy and scenario, held-out seeds 2000-2099; '-' = not applicable)."
+379,2000,result/constant registry (py:HELD_SEED0:),"* . Mean return per scenario (n = 100 episodes per policy and scenario, held-out seeds 2000-2099; '-' = not applicable)."
+383,33.65,result/constant registry (results/sensitivity.csv:heldout_return),| DQN (Agent A) | 33.65 | 7.67 | 36.70 | 26.28 | 36.52 | 35.97 | 25.25 | - |
+383,7.67,result/constant registry (results/scenario_summary.csv:return_mean),| DQN (Agent A) | 33.65 | 7.67 | 36.70 | 26.28 | 36.52 | 35.97 | 25.25 | - |
+383,36.70,result/constant registry (results/scenario_summary.csv:return_mean),| DQN (Agent A) | 33.65 | 7.67 | 36.70 | 26.28 | 36.52 | 35.97 | 25.25 | - |
+383,26.28,result/constant registry (results/scenario_summary.csv:return_mean),| DQN (Agent A) | 33.65 | 7.67 | 36.70 | 26.28 | 36.52 | 35.97 | 25.25 | - |
+383,36.52,result/constant registry (results/scenario_summary.csv:return_mean),| DQN (Agent A) | 33.65 | 7.67 | 36.70 | 26.28 | 36.52 | 35.97 | 25.25 | - |
+383,35.97,result/constant registry (results/scenario_summary.csv:return_mean),| DQN (Agent A) | 33.65 | 7.67 | 36.70 | 26.28 | 36.52 | 35.97 | 25.25 | - |
+383,25.25,result/constant registry (results/scenario_summary.csv:return_mean),| DQN (Agent A) | 33.65 | 7.67 | 36.70 | 26.28 | 36.52 | 35.97 | 25.25 | - |
+384,35.46,result/constant registry (results/scenario_summary.csv:return_mean),| raster_low | 35.46 | 33.75 | 35.78 | 34.96 | 35.46 | 35.46 | 17.19 | - |
+384,33.75,result/constant registry (results/scenario_summary.csv:return_mean),| raster_low | 35.46 | 33.75 | 35.78 | 34.96 | 35.46 | 35.46 | 17.19 | - |
+384,35.78,result/constant registry (results/scenario_summary.csv:return_mean),| raster_low | 35.46 | 33.75 | 35.78 | 34.96 | 35.46 | 35.46 | 17.19 | - |
+384,34.96,result/constant registry (results/scenario_summary.csv:return_mean),| raster_low | 35.46 | 33.75 | 35.78 | 34.96 | 35.46 | 35.46 | 17.19 | - |
+384,35.46,result/constant registry (results/scenario_summary.csv:return_mean),| raster_low | 35.46 | 33.75 | 35.78 | 34.96 | 35.46 | 35.46 | 17.19 | - |
+384,35.46,result/constant registry (results/scenario_summary.csv:return_mean),| raster_low | 35.46 | 33.75 | 35.78 | 34.96 | 35.46 | 35.46 | 17.19 | - |
+384,17.19,result/constant registry (results/scenario_summary.csv:return_mean),| raster_low | 35.46 | 33.75 | 35.78 | 34.96 | 35.46 | 35.46 | 17.19 | - |
+385,5.67,result/constant registry (results/sensitivity.csv:heldout_return),| PPO (Agent B) | 5.67 | 5.36 | 5.67 | 5.74 | 5.68 | 5.67 | 5.67 | 5.76 |
+385,5.36,result/constant registry (results/scenario_summary.csv:return_mean),| PPO (Agent B) | 5.67 | 5.36 | 5.67 | 5.74 | 5.68 | 5.67 | 5.67 | 5.76 |
+385,5.67,result/constant registry (results/sensitivity.csv:heldout_return),| PPO (Agent B) | 5.67 | 5.36 | 5.67 | 5.74 | 5.68 | 5.67 | 5.67 | 5.76 |
+385,5.74,result/constant registry (results/scenario_summary.csv:return_mean),| PPO (Agent B) | 5.67 | 5.36 | 5.67 | 5.74 | 5.68 | 5.67 | 5.67 | 5.76 |
+385,5.68,result/constant registry (results/sensitivity.csv:heldout_return),| PPO (Agent B) | 5.67 | 5.36 | 5.67 | 5.74 | 5.68 | 5.67 | 5.67 | 5.76 |
+385,5.67,result/constant registry (results/sensitivity.csv:heldout_return),| PPO (Agent B) | 5.67 | 5.36 | 5.67 | 5.74 | 5.68 | 5.67 | 5.67 | 5.76 |
+385,5.67,result/constant registry (results/sensitivity.csv:heldout_return),| PPO (Agent B) | 5.67 | 5.36 | 5.67 | 5.74 | 5.68 | 5.67 | 5.67 | 5.76 |
+385,5.76,result/constant registry (results/scenario_summary.csv:return_mean),| PPO (Agent B) | 5.67 | 5.36 | 5.67 | 5.74 | 5.68 | 5.67 | 5.67 | 5.76 |
+386,5.68,result/constant registry (results/sensitivity.csv:heldout_return),| scripted_approach (upper bound) | 5.68 | 5.36 | 5.67 | 5.74 | 5.68 | 5.68 | 5.68 | 5.77 |
+386,5.36,result/constant registry (results/scenario_summary.csv:return_mean),| scripted_approach (upper bound) | 5.68 | 5.36 | 5.67 | 5.74 | 5.68 | 5.68 | 5.68 | 5.77 |
+386,5.67,result/constant registry (results/sensitivity.csv:heldout_return),| scripted_approach (upper bound) | 5.68 | 5.36 | 5.67 | 5.74 | 5.68 | 5.68 | 5.68 | 5.77 |
+386,5.74,result/constant registry (results/scenario_summary.csv:return_mean),| scripted_approach (upper bound) | 5.68 | 5.36 | 5.67 | 5.74 | 5.68 | 5.68 | 5.68 | 5.77 |
+386,5.68,result/constant registry (results/sensitivity.csv:heldout_return),| scripted_approach (upper bound) | 5.68 | 5.36 | 5.67 | 5.74 | 5.68 | 5.68 | 5.68 | 5.77 |
+386,5.68,result/constant registry (results/sensitivity.csv:heldout_return),| scripted_approach (upper bound) | 5.68 | 5.36 | 5.67 | 5.74 | 5.68 | 5.68 | 5.68 | 5.77 |
+386,5.68,result/constant registry (results/sensitivity.csv:heldout_return),| scripted_approach (upper bound) | 5.68 | 5.36 | 5.67 | 5.74 | 5.68 | 5.68 | 5.68 | 5.77 |
+386,5.77,result/constant registry (results/scenario_summary.csv:return_mean),| scripted_approach (upper bound) | 5.68 | 5.36 | 5.67 | 5.74 | 5.68 | 5.68 | 5.68 | 5.77 |
+387,40.02,result/constant registry (results/sensitivity.csv:heldout_return),| A2C (Agent C) | 40.02 | 41.51 | 19.29 | 68.88 | 40.03 | 40.04 | 38.64 | - |
+387,41.51,result/constant registry (results/scenario_summary.csv:return_mean),| A2C (Agent C) | 40.02 | 41.51 | 19.29 | 68.88 | 40.03 | 40.04 | 38.64 | - |
+387,19.29,result/constant registry (results/scenario_summary.csv:return_mean),| A2C (Agent C) | 40.02 | 41.51 | 19.29 | 68.88 | 40.03 | 40.04 | 38.64 | - |
+387,68.88,result/constant registry (results/scenario_summary.csv:return_mean),| A2C (Agent C) | 40.02 | 41.51 | 19.29 | 68.88 | 40.03 | 40.04 | 38.64 | - |
+387,40.03,result/constant registry (results/scenario_summary.csv:return_mean),| A2C (Agent C) | 40.02 | 41.51 | 19.29 | 68.88 | 40.03 | 40.04 | 38.64 | - |
+387,40.04,result/constant registry (results/scenario_summary.csv:return_mean),| A2C (Agent C) | 40.02 | 41.51 | 19.29 | 68.88 | 40.03 | 40.04 | 38.64 | - |
+387,38.64,result/constant registry (results/scenario_summary.csv:return_mean),| A2C (Agent C) | 40.02 | 41.51 | 19.29 | 68.88 | 40.03 | 40.04 | 38.64 | - |
+388,42.62,result/constant registry (results/summary_S0_all.csv:return_mean),| rule_supervisor | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+388,41.68,result/constant registry (results/scenario_summary.csv:return_mean),| rule_supervisor | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+388,21.38,result/constant registry (results/scenario_summary.csv:return_mean),| rule_supervisor | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+388,72.98,result/constant registry (results/scenario_summary.csv:return_mean),| rule_supervisor | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+388,42.62,result/constant registry (results/summary_S0_all.csv:return_mean),| rule_supervisor | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+388,42.62,result/constant registry (results/summary_S0_all.csv:return_mean),| rule_supervisor | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+388,41.35,result/constant registry (results/scenario_summary.csv:return_mean),| rule_supervisor | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+389,44.50,result/constant registry (results/summary_S0_all.csv:return_mean),| A2C (C_withA) | 44.50 | 32.70 | 21.53 | 74.78 | 44.52 | 44.43 | 39.62 | - |
+389,32.70,result/constant registry (results/scenario_summary.csv:return_mean),| A2C (C_withA) | 44.50 | 32.70 | 21.53 | 74.78 | 44.52 | 44.43 | 39.62 | - |
+389,21.53,result/constant registry (results/scenario_summary.csv:return_mean),| A2C (C_withA) | 44.50 | 32.70 | 21.53 | 74.78 | 44.52 | 44.43 | 39.62 | - |
+389,74.78,result/constant registry (results/scenario_summary.csv:return_mean),| A2C (C_withA) | 44.50 | 32.70 | 21.53 | 74.78 | 44.52 | 44.43 | 39.62 | - |
+389,44.52,result/constant registry (results/scenario_summary.csv:return_mean),| A2C (C_withA) | 44.50 | 32.70 | 21.53 | 74.78 | 44.52 | 44.43 | 39.62 | - |
+389,44.43,result/constant registry (results/scenario_summary.csv:return_mean),| A2C (C_withA) | 44.50 | 32.70 | 21.53 | 74.78 | 44.52 | 44.43 | 39.62 | - |
+389,39.62,result/constant registry (results/scenario_summary.csv:return_mean),| A2C (C_withA) | 44.50 | 32.70 | 21.53 | 74.78 | 44.52 | 44.43 | 39.62 | - |
+390,41.34,result/constant registry (results/summary_S0_all.csv:return_mean),| ALL LEARNED (C + A + B) | 41.34 | 32.29 | 19.91 | 69.62 | 41.14 | 40.71 | 36.29 | - |
+390,32.29,result/constant registry (results/scenario_summary.csv:return_mean),| ALL LEARNED (C + A + B) | 41.34 | 32.29 | 19.91 | 69.62 | 41.14 | 40.71 | 36.29 | - |
+390,19.91,result/constant registry (results/scenario_summary.csv:return_mean),| ALL LEARNED (C + A + B) | 41.34 | 32.29 | 19.91 | 69.62 | 41.14 | 40.71 | 36.29 | - |
+390,69.62,result/constant registry (results/scenario_summary.csv:return_mean),| ALL LEARNED (C + A + B) | 41.34 | 32.29 | 19.91 | 69.62 | 41.14 | 40.71 | 36.29 | - |
+390,41.14,result/constant registry (results/scenario_summary.csv:return_mean),| ALL LEARNED (C + A + B) | 41.34 | 32.29 | 19.91 | 69.62 | 41.14 | 40.71 | 36.29 | - |
+390,40.71,result/constant registry (results/scenario_summary.csv:return_mean),| ALL LEARNED (C + A + B) | 41.34 | 32.29 | 19.91 | 69.62 | 41.14 | 40.71 | 36.29 | - |
+390,36.29,result/constant registry (results/scenario_summary.csv:return_mean),| ALL LEARNED (C + A + B) | 41.34 | 32.29 | 19.91 | 69.62 | 41.14 | 40.71 | 36.29 | - |
+391,42.62,result/constant registry (results/summary_S0_all.csv:return_mean),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+391,41.68,result/constant registry (results/scenario_summary.csv:return_mean),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+391,21.38,result/constant registry (results/scenario_summary.csv:return_mean),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+391,72.98,result/constant registry (results/scenario_summary.csv:return_mean),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+391,42.62,result/constant registry (results/summary_S0_all.csv:return_mean),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+391,42.62,result/constant registry (results/summary_S0_all.csv:return_mean),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+391,41.35,result/constant registry (results/scenario_summary.csv:return_mean),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 41.68 | 21.38 | 72.98 | 42.62 | 42.62 | 41.35 | - |
+393,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Robustness gap of the learned policies (nominal minus perturbed; positive = worse; n = 100 episodes per scenario, he"
+393,2000,result/constant registry (py:HELD_SEED0:),"* . Robustness gap of the learned policies (nominal minus perturbed; positive = worse; n = 100 episodes per scenario, he"
+397,25.98,result/constant registry (results/robustness_gap.csv:return_gap),| DQN (Agent A) | S1_learned | +25.98 | +93 pp |
+397,93,result/constant registry (results/robustness_gap.csv:success_gap),| DQN (Agent A) | S1_learned | +25.98 | +93 pp |
+399,7.37,result/constant registry (results/robustness_gap.csv:return_gap),| DQN (Agent A) | S2_density35 | +7.37 | +16 pp |
+399,16,result/constant registry (results/robustness_gap.csv:success_gap),| DQN (Agent A) | S2_density35 | +7.37 | +16 pp |
+402,8.40,result/constant registry (results/robustness_gap.csv:return_gap),| DQN (Agent A) | S4_battery0.6 | +8.40 | +12 pp |
+402,12,result/constant registry (results/robustness_gap.csv:success_gap),| DQN (Agent A) | S4_battery0.6 | +8.40 | +12 pp |
+403,0.32,result/constant registry (results/robustness_gap.csv:return_gap),| PPO (Agent B) | S1_learned | +0.32 | +0 pp |
+403,0,result/constant registry (results/sensitivity.csv:ent_coef),| PPO (Agent B) | S1_learned | +0.32 | +0 pp |
+404,0.00,result/constant registry (results/robustness_gap.csv:return_gap),| PPO (Agent B) | S2_density10 | +0.00 | +0 pp |
+404,0,result/constant registry (results/sensitivity.csv:ent_coef),| PPO (Agent B) | S2_density10 | +0.00 | +0 pp |
+405,0,result/constant registry (results/sensitivity.csv:ent_coef),| PPO (Agent B) | S2_density35 | -0.06 | +0 pp |
+406,0,result/constant registry (results/sensitivity.csv:ent_coef),| PPO (Agent B) | S3_noise0.05 | -0.00 | +0 pp |
+407,0,result/constant registry (results/sensitivity.csv:ent_coef),| PPO (Agent B) | S3_noise0.10 | -0.00 | +0 pp |
+408,0,result/constant registry (results/sensitivity.csv:ent_coef),| PPO (Agent B) | S4_battery0.6 | -0.00 | +0 pp |
+409,0,result/constant registry (results/sensitivity.csv:ent_coef),| PPO (Agent B) | S5_hardstart | -0.09 | +0 pp |
+410,0,result/constant registry (results/sensitivity.csv:ent_coef),| A2C (Agent C) | S1_learned | -1.49 | +0 pp |
+411,20.74,result/constant registry (results/robustness_gap.csv:return_gap),| A2C (Agent C) | S2_density10 | +20.74 | +0 pp |
+411,0,result/constant registry (results/sensitivity.csv:ent_coef),| A2C (Agent C) | S2_density10 | +20.74 | +0 pp |
+412,0,result/constant registry (results/sensitivity.csv:ent_coef),| A2C (Agent C) | S2_density35 | -28.86 | +0 pp |
+413,0,result/constant registry (results/sensitivity.csv:ent_coef),| A2C (Agent C) | S3_noise0.05 | -0.00 | +0 pp |
+414,0,result/constant registry (results/sensitivity.csv:ent_coef),| A2C (Agent C) | S3_noise0.10 | -0.02 | +0 pp |
+415,1.39,result/constant registry (results/robustness_gap.csv:return_gap),| A2C (Agent C) | S4_battery0.6 | +1.39 | +0 pp |
+415,0,result/constant registry (results/sensitivity.csv:ent_coef),| A2C (Agent C) | S4_battery0.6 | +1.39 | +0 pp |
+416,9.06,result/constant registry (results/robustness_gap.csv:return_gap),| ALL LEARNED (C + A + B) | S1_learned | +9.06 | +0 pp |
+416,0,result/constant registry (results/sensitivity.csv:ent_coef),| ALL LEARNED (C + A + B) | S1_learned | +9.06 | +0 pp |
+417,21.44,result/constant registry (results/robustness_gap.csv:return_gap),| ALL LEARNED (C + A + B) | S2_density10 | +21.44 | +0 pp |
+417,0,result/constant registry (results/sensitivity.csv:ent_coef),| ALL LEARNED (C + A + B) | S2_density10 | +21.44 | +0 pp |
+418,0,result/constant registry (results/sensitivity.csv:ent_coef),| ALL LEARNED (C + A + B) | S2_density35 | -28.28 | +0 pp |
+419,0.20,result/constant registry (results/robustness_gap.csv:return_gap),| ALL LEARNED (C + A + B) | S3_noise0.05 | +0.20 | +0 pp |
+419,0,result/constant registry (results/sensitivity.csv:ent_coef),| ALL LEARNED (C + A + B) | S3_noise0.05 | +0.20 | +0 pp |
+420,0.63,result/constant registry (results/robustness_gap.csv:return_gap),| ALL LEARNED (C + A + B) | S3_noise0.10 | +0.63 | +0 pp |
+420,0,result/constant registry (results/sensitivity.csv:ent_coef),| ALL LEARNED (C + A + B) | S3_noise0.10 | +0.63 | +0 pp |
+421,5.06,result/constant registry (results/robustness_gap.csv:return_gap),| ALL LEARNED (C + A + B) | S4_battery0.6 | +5.06 | +0 pp |
+421,0,result/constant registry (results/sensitivity.csv:ent_coef),| ALL LEARNED (C + A + B) | S4_battery0.6 | +5.06 | +0 pp |
+427,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Real-image (DeepCrack) detector, analytic-trained and real-image-trained models (n = 100 episodes each, seeds 2000-2"
+427,2000,result/constant registry (py:HELD_SEED0:),"* . Real-image (DeepCrack) detector, analytic-trained and real-image-trained models (n = 100 episodes each, seeds 2000-2"
+431,3,result/constant registry (results/scenario_summary.csv:success_rate),"| Agent A (DQN, navigate) | DQN (Agent A) | 3% | 7.67 | 190.8 | 0.992 |"
+431,7.67,result/constant registry (results/scenario_summary.csv:return_mean),"| Agent A (DQN, navigate) | DQN (Agent A) | 3% | 7.67 | 190.8 | 0.992 |"
+431,190.8,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent A (DQN, navigate) | DQN (Agent A) | 3% | 7.67 | 190.8 | 0.992 |"
+431,0.992,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent A (DQN, navigate) | DQN (Agent A) | 3% | 7.67 | 190.8 | 0.992 |"
+432,20,result/constant registry (results/scenario_summary.csv:success_rate),"| Agent A (DQN, navigate) | DQN (Agent A, real-image trained) | 20% | 14.58 | 148.9 | 0.910 |"
+432,14.58,result/constant registry (results/scenario_summary.csv:return_mean),"| Agent A (DQN, navigate) | DQN (Agent A, real-image trained) | 20% | 14.58 | 148.9 | 0.910 |"
+432,148.9,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent A (DQN, navigate) | DQN (Agent A, real-image trained) | 20% | 14.58 | 148.9 | 0.910 |"
+432,0.910,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent A (DQN, navigate) | DQN (Agent A, real-image trained) | 20% | 14.58 | 148.9 | 0.910 |"
+433,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent A (DQN, navigate) | raster_low | 100% | 33.75 | 123.4 | 0.627 |"
+433,33.75,result/constant registry (results/scenario_summary.csv:return_mean),"| Agent A (DQN, navigate) | raster_low | 100% | 33.75 | 123.4 | 0.627 |"
+433,123.4,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent A (DQN, navigate) | raster_low | 100% | 33.75 | 123.4 | 0.627 |"
+433,0.627,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent A (DQN, navigate) | raster_low | 100% | 33.75 | 123.4 | 0.627 |"
+434,20,result/constant registry (results/scenario_summary.csv:success_rate),"| Agent A (DQN, navigate) | raster_mid | 20% | 14.01 | 168.7 | 0.849 |"
+434,14.01,result/constant registry (results/scenario_summary.csv:return_mean),"| Agent A (DQN, navigate) | raster_mid | 20% | 14.01 | 168.7 | 0.849 |"
+434,168.7,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent A (DQN, navigate) | raster_mid | 20% | 14.01 | 168.7 | 0.849 |"
+434,0.849,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent A (DQN, navigate) | raster_mid | 20% | 14.01 | 168.7 | 0.849 |"
+435,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent A (DQN, navigate) | random | 0% | -27.83 | 150.2 | 1.001 |"
+435,150.2,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent A (DQN, navigate) | random | 0% | -27.83 | 150.2 | 1.001 |"
+435,1.001,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent A (DQN, navigate) | random | 0% | -27.83 | 150.2 | 1.001 |"
+436,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent B (PPO, refine) | PPO (Agent B) | 100% | 5.36 | 3.7 | 0.030 |"
+436,5.36,result/constant registry (results/scenario_summary.csv:return_mean),"| Agent B (PPO, refine) | PPO (Agent B) | 100% | 5.36 | 3.7 | 0.030 |"
+436,3.7,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent B (PPO, refine) | PPO (Agent B) | 100% | 5.36 | 3.7 | 0.030 |"
+436,0.030,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent B (PPO, refine) | PPO (Agent B) | 100% | 5.36 | 3.7 | 0.030 |"
+437,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent B (PPO, refine) | PPO (Agent B, real-image trained) | 100% | 5.36 | 3.6 | 0.029 |"
+437,5.36,result/constant registry (results/scenario_summary.csv:return_mean),"| Agent B (PPO, refine) | PPO (Agent B, real-image trained) | 100% | 5.36 | 3.6 | 0.029 |"
+437,3.6,result/constant registry (results/sensitivity.csv:heldout_steps),"| Agent B (PPO, refine) | PPO (Agent B, real-image trained) | 100% | 5.36 | 3.6 | 0.029 |"
+437,0.029,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent B (PPO, refine) | PPO (Agent B, real-image trained) | 100% | 5.36 | 3.6 | 0.029 |"
+438,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent B (PPO, refine) | fixed_orbit | 0% | -2.32 | 30.0 | 0.240 |"
+438,30.0,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent B (PPO, refine) | fixed_orbit | 0% | -2.32 | 30.0 | 0.240 |"
+438,0.240,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent B (PPO, refine) | fixed_orbit | 0% | -2.32 | 30.0 | 0.240 |"
+439,0,result/constant registry (results/sensitivity.csv:ent_coef),"| Agent B (PPO, refine) | random | 0% | -2.25 | 30.0 | 0.240 |"
+439,30.0,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent B (PPO, refine) | random | 0% | -2.25 | 30.0 | 0.240 |"
+439,0.240,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent B (PPO, refine) | random | 0% | -2.25 | 30.0 | 0.240 |"
+440,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 100% | 5.36 | 3.6 | 0.029 |"
+440,5.36,result/constant registry (results/scenario_summary.csv:return_mean),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 100% | 5.36 | 3.6 | 0.029 |"
+440,3.6,result/constant registry (results/sensitivity.csv:heldout_steps),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 100% | 5.36 | 3.6 | 0.029 |"
+440,0.029,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent B (PPO, refine) | scripted_approach (upper bound) | 100% | 5.36 | 3.6 | 0.029 |"
+441,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent C (A2C, supervise) | A2C (Agent C) | 100% | 41.51 | 17.8 | 0.494 |"
+441,41.51,result/constant registry (results/scenario_summary.csv:return_mean),"| Agent C (A2C, supervise) | A2C (Agent C) | 100% | 41.51 | 17.8 | 0.494 |"
+441,17.8,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent C (A2C, supervise) | A2C (Agent C) | 100% | 41.51 | 17.8 | 0.494 |"
+441,0.494,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent C (A2C, supervise) | A2C (Agent C) | 100% | 41.51 | 17.8 | 0.494 |"
+442,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent C (A2C, supervise) | A2C (Agent C, real-image trained) | 100% | 41.58 | 13.4 | 0.350 |"
+442,41.58,result/constant registry (results/scenario_summary.csv:return_mean),"| Agent C (A2C, supervise) | A2C (Agent C, real-image trained) | 100% | 41.58 | 13.4 | 0.350 |"
+442,13.4,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent C (A2C, supervise) | A2C (Agent C, real-image trained) | 100% | 41.58 | 13.4 | 0.350 |"
+442,0.350,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent C (A2C, supervise) | A2C (Agent C, real-image trained) | 100% | 41.58 | 13.4 | 0.350 |"
+443,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent C (A2C, supervise) | rule_supervisor | 100% | 41.68 | 34.5 | 0.951 |"
+443,41.68,result/constant registry (results/scenario_summary.csv:return_mean),"| Agent C (A2C, supervise) | rule_supervisor | 100% | 41.68 | 34.5 | 0.951 |"
+443,34.5,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent C (A2C, supervise) | rule_supervisor | 100% | 41.68 | 34.5 | 0.951 |"
+443,0.951,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent C (A2C, supervise) | rule_supervisor | 100% | 41.68 | 34.5 | 0.951 |"
+444,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| Agent C (A2C, supervise) | random | 100% | 3.51 | 2.6 | 0.060 |"
+444,3.51,result/constant registry (results/scenario_summary.csv:return_mean),"| Agent C (A2C, supervise) | random | 100% | 3.51 | 2.6 | 0.060 |"
+444,2.6,result/constant registry (results/scenario_summary.csv:steps_mean),"| Agent C (A2C, supervise) | random | 100% | 3.51 | 2.6 | 0.060 |"
+444,0.060,result/constant registry (results/scenario_summary.csv:energy_used_mean),"| Agent C (A2C, supervise) | random | 100% | 3.51 | 2.6 | 0.060 |"
+450,3,result/constant registry (results/scenario_summary.csv:success_rate),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+450,20,result/constant registry (results/scenario_summary.csv:success_rate),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+450,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+450,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+450,41.51,result/constant registry (results/scenario_summary.csv:return_mean),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+450,41.68,result/constant registry (results/scenario_summary.csv:return_mean),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+450,35,scenario definition (common.SCENARIOS),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+450,80,result/constant registry (results/scenario_summary.csv:success_rate),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+450,0.05,result/constant registry (results/sensitivity.csv:ent_coef),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+450,0.10,result/constant registry (py:SCENARIOS['S3_noise0.10']['noise']:),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+450,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+450,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+450,4.76,result/constant registry (results/scenario_summary.csv:steps_mean),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+450,4.75,result/constant registry (results/scenario_summary.csv:steps_mean),**Insight.** **Real images are the hardest change for Agent A.** The analytic-trained DQN drops to 3% success and even t
+452,2000,result/constant registry (py:HELD_SEED0:),"**Video evidence.**  (  real-image (DeepCrack) detector, held-out seed 2000);  (real DeepCrack test patches);  (  defect"
+452,35,scenario definition (common.SCENARIOS),"**Video evidence.**  (  real-image (DeepCrack) detector, held-out seed 2000);  (real DeepCrack test patches);  (  defect"
+452,2013,video clip definition (make_videos.CLIPS),"**Video evidence.**  (  real-image (DeepCrack) detector, held-out seed 2000);  (real DeepCrack test patches);  (  defect"
+452,0.6,result/constant registry (results/sensitivity.csv:eps_fraction),"**Video evidence.**  (  real-image (DeepCrack) detector, held-out seed 2000);  (real DeepCrack test patches);  (  defect"
+452,2000,result/constant registry (py:HELD_SEED0:),"**Video evidence.**  (  real-image (DeepCrack) detector, held-out seed 2000);  (real DeepCrack test patches);  (  defect"
+452,2000,result/constant registry (py:HELD_SEED0:),"**Video evidence.**  (  real-image (DeepCrack) detector, held-out seed 2000);  (real DeepCrack test patches);  (  defect"
+452,2000,result/constant registry (py:HELD_SEED0:),"**Video evidence.**  (  real-image (DeepCrack) detector, held-out seed 2000);  (real DeepCrack test patches);  (  defect"
+462,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Integration ablation in full mode (n = 100 episodes per policy, held-out seeds 2000-2099).*"
+462,2000,result/constant registry (py:HELD_SEED0:),"* . Integration ablation in full mode (n = 100 episodes per policy, held-out seeds 2000-2099).*"
+464,26,result/constant registry (results/derived_metrics.csv:value),| Configuration | Return | Decisions | Low-level steps | Defects (of 26) | Energy | mIoU | REFINE share |
+466,41.34,result/constant registry (results/summary_S0_all.csv:return_mean),| ALL LEARNED (C + A + B) | 41.34 | 17.2 | 81.1 | 21.72 | 0.513 | 0.529 | 0.0% |
+466,17.2,result/constant registry (results/summary_S0_all.csv:steps_mean),| ALL LEARNED (C + A + B) | 41.34 | 17.2 | 81.1 | 21.72 | 0.513 | 0.529 | 0.0% |
+466,81.1,result/constant registry (results/summary_S0_all.csv:low_level_steps_mean),| ALL LEARNED (C + A + B) | 41.34 | 17.2 | 81.1 | 21.72 | 0.513 | 0.529 | 0.0% |
+466,21.72,result/constant registry (results/summary_S0_all.csv:defects_found_mean),| ALL LEARNED (C + A + B) | 41.34 | 17.2 | 81.1 | 21.72 | 0.513 | 0.529 | 0.0% |
+466,0.513,result/constant registry (results/summary_S0_all.csv:energy_used_mean),| ALL LEARNED (C + A + B) | 41.34 | 17.2 | 81.1 | 21.72 | 0.513 | 0.529 | 0.0% |
+466,0.529,result/constant registry (results/summary_S0_all.csv:miou_mean),| ALL LEARNED (C + A + B) | 41.34 | 17.2 | 81.1 | 21.72 | 0.513 | 0.529 | 0.0% |
+466,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| ALL LEARNED (C + A + B) | 41.34 | 17.2 | 81.1 | 21.72 | 0.513 | 0.529 | 0.0% |
+467,42.62,result/constant registry (results/summary_S0_all.csv:return_mean),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 33.7 | 148.4 | 22.47 | 0.956 | 0.599 | 31.5% |
+467,33.7,result/constant registry (results/summary_S0_all.csv:steps_mean),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 33.7 | 148.4 | 22.47 | 0.956 | 0.599 | 31.5% |
+467,148.4,result/constant registry (results/summary_S0_all.csv:low_level_steps_mean),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 33.7 | 148.4 | 22.47 | 0.956 | 0.599 | 31.5% |
+467,22.47,result/constant registry (results/summary_S0_all.csv:defects_found_mean),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 33.7 | 148.4 | 22.47 | 0.956 | 0.599 | 31.5% |
+467,0.956,result/constant registry (results/summary_S0_all.csv:energy_used_mean),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 33.7 | 148.4 | 22.47 | 0.956 | 0.599 | 31.5% |
+467,0.599,result/constant registry (results/summary_S0_all.csv:miou_mean),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 33.7 | 148.4 | 22.47 | 0.956 | 0.599 | 31.5% |
+467,31.5,result/constant registry (results/summary_S0_all.csv:freq_refine),| ALL SCRIPTED (rule + raster + approach) | 42.62 | 33.7 | 148.4 | 22.47 | 0.956 | 0.599 | 31.5% |
+468,40.02,result/constant registry (results/sensitivity.csv:heldout_return),"| ablation: C learned, A/B scripted | 40.02 | 19.2 | 91.2 | 21.06 | 0.513 | 0.501 | 0.0% |"
+468,19.2,result/constant registry (results/sensitivity.csv:heldout_steps),"| ablation: C learned, A/B scripted | 40.02 | 19.2 | 91.2 | 21.06 | 0.513 | 0.501 | 0.0% |"
+468,91.2,result/constant registry (results/summary_S0_all.csv:low_level_steps_mean),"| ablation: C learned, A/B scripted | 40.02 | 19.2 | 91.2 | 21.06 | 0.513 | 0.501 | 0.0% |"
+468,21.06,result/constant registry (results/summary_S0_all.csv:defects_found_mean),"| ablation: C learned, A/B scripted | 40.02 | 19.2 | 91.2 | 21.06 | 0.513 | 0.501 | 0.0% |"
+468,0.513,result/constant registry (results/summary_S0_all.csv:energy_used_mean),"| ablation: C learned, A/B scripted | 40.02 | 19.2 | 91.2 | 21.06 | 0.513 | 0.501 | 0.0% |"
+468,0.501,result/constant registry (results/summary_S0_all.csv:miou_mean),"| ablation: C learned, A/B scripted | 40.02 | 19.2 | 91.2 | 21.06 | 0.513 | 0.501 | 0.0% |"
+468,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),"| ablation: C learned, A/B scripted | 40.02 | 19.2 | 91.2 | 21.06 | 0.513 | 0.501 | 0.0% |"
+469,44.50,result/constant registry (results/summary_S0_all.csv:return_mean),"| ablation: rule C, A + B learned | 44.50 | 32.0 | 140.6 | 23.40 | 0.922 | 0.619 | 31.3% |"
+469,32.0,result/constant registry (results/summary_S0_all.csv:steps_mean),"| ablation: rule C, A + B learned | 44.50 | 32.0 | 140.6 | 23.40 | 0.922 | 0.619 | 31.3% |"
+469,140.6,result/constant registry (results/summary_S0_all.csv:low_level_steps_mean),"| ablation: rule C, A + B learned | 44.50 | 32.0 | 140.6 | 23.40 | 0.922 | 0.619 | 31.3% |"
+469,23.40,result/constant registry (results/summary_S0_all.csv:defects_found_mean),"| ablation: rule C, A + B learned | 44.50 | 32.0 | 140.6 | 23.40 | 0.922 | 0.619 | 31.3% |"
+469,0.922,result/constant registry (results/summary_S0_all.csv:energy_used_mean),"| ablation: rule C, A + B learned | 44.50 | 32.0 | 140.6 | 23.40 | 0.922 | 0.619 | 31.3% |"
+469,0.619,result/constant registry (results/summary_S0_all.csv:miou_mean),"| ablation: rule C, A + B learned | 44.50 | 32.0 | 140.6 | 23.40 | 0.922 | 0.619 | 31.3% |"
+469,31.3,result/constant registry (results/summary_S0_all.csv:freq_refine),"| ablation: rule C, A + B learned | 44.50 | 32.0 | 140.6 | 23.40 | 0.922 | 0.619 | 31.3% |"
+470,44.50,result/constant registry (results/summary_S0_all.csv:return_mean),| C_withA + A + B (extra) | 44.50 | 29.8 | 144.0 | 23.38 | 0.835 | 0.597 | 0.0% |
+470,29.8,result/constant registry (results/summary_S0_all.csv:steps_mean),| C_withA + A + B (extra) | 44.50 | 29.8 | 144.0 | 23.38 | 0.835 | 0.597 | 0.0% |
+470,144.0,result/constant registry (results/summary_S0_all.csv:low_level_steps_mean),| C_withA + A + B (extra) | 44.50 | 29.8 | 144.0 | 23.38 | 0.835 | 0.597 | 0.0% |
+470,23.38,result/constant registry (results/summary_S0_all.csv:defects_found_mean),| C_withA + A + B (extra) | 44.50 | 29.8 | 144.0 | 23.38 | 0.835 | 0.597 | 0.0% |
+470,0.835,result/constant registry (results/summary_S0_all.csv:energy_used_mean),| C_withA + A + B (extra) | 44.50 | 29.8 | 144.0 | 23.38 | 0.835 | 0.597 | 0.0% |
+470,0.597,result/constant registry (results/summary_S0_all.csv:miou_mean),| C_withA + A + B (extra) | 44.50 | 29.8 | 144.0 | 23.38 | 0.835 | 0.597 | 0.0% |
+470,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),| C_withA + A + B (extra) | 44.50 | 29.8 | 144.0 | 23.38 | 0.835 | 0.597 | 0.0% |
+476,44.50,result/constant registry (results/summary_S0_all.csv:return_mean),"**Insight.** Compared with the all-scripted system, the fully learned hierarchy (C + A + B) completes every mission whil"
+476,23.40,result/constant registry (results/summary_S0_all.csv:defects_found_mean),"**Insight.** Compared with the all-scripted system, the fully learned hierarchy (C + A + B) completes every mission whil"
+476,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),"**Insight.** Compared with the all-scripted system, the fully learned hierarchy (C + A + B) completes every mission whil"
+476,44.50,result/constant registry (results/summary_S0_all.csv:return_mean),"**Insight.** Compared with the all-scripted system, the fully learned hierarchy (C + A + B) completes every mission whil"
+478,2000,result/constant registry (py:HELD_SEED0:),"**Video evidence.**  (  nominal, held-out seed 2000, full mode)."
+490,0,result/constant registry (results/sensitivity.csv:ent_coef),"* . Training diagnostics from TensorBoard (main runs, training seed 0; training logs, no evaluation episodes).*"
+492,10,result/constant registry (py:METHOD['diag_window']:),| Diagnostic | Mean of first 10 logs | Mean of last 10 logs | Maximum |
+492,10,result/constant registry (py:METHOD['diag_window']:),| Diagnostic | Mean of first 10 logs | Mean of last 10 logs | Maximum |
+494,0.0133,result/constant registry (results/tb_scalars.csv:value),| DQN loss | 0.0133 | 0.0278 | 0.3312 |
+494,0.0278,result/constant registry (results/tb_scalars.csv:value),| DQN loss | 0.0133 | 0.0278 | 0.3312 |
+494,0.3312,result/constant registry (results/tb_scalars.csv:value),| DQN loss | 0.0133 | 0.0278 | 0.3312 |
+495,3.8424,result/constant registry (results/tb_scalars.csv:value),| PPO value loss | 3.8424 | 0.0013 | 9.8718 |
+495,0.0013,result/constant registry (results/tb_scalars.csv:value),| PPO value loss | 3.8424 | 0.0013 | 9.8718 |
+495,9.8718,result/constant registry (results/tb_scalars.csv:value),| PPO value loss | 3.8424 | 0.0013 | 9.8718 |
+496,0.0144,result/constant registry (results/tb_scalars.csv:value),| PPO approx. KL | 0.0144 | 0.0122 | 0.0229 |
+496,0.0122,result/constant registry (results/tb_scalars.csv:value),| PPO approx. KL | 0.0144 | 0.0122 | 0.0229 |
+496,0.0229,result/constant registry (results/tb_scalars.csv:value),| PPO approx. KL | 0.0144 | 0.0122 | 0.0229 |
+497,0.1566,result/constant registry (results/tb_scalars.csv:value),| PPO clip fraction | 0.1566 | 0.1364 | 0.2452 |
+497,0.1364,result/constant registry (results/tb_scalars.csv:value),| PPO clip fraction | 0.1566 | 0.1364 | 0.2452 |
+497,0.2452,result/constant registry (results/tb_scalars.csv:value),| PPO clip fraction | 0.1566 | 0.1364 | 0.2452 |
+498,0.0093,result/constant registry (results/tb_scalars.csv:value),| PPO explained variance | 0.0093 | 0.9656 | 0.9725 |
+498,0.9656,result/constant registry (results/tb_scalars.csv:value),| PPO explained variance | 0.0093 | 0.9656 | 0.9725 |
+498,0.9725,result/constant registry (results/tb_scalars.csv:value),| PPO explained variance | 0.0093 | 0.9656 | 0.9725 |
+499,36.3799,result/constant registry (results/tb_scalars.csv:value),| A2C value loss | 36.3799 | 2.9513 | 128.6563 |
+499,2.9513,result/constant registry (results/tb_scalars.csv:value),| A2C value loss | 36.3799 | 2.9513 | 128.6563 |
+499,128.6563,result/constant registry (results/tb_scalars.csv:value),| A2C value loss | 36.3799 | 2.9513 | 128.6563 |
+500,0.8458,result/constant registry (results/tb_scalars.csv:value),| A2C explained variance | 0.8458 | 0.9732 | 0.9955 |
+500,0.9732,result/constant registry (results/tb_scalars.csv:value),| A2C explained variance | 0.8458 | 0.9732 | 0.9955 |
+500,0.9955,result/constant registry (results/tb_scalars.csv:value),| A2C explained variance | 0.8458 | 0.9732 | 0.9955 |
+506,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"* . Hyperparameter sensitivity (CO5), every run evaluated on the 100 held-out bridges (seeds 2000-2099).*"
+506,2000,result/constant registry (py:HELD_SEED0:),"* . Hyperparameter sensitivity (CO5), every run evaluated on the 100 held-out bridges (seeds 2000-2099).*"
+508,95,result/constant registry (py:METHOD['ci_level']:),| Run | Setting | Training steps | Held-out return | 95% CI | Success | Length |
+510,0.1,result/constant registry (results/sensitivity.csv:eps_fraction),"| A_eps0.1 | eps_fraction 0.1 | 150,000 (short run) | 36.79 | ±1.09 | 97% | 78.5 |"
+510,150000,result/constant registry (results/sensitivity.csv:steps_trained),"| A_eps0.1 | eps_fraction 0.1 | 150,000 (short run) | 36.79 | ±1.09 | 97% | 78.5 |"
+510,36.79,result/constant registry (results/sensitivity.csv:heldout_return),"| A_eps0.1 | eps_fraction 0.1 | 150,000 (short run) | 36.79 | ±1.09 | 97% | 78.5 |"
+510,1.09,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| A_eps0.1 | eps_fraction 0.1 | 150,000 (short run) | 36.79 | ±1.09 | 97% | 78.5 |"
+510,97,result/constant registry (results/sensitivity.csv:heldout_success),"| A_eps0.1 | eps_fraction 0.1 | 150,000 (short run) | 36.79 | ±1.09 | 97% | 78.5 |"
+510,78.5,result/constant registry (results/sensitivity.csv:heldout_steps),"| A_eps0.1 | eps_fraction 0.1 | 150,000 (short run) | 36.79 | ±1.09 | 97% | 78.5 |"
+511,0.3,result/constant registry (results/sensitivity.csv:clip_range),"| A_eps0.3 | eps_fraction 0.3 | 150,000 (short run) | 34.55 | ±0.90 | 99% | 92.5 |"
+511,150000,result/constant registry (results/sensitivity.csv:steps_trained),"| A_eps0.3 | eps_fraction 0.3 | 150,000 (short run) | 34.55 | ±0.90 | 99% | 92.5 |"
+511,34.55,result/constant registry (results/sensitivity.csv:heldout_return),"| A_eps0.3 | eps_fraction 0.3 | 150,000 (short run) | 34.55 | ±0.90 | 99% | 92.5 |"
+511,0.90,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| A_eps0.3 | eps_fraction 0.3 | 150,000 (short run) | 34.55 | ±0.90 | 99% | 92.5 |"
+511,99,result/constant registry (results/multiseed_per_seed.csv:heldout_success),"| A_eps0.3 | eps_fraction 0.3 | 150,000 (short run) | 34.55 | ±0.90 | 99% | 92.5 |"
+511,92.5,result/constant registry (results/sensitivity.csv:heldout_steps),"| A_eps0.3 | eps_fraction 0.3 | 150,000 (short run) | 34.55 | ±0.90 | 99% | 92.5 |"
+512,0.6,result/constant registry (results/sensitivity.csv:eps_fraction),"| A_eps0.6 | eps_fraction 0.6 | 150,000 (short run) | 30.89 | ±1.83 | 90% | 111.2 |"
+512,150000,result/constant registry (results/sensitivity.csv:steps_trained),"| A_eps0.6 | eps_fraction 0.6 | 150,000 (short run) | 30.89 | ±1.83 | 90% | 111.2 |"
+512,30.89,result/constant registry (results/sensitivity.csv:heldout_return),"| A_eps0.6 | eps_fraction 0.6 | 150,000 (short run) | 30.89 | ±1.83 | 90% | 111.2 |"
+512,1.83,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| A_eps0.6 | eps_fraction 0.6 | 150,000 (short run) | 30.89 | ±1.83 | 90% | 111.2 |"
+512,90,result/constant registry (results/sensitivity.csv:heldout_success),"| A_eps0.6 | eps_fraction 0.6 | 150,000 (short run) | 30.89 | ±1.83 | 90% | 111.2 |"
+512,111.2,result/constant registry (results/sensitivity.csv:heldout_steps),"| A_eps0.6 | eps_fraction 0.6 | 150,000 (short run) | 30.89 | ±1.83 | 90% | 111.2 |"
+513,0.3,result/constant registry (results/sensitivity.csv:clip_range),"| A | eps_fraction 0.3 | 200,000 | 33.65 | ±1.29 | 96% | 95.1 |"
+513,200000,result/constant registry (results/sensitivity.csv:steps_trained),"| A | eps_fraction 0.3 | 200,000 | 33.65 | ±1.29 | 96% | 95.1 |"
+513,33.65,result/constant registry (results/sensitivity.csv:heldout_return),"| A | eps_fraction 0.3 | 200,000 | 33.65 | ±1.29 | 96% | 95.1 |"
+513,1.29,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| A | eps_fraction 0.3 | 200,000 | 33.65 | ±1.29 | 96% | 95.1 |"
+513,96,result/constant registry (results/summary_S0_all.csv:success_rate),"| A | eps_fraction 0.3 | 200,000 | 33.65 | ±1.29 | 96% | 95.1 |"
+513,95.1,result/constant registry (results/sensitivity.csv:heldout_steps),"| A | eps_fraction 0.3 | 200,000 | 33.65 | ±1.29 | 96% | 95.1 |"
+514,0,result/constant registry (results/sensitivity.csv:ent_coef),"| B_ent0.0 | ent 0, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+514,0.2,result/constant registry (results/sensitivity.csv:clip_range),"| B_ent0.0 | ent 0, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+514,60000,result/constant registry (results/sensitivity.csv:steps_trained),"| B_ent0.0 | ent 0, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+514,5.67,result/constant registry (results/sensitivity.csv:heldout_return),"| B_ent0.0 | ent 0, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+514,0.03,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| B_ent0.0 | ent 0, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+514,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| B_ent0.0 | ent 0, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+514,3.6,result/constant registry (results/sensitivity.csv:heldout_steps),"| B_ent0.0 | ent 0, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+515,0.01,result/constant registry (results/sensitivity.csv:ent_coef),"| B_ent0.01 | ent 0.01, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+515,0.2,result/constant registry (results/sensitivity.csv:clip_range),"| B_ent0.01 | ent 0.01, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+515,60000,result/constant registry (results/sensitivity.csv:steps_trained),"| B_ent0.01 | ent 0.01, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+515,5.67,result/constant registry (results/sensitivity.csv:heldout_return),"| B_ent0.01 | ent 0.01, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+515,0.03,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| B_ent0.01 | ent 0.01, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+515,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| B_ent0.01 | ent 0.01, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+515,3.6,result/constant registry (results/sensitivity.csv:heldout_steps),"| B_ent0.01 | ent 0.01, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+516,0.05,result/constant registry (results/sensitivity.csv:ent_coef),"| B_ent0.05 | ent 0.05, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+516,0.2,result/constant registry (results/sensitivity.csv:clip_range),"| B_ent0.05 | ent 0.05, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+516,60000,result/constant registry (results/sensitivity.csv:steps_trained),"| B_ent0.05 | ent 0.05, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+516,5.67,result/constant registry (results/sensitivity.csv:heldout_return),"| B_ent0.05 | ent 0.05, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+516,0.03,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| B_ent0.05 | ent 0.05, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+516,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| B_ent0.05 | ent 0.05, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+516,3.6,result/constant registry (results/sensitivity.csv:heldout_steps),"| B_ent0.05 | ent 0.05, clip 0.2 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+517,0,result/constant registry (results/sensitivity.csv:ent_coef),"| B_clip0.1 | ent 0, clip 0.1 | 60,000 (short run) | 5.68 | ±0.03 | 100% | 3.5 |"
+517,0.1,result/constant registry (results/sensitivity.csv:eps_fraction),"| B_clip0.1 | ent 0, clip 0.1 | 60,000 (short run) | 5.68 | ±0.03 | 100% | 3.5 |"
+517,60000,result/constant registry (results/sensitivity.csv:steps_trained),"| B_clip0.1 | ent 0, clip 0.1 | 60,000 (short run) | 5.68 | ±0.03 | 100% | 3.5 |"
+517,5.68,result/constant registry (results/sensitivity.csv:heldout_return),"| B_clip0.1 | ent 0, clip 0.1 | 60,000 (short run) | 5.68 | ±0.03 | 100% | 3.5 |"
+517,0.03,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| B_clip0.1 | ent 0, clip 0.1 | 60,000 (short run) | 5.68 | ±0.03 | 100% | 3.5 |"
+517,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| B_clip0.1 | ent 0, clip 0.1 | 60,000 (short run) | 5.68 | ±0.03 | 100% | 3.5 |"
+517,3.5,result/constant registry (results/sensitivity.csv:heldout_steps),"| B_clip0.1 | ent 0, clip 0.1 | 60,000 (short run) | 5.68 | ±0.03 | 100% | 3.5 |"
+518,0,result/constant registry (results/sensitivity.csv:ent_coef),"| B_clip0.3 | ent 0, clip 0.3 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+518,0.3,result/constant registry (results/sensitivity.csv:clip_range),"| B_clip0.3 | ent 0, clip 0.3 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+518,60000,result/constant registry (results/sensitivity.csv:steps_trained),"| B_clip0.3 | ent 0, clip 0.3 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+518,5.67,result/constant registry (results/sensitivity.csv:heldout_return),"| B_clip0.3 | ent 0, clip 0.3 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+518,0.03,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| B_clip0.3 | ent 0, clip 0.3 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+518,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| B_clip0.3 | ent 0, clip 0.3 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+518,3.6,result/constant registry (results/sensitivity.csv:heldout_steps),"| B_clip0.3 | ent 0, clip 0.3 | 60,000 (short run) | 5.67 | ±0.03 | 100% | 3.6 |"
+519,0,result/constant registry (results/sensitivity.csv:ent_coef),"| B | ent 0, clip 0.2 | 100,000 | 5.67 | ±0.03 | 100% | 3.6 |"
+519,0.2,result/constant registry (results/sensitivity.csv:clip_range),"| B | ent 0, clip 0.2 | 100,000 | 5.67 | ±0.03 | 100% | 3.6 |"
+519,100000,result/constant registry (results/sensitivity.csv:steps_trained),"| B | ent 0, clip 0.2 | 100,000 | 5.67 | ±0.03 | 100% | 3.6 |"
+519,5.67,result/constant registry (results/sensitivity.csv:heldout_return),"| B | ent 0, clip 0.2 | 100,000 | 5.67 | ±0.03 | 100% | 3.6 |"
+519,0.03,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| B | ent 0, clip 0.2 | 100,000 | 5.67 | ±0.03 | 100% | 3.6 |"
+519,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| B | ent 0, clip 0.2 | 100,000 | 5.67 | ±0.03 | 100% | 3.6 |"
+519,3.6,result/constant registry (results/sensitivity.csv:heldout_steps),"| B | ent 0, clip 0.2 | 100,000 | 5.67 | ±0.03 | 100% | 3.6 |"
+520,0,result/constant registry (results/sensitivity.csv:ent_coef),"| C_ent0.0 | ent 0 | 60,000 (short run) | 40.10 | ±0.88 | 100% | 13.2 |"
+520,60000,result/constant registry (results/sensitivity.csv:steps_trained),"| C_ent0.0 | ent 0 | 60,000 (short run) | 40.10 | ±0.88 | 100% | 13.2 |"
+520,40.10,result/constant registry (results/sensitivity.csv:heldout_return),"| C_ent0.0 | ent 0 | 60,000 (short run) | 40.10 | ±0.88 | 100% | 13.2 |"
+520,0.88,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| C_ent0.0 | ent 0 | 60,000 (short run) | 40.10 | ±0.88 | 100% | 13.2 |"
+520,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| C_ent0.0 | ent 0 | 60,000 (short run) | 40.10 | ±0.88 | 100% | 13.2 |"
+520,13.2,result/constant registry (results/sensitivity.csv:heldout_steps),"| C_ent0.0 | ent 0 | 60,000 (short run) | 40.10 | ±0.88 | 100% | 13.2 |"
+521,0.01,result/constant registry (results/sensitivity.csv:ent_coef),"| C_ent0.01 | ent 0.01 | 60,000 (short run) | 40.52 | ±0.86 | 100% | 17.7 |"
+521,60000,result/constant registry (results/sensitivity.csv:steps_trained),"| C_ent0.01 | ent 0.01 | 60,000 (short run) | 40.52 | ±0.86 | 100% | 17.7 |"
+521,40.52,result/constant registry (results/sensitivity.csv:heldout_return),"| C_ent0.01 | ent 0.01 | 60,000 (short run) | 40.52 | ±0.86 | 100% | 17.7 |"
+521,0.86,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| C_ent0.01 | ent 0.01 | 60,000 (short run) | 40.52 | ±0.86 | 100% | 17.7 |"
+521,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| C_ent0.01 | ent 0.01 | 60,000 (short run) | 40.52 | ±0.86 | 100% | 17.7 |"
+521,17.7,result/constant registry (results/sensitivity.csv:heldout_steps),"| C_ent0.01 | ent 0.01 | 60,000 (short run) | 40.52 | ±0.86 | 100% | 17.7 |"
+522,0.05,result/constant registry (results/sensitivity.csv:ent_coef),"| C_ent0.05 | ent 0.05 | 60,000 (short run) | 40.42 | ±0.86 | 100% | 16.7 |"
+522,60000,result/constant registry (results/sensitivity.csv:steps_trained),"| C_ent0.05 | ent 0.05 | 60,000 (short run) | 40.42 | ±0.86 | 100% | 16.7 |"
+522,40.42,result/constant registry (results/sensitivity.csv:heldout_return),"| C_ent0.05 | ent 0.05 | 60,000 (short run) | 40.42 | ±0.86 | 100% | 16.7 |"
+522,0.86,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| C_ent0.05 | ent 0.05 | 60,000 (short run) | 40.42 | ±0.86 | 100% | 16.7 |"
+522,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| C_ent0.05 | ent 0.05 | 60,000 (short run) | 40.42 | ±0.86 | 100% | 16.7 |"
+522,16.7,result/constant registry (results/sensitivity.csv:heldout_steps),"| C_ent0.05 | ent 0.05 | 60,000 (short run) | 40.42 | ±0.86 | 100% | 16.7 |"
+523,0.01,result/constant registry (results/sensitivity.csv:ent_coef),"| C | ent 0.01 | 100,000 | 40.02 | ±0.88 | 100% | 19.2 |"
+523,100000,result/constant registry (results/sensitivity.csv:steps_trained),"| C | ent 0.01 | 100,000 | 40.02 | ±0.88 | 100% | 19.2 |"
+523,40.02,result/constant registry (results/sensitivity.csv:heldout_return),"| C | ent 0.01 | 100,000 | 40.02 | ±0.88 | 100% | 19.2 |"
+523,0.88,result/constant registry (results/sensitivity.csv:heldout_return_ci95),"| C | ent 0.01 | 100,000 | 40.02 | ±0.88 | 100% | 19.2 |"
+523,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"| C | ent 0.01 | 100,000 | 40.02 | ±0.88 | 100% | 19.2 |"
+523,19.2,result/constant registry (results/sensitivity.csv:heldout_steps),"| C | ent 0.01 | 100,000 | 40.02 | ±0.88 | 100% | 19.2 |"
+527,95,result/constant registry (py:METHOD['ci_level']:),* . Hyperparameter sensitivity (held-out return with 95% CI).*
+529,0.966,result/constant registry (results/tb_scalars.csv:value),"**Insight.** PPO is healthy: the explained variance rises to 0.966, the approximate KL stays small (0.0122 at the end) a"
+529,0.0122,result/constant registry (results/tb_scalars.csv:value),"**Insight.** PPO is healthy: the explained variance rises to 0.966, the approximate KL stays small (0.0122 at the end) a"
+529,0.14,result/constant registry (results/tb_scalars.csv:value),"**Insight.** PPO is healthy: the explained variance rises to 0.966, the approximate KL stays small (0.0122 at the end) a"
+529,0.973,result/constant registry (results/tb_scalars.csv:value),"**Insight.** PPO is healthy: the explained variance rises to 0.966, the approximate KL stays small (0.0122 at the end) a"
+529,0.331,result/constant registry (results/tb_scalars.csv:value),"**Insight.** PPO is healthy: the explained variance rises to 0.966, the approximate KL stays small (0.0122 at the end) a"
+529,0.1,result/constant registry (results/sensitivity.csv:eps_fraction),"**Insight.** PPO is healthy: the explained variance rises to 0.966, the approximate KL stays small (0.0122 at the end) a"
+529,36.79,result/constant registry (results/sensitivity.csv:heldout_return),"**Insight.** PPO is healthy: the explained variance rises to 0.966, the approximate KL stays small (0.0122 at the end) a"
+529,0.6,result/constant registry (results/sensitivity.csv:eps_fraction),"**Insight.** PPO is healthy: the explained variance rises to 0.966, the approximate KL stays small (0.0122 at the end) a"
+529,30.89,result/constant registry (results/sensitivity.csv:heldout_return),"**Insight.** PPO is healthy: the explained variance rises to 0.966, the approximate KL stays small (0.0122 at the end) a"
+529,5.67,result/constant registry (results/sensitivity.csv:heldout_return),"**Insight.** PPO is healthy: the explained variance rises to 0.966, the approximate KL stays small (0.0122 at the end) a"
+529,5.68,result/constant registry (results/sensitivity.csv:heldout_return),"**Insight.** PPO is healthy: the explained variance rises to 0.966, the approximate KL stays small (0.0122 at the end) a"
+529,40.02,result/constant registry (results/sensitivity.csv:heldout_return),"**Insight.** PPO is healthy: the explained variance rises to 0.966, the approximate KL stays small (0.0122 at the end) a"
+533,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"- **Agent B (PPO) is solved:** 100% success, regret 0.003 against the privileged upper bound, robust to a hard start, re"
+533,0.003,result/constant registry (results/summary_S0_all.csv:regret_mean),"- **Agent B (PPO) is solved:** 100% success, regret 0.003 against the privileged upper bound, robust to a hard start, re"
+534,96,result/constant registry (results/summary_S0_all.csv:success_rate),- **Agent A (DQN) is more efficient than the dense raster; its reliability depends on the training seed:** steps -26% an
+534,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),- **Agent A (DQN) is more efficient than the dense raster; its reliability depends on the training seed:** steps -26% an
+534,99,result/constant registry (results/multiseed_per_seed.csv:heldout_success),- **Agent A (DQN) is more efficient than the dense raster; its reliability depends on the training seed:** steps -26% an
+535,60,result/constant registry (py:SCENARIOS['S4_battery0.6']['start_battery'] * 100:),"- **Low battery favours the learned planner:** at 60% starting battery the raster fails 100% of missions, the DQN succee"
+535,100,result/constant registry (results/scenario_summary.csv:battery_empty_rate),"- **Low battery favours the learned planner:** at 60% starting battery the raster fails 100% of missions, the DQN succee"
+535,84,result/constant registry (results/scenario_summary.csv:success_rate),"- **Low battery favours the learned planner:** at 60% starting battery the raster fails 100% of missions, the DQN succee"
+536,20,result/constant registry (results/scenario_summary.csv:success_rate),- **Real images break Agent A:** 20% success even when trained on the real-image detector; B and C transfer without loss
+538,0.0,result/constant registry (results/summary_S0_all.csv:freq_refine),"- **The original A2C never uses REFINE** (0.0% of decisions), so Agent B is idle inside the learned hierarchy. Other tra"
+538,18,result/constant registry (results/derived_metrics.csv:value),"- **The original A2C never uses REFINE** (0.0% of decisions), so Agent B is idle inside the learned hierarchy. Other tra"
+546,2,result/constant registry (py:ie.W_DEF_C:),"- **Simplified world.** 2-D grid, no wind, collisions or 3-D geometry; energy is a fixed cost per action."
+546,3,result/constant registry (results/scenario_summary.csv:success_rate),"- **Simplified world.** 2-D grid, no wind, collisions or 3-D geometry; energy is a fixed cost per action."
+549,3,result/constant registry (results/scenario_summary.csv:success_rate),"- **Future work:** Double/Dueling DQN, a battery-randomised curriculum for Agent A and C_withA, a curriculum from the an"
+559,1000,result/constant registry (py:METHOD['oob_per']:),"| videos/V1_env_tour.mp4 |   nominal (seed 1000) | What is the task and what do we measure? | coverage, mean uncertainty"
+559,58,result/constant registry (videos/video_files.csv:duration_s),"| videos/V1_env_tour.mp4 |   nominal (seed 1000) | What is the task and what do we measure? | coverage, mean uncertainty"
+560,1000,result/constant registry (py:METHOD['oob_per']:),"| videos/V2_agentA_vs_raster_seed1000.mp4 |   nominal, training-eval bridge seed 1000 | Does Agent A finish the inspecti"
+560,58,result/constant registry (videos/video_files.csv:duration_s),"| videos/V2_agentA_vs_raster_seed1000.mp4 |   nominal, training-eval bridge seed 1000 | Does Agent A finish the inspecti"
+561,2005,video clip definition (make_videos.CLIPS),"| videos/V3_agentA_vs_raster_heldout2005.mp4 |   nominal, held-out bridge seed 2005 | Does Agent A generalise to an unse"
+561,58,result/constant registry (videos/video_files.csv:duration_s),"| videos/V3_agentA_vs_raster_heldout2005.mp4 |   nominal, held-out bridge seed 2005 | Does Agent A generalise to an unse"
+562,2000,result/constant registry (py:HELD_SEED0:),"| videos/V4_agentA_real_images_seed2000.mp4 |   real-image (DeepCrack) detector, held-out seed 2000 | Does Agent A work "
+562,0.282,"result/constant registry (py:np.load(CACHE)[""success_unc""]:)","| videos/V4_agentA_real_images_seed2000.mp4 |   real-image (DeepCrack) detector, held-out seed 2000 | Does Agent A work "
+562,58,result/constant registry (videos/video_files.csv:duration_s),"| videos/V4_agentA_real_images_seed2000.mp4 |   real-image (DeepCrack) detector, held-out seed 2000 | Does Agent A work "
+563,2000,result/constant registry (py:HELD_SEED0:),| videos/V5_agentB_nominal_and_hardstart.mp4 |   nominal (seeds 2000-2001) +   hard start geometry (seed 2000) | Does PP
+563,2000,result/constant registry (py:HELD_SEED0:),| videos/V5_agentB_nominal_and_hardstart.mp4 |   nominal (seeds 2000-2001) +   hard start geometry (seed 2000) | Does PP
+563,4,result/constant registry (results/robustness_gap.csv:success_gap),| videos/V5_agentB_nominal_and_hardstart.mp4 |   nominal (seeds 2000-2001) +   hard start geometry (seed 2000) | Does PP
+563,4,result/constant registry (results/robustness_gap.csv:success_gap),| videos/V5_agentB_nominal_and_hardstart.mp4 |   nominal (seeds 2000-2001) +   hard start geometry (seed 2000) | Does PP
+563,58,result/constant registry (videos/video_files.csv:duration_s),| videos/V5_agentB_nominal_and_hardstart.mp4 |   nominal (seeds 2000-2001) +   hard start geometry (seed 2000) | Does PP
+564,2000,result/constant registry (py:HELD_SEED0:),"| videos/V6_agentC_mission_seed2000.mp4 |   nominal, held-out seed 2000 | Which options does the A2C supervisor choose? "
+564,58,result/constant registry (videos/video_files.csv:duration_s),"| videos/V6_agentC_mission_seed2000.mp4 |   nominal, held-out seed 2000 | Which options does the A2C supervisor choose? "
+565,2000,result/constant registry (py:HELD_SEED0:),"| videos/V7_full_mission_learned_vs_rule.mp4 |   nominal, held-out seed 2000, full mode | Do the three agents work toget"
+565,58,result/constant registry (videos/video_files.csv:duration_s),"| videos/V7_full_mission_learned_vs_rule.mp4 |   nominal, held-out seed 2000, full mode | Do the three agents work toget"
+566,58,result/constant registry (videos/video_files.csv:duration_s),| videos/V8_detector_q0_to_q4.mp4 | real DeepCrack test patches | Why are real images harder? | uncertainty and detectio
+567,35,scenario definition (common.SCENARIOS),"| videos/V9_agentA_density35_seed2013.mp4 |   defect density 35%, held-out seed 2013 (a DQN failure case) | Does Agent A"
+567,2013,video clip definition (make_videos.CLIPS),"| videos/V9_agentA_density35_seed2013.mp4 |   defect density 35%, held-out seed 2013 (a DQN failure case) | Does Agent A"
+567,58,result/constant registry (videos/video_files.csv:duration_s),"| videos/V9_agentA_density35_seed2013.mp4 |   defect density 35%, held-out seed 2013 (a DQN failure case) | Does Agent A"
+568,0.6,result/constant registry (results/sensitivity.csv:eps_fraction),"| videos/V10_agentA_battery0.6_seed2000.mp4 |   starting battery 0.6, held-out seed 2000 | Is Agent A safe when the batt"
+568,2000,result/constant registry (py:HELD_SEED0:),"| videos/V10_agentA_battery0.6_seed2000.mp4 |   starting battery 0.6, held-out seed 2000 | Is Agent A safe when the batt"
+568,58,result/constant registry (videos/video_files.csv:duration_s),"| videos/V10_agentA_battery0.6_seed2000.mp4 |   starting battery 0.6, held-out seed 2000 | Is Agent A safe when the batt"

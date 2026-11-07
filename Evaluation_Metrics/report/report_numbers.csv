@@ -1,0 +1,1014 @@
+text,source,column,fmt,scale,agg,key,value
+8,py:ie.H,,.0f,1.0,,{},8.0
+16,py:ie.W,,.0f,1.0,,{},16.0
+455,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""validation_pass""}",455.0
+455,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""validation_checks""}",455.0
+65,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""validation_policies""}",65.0
+19,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""validation_files""}",19.0
+0.00,results/derived_metrics.csv,value,.2f,1.0,,"{""name"": ""validation_max_rel_pct""}",8.160396510644114e-09
+0.32,py:ie.InspectionEnv().success_unc,,.2f,1.0,,{},0.32
+0.282,"py:np.load(CACHE)[""success_unc""]",,.3f,1.0,,{},0.28195226192474365
+13400,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""total_episodes""}",13400.0
+8,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""n_scenarios""}",8.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+1000,py:ORIG_SEED0,,.0f,1.0,,{},1000.0
+7,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""validation_metrics""}",7.0
+0.95,py:ie.InspectionEnv().success_cov,,.2f,1.0,,{},0.95
+200,py:ie.MAX_STEPS['navigate'],,.0f,1.0,,{},200.0
+30,py:ie.MAX_STEPS['refine'],,.0f,1.0,,{},30.0
+40,py:ie.MAX_STEPS['supervise'],,.0f,1.0,,{},40.0
+50,py:METHOD['ma_window'],,.0f,1.0,,{},50.0
+1,py:METHOD['band_std'],,.0f,1.0,,{},1.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+1000,py:METHOD['oob_per'],,.0f,1.0,,{},1000.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+96,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",96.0
+4,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",3.90784356795581
+96,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",96.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",100.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",0.0
+100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",100.0
+0,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""raster_mid""}",0.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""A"", ""policy"": ""raster_mid""}",0.0
+0,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""A"", ""policy"": ""raster_mid""}",0.0
+0,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""random""}",0.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""A"", ""policy"": ""random""}",0.0
+0,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""A"", ""policy"": ""random""}",0.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",0.0
+100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+0,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""B"", ""policy"": ""fixed_orbit""}",0.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""B"", ""policy"": ""fixed_orbit""}",0.0
+0,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""B"", ""policy"": ""fixed_orbit""}",0.0
+2,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""B"", ""policy"": ""random""}",2.0
+3,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""B"", ""policy"": ""random""}",2.79189829803178
+2,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""B"", ""policy"": ""random""}",2.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",100.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",0.0
+100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",100.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",100.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.0
+100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",100.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",100.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",0.0
+100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",100.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""C"", ""policy"": ""random""}",100.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""C"", ""policy"": ""random""}",0.0
+100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""C"", ""policy"": ""random""}",100.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",100.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",0.0
+100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",100.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",100.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",0.0
+100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",100.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",100.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",0.0
+100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",100.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",0.0
+100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",100.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",0.0
+100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",100.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",100.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",0.0
+100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",100.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",100.0
+0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",0.0
+100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",100.0
+100,results/summary_S0_all.csv,n_episodes,.0f,1.0,first,{},100.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+96,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",96.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",100.0
+100,results/validation.csv,reproduced,.0f,100.0,,"{""run"": ""A"", ""policy"": ""DQN (Agent A)"", ""metric"": ""success""}",100.0
+4,results/summary_S0_all.csv,battery_empty_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",4.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+0,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""B"", ""policy"": ""fixed_orbit""}",0.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""C"", ""policy"": ""random""}",100.0
+20,py:ORIG_N,,.0f,1.0,,{},20.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+50,py:METHOD['ma_window'],,.0f,1.0,,{},50.0
+1,py:METHOD['band_std'],,.0f,1.0,,{},1.0
+33.65,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",33.649311410399775
+6.50,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",6.498309100792341
+36.30,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",36.30161579072802
+1.29,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",1.289405507444045
+35.46,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",35.45929533993426
+0.09,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",0.0864348692215733
+35.46,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",35.46154955380398
+0.02,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",0.01715055327176
+6.23,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""A"", ""policy"": ""raster_mid""}",6.227232365348869
+0.08,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""A"", ""policy"": ""raster_mid""}",0.0822567125325272
+6.23,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""A"", ""policy"": ""raster_mid""}",6.231149761384507
+0.02,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""A"", ""policy"": ""raster_mid""}",0.0163215163388811
+-27.54,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""A"", ""policy"": ""random""}",-27.54239002547898
+9.21,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""A"", ""policy"": ""random""}",9.207795659119894
+-27.46,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""A"", ""policy"": ""random""}",-27.46156703507934
+1.83,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""A"", ""policy"": ""random""}",1.827026423356952
+5.67,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",5.674704538978887
+0.16,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",0.1575004930584213
+5.65,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",5.652881658225952
+0.03,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",0.0312515148209738
+-2.27,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""B"", ""policy"": ""fixed_orbit""}",-2.271219756731484
+0.10,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""B"", ""policy"": ""fixed_orbit""}",0.0962537956945931
+-2.32,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""B"", ""policy"": ""fixed_orbit""}",-2.315994118466973
+0.02,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""B"", ""policy"": ""fixed_orbit""}",0.0190988413071747
+-2.00,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""B"", ""policy"": ""random""}",-2.003887857703841
+1.09,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""B"", ""policy"": ""random""}",1.0921426460418622
+-2.18,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""B"", ""policy"": ""random""}",-2.1773903927744525
+0.22,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""B"", ""policy"": ""random""}",0.2167047951826707
+5.68,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",5.677299736787688
+0.16,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",0.1572802376518095
+5.66,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",5.6579732631102
+0.03,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",0.031207811369826
+40.02,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",40.023549999999965
+4.43,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",4.434421163813915
+39.74,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",39.744999999999976
+0.88,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.8798853643713137
+42.62,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",42.62223999999996
+3.91,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",3.9117755691545377
+43.51,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",43.514999999999965
+0.78,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",0.7761811395118039
+3.55,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""C"", ""policy"": ""random""}",3.54892
+6.20,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""C"", ""policy"": ""random""}",6.202093596797321
+0.00,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""C"", ""policy"": ""random""}",0.0
+1.23,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""C"", ""policy"": ""random""}",1.2306299250090815
+44.50,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",44.50249999999995
+4.11,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",4.105148129071123
+45.56,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",45.55749999999993
+0.81,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",0.8145504506476188
+44.72,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",44.71922999999997
+3.60,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",3.598232284445833
+45.53,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",45.52699999999997
+0.71,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",0.713967349454294
+41.34,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",41.34339999999998
+4.01,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",4.009951691187381
+41.75,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",41.75249999999997
+0.80,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",0.7956614120696622
+42.62,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",42.62223999999996
+3.91,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",3.9117755691545377
+43.51,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",43.514999999999965
+0.78,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",0.7761811395118039
+40.02,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",40.023549999999965
+4.43,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",4.434421163813915
+39.74,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",39.744999999999976
+0.88,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",0.8798853643713137
+44.50,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",44.49879999999997
+3.61,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",3.614279063868084
+45.52,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",45.52299999999997
+0.72,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",0.7171513786290937
+44.50,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",44.50249999999995
+4.11,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",4.105148129071123
+45.56,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",45.55749999999993
+0.81,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",0.8145504506476188
+100,results/summary_S0_all.csv,n_episodes,.0f,1.0,first,{},100.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+50,py:METHOD['ma_window'],,.0f,1.0,,{},50.0
+1,py:METHOD['band_std'],,.0f,1.0,,{},1.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+"5,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""B""}",5000.0
+5.67,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",5.674704538978887
+5.68,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",5.677299736787688
+40.02,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",40.023549999999965
+42.62,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",42.62223999999996
+"140,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""A""}",140000.0
+36.89,results/sample_efficiency.csv,best_eval_return,.2f,1.0,,"{""run"": ""A""}",36.885454200000005
+33.65,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",33.649311410399775
+35.46,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",35.45929533993426
+91.2,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",91.20833333333331
+188.5,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",188.5
+91.2,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",91.20833333333331
+0.531,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",0.5309000000000004
+123.0,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",123.0
+nan,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",
+123.0,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",123.0
+0.625,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",0.6250000000000007
+nan,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""raster_mid""}",
+199.0,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""raster_mid""}",199.0
+nan,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""raster_mid""}",
+1.000,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""A"", ""policy"": ""raster_mid""}",1.0000000000000009
+nan,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""random""}",
+150.2,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""random""}",150.15
+nan,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""random""}",
+1.001,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""A"", ""policy"": ""random""}",1.0012000000000008
+3.6,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",3.56
+nan,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",
+3.6,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",3.56
+0.028,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",0.02848
+nan,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""B"", ""policy"": ""fixed_orbit""}",
+30.0,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""B"", ""policy"": ""fixed_orbit""}",30.0
+nan,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""B"", ""policy"": ""fixed_orbit""}",
+0.240,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""B"", ""policy"": ""fixed_orbit""}",0.2400000000000003
+16.5,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""B"", ""policy"": ""random""}",16.5
+30.0,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""B"", ""policy"": ""random""}",30.0
+16.5,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""B"", ""policy"": ""random""}",16.5
+0.238,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""B"", ""policy"": ""random""}",0.2378400000000002
+3.5,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",3.52
+nan,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",
+3.5,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",3.52
+0.028,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",0.02816
+19.2,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",19.24
+nan,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",
+91.2,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",91.2
+0.513,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.5129000000000005
+33.7,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",33.69
+nan,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",
+148.4,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",148.39
+0.956,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",0.9555200000000008
+2.6,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""C"", ""policy"": ""random""}",2.63
+nan,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""C"", ""policy"": ""random""}",
+7.1,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""C"", ""policy"": ""random""}",7.07
+0.062,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""C"", ""policy"": ""random""}",0.06216
+29.8,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",29.8
+nan,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",
+144.0,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",144.0
+0.835,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",0.8350000000000009
+32.1,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",32.11
+nan,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",
+140.8,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",140.83
+0.922,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",0.9215400000000008
+100,results/summary_S0_all.csv,n_episodes,.0f,1.0,first,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+"100,000",results/sample_efficiency.csv,steps_to_80pct_success,",.0f",1.0,,"{""run"": ""A""}",100000.0
+"140,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""A""}",140000.0
+"200,000",results/sample_efficiency.csv,steps_trained,",.0f",1.0,,"{""run"": ""A""}",200000.0
+5.7,results/sample_efficiency.csv,train_minutes,.1f,1.0,,"{""run"": ""A""}",5.7
+nan,results/sample_efficiency.csv,steps_to_80pct_success,",.0f",1.0,,"{""run"": ""A_learned""}",
+nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""A_learned""}",
+"500,000",results/sample_efficiency.csv,steps_trained,",.0f",1.0,,"{""run"": ""A_learned""}",500000.0
+20.4,results/sample_efficiency.csv,train_minutes,.1f,1.0,,"{""run"": ""A_learned""}",20.4
+"5,000",results/sample_efficiency.csv,steps_to_80pct_success,",.0f",1.0,,"{""run"": ""B""}",5000.0
+"5,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""B""}",5000.0
+"100,000",results/sample_efficiency.csv,steps_trained,",.0f",1.0,,"{""run"": ""B""}",100000.0
+2.1,results/sample_efficiency.csv,train_minutes,.1f,1.0,,"{""run"": ""B""}",2.1
+"5,000",results/sample_efficiency.csv,steps_to_80pct_success,",.0f",1.0,,"{""run"": ""B_learned""}",5000.0
+"10,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""B_learned""}",10000.0
+"100,000",results/sample_efficiency.csv,steps_trained,",.0f",1.0,,"{""run"": ""B_learned""}",100000.0
+2.1,results/sample_efficiency.csv,train_minutes,.1f,1.0,,"{""run"": ""B_learned""}",2.1
+"10,000",results/sample_efficiency.csv,steps_to_80pct_success,",.0f",1.0,,"{""run"": ""C""}",10000.0
+"10,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""C""}",10000.0
+"100,000",results/sample_efficiency.csv,steps_trained,",.0f",1.0,,"{""run"": ""C""}",100000.0
+3.5,results/sample_efficiency.csv,train_minutes,.1f,1.0,,"{""run"": ""C""}",3.5
+"10,000",results/sample_efficiency.csv,steps_to_80pct_success,",.0f",1.0,,"{""run"": ""C_learned""}",10000.0
+"10,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""C_learned""}",10000.0
+"100,000",results/sample_efficiency.csv,steps_trained,",.0f",1.0,,"{""run"": ""C_learned""}",100000.0
+3.8,results/sample_efficiency.csv,train_minutes,.1f,1.0,,"{""run"": ""C_learned""}",3.8
+"20,000",results/sample_efficiency.csv,steps_to_80pct_success,",.0f",1.0,,"{""run"": ""C_withA""}",20000.0
+"30,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""C_withA""}",30000.0
+"100,000",results/sample_efficiency.csv,steps_trained,",.0f",1.0,,"{""run"": ""C_withA""}",100000.0
+7.5,results/sample_efficiency.csv,train_minutes,.1f,1.0,,"{""run"": ""C_withA""}",7.5
+"195,596",results/model_size.csv,parameters,",.0f",1.0,,"{""agent"": ""A""}",195596.0
+"1,565",results/model_size.csv,file_kb,",.0f",1.0,,"{""agent"": ""A""}",1565.4765625
+0.51,results/model_size.csv,latency_ms_median_1000,.2f,1.0,,"{""agent"": ""A""}",0.5113499937579036
+0.91,results/model_size.csv,latency_ms_p95_1000,.2f,1.0,,"{""agent"": ""A""}",0.9110500097449402
+"9,479",results/model_size.csv,parameters,",.0f",1.0,,"{""agent"": ""B""}",9479.0
+147,results/model_size.csv,file_kb,",.0f",1.0,,"{""agent"": ""B""}",147.3271484375
+0.67,results/model_size.csv,latency_ms_median_1000,.2f,1.0,,"{""agent"": ""B""}",0.6668000060017221
+1.78,results/model_size.csv,latency_ms_p95_1000,.2f,1.0,,"{""agent"": ""B""}",1.780679992953082
+"9,476",results/model_size.csv,parameters,",.0f",1.0,,"{""agent"": ""C""}",9476.0
+109,results/model_size.csv,file_kb,",.0f",1.0,,"{""agent"": ""C""}",109.37109375
+0.99,results/model_size.csv,latency_ms_median_1000,.2f,1.0,,"{""agent"": ""C""}",0.9906999985105358
+2.02,results/model_size.csv,latency_ms_p95_1000,.2f,1.0,,"{""agent"": ""C""}",2.022005005710525
+"9,476",results/model_size.csv,parameters,",.0f",1.0,,"{""agent"": ""C_withA""}",9476.0
+109,results/model_size.csv,file_kb,",.0f",1.0,,"{""agent"": ""C_withA""}",109.3935546875
+0.94,results/model_size.csv,latency_ms_median_1000,.2f,1.0,,"{""agent"": ""C_withA""}",0.9383500000694768
+1.93,results/model_size.csv,latency_ms_p95_1000,.2f,1.0,,"{""agent"": ""C_withA""}",1.9286949966044624
+1000,py:METHOD['latency_calls'],,.0f,1.0,,{},1000.0
+91.2,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",91.20833333333331
+123.0,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",123.0
+-26,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""A_steps_vs_raster_pct""}",-25.846883468834704
+-15,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""A_energy_vs_raster_pct""}",-15.05600000000003
+188.5,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",188.5
+3.56,results/summary_S0_all.csv,steps_success_mean,.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",3.56
+3.52,results/summary_S0_all.csv,steps_success_mean,.2f,1.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",3.52
+-43,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""C_decisions_vs_rule_pct""}",-42.891065598100326
+-46,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""C_energy_vs_rule_pct""}",-46.32242129939719
+-6.1,results/derived_metrics.csv,value,+.1f,1.0,,"{""name"": ""C_return_vs_rule_pct""}",-6.097028218132131
+"5,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""B""}",5000.0
+"10,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""C""}",10000.0
+"140,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""A""}",140000.0
+"500,000",results/sample_efficiency.csv,steps_trained,",.0f",1.0,,"{""run"": ""A_learned""}",500000.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+1.81,results/summary_S0_all.csv,regret_mean,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",1.809983929534489
+1.29,results/summary_S0_all.csv,regret_ci95,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",1.2910252698060265
+181.0,results/summary_S0_all.csv,regret_cumulative,.1f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",180.9983929534489
+0.00,results/summary_S0_all.csv,regret_mean,.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",0.0025951978088043
+0.00,results/summary_S0_all.csv,regret_ci95,.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",0.0014336687607514
+0.3,results/summary_S0_all.csv,regret_cumulative,.1f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",0.2595197808804315
+2.60,results/summary_S0_all.csv,regret_mean,.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",2.598689999999994
+0.50,results/summary_S0_all.csv,regret_ci95,.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.5018703735351078
+259.9,results/summary_S0_all.csv,regret_cumulative,.1f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",259.8689999999994
+0.22,results/summary_S0_all.csv,regret_mean,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",0.2167300000000225
+0.81,results/summary_S0_all.csv,regret_ci95,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",0.806997858753878
+21.7,results/summary_S0_all.csv,regret_cumulative,.1f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",21.67300000000225
+1.28,results/summary_S0_all.csv,regret_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",1.2788399999999822
+0.75,results/summary_S0_all.csv,regret_ci95,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",0.7549198632069701
+127.9,results/summary_S0_all.csv,regret_cumulative,.1f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",127.88399999999822
+-1.88,results/summary_S0_all.csv,regret_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",-1.876560000000004
+0.80,results/summary_S0_all.csv,regret_ci95,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",0.7960503796078517
+-187.7,results/summary_S0_all.csv,regret_cumulative,.1f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",-187.65600000000043
+100,results/summary_S0_all.csv,n_episodes,.0f,1.0,first,{},100.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+0.003,results/summary_S0_all.csv,regret_mean,.3f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",0.0025951978088043
+1.81,results/summary_S0_all.csv,regret_mean,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",1.809983929534489
+2.60,results/summary_S0_all.csv,regret_mean,.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",2.598689999999994
+0.22,results/summary_S0_all.csv,regret_mean,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",0.2167300000000225
+0.81,results/summary_S0_all.csv,regret_ci95,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",0.806997858753878
+1.88,results/summary_S0_all.csv,regret_mean,.2f,-1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",1.876560000000004
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+0.09,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",0.0864348692215733
+6.50,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",6.498309100792341
+4.43,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",4.434421163813915
+3.91,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",3.9117755691545377
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+4,results/multiseed_summary.csv,n_seeds,.0f,1.0,,"{""agent"": ""A""}",4.0
+36.202,results/multiseed_summary.csv,return_mean,.3f,1.0,,"{""agent"": ""A""}",36.20211270299633
+1.817,results/multiseed_summary.csv,return_std,.3f,1.0,,"{""agent"": ""A""}",1.8172305922194745
+2.892,results/multiseed_summary.csv,return_ci95,.3f,1.0,,"{""agent"": ""A""}",2.891619392028697
+99,results/multiseed_summary.csv,success_mean,.0f,100.0,,"{""agent"": ""A""}",98.75
+81.88,results/multiseed_summary.csv,steps_mean,.2f,1.0,,"{""agent"": ""A""}",81.8825
+4,results/multiseed_summary.csv,n_seeds,.0f,1.0,,"{""agent"": ""B""}",4.0
+5.675,results/multiseed_summary.csv,return_mean,.3f,1.0,,"{""agent"": ""B""}",5.674822512616551
+0.001,results/multiseed_summary.csv,return_std,.3f,1.0,,"{""agent"": ""B""}",0.0005092246591106
+0.001,results/multiseed_summary.csv,return_ci95,.3f,1.0,,"{""agent"": ""B""}",0.0008102900674731
+100,results/multiseed_summary.csv,success_mean,.0f,100.0,,"{""agent"": ""B""}",100.0
+3.62,results/multiseed_summary.csv,steps_mean,.2f,1.0,,"{""agent"": ""B""}",3.6175
+4,results/multiseed_summary.csv,n_seeds,.0f,1.0,,"{""agent"": ""C""}",4.0
+40.398,results/multiseed_summary.csv,return_mean,.3f,1.0,,"{""agent"": ""C""}",40.39844999999999
+0.275,results/multiseed_summary.csv,return_std,.3f,1.0,,"{""agent"": ""C""}",0.2748425050824742
+0.437,results/multiseed_summary.csv,return_ci95,.3f,1.0,,"{""agent"": ""C""}",0.4373357574173166
+100,results/multiseed_summary.csv,success_mean,.0f,100.0,,"{""agent"": ""C""}",100.0
+18.20,results/multiseed_summary.csv,steps_mean,.2f,1.0,,"{""agent"": ""C""}",18.195
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+33.649,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 0}",33.649311410399775
+1.289,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 0}",1.289405507444045
+96,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""A"", ""train_seed"": 0}",96.0
+36.674,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 1}",36.67426505202316
+0.482,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 1}",0.4822441857631012
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""A"", ""train_seed"": 1}",100.0
+36.534,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 2}",36.53437334201894
+0.688,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 2}",0.6878501320925345
+99,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""A"", ""train_seed"": 2}",99.0
+37.951,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 3}",37.95050100754344
+0.123,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 3}",0.1229678505875826
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""A"", ""train_seed"": 3}",100.0
+5.675,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""B"", ""train_seed"": 0}",5.674704538978887
+0.031,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""B"", ""train_seed"": 0}",0.0312515148209738
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""B"", ""train_seed"": 0}",100.0
+5.675,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""B"", ""train_seed"": 1}",5.675282453130856
+0.031,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""B"", ""train_seed"": 1}",0.031337970100276
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""B"", ""train_seed"": 1}",100.0
+5.674,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""B"", ""train_seed"": 2}",5.674154540480121
+0.031,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""B"", ""train_seed"": 2}",0.0314973519652182
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""B"", ""train_seed"": 2}",100.0
+5.675,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""B"", ""train_seed"": 3}",5.675148517876339
+0.031,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""B"", ""train_seed"": 3}",0.0313383620687267
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""B"", ""train_seed"": 3}",100.0
+40.024,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""C"", ""train_seed"": 0}",40.023549999999965
+0.880,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""C"", ""train_seed"": 0}",0.8798853643713137
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""C"", ""train_seed"": 0}",100.0
+40.668,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""C"", ""train_seed"": 1}",40.66768
+0.861,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""C"", ""train_seed"": 1}",0.8613830965863876
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""C"", ""train_seed"": 1}",100.0
+40.515,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""C"", ""train_seed"": 2}",40.51451999999999
+0.853,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""C"", ""train_seed"": 2}",0.8531152680257635
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""C"", ""train_seed"": 2}",100.0
+40.388,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""C"", ""train_seed"": 3}",40.38804999999999
+0.860,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""C"", ""train_seed"": 3}",0.8596945341369351
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""C"", ""train_seed"": 3}",100.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+5.675,results/multiseed_summary.csv,return_mean,.3f,1.0,,"{""agent"": ""B""}",5.674822512616551
+0.001,results/multiseed_summary.csv,return_std,.3f,1.0,,"{""agent"": ""B""}",0.0005092246591106
+40.40,results/multiseed_summary.csv,return_mean,.2f,1.0,,"{""agent"": ""C""}",40.39844999999999
+0.27,results/multiseed_summary.csv,return_std,.2f,1.0,,"{""agent"": ""C""}",0.2748425050824742
+36.20,results/multiseed_summary.csv,return_mean,.2f,1.0,,"{""agent"": ""A""}",36.20211270299633
+1.82,results/multiseed_summary.csv,return_std,.2f,1.0,,"{""agent"": ""A""}",1.8172305922194745
+99,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,min,"{""agent"": ""A"", ""source"": ""multiseed""}",99.0
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,max,"{""agent"": ""A"", ""source"": ""multiseed""}",100.0
+36.53,results/multiseed_per_seed.csv,heldout_return,.2f,1.0,min,"{""agent"": ""A"", ""source"": ""multiseed""}",36.53437334201894
+37.95,results/multiseed_per_seed.csv,heldout_return,.2f,1.0,max,"{""agent"": ""A"", ""source"": ""multiseed""}",37.95050100754344
+35.46,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",35.45929533993426
+96,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""A"", ""train_seed"": 0}",96.0
+33.65,results/multiseed_per_seed.csv,heldout_return,.2f,1.0,,"{""agent"": ""A"", ""train_seed"": 0}",33.649311410399775
+0.999,results/summary_A.csv,coverage_mean,.3f,1.0,,"{""policy"": ""DQN (Agent A)""}",0.99875
+0.489,results/summary_A.csv,pos_coverage_mean,.3f,1.0,,"{""policy"": ""DQN (Agent A)""}",0.488984375
+0.201,results/summary_A.csv,pose_coverage_mean,.3f,1.0,,"{""policy"": ""DQN (Agent A)""}",0.2009635416666666
+0.799,results/summary_A.csv,visit_entropy_mean,.3f,1.0,,"{""policy"": ""DQN (Agent A)""}",0.7986942442926996
+0.953,results/summary_A.csv,coverage_mean,.3f,1.0,,"{""policy"": ""raster_low""}",0.953125
+0.953,results/summary_A.csv,pos_coverage_mean,.3f,1.0,,"{""policy"": ""raster_low""}",0.953125
+0.323,results/summary_A.csv,pose_coverage_mean,.3f,1.0,,"{""policy"": ""raster_low""}",0.3229166666666666
+0.988,results/summary_A.csv,visit_entropy_mean,.3f,1.0,,"{""policy"": ""raster_low""}",0.987978634776278
+1.000,results/summary_A.csv,coverage_mean,.3f,1.0,,"{""policy"": ""raster_mid""}",1.0
+0.391,results/summary_A.csv,pos_coverage_mean,.3f,1.0,,"{""policy"": ""raster_mid""}",0.390625
+0.133,results/summary_A.csv,pose_coverage_mean,.3f,1.0,,"{""policy"": ""raster_mid""}",0.1328125
+0.790,results/summary_A.csv,visit_entropy_mean,.3f,1.0,,"{""policy"": ""raster_mid""}",0.7904617767988154
+0.510,results/summary_A.csv,coverage_mean,.3f,1.0,,"{""policy"": ""random""}",0.509921875
+0.263,results/summary_A.csv,pos_coverage_mean,.3f,1.0,,"{""policy"": ""random""}",0.26296875
+0.166,results/summary_A.csv,pose_coverage_mean,.3f,1.0,,"{""policy"": ""random""}",0.1664322916666665
+0.659,results/summary_A.csv,visit_entropy_mean,.3f,1.0,,"{""policy"": ""random""}",0.6593455773602231
+100,results/summary_A.csv,n_episodes,.0f,1.0,first,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+94.8,results/summary_S0_all.csv,freq_explore,.1f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",94.80249480249479
+0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.0
+5.2,results/summary_S0_all.csv,freq_return,.1f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",5.1975051975051905
+65.5,results/summary_S0_all.csv,freq_explore,.1f,100.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",65.5387355298308
+31.5,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",31.493024636390622
+3.0,results/summary_S0_all.csv,freq_return,.1f,100.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",2.96823983377856
+31.2,results/summary_S0_all.csv,freq_explore,.1f,100.0,,"{""group"": ""C"", ""policy"": ""random""}",31.1787072243346
+30.8,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""C"", ""policy"": ""random""}",30.798479087452467
+38.0,results/summary_S0_all.csv,freq_return,.1f,100.0,,"{""group"": ""C"", ""policy"": ""random""}",38.02281368821292
+96.6,results/summary_S0_all.csv,freq_explore,.1f,100.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",96.64429530201343
+0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",0.0
+3.4,results/summary_S0_all.csv,freq_return,.1f,100.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",3.35570469798657
+65.6,results/summary_S0_all.csv,freq_explore,.1f,100.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",65.64933042665835
+31.2,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",31.236374961071313
+3.1,results/summary_S0_all.csv,freq_return,.1f,100.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",3.11429461227032
+94.2,results/summary_S0_all.csv,freq_explore,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",94.19279907084784
+0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",0.0
+5.8,results/summary_S0_all.csv,freq_return,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",5.80720092915214
+65.5,results/summary_S0_all.csv,freq_explore,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",65.5387355298308
+31.5,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",31.493024636390622
+3.0,results/summary_S0_all.csv,freq_return,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",2.96823983377856
+94.8,results/summary_S0_all.csv,freq_explore,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",94.80249480249479
+0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",0.0
+5.2,results/summary_S0_all.csv,freq_return,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",5.1975051975051905
+65.6,results/summary_S0_all.csv,freq_explore,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",65.55068836045056
+31.3,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",31.320400500625777
+3.1,results/summary_S0_all.csv,freq_return,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",3.12891113892365
+96.6,results/summary_S0_all.csv,freq_explore,.1f,100.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",96.64429530201343
+0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",0.0
+3.4,results/summary_S0_all.csv,freq_return,.1f,100.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",3.35570469798657
+100,results/summary_S0_all.csv,n_episodes,.0f,1.0,first,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+1.0,py:json.load(open(RUN_DIRS['A'] / 'hyperparams.json'))['exploration_initial_eps'],,.1f,1.0,,{},1.0
+0.05,results/tb_scalars.csv,value,.2f,1.0,last,"{""run"": ""A"", ""tag"": ""rollout/exploration_rate""}",0.050000000745058
+30,py:json.load(open(RUN_DIRS['A'] / 'hyperparams.json'))['exploration_fraction'],,.0f,100.0,,{},30.0
+4.24,results/tb_scalars.csv,value,.2f,-1.0,first,"{""run"": ""B"", ""tag"": ""train/entropy_loss""}",4.243626117706299
+0.66,results/tb_scalars.csv,value,.2f,-1.0,last,"{""run"": ""B"", ""tag"": ""train/entropy_loss""}",0.6551709771156311
+0.999,results/summary_A.csv,coverage_mean,.3f,1.0,,"{""policy"": ""DQN (Agent A)""}",0.99875
+0.49,results/summary_A.csv,pos_coverage_mean,.2f,1.0,,"{""policy"": ""DQN (Agent A)""}",0.488984375
+0.95,results/summary_A.csv,pos_coverage_mean,.2f,1.0,,"{""policy"": ""raster_low""}",0.953125
+0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.0
+31.5,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",31.493024636390622
+2,py:ie.W_DEF_C,,.0f,1.0,,{},2.0
+0.5,py:ie.W_ENERGY_C,,.1f,1.0,,{},0.5
+18.0,results/derived_metrics.csv,value,.1f,1.0,,"{""name"": ""C_seed1_refine_pct""}",18.01112656467316
+14.1,results/derived_metrics.csv,value,.1f,1.0,,"{""name"": ""C_seed2_refine_pct""}",14.129810453762206
+37.5,results/derived_metrics.csv,value,.1f,1.0,,"{""name"": ""C_seed3_refine_pct""}",37.51724137931034
+1000,py:METHOD['oob_per'],,.0f,1.0,,{},1000.0
+1000,py:METHOD['oob_per'],,.0f,1.0,,{},1000.0
+4,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",4.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",0.0
+96,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",96.0
+0,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""raster_low""}",0.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""raster_low""}",0.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
+100,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""raster_mid""}",100.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""raster_mid""}",0.0
+0,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""raster_mid""}",0.0
+100,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""random""}",100.0
+191.6,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""random""}",191.6083916083916
+0,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""random""}",0.0
+0,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",100.0
+0,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",0.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",0.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",100.0
+0,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",0.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",0.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",100.0
+0,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",0.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",0.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",100.0
+0,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",0.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",0.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
+17,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",17.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",0.0
+84,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",84.0
+100,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""raster_low""}",0.0
+0,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""raster_low""}",0.0
+100,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""raster_mid""}",100.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""raster_mid""}",0.0
+0,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""raster_mid""}",0.0
+100,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""random""}",100.0
+211.8,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""random""}",211.7581808097615
+0,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""random""}",0.0
+0,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",100.0
+0,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",0.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",0.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",100.0
+24,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",24.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",0.0
+76,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",76.0
+0,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",0.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",0.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",100.0
+0,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",0.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",0.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
+100,results/scenario_summary.csv,n_episodes,.0f,1.0,first,{},100.0
+1000,py:METHOD['oob_per'],,.0f,1.0,,{},1000.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",0.0
+192,results/scenario_summary.csv,oob_per_1000_steps,.0f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""random""}",191.6083916083916
+100,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
+0,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""raster_low""}",0.0
+0.625,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",0.6250000000000007
+84,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",84.0
+17,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",17.0
+24,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",24.0
+1000,py:METHOD['oob_per'],,.0f,1.0,,{},1000.0
+1000,py:METHOD['oob_per'],,.0f,1.0,,{},1000.0
+60,py:SCENARIOS['S4_battery0.6']['start_battery'] * 100,,.0f,1.0,,{},60.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+96,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",96.0
+3,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",3.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density10"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",100.0
+80,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density35"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",80.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",100.0
+84,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",84.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density10"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density35"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
+0,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""raster_low""}",0.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density10"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density35"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S5_hardstart"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density10"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density35"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S5_hardstart"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density10"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density35"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density10"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density35"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density10"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",100.0
+98,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density35"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",98.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",100.0
+76,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",76.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density10"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density35"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density10"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density35"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+33.65,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",33.649311410399775
+7.67,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",7.672342981192039
+36.70,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density10"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",36.69502206331774
+26.28,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density35"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",26.2793064999788
+36.52,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",36.52105010982081
+35.97,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",35.97088970887134
+25.25,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",25.25027733271091
+35.46,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""raster_low""}",35.45929533993426
+33.75,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""raster_low""}",33.75423986177033
+35.78,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density10"", ""group"": ""A"", ""policy"": ""raster_low""}",35.77701997858906
+34.96,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density35"", ""group"": ""A"", ""policy"": ""raster_low""}",34.96320513498448
+35.46,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""A"", ""policy"": ""raster_low""}",35.45929533993426
+35.46,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""A"", ""policy"": ""raster_low""}",35.45929533993426
+17.19,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""raster_low""}",17.187906400965513
+5.67,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",5.674704538978887
+5.36,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",5.356431297380477
+5.67,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density10"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",5.672880226545397
+5.74,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density35"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",5.737870418344549
+5.68,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",5.675102398507997
+5.67,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",5.674989208046913
+5.67,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",5.674950624818703
+5.76,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S5_hardstart"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",5.759811727397605
+5.68,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",5.677299736787688
+5.36,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",5.358351819571108
+5.67,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density10"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",5.674333335326505
+5.74,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density35"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",5.738240285307251
+5.68,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",5.677299736787688
+5.68,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",5.677299736787688
+5.68,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",5.677299736787688
+5.77,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S5_hardstart"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",5.767106460932524
+40.02,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",40.023549999999965
+41.51,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",41.51289999999997
+19.29,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density10"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",19.286300000000008
+68.88,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density35"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",68.87919999999997
+40.03,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",40.025349999999975
+40.04,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",40.03874999999997
+38.64,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",38.63625
+42.62,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",42.62223999999996
+41.68,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",41.684459999999966
+21.38,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density10"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",21.382250000000013
+72.98,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density35"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",72.98203999999994
+42.62,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",42.62223999999996
+42.62,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",42.62223999999996
+41.35,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",41.34503999999999
+44.50,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",44.50249999999995
+32.70,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",32.69779999999997
+21.53,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density10"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",21.53230000000001
+74.78,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density35"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",74.78229999999996
+44.52,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",44.523399999999945
+44.43,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",44.43334999999996
+39.62,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",39.618899999999975
+41.34,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",41.34339999999998
+32.29,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",32.28715
+19.91,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density10"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",19.906650000000003
+69.62,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density35"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",69.6215
+41.14,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",41.14484999999998
+40.71,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",40.71024999999998
+36.29,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",36.2854
+42.62,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",42.62223999999996
+41.68,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",41.684459999999966
+21.38,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density10"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",21.382250000000013
+72.98,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density35"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",72.98203999999994
+42.62,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",42.62223999999996
+42.62,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",42.62223999999996
+41.35,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",41.34503999999999
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
++25.98,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S1_learned""}",25.976968429207737
++93,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S1_learned""}",93.0
+-3.05,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S2_density10""}",-3.045710652917961
+-4,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S2_density10""}",-4.0
++7.37,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S2_density35""}",7.3700049104209775
++16,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S2_density35""}",15.99999999999999
+-2.87,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S3_noise0.05""}",-2.871738699421037
+-4,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S3_noise0.05""}",-4.0
+-2.32,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S3_noise0.10""}",-2.3215782984715645
+-4,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S3_noise0.10""}",-4.0
++8.40,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S4_battery0.6""}",8.399034077688867
++12,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S4_battery0.6""}",12.0
++0.32,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S1_learned""}",0.3182732415984093
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S1_learned""}",0.0
++0.00,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S2_density10""}",0.0018243124334897
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S2_density10""}",0.0
+-0.06,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S2_density35""}",-0.0631658793656626
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S2_density35""}",0.0
+-0.00,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S3_noise0.05""}",-0.0003978595291105
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S3_noise0.05""}",0.0
+-0.00,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S3_noise0.10""}",-0.0002846690680264
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S3_noise0.10""}",0.0
+-0.00,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S4_battery0.6""}",-0.0002460858398167
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S4_battery0.6""}",0.0
+-0.09,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S5_hardstart""}",-0.0851071884187186
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)"", ""scenario"": ""S5_hardstart""}",0.0
+-1.49,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)"", ""scenario"": ""S1_learned""}",-1.4893500000000088
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)"", ""scenario"": ""S1_learned""}",0.0
++20.74,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)"", ""scenario"": ""S2_density10""}",20.73724999999996
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)"", ""scenario"": ""S2_density10""}",0.0
+-28.86,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)"", ""scenario"": ""S2_density35""}",-28.855650000000004
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)"", ""scenario"": ""S2_density35""}",0.0
+-0.00,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)"", ""scenario"": ""S3_noise0.05""}",-0.00180000000001
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)"", ""scenario"": ""S3_noise0.05""}",0.0
+-0.02,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)"", ""scenario"": ""S3_noise0.10""}",-0.0152000000000072
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)"", ""scenario"": ""S3_noise0.10""}",0.0
++1.39,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)"", ""scenario"": ""S4_battery0.6""}",1.387299999999961
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)"", ""scenario"": ""S4_battery0.6""}",0.0
++9.06,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S1_learned""}",9.056249999999984
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S1_learned""}",0.0
++21.44,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S2_density10""}",21.43674999999998
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S2_density10""}",0.0
+-28.28,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S2_density35""}",-28.278100000000016
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S2_density35""}",0.0
++0.20,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S3_noise0.05""}",0.1985500000000044
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S3_noise0.05""}",0.0
++0.63,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S3_noise0.10""}",0.6331500000000005
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S3_noise0.10""}",0.0
++5.06,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S4_battery0.6""}",5.0579999999999785
++0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S4_battery0.6""}",0.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+3,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",3.0
+7.67,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",7.672342981192039
+190.8,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",190.78
+0.992,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",0.9922000000000004
+20,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A, real-image trained)""}",20.0
+14.58,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A, real-image trained)""}",14.5796682851098
+148.9,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A, real-image trained)""}",148.93
+0.910,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A, real-image trained)""}",0.9095500000000004
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
+33.75,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""raster_low""}",33.75423986177033
+123.4,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""raster_low""}",123.43
+0.627,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""raster_low""}",0.6271500000000007
+20,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""raster_mid""}",20.0
+14.01,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""raster_mid""}",14.005385205155562
+168.7,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""raster_mid""}",168.74
+0.849,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""raster_mid""}",0.8487000000000008
+0,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""random""}",0.0
+-27.83,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""random""}",-27.826704756190043
+150.2,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""random""}",150.15
+1.001,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""random""}",1.0012000000000008
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+5.36,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",5.356431297380477
+3.7,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",3.7
+0.030,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",0.0296
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""PPO (Agent B, real-image trained)""}",100.0
+5.36,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""PPO (Agent B, real-image trained)""}",5.355241733733565
+3.6,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""PPO (Agent B, real-image trained)""}",3.65
+0.029,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""PPO (Agent B, real-image trained)""}",0.0292
+0,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""fixed_orbit""}",0.0
+-2.32,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""fixed_orbit""}",-2.316732813054696
+30.0,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""fixed_orbit""}",30.0
+0.240,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""fixed_orbit""}",0.2400000000000003
+0,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""random""}",0.0
+-2.25,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""random""}",-2.2521643589716405
+30.0,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""random""}",30.0
+0.240,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""random""}",0.2400000000000003
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",100.0
+5.36,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",5.358351819571108
+3.6,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",3.61
+0.029,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",0.02888
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",100.0
+41.51,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",41.51289999999997
+17.8,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",17.76
+0.494,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.4942000000000004
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""A2C (Agent C, real-image trained)""}",100.0
+41.58,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""A2C (Agent C, real-image trained)""}",41.58499999999998
+13.4,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""A2C (Agent C, real-image trained)""}",13.37
+0.350,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""A2C (Agent C, real-image trained)""}",0.3500000000000004
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",100.0
+41.68,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",41.684459999999966
+34.5,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",34.55
+0.951,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",0.9510800000000008
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""random""}",100.0
+3.51,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""random""}",3.51012
+2.6,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""random""}",2.63
+0.060,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""random""}",0.05976
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+3,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",3.0
+20,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A, real-image trained)""}",20.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+41.51,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""A2C (Agent C)""}",41.51289999999997
+41.68,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""rule_supervisor""}",41.684459999999966
+80,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density35"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",80.0
+0.05,py:SCENARIOS['S3_noise0.05']['noise'],,.2f,1.0,,{},0.05
+0.10,py:SCENARIOS['S3_noise0.10']['noise'],,.2f,1.0,,{},0.1
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",100.0
+100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S5_hardstart"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+4.76,results/scenario_summary.csv,steps_mean,.2f,1.0,,"{""scenario"": ""S5_hardstart"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",4.76
+4.75,results/scenario_summary.csv,steps_mean,.2f,1.0,,"{""scenario"": ""S5_hardstart"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",4.75
+100,py:HELD_N,,.0f,1.0,,{},100.0
+41.34,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",41.34339999999998
+17.2,results/summary_S0_all.csv,steps_mean,.1f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",17.22
+81.1,results/summary_S0_all.csv,low_level_steps_mean,.1f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",81.1
+21.72,results/summary_S0_all.csv,defects_found_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",21.72
+0.513,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",0.5132000000000004
+0.529,results/summary_S0_all.csv,miou_mean,.3f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",0.5289616780199333
+0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",0.0
+42.62,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",42.62223999999996
+33.7,results/summary_S0_all.csv,steps_mean,.1f,1.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",33.69
+148.4,results/summary_S0_all.csv,low_level_steps_mean,.1f,1.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",148.39
+22.47,results/summary_S0_all.csv,defects_found_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",22.47
+0.956,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",0.9555200000000008
+0.599,results/summary_S0_all.csv,miou_mean,.3f,1.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",0.5994082048898697
+31.5,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",31.493024636390622
+40.02,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",40.023549999999965
+19.2,results/summary_S0_all.csv,steps_mean,.1f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",19.24
+91.2,results/summary_S0_all.csv,low_level_steps_mean,.1f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",91.2
+21.06,results/summary_S0_all.csv,defects_found_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",21.06
+0.513,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",0.5129000000000005
+0.501,results/summary_S0_all.csv,miou_mean,.3f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",0.5005757300883836
+0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ablation: C learned, A/B scripted""}",0.0
+44.50,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",44.49879999999997
+32.0,results/summary_S0_all.csv,steps_mean,.1f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",31.96
+140.6,results/summary_S0_all.csv,low_level_steps_mean,.1f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",140.55
+23.40,results/summary_S0_all.csv,defects_found_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",23.4
+0.922,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",0.9224000000000008
+0.619,results/summary_S0_all.csv,miou_mean,.3f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",0.619344913477637
+31.3,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",31.320400500625777
+44.50,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",44.50249999999995
+29.8,results/summary_S0_all.csv,steps_mean,.1f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",29.8
+144.0,results/summary_S0_all.csv,low_level_steps_mean,.1f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",144.0
+23.38,results/summary_S0_all.csv,defects_found_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",23.38
+0.835,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",0.8350000000000009
+0.597,results/summary_S0_all.csv,miou_mean,.3f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",0.5966710976164837
+0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",0.0
+100,results/summary_S0_all.csv,n_episodes,.0f,1.0,first,{},100.0
+26,results/episodes_full_S0_nominal.csv,defects_total,.0f,1.0,,"{""seed"": 2000, ""policy"": ""ALL LEARNED (C + A + B)""}",26.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+-46,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""full_energy_learned_vs_scripted_pct""}",-46.29102478231748
+-49,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""full_decisions_learned_vs_scripted_pct""}",-48.88691006233304
+-0.75,results/derived_metrics.csv,value,+.2f,1.0,,"{""name"": ""full_defects_learned_minus_scripted""}",-0.75
+44.50,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",44.49879999999997
+23.40,results/summary_S0_all.csv,defects_found_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",23.4
+0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",0.0
+44.50,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",44.50249999999995
+0.0133,results/tb_scalars.csv,value,.4f,1.0,head10mean,"{""run"": ""A"", ""tag"": ""train/loss""}",0.013341448269784409
+0.0278,results/tb_scalars.csv,value,.4f,1.0,tail10mean,"{""run"": ""A"", ""tag"": ""train/loss""}",0.027782874181866625
+0.3312,results/tb_scalars.csv,value,.4f,1.0,max,"{""run"": ""A"", ""tag"": ""train/loss""}",0.3312056064605713
+3.8424,results/tb_scalars.csv,value,.4f,1.0,head10mean,"{""run"": ""B"", ""tag"": ""train/value_loss""}",3.842397017776966
+0.0013,results/tb_scalars.csv,value,.4f,1.0,tail10mean,"{""run"": ""B"", ""tag"": ""train/value_loss""}",0.0012921944027766
+9.8718,results/tb_scalars.csv,value,.4f,1.0,max,"{""run"": ""B"", ""tag"": ""train/value_loss""}",9.871826171875
+0.0144,results/tb_scalars.csv,value,.4f,1.0,head10mean,"{""run"": ""B"", ""tag"": ""train/approx_kl""}",0.01435606153681869
+0.0122,results/tb_scalars.csv,value,.4f,1.0,tail10mean,"{""run"": ""B"", ""tag"": ""train/approx_kl""}",0.012176116136833979
+0.0229,results/tb_scalars.csv,value,.4f,1.0,max,"{""run"": ""B"", ""tag"": ""train/approx_kl""}",0.0228771716356277
+0.1566,results/tb_scalars.csv,value,.4f,1.0,head10mean,"{""run"": ""B"", ""tag"": ""train/clip_fraction""}",0.15664062649011606
+0.1364,results/tb_scalars.csv,value,.4f,1.0,tail10mean,"{""run"": ""B"", ""tag"": ""train/clip_fraction""}",0.13642577901482578
+0.2452,results/tb_scalars.csv,value,.4f,1.0,max,"{""run"": ""B"", ""tag"": ""train/clip_fraction""}",0.2452148497104644
+0.0093,results/tb_scalars.csv,value,.4f,1.0,head10mean,"{""run"": ""B"", ""tag"": ""train/explained_variance""}",0.009260398149490345
+0.9656,results/tb_scalars.csv,value,.4f,1.0,tail10mean,"{""run"": ""B"", ""tag"": ""train/explained_variance""}",0.9656416654586792
+0.9725,results/tb_scalars.csv,value,.4f,1.0,max,"{""run"": ""B"", ""tag"": ""train/explained_variance""}",0.9724687933921814
+36.3799,results/tb_scalars.csv,value,.4f,1.0,head10mean,"{""run"": ""C"", ""tag"": ""train/value_loss""}",36.37985367774964
+2.9513,results/tb_scalars.csv,value,.4f,1.0,tail10mean,"{""run"": ""C"", ""tag"": ""train/value_loss""}",2.9512564539909363
+128.6563,results/tb_scalars.csv,value,.4f,1.0,max,"{""run"": ""C"", ""tag"": ""train/value_loss""}",128.65628051757812
+0.8458,results/tb_scalars.csv,value,.4f,1.0,head10mean,"{""run"": ""C"", ""tag"": ""train/explained_variance""}",0.845792931318283
+0.9732,results/tb_scalars.csv,value,.4f,1.0,tail10mean,"{""run"": ""C"", ""tag"": ""train/explained_variance""}",0.9731732964515686
+0.9955,results/tb_scalars.csv,value,.4f,1.0,max,"{""run"": ""C"", ""tag"": ""train/explained_variance""}",0.9955171942710876
+10,py:METHOD['diag_window'],,.0f,1.0,,{},10.0
+10,py:METHOD['diag_window'],,.0f,1.0,,{},10.0
+0.1,results/sensitivity.csv,eps_fraction,g,1.0,,"{""run"": ""A_eps0.1""}",0.1
+"150,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""A_eps0.1""}",150000.0
+36.79,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""A_eps0.1""}",36.79148104484222
+1.09,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""A_eps0.1""}",1.087305079332833
+97,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""A_eps0.1""}",97.0
+78.5,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""A_eps0.1""}",78.48
+0.3,results/sensitivity.csv,eps_fraction,g,1.0,,"{""run"": ""A_eps0.3""}",0.3
+"150,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""A_eps0.3""}",150000.0
+34.55,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""A_eps0.3""}",34.55228390224243
+0.90,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""A_eps0.3""}",0.8996651052914644
+99,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""A_eps0.3""}",99.0
+92.5,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""A_eps0.3""}",92.47
+0.6,results/sensitivity.csv,eps_fraction,g,1.0,,"{""run"": ""A_eps0.6""}",0.6
+"150,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""A_eps0.6""}",150000.0
+30.89,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""A_eps0.6""}",30.892573786462517
+1.83,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""A_eps0.6""}",1.826527430762776
+90,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""A_eps0.6""}",90.0
+111.2,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""A_eps0.6""}",111.22
+0.3,results/sensitivity.csv,eps_fraction,g,1.0,,"{""run"": ""A""}",0.3
+"200,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""A""}",200000.0
+33.65,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""A""}",33.649311410399775
+1.29,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""A""}",1.289405507444045
+96,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""A""}",96.0
+95.1,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""A""}",95.1
+0,results/sensitivity.csv,ent_coef,g,1.0,,"{""run"": ""B_ent0.0""}",0.0
+0.2,results/sensitivity.csv,clip_range,g,1.0,,"{""run"": ""B_ent0.0""}",0.2
+"60,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""B_ent0.0""}",60000.0
+5.67,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""B_ent0.0""}",5.674589150863657
+0.03,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""B_ent0.0""}",0.0313324249602727
+100,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""B_ent0.0""}",100.0
+3.6,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""B_ent0.0""}",3.57
+0.01,results/sensitivity.csv,ent_coef,g,1.0,,"{""run"": ""B_ent0.01""}",0.01
+0.2,results/sensitivity.csv,clip_range,g,1.0,,"{""run"": ""B_ent0.01""}",0.2
+"60,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""B_ent0.01""}",60000.0
+5.67,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""B_ent0.01""}",5.67370575591376
+0.03,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""B_ent0.01""}",0.0313688938065412
+100,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""B_ent0.01""}",100.0
+3.6,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""B_ent0.01""}",3.6
+0.05,results/sensitivity.csv,ent_coef,g,1.0,,"{""run"": ""B_ent0.05""}",0.05
+0.2,results/sensitivity.csv,clip_range,g,1.0,,"{""run"": ""B_ent0.05""}",0.2
+"60,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""B_ent0.05""}",60000.0
+5.67,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""B_ent0.05""}",5.67492147524089
+0.03,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""B_ent0.05""}",0.0313712184193594
+100,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""B_ent0.05""}",100.0
+3.6,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""B_ent0.05""}",3.58
+0,results/sensitivity.csv,ent_coef,g,1.0,,"{""run"": ""B_clip0.1""}",0.0
+0.1,results/sensitivity.csv,clip_range,g,1.0,,"{""run"": ""B_clip0.1""}",0.1
+"60,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""B_clip0.1""}",60000.0
+5.68,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""B_clip0.1""}",5.675760733171655
+0.03,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""B_clip0.1""}",0.0314839928652851
+100,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""B_clip0.1""}",100.0
+3.5,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""B_clip0.1""}",3.54
+0,results/sensitivity.csv,ent_coef,g,1.0,,"{""run"": ""B_clip0.3""}",0.0
+0.3,results/sensitivity.csv,clip_range,g,1.0,,"{""run"": ""B_clip0.3""}",0.3
+"60,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""B_clip0.3""}",60000.0
+5.67,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""B_clip0.3""}",5.674424652640199
+0.03,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""B_clip0.3""}",0.0313681875341408
+100,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""B_clip0.3""}",100.0
+3.6,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""B_clip0.3""}",3.59
+0,results/sensitivity.csv,ent_coef,g,1.0,,"{""run"": ""B""}",0.0
+0.2,results/sensitivity.csv,clip_range,g,1.0,,"{""run"": ""B""}",0.2
+"100,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""B""}",100000.0
+5.67,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""B""}",5.674704538978887
+0.03,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""B""}",0.0312515148209738
+100,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""B""}",100.0
+3.6,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""B""}",3.56
+0,results/sensitivity.csv,ent_coef,g,1.0,,"{""run"": ""C_ent0.0""}",0.0
+"60,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""C_ent0.0""}",60000.0
+40.10,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""C_ent0.0""}",40.10499999999998
+0.88,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""C_ent0.0""}",0.8793009857823074
+100,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""C_ent0.0""}",100.0
+13.2,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""C_ent0.0""}",13.16
+0.01,results/sensitivity.csv,ent_coef,g,1.0,,"{""run"": ""C_ent0.01""}",0.01
+"60,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""C_ent0.01""}",60000.0
+40.52,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""C_ent0.01""}",40.522559999999984
+0.86,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""C_ent0.01""}",0.8601105907851834
+100,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""C_ent0.01""}",100.0
+17.7,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""C_ent0.01""}",17.69
+0.05,results/sensitivity.csv,ent_coef,g,1.0,,"{""run"": ""C_ent0.05""}",0.05
+"60,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""C_ent0.05""}",60000.0
+40.42,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""C_ent0.05""}",40.42458999999999
+0.86,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""C_ent0.05""}",0.8630848304912206
+100,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""C_ent0.05""}",100.0
+16.7,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""C_ent0.05""}",16.69
+0.01,results/sensitivity.csv,ent_coef,g,1.0,,"{""run"": ""C""}",0.01
+"100,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""C""}",100000.0
+40.02,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""C""}",40.023549999999965
+0.88,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""C""}",0.8798853643713137
+100,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""C""}",100.0
+19.2,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""C""}",19.24
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+0.966,results/tb_scalars.csv,value,.3f,1.0,tail10mean,"{""run"": ""B"", ""tag"": ""train/explained_variance""}",0.9656416654586792
+0.0122,results/tb_scalars.csv,value,.4f,1.0,tail10mean,"{""run"": ""B"", ""tag"": ""train/approx_kl""}",0.012176116136833979
+0.14,results/tb_scalars.csv,value,.2f,1.0,tail10mean,"{""run"": ""B"", ""tag"": ""train/clip_fraction""}",0.13642577901482578
+0.973,results/tb_scalars.csv,value,.3f,1.0,tail10mean,"{""run"": ""C"", ""tag"": ""train/explained_variance""}",0.9731732964515686
+0.331,results/tb_scalars.csv,value,.3f,1.0,max,"{""run"": ""A"", ""tag"": ""train/loss""}",0.3312056064605713
+0.1,results/sensitivity.csv,eps_fraction,.1f,1.0,,"{""run"": ""A_eps0.1""}",0.1
+36.79,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""A_eps0.1""}",36.79148104484222
+0.6,results/sensitivity.csv,eps_fraction,.1f,1.0,,"{""run"": ""A_eps0.6""}",0.6
+30.89,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""A_eps0.6""}",30.892573786462517
+5.67,results/sensitivity.csv,heldout_return,.2f,1.0,min,"{""agent"": ""B""}",5.67370575591376
+5.68,results/sensitivity.csv,heldout_return,.2f,1.0,max,"{""agent"": ""B""}",5.675760733171655
+40.02,results/sensitivity.csv,heldout_return,.2f,1.0,min,"{""agent"": ""C""}",40.023549999999965
+40.52,results/sensitivity.csv,heldout_return,.2f,1.0,max,"{""agent"": ""C""}",40.522559999999984
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
+0.003,results/summary_S0_all.csv,regret_mean,.3f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",0.0025951978088043
+-26,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""A_steps_vs_raster_pct""}",-25.846883468834704
+-15,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""A_energy_vs_raster_pct""}",-15.05600000000003
+96,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",96.0
+100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",100.0
+99,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,min,"{""agent"": ""A"", ""source"": ""multiseed""}",99.0
+100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,max,"{""agent"": ""A"", ""source"": ""multiseed""}",100.0
+100,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
+84,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",84.0
+20,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A, real-image trained)""}",20.0
+-46,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""full_energy_learned_vs_scripted_pct""}",-46.29102478231748
+-0.75,results/derived_metrics.csv,value,+.2f,1.0,,"{""name"": ""full_defects_learned_minus_scripted""}",-0.75
+0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.0
+18,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""C_seed1_refine_pct""}",18.01112656467316
+38,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""C_seed3_refine_pct""}",37.51724137931034
+60,py:SCENARIOS['S4_battery0.6']['start_battery'] * 100,,.0f,1.0,,{},60.0
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V1_env_tour""}",57.5
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V2_agentA_vs_raster_seed1000""}",57.6
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V3_agentA_vs_raster_heldout2005""}",57.6
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V4_agentA_real_images_seed2000""}",57.5
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V5_agentB_nominal_and_hardstart""}",57.6
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V6_agentC_mission_seed2000""}",57.5
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V7_full_mission_learned_vs_rule""}",57.6
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V8_detector_q0_to_q4""}",57.5
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V9_agentA_density35_seed2013""}",57.6
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V10_agentA_battery0.6_seed2000""}",57.5

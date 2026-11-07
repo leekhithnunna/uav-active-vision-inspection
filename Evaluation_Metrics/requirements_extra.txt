@@ -1,0 +1,10 @@
+# Extra packages for Evaluation_Metrics/ (on top of Live_Demo/requirements.txt).
+# Install into the existing venv:  %USERPROFILE%\.venvs\uav_demo
+#   python -m pip install -r Evaluation_Metrics/requirements_extra.txt
+scipy==1.18.1            # Student-t 95% confidence intervals
+tensorboard==2.21.0      # reading tb/ event files (training diagnostics)
+imageio==2.38.1          # GIF -> MP4 conversion, title cards
+imageio-ffmpeg==0.8.1    # bundled ffmpeg binary (no system install needed)
+python-docx==1.2.0       # .docx report
+docx2pdf==0.1.8          # .docx -> .pdf through the installed Microsoft Word (Windows)
+pywin32==312             # dependency of docx2pdf on Windows
