@@ -39,3 +39,11 @@ Training seeds found in hyperparams.json of all 18 runs: [0]. Variability across
 - `out_of_bounds` in `info` is a per-step flag and is always False in supervise/full modes (OOB moves inside an Explore option are not reported). `ScenarioEnv` counts them with a hook on `_nav_step`.
 - There is no battery-empty flag. It is derived as `battery <= 0` at episode end, which is exactly the env's own termination test (`self.battery <= 0`).
 - In supervise/full modes `steps` counts supervisor decisions; low-level steps are counted separately (`low_level_steps`).
+
+## 7. Scenario combinations skipped or limited
+
+| Scenario | Policy | Reason |
+|---|---|---|
+| S3_noise0.05 / S3_noise0.10 | C, C_withA, full | only Agent C's own observation is noised; sub-agents A/B read their observations inside the env |
+| S5_hardstart | A, C, C_withA, full | hard start geometry only exists in refine mode (Agent B) |
+| S1_learned | C_withA | only the analytic-trained C_withA model exists (no real-image C_withA) |

@@ -1,0 +1,4 @@
+scenario,policy,reason
+S3_noise0.05 / S3_noise0.10,"C, C_withA, full",only Agent C's own observation is noised; sub-agents A/B read their observations inside the env
+S5_hardstart,"A, C, C_withA, full",hard start geometry only exists in refine mode (Agent B)
+S1_learned,C_withA,only the analytic-trained C_withA model exists (no real-image C_withA)
