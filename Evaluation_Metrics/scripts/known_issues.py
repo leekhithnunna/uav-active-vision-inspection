@@ -85,7 +85,14 @@ def main():
             "- There is no battery-empty flag. It is derived as `battery <= 0` at episode end, which is exactly the "
             "env's own termination test (`self.battery <= 0`).",
             "- In supervise/full modes `steps` counts supervisor decisions; low-level steps are counted separately "
-            "(`low_level_steps`).", ""]
+            "(`low_level_steps`).", "",
+            "## 6b. The detector clip (V8) shows raw detector outputs, not the uncertainty the agents see", "",
+            "Live_Demo's detector demo (`demos/d5_detector_views.py`) draws the per-pixel MC-dropout standard "
+            "deviation as a heatmap and prints `u` = the raw mean predictive entropy (bits). On the q0 crack patch both "
+            "are low although the crack is missed (false confidence). The environment does not use these raw values: "
+            "`detector_cache.npz` stores the entropy rank-normalised to [0, 1] and made non-increasing in q (README "
+            "section 5), so a blurred view always counts as uncertain. The `u` printed in V8 is therefore not the value "
+            "the agents observe; the V8 voice-over explains this.", ""]
 
     # 7. scenario issues appended by evaluate_scenarios.py
     sk = RESULTS / "scenario_skips.csv"

@@ -33,6 +33,15 @@ from env.baselines import (RasterNav, ApproachRefiner, FixedOrbit, RuleSuperviso
 CACHE = ROOT / "For_Mukhesh" / "detector_cache.npz"
 ORIG_SEED0, ORIG_N = 1000, 20
 HELD_SEED0, HELD_N = 2000, 100
+# evaluation-method settings (used by the scripts AND quoted in the report, so they cannot drift apart)
+METHOD = {
+    "ci_level": 95,          # confidence level of all intervals (Student t)
+    "ma_window": 50,         # moving-average window of the learning curves (episodes)
+    "band_std": 1,           # learning-curve band = +-1 std of the same window
+    "diag_window": 10,       # TensorBoard diagnostics: mean of first / last N logged values
+    "oob_per": 1000,         # out-of-bounds rate is reported per this many low-level steps
+    "latency_calls": 1000,   # predict() calls in the latency micro-benchmark
+}
 OPTION_NAMES = ("EXPLORE", "REFINE", "RETURN")
 
 # ------------------------------------------------------------------ model registry (read-only)
@@ -269,7 +278,8 @@ def ci95(x):
     n = len(x)
     if n < 2:
         return float("nan")
-    return float(stats.t.ppf(0.975, n - 1) * x.std(ddof=1) / np.sqrt(n))
+    q = 1 - (1 - METHOD["ci_level"] / 100) / 2
+    return float(stats.t.ppf(q, n - 1) * x.std(ddof=1) / np.sqrt(n))
 
 
 def git_rev():

@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import (RESULTS, HELD_SEED0, HELD_N, make_env, run_policy, policy, load_model, sb3_policy,  # noqa: E402
+from common import (RESULTS, HELD_SEED0, HELD_N, METHOD, make_env, run_policy, policy, load_model, sb3_policy,  # noqa: E402
                     RasterNav, ApproachRefiner, FixedOrbit, RuleSupervisor, RandomPolicy, ci95)
 
 GROUPS = ["A", "B", "C", "C_withA", "full"]
@@ -127,7 +127,7 @@ def summarize_group(df):
         r["steps_fail_mean"] = fail["steps"].mean() if len(fail) else np.nan
         r["time_to_goal_mean"] = succ["low_level_steps"].mean() if len(succ) else np.nan
         r["battery_empty_rate"] = d["battery_empty"].mean()
-        r["oob_per_1000_steps"] = 1000.0 * d["out_of_bounds"].sum() / max(d["low_level_steps"].sum(), 1)
+        r["oob_per_1000_steps"] = METHOD["oob_per"] * d["out_of_bounds"].sum() / max(d["low_level_steps"].sum(), 1)
         n_dec = (d["n_explore"] + d["n_refine"] + d["n_return"]).sum()
         for o in ["explore", "refine", "return"]:
             r[f"freq_{o}"] = d[f"n_{o}"].sum() / n_dec if n_dec else np.nan

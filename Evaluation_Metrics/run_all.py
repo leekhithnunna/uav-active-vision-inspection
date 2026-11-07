@@ -60,6 +60,7 @@ def main():
     if a.start <= 8:
         run(8, "known issues + report", [S / "known_issues.py"])
         run(8, "report", [S / "build_report.py"])
+        run(8, "SUBMISSION folder", [S / "make_submission.py"])
     if not a.no_tests:
         run(9, "verification (pytest)", ["-m", "pytest", EM / "tests", "-q", "-p", "no:cacheprovider"])
     print(f"\nAll done in {(time.time() - t0) / 60:.1f} min. Deliverables: Evaluation_Metrics/report/ and "

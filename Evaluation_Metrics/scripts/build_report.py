@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 import platform
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -21,7 +22,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import EM, ROOT, RESULTS, REPORT, VIDEOS, PLOTS, SCENARIOS, CACHE, HELD_SEED0, HELD_N, git_rev  # noqa: E402
+from common import EM, ROOT, RESULTS, REPORT, VIDEOS, PLOTS, SCENARIOS, CACHE, HELD_SEED0, HELD_N, METHOD, git_rev  # noqa: E402
 import common  # noqa: E402,F401  (used by eval() of 'py:' sources)
 import env.inspection_env as ie  # noqa: E402,F401
 
@@ -105,6 +106,31 @@ def der(name, fmt=".0f", suffix=""):
     return num(DER, "value", fmt, suffix=suffix, name=name)
 
 
+# <<NAME>> placeholders in the prose -> registered numbers (method settings, env constants, result columns)
+PH = {
+    "CI": ("py:METHOD['ci_level']", "", ".0f", {}), "MA": ("py:METHOD['ma_window']", "", ".0f", {}),
+    "BAND": ("py:METHOD['band_std']", "", ".0f", {}), "DIAG": ("py:METHOD['diag_window']", "", ".0f", {}),
+    "OOBPER": ("py:METHOD['oob_per']", "", ".0f", {}), "LATN": ("py:METHOD['latency_calls']", "", ".0f", {}),
+    "HELDN": ("py:HELD_N", "", ".0f", {}), "HELD0": ("py:HELD_SEED0", "", ".0f", {}),
+    "HELD1": ("py:HELD_SEED0 + HELD_N - 1", "", ".0f", {}), "ORIG0": ("py:ORIG_SEED0", "", ".0f", {}),
+    "ORIGN": ("py:ORIG_N", "", ".0f", {}), "H": ("py:ie.H", "", ".0f", {}), "W": ("py:ie.W", "", ".0f", {}),
+    "MAXNAV": ("py:ie.MAX_STEPS['navigate']", "", ".0f", {}), "MAXREF": ("py:ie.MAX_STEPS['refine']", "", ".0f", {}),
+    "MAXSUP": ("py:ie.MAX_STEPS['supervise']", "", ".0f", {}),
+    "BAT": ("py:SCENARIOS['S4_battery0.6']['start_battery'] * 100", "", ".0f", {}),
+    "NDEF": ("results/episodes_full_S0_nominal.csv", "defects_total", ".0f",
+             {"seed": 2000, "policy": "ALL LEARNED (C + A + B)"}),
+    "NMET": ("results/derived_metrics.csv", "value", ".0f", {"name": "validation_metrics"}),
+}
+
+
+def resolve(text):
+    """Replace every <<NAME>> placeholder by its registered value."""
+    def sub(m):
+        src, col, fmt, key = PH[m.group(1)]
+        return num(src, col, fmt, **key)
+    return re.sub(r"<<([A-Z0-9]+)>>", sub, text) if isinstance(text, str) else text
+
+
 # ====================================================================== derived metrics (written to CSV first)
 def derive():
     s = pd.read_csv(RESULTS / "summary_S0_all.csv").set_index(["group", "policy"])
@@ -138,6 +164,7 @@ def derive():
     add("validation_checks", len(v), "rows in validation.csv")
     add("validation_pass", int(v.within_1pct.sum()), "rows within 1%")
     add("validation_policies", v.groupby(["run", "policy"]).ngroups, "distinct (run, policy)")
+    add("validation_metrics", v.metric.nunique(), "distinct metrics compared per policy")
     add("validation_max_rel_pct", 100 * v.rel_diff.max(), "max relative difference (%)")
     add("validation_files", v.source.nunique(), "distinct saved result files checked")
     tb = pd.read_csv(RESULTS / "tb_scalars.csv")
@@ -166,24 +193,25 @@ TAB = {"n": 0}
 
 
 def h(level, text):
-    B.append(("h", level, text))
+    B.append(("h", level, resolve(text)))
 
 
 def p(text):
-    B.append(("p", text))
+    B.append(("p", resolve(text)))
 
 
 def bullets(items):
-    B.append(("ul", items))
+    B.append(("ul", [resolve(x) for x in items]))
 
 
 def formula(text):
-    B.append(("formula", text))
+    B.append(("formula", resolve(text)))
 
 
 def table(header, rows, caption):
     TAB["n"] += 1
-    B.append(("table", header, rows, f"Table {TAB['n']}. {caption}"))
+    B.append(("table", [resolve(x) for x in header], [[resolve(str(c)) for c in r] for r in rows],
+              f"Table {TAB['n']}. {resolve(caption)}"))
 
 
 def fig(name, caption):
@@ -191,7 +219,7 @@ def fig(name, caption):
     if not path.exists():
         return
     FIG["n"] += 1
-    B.append(("img", f"plots/{name}.png", f"Figure {FIG['n']}. {caption}"))
+    B.append(("img", f"plots/{name}.png", f"Figure {FIG['n']}. {resolve(caption)}"))
 
 
 def qblock(question, metric, formula_text):
@@ -212,7 +240,7 @@ def videos_ref(ids):
 
 def nfoot(df_src, **key):
     return (f"n = {num(df_src, 'n_episodes', '.0f', agg='first', **key)} episodes per policy, held-out seeds "
-            f"{HELD_SEED0}-{HELD_SEED0 + HELD_N - 1}")
+            "<<HELD0>>-<<HELD1>>")
 
 
 # ====================================================================== content
@@ -235,7 +263,7 @@ def sec_title():
       f"`{git_rev()}`. Every number in this document is read from a result file by code "
       f"(see `report/report_numbers.csv`).")
     h(2, "1. Project summary")
-    p("A drone inspects an 8 x 16 grid of bridge-surface cells for cracks. Three cooperating agents share one "
+    p("A drone inspects an <<H>> x <<W>> grid of bridge-surface cells for cracks. Three cooperating agents share one "
       "Gymnasium environment: **Agent A (DQN)** decides where to fly and at which altitude, **Agent B (PPO)** "
       "refines the view of one suspicious cell with continuous distance / angle / offset actions, and "
       "**Agent C (A2C)** is a mission supervisor that chooses between the options EXPLORE (run Agent A), "
@@ -248,8 +276,8 @@ def sec_title():
 def sec_protocol():
     h(2, "2. Evaluation protocol")
     bullets([
-        f"**Held-out bridges:** seeds {HELD_SEED0}-{HELD_SEED0 + HELD_N - 1} ({HELD_N} episodes per policy and "
-        f"scenario). Training used unseeded vectorised environments and the EvalCallback used seeds from 1000, so "
+        f"**Held-out bridges:** seeds <<HELD0>>-<<HELD1>> (<<HELDN>> episodes per policy and "
+        f"scenario). Training used unseeded vectorised environments and the EvalCallback used seeds from <<ORIG0>>, so "
         f"these bridges were never seen during training or model selection. Every policy runs on the *same* "
         f"bridges, so comparisons are paired.",
         "**Policies:** the saved `best/best_model.zip` of every run, `deterministic=True`. Baselines are the "
@@ -257,7 +285,7 @@ def sec_protocol():
         "upper bound, rule supervisor, random).",
         f"**Validation first:** before any new evaluation, every saved result was re-computed on the original "
         f"seeds with `baselines.evaluate()`: {der('validation_pass')} of {der('validation_checks')} checks "
-        f"({der('validation_policies')} policies x 7 metrics, {der('validation_files')} saved files) matched "
+        f"({der('validation_policies')} policies x <<NMET>> metrics, {der('validation_files')} saved files) matched "
         f"within 1%; the largest relative difference was {der('validation_max_rel_pct', '.2f', '%')} "
         "(`results/validation.csv`).",
         f"**Detectors:** analytic (default, success threshold mean uncertainty <= "
@@ -272,10 +300,10 @@ def sec_protocol():
     ])
     p("**What counts as success** (design contract v1.1):")
     table(["Agent", "Episode limit", "Success"],
-          [["A (navigate)", "200 steps", f"coverage >= {num('py:ie.InspectionEnv().success_cov', '', '.2f')} and "
+          [["A (navigate)", "<<MAXNAV>> steps", f"coverage >= {num('py:ie.InspectionEnv().success_cov', '', '.2f')} and "
             f"mean uncertainty <= threshold"],
-           ["B (refine)", "30 steps", "best view reached (view quality q = 4)"],
-           ["C (supervise / full)", "40 decisions", "RETURN chosen with battery > 0 (safe return)"]],
+           ["B (refine)", "<<MAXREF>> steps", "best view reached (view quality q = 4)"],
+           ["C (supervise / full)", "<<MAXSUP>> decisions", "RETURN chosen with battery > 0 (safe return)"]],
           "Success definitions per agent.")
 
 
@@ -283,15 +311,15 @@ def sec_metrics():
     h(2, "3. Metric definitions")
     defs = [
         ("Episode return", "G = sum_t r_t  (undiscounted sum of rewards in one episode)"),
-        ("Moving-average return", "MA_k(i) = (1/k) * sum_{j=i-k+1..i} G_j ,  k = 50 training episodes; band = ±1 std of the same window"),
+        ("Moving-average return", "MA_k(i) = (1/k) * sum_{j=i-k+1..i} G_j ,  k = <<MA>> training episodes; band = ±<<BAND>> std of the same window"),
         ("Success rate", "SR = (1/N) * sum_i 1[episode i successful]"),
         ("Episode length", "L = number of steps (A, B) or supervisor decisions (C); reported separately for successful and failed episodes"),
         ("Time to goal", "mean number of low-level environment steps until success, over successful episodes only"),
         ("Regret (per episode)", "regret_i = G_i(benchmark) - G_i(agent) on the same bridge i;  mean and cumulative sum over i"),
         ("Standard deviation", "s = sqrt( sum_i (x_i - mean)^2 / (N-1) )"),
-        ("95% confidence interval", "mean ± t_{0.975, N-1} * s / sqrt(N)   (Student t)"),
+        ("<<CI>>% confidence interval", "mean ± t_{0.975, N-1} * s / sqrt(N)   (Student t)"),
         ("Robustness gap", "gap = metric(S0 nominal) - metric(perturbed scenario); positive = worse when perturbed"),
-        ("Constraint-violation rate", "battery-empty rate = (1/N) * sum_i 1[battery_i <= 0];  OOB rate = 1000 * (out-of-bounds moves) / (low-level steps)"),
+        ("Constraint-violation rate", "battery-empty rate = (1/N) * sum_i 1[battery_i <= 0];  OOB rate = <<OOBPER>> * (out-of-bounds moves) / (low-level steps)"),
         ("Coverage", "fraction of the 128 cells seen at least once (task coverage);  position coverage = visited (row, col) / 128;  pose coverage = visited (altitude, row, col) / 384"),
         ("Visitation entropy", "H = -sum_c p_c log p_c / log(128), p_c = share of visits to cell c (1 = perfectly uniform)"),
         ("Sample efficiency", "environment steps until the evaluation success rate first reaches 80% / 100%"),
@@ -312,14 +340,14 @@ def tab_success(groups):
 
 def sec_q1():
     h(2, "Q1. Does each agent complete its task?")
-    qblock("Does each agent complete its task on unseen bridges?", "Success rate (with 95% CI).",
+    qblock("Does each agent complete its task on unseen bridges?", "Success rate (with <<CI>>% CI).",
            "SR = (1/N) * sum_i 1[success_i]")
-    table(["Group", "Policy", "Success rate", "95% CI", "Successful episodes"], tab_success(GROUP_ORDER),
+    table(["Group", "Policy", "Success rate", "<<CI>>% CI", "Successful episodes"], tab_success(GROUP_ORDER),
           f"Success rate on held-out bridges ({nfoot(S0)}).")
     fig("03_success_and_length", "Success rate and episode length of successful vs failed episodes.")
     p("**Insight.** "
       f"Agent A (DQN) succeeds on {s0p('A', 'DQN (Agent A)', 'success_rate')} of the unseen bridges, against "
-      f"{s0p('A', 'raster_low', 'success_rate')} for the dense raster. On the 20 original evaluation bridges the "
+      f"{s0p('A', 'raster_low', 'success_rate')} for the dense raster. On the <<ORIGN>> original evaluation bridges the "
       f"saved result was {num(VAL, 'reproduced', '.0f', 100.0, suffix='%', run='A', policy='DQN (Agent A)', metric='success')}"
       f", so the agent generalises well but not perfectly: every failure is a battery-empty episode "
       f"(battery-empty rate {s0p('A', 'DQN (Agent A)', 'battery_empty_rate')}), meaning that on a few bridges the "
@@ -336,17 +364,17 @@ def sec_q1():
 def sec_q2():
     h(2, "Q2. How much reward does it collect, and is it learning?")
     qblock("How much return does each agent collect, and did training converge?",
-           "Episode return (mean, std, median, 95% CI); learning curves with a 50-episode moving average and ±1 std band.",
+           "Episode return (mean, std, median, <<CI>>% CI); learning curves with a <<MA>>-episode moving average and ±<<BAND>> std band.",
            "G = sum_t r_t ;  MA_50(i) = mean(G_{i-49..i})")
     rows = []
     for g in GROUP_ORDER:
         for pol in policies(g):
             rows.append([GTITLE[g], pol, s0(g, pol, "return_mean"), s0(g, pol, "return_std"),
                          s0(g, pol, "return_median"), f"±{s0(g, pol, 'return_ci95')}"])
-    table(["Group", "Policy", "Mean return", "Std", "Median", "95% CI"], rows, f"Held-out return ({nfoot(S0)}).")
-    fig("01_learning_curves", "Learning curves (raw return, 50-episode moving average with ±1 std band, eval return, "
+    table(["Group", "Policy", "Mean return", "Std", "Median", "<<CI>>% CI"], rows, f"Held-out return ({nfoot(S0)}).")
+    fig("01_learning_curves", "Learning curves (raw return, <<MA>>-episode moving average with ±<<BAND>> std band, eval return, "
         "success rate, episode length).")
-    fig("02_vs_baselines", "Mean held-out return with 95% CI, learned agents vs baselines.")
+    fig("02_vs_baselines", "Mean held-out return with <<CI>>% CI, learned agents vs baselines.")
     p("**Insight.** "
       f"All three learning curves rise and flatten. PPO converges fastest: its evaluation success first reaches 100% "
       f"after {num(SE, 'steps_to_100pct_success', ',.0f', run='B')} steps and its held-out return "
@@ -388,14 +416,14 @@ def sec_q3():
         rows.append([run, num(SE, "steps_trained", ",.0f", run=run), f80 if f80 != "nan" else "never",
                      f100 if f100 != "nan" else "never", num(SE, "train_minutes", ".1f", run=run)])
     table(["Run", "Training steps", "Steps to 80% eval success", "Steps to 100% eval success",
-           "Training time (min, Colab)"], rows, "Sample efficiency and training time (EvalCallback logs, "
-          "training seed 0).")
+           "Training time (min, Colab)"], rows, "Sample efficiency and training time (from training logs, training seed 0; each eval point is the "
+          "EvalCallback mean over its eval episodes, see results/eval_curves.csv).")
     rows = [[a, _df(MSZ).set_index("agent").loc[a, "algorithm"],
              num(MSZ, "parameters", ",.0f", agent=a), num(MSZ, "file_kb", ",.0f", agent=a),
              num(MSZ, "latency_ms_median_1000", ".2f", agent=a), num(MSZ, "latency_ms_p95_1000", ".2f", agent=a)]
             for a in _df(MSZ).agent]
     table(["Agent", "Algorithm", "Parameters", "Model file (KB)", "Latency median (ms)", "Latency p95 (ms)"], rows,
-          "Model size and inference latency (1000 deterministic predict() calls, single CPU thread).")
+          "Model size and inference latency (<<LATN>> deterministic predict() calls, single CPU thread).")
     p("**Insight.** "
       f"On the bridges that both solve, the DQN needs {s0('A', 'DQN (Agent A)', 'steps_success_mean', '.1f')} steps "
       f"against {s0('A', 'raster_low', 'steps_success_mean', '.1f')} for the dense raster "
@@ -416,7 +444,7 @@ def sec_q3():
 def sec_q4():
     h(2, "Q4. How close is it to the best possible / best baseline?")
     qblock("How much return does each learned agent lose compared with a strong benchmark on the same bridges?",
-           "Per-episode regret against an explicitly stated benchmark (mean, 95% CI, cumulative).",
+           "Per-episode regret against an explicitly stated benchmark (mean, <<CI>>% CI, cumulative).",
            "regret_i = G_i(benchmark) - G_i(agent) ;  cumulative regret = sum_i regret_i")
     rows = []
     bench_kind = {"A": "best baseline (dense raster)", "B": "privileged upper bound", "C": "rule supervisor",
@@ -426,7 +454,7 @@ def sec_q4():
         b = _df(S0).set_index(["group", "policy"]).loc[(g, pol), "benchmark"]
         rows.append([pol, f"{b} ({bench_kind[g]})", s0(g, pol, "regret_mean"), f"±{s0(g, pol, 'regret_ci95')}",
                      s0(g, pol, "regret_cumulative", ".1f")])
-    table(["Agent", "Benchmark", "Mean regret", "95% CI", "Cumulative regret (100 bridges)"], rows,
+    table(["Agent", "Benchmark", "Mean regret", "<<CI>>% CI", "Cumulative regret (<<HELDN>> bridges)"], rows,
           f"Regret on held-out bridges ({nfoot(S0)}). Positive = the benchmark collected more return.")
     fig("11_regret", "Mean regret of each learned agent against its benchmark.")
     p("**Insight.** "
@@ -435,7 +463,7 @@ def sec_q4():
       f"The DQN loses {s0('A', 'DQN (Agent A)', 'regret_mean')} per episode to the dense raster, almost entirely from "
       f"its battery-empty failures. A2C trained with scripted sub-agents loses {s0('C', 'A2C (Agent C)', 'regret_mean')} "
       f"to the rule supervisor, but the A2C retrained with Agent A inside (C_withA) reduces this to "
-      f"{s0('C_withA', 'A2C (C_withA)', 'regret_mean')} (95% CI ±{s0('C_withA', 'A2C (C_withA)', 'regret_ci95')}, "
+      f"{s0('C_withA', 'A2C (C_withA)', 'regret_mean')} (<<CI>>% CI ±{s0('C_withA', 'A2C (C_withA)', 'regret_ci95')}, "
       "so not significantly different from zero). A negative regret means beating the benchmark: the rule supervisor "
       f"with learned A and B beats the all-scripted system by {num(S0, 'regret_mean', '.2f', -1.0, group='full', policy='ablation: rule C, A + B learned')} "
       "per mission, which shows that the learned navigator and refiner are better than their scripted versions.")
@@ -444,10 +472,10 @@ def sec_q4():
 def sec_q5():
     h(2, "Q5. Is performance consistent?")
     qblock("How much does performance vary between bridges and between training seeds?",
-           "Standard deviation, 95% confidence interval, box plots; mean ± std across training seeds.",
+           "Standard deviation, <<CI>>% confidence interval, box plots; mean ± std across training seeds.",
            "s = sqrt(sum (x - mean)^2 / (N-1)) ;  CI95 = mean ± t_{0.975,N-1} s / sqrt(N)")
     fig("05_boxplots_return", "Distribution of held-out episode returns per policy.")
-    p("Per-bridge variability (std and 95% CI of the return) is listed in Table 3 (Q2). "
+    p("Per-bridge variability (std and <<CI>>% CI of the return) is listed in Table 3 (Q2). "
       f"The dense raster has almost no spread (std {s0('A', 'raster_low', 'return_std')}) because it flies the same "
       f"path on every bridge, while the DQN adapts its route (std {s0('A', 'DQN (Agent A)', 'return_std')}) and has a "
       "few low-return failure outliers. Supervisor returns vary mostly because the number of defects differs per "
@@ -459,14 +487,14 @@ def sec_q5():
                  f"±{num(MSS, 'return_ci95', '.3f', agent=a)}", pct(MSS, "success_mean", agent=a),
                  num(MSS, "steps_mean", ".2f", agent=a)] for a in m.agent]
         table(["Agent", "Training seeds", "Seed ids", "Mean held-out return", "Std across seeds",
-               "95% CI across seeds", "Mean success", "Mean length"], rows,
-              "Across training seeds: each seed evaluated on the same 100 held-out bridges; seed 0 is the original run.")
+               "<<CI>>% CI across seeds", "Mean success", "Mean length"], rows,
+              "Across training seeds: each seed evaluated on the same <<HELDN>> held-out bridges; seed 0 is the original run.")
         mp = _df(MSP)
         rows = [[r.agent, f"{int(r.train_seed)}", num(MSP, "heldout_return", ".3f", agent=r.agent, train_seed=r.train_seed),
                  f"±{num(MSP, 'heldout_return_ci95', '.3f', agent=r.agent, train_seed=r.train_seed)}",
                  pct(MSP, "heldout_success", agent=r.agent, train_seed=r.train_seed)] for r in mp.itertuples()]
-        table(["Agent", "Training seed", "Held-out return", "95% CI (over bridges)", "Success"], rows,
-              "Per-seed held-out results (n = 100 bridges each).")
+        table(["Agent", "Training seed", "Held-out return", "<<CI>>% CI (over bridges)", "Success"], rows,
+              "Per-seed held-out results (n = <<HELDN>> bridges each, seeds <<HELD0>>-<<HELD1>>).")
         fig("05b_boxplot_training_seeds", "Held-out return per training seed.")
         fig("01b_learning_curves_multiseed", "Eval-return learning curves across training seeds (mean ± std).")
         txt = ("**Insight.** Across training seeds the final performance is very stable: PPO "
@@ -540,8 +568,8 @@ def sec_q6():
 def sec_q7():
     h(2, "Q7. Is it safe?")
     qblock("Does the agent violate the battery and flight-area constraints?",
-           "Battery-empty rate (% of episodes) and out-of-bounds moves per 1000 low-level steps.",
-           "battery-empty rate = (1/N) sum 1[battery <= 0] ;  OOB rate = 1000 * OOB moves / steps")
+           "Battery-empty rate (% of episodes) and out-of-bounds moves per <<OOBPER>> low-level steps.",
+           "battery-empty rate = (1/N) sum 1[battery <= 0] ;  OOB rate = <<OOBPER>> * OOB moves / steps")
     rows = []
     for scen in ["S0_nominal", "S4_battery0.6"]:
         for g, pol in [("A", "DQN (Agent A)"), ("A", "raster_low"), ("A", "raster_mid"), ("A", "random"),
@@ -549,13 +577,13 @@ def sec_q7():
                        ("full", "ALL LEARNED (C + A + B)"), ("full", "ALL SCRIPTED (rule + raster + approach)")]:
             rows.append([scen, pol, sc(scen, g, pol, "battery_empty_rate", ".0f", 100.0, "%"),
                          sc(scen, g, pol, "oob_per_1000_steps", ".1f"), sc(scen, g, pol, "success_rate", ".0f", 100.0, "%")])
-    table(["Scenario", "Policy", "Battery-empty rate", "OOB moves / 1000 steps", "Success"], rows,
+    table(["Scenario", "Policy", "Battery-empty rate", "OOB moves / <<OOBPER>> steps", "Success"], rows,
           f"Constraint violations, nominal battery vs starting battery 0.6 ({nfoot(SC)}).")
     p("**Insight.** "
       f"None of the learned policies ever leaves the flight area (DQN {sc('S0_nominal', 'A', 'DQN (Agent A)', 'oob_per_1000_steps', '.1f')} "
-      f"out-of-bounds moves per 1000 steps), while the random navigator makes "
-      f"{sc('S0_nominal', 'A', 'random', 'oob_per_1000_steps', '.0f')} per 1000 steps. **Key robustness finding:** when "
-      f"the drone starts with only 60% battery, the dense raster runs out of battery in "
+      f"out-of-bounds moves per <<OOBPER>> steps), while the random navigator makes "
+      f"{sc('S0_nominal', 'A', 'random', 'oob_per_1000_steps', '.0f')} per <<OOBPER>> steps. **Key robustness finding:** when "
+      f"the drone starts with only <<BAT>>% battery, the dense raster runs out of battery in "
       f"{sc('S4_battery0.6', 'A', 'raster_low', 'battery_empty_rate', '.0f', 100.0, '%')} of missions (success "
       f"{sc('S4_battery0.6', 'A', 'raster_low', 'success_rate', '.0f', 100.0, '%')}), because its fixed path needs about "
       f"{s0('A', 'raster_low', 'energy_used_mean', '.3f')} of a full battery. The DQN still succeeds in "
@@ -579,7 +607,7 @@ def sec_q8():
            "Success rate and return per scenario; robustness gap (nominal - perturbed).",
            "gap = metric(S0) - metric(scenario)")
     table(["Scenario", "Description"], [[k, v["desc"]] for k, v in SCENARIOS.items()],
-          "Varying task environments (all on held-out seeds 2000-2099, n = 100 episodes per policy).")
+          "Varying task environments (all on held-out seeds <<HELD0>>-<<HELD1>>, n = <<HELDN>> episodes per policy).")
     scen = list(SCENARIOS)
     d = _df(SC)
     for metric, label, fmt, scale, suf in [("success_rate", "Success rate", ".0f", 100.0, "%"),
@@ -591,7 +619,8 @@ def sec_q8():
                 ok = ((d.scenario == s) & (d.group == g) & (d.policy == pol)).any()
                 r.append(sc(s, g, pol, metric, fmt, scale, suf) if ok else "-")
             rows.append(r)
-        table(["Policy"] + [s.replace("_", " ") for s in scen], rows, f"{label} per scenario ('-' = not applicable).")
+        table(["Policy"] + [s.replace("_", " ") for s in scen], rows, f"{label} per scenario (n = <<HELDN>> episodes per policy and scenario, held-out seeds <<HELD0>>-<<HELD1>>; "
+              "'-' = not applicable).")
     rows = []
     for g, pol in [("A", "DQN (Agent A)"), ("B", "PPO (Agent B)"), ("C", "A2C (Agent C)"), ("full", "ALL LEARNED (C + A + B)")]:
         for s in scen[1:]:
@@ -600,7 +629,8 @@ def sec_q8():
             rows.append([pol, s, num(RG, "return_gap", "+.2f", group=g, policy=pol, scenario=s),
                          num(RG, "success_gap", "+.0f", 100.0, suffix=" pp", group=g, policy=pol, scenario=s)])
     table(["Learned policy", "Scenario", "Return gap", "Success gap"], rows,
-          "Robustness gap of the learned policies (nominal minus perturbed; positive = worse).")
+          "Robustness gap of the learned policies (nominal minus perturbed; positive = worse; n = <<HELDN>> episodes "
+          "per scenario, held-out seeds <<HELD0>>-<<HELD1>>).")
     fig("06_robustness_gap", "Robustness gap per scenario (relative return drop and success drop).")
     rows = []
     for g in ["A", "B", "C"]:
@@ -609,7 +639,7 @@ def sec_q8():
                          sc("S1_learned", g, pol, "return_mean"), sc("S1_learned", g, pol, "steps_mean", ".1f"),
                          sc("S1_learned", g, pol, "energy_used_mean", ".3f")])
     table(["Group", "Policy", "Success", "Return", "Length", "Energy"], rows,
-          "Real-image (DeepCrack) detector, analytic-trained and real-image-trained models (n = 100 each).")
+          "Real-image (DeepCrack) detector, analytic-trained and real-image-trained models (n = <<HELDN>> episodes each, seeds <<HELD0>>-<<HELD1>>).")
     fig("13_real_image_success", "Success rate with the analytic vs the real-image detector.")
     p("**Insight.** "
       f"**Real images are the hardest change for Agent A.** The analytic-trained DQN drops to "
@@ -641,12 +671,12 @@ def sec_q9():
     h(2, "Q9. Do the agents work together?")
     qblock("Does the hierarchy of three learned agents work, and which learned parts help?",
            "Integration ablation in full mode: return, decisions, defects found, energy, mIoU, REFINE share.",
-           "same 100 bridges for every configuration (paired)")
+           "same <<HELDN>> bridges for every configuration (paired)")
     rows = [[pol, s0("full", pol, "return_mean"), s0("full", pol, "steps_mean", ".1f"),
              s0("full", pol, "low_level_steps_mean", ".1f"), s0("full", pol, "defects_found_mean"),
              s0("full", pol, "energy_used_mean", ".3f"), s0("full", pol, "miou_mean", ".3f"),
              s0p("full", pol, "freq_refine", ".1f")] for pol in policies("full")]
-    table(["Configuration", "Return", "Decisions", "Low-level steps", "Defects (of 26)", "Energy", "mIoU",
+    table(["Configuration", "Return", "Decisions", "Low-level steps", "Defects (of <<NDEF>>)", "Energy", "mIoU",
            "REFINE share"], rows, f"Integration ablation in full mode ({nfoot(S0)}).")
     fig("10_integration_ablation", "Energy vs defects found per configuration.")
     p("**Insight.** "
@@ -679,8 +709,8 @@ def sec_q10():
         rows.append([label, num(TB, "value", ".4f", agg="head10mean", run=run, tag=tag),
                      num(TB, "value", ".4f", agg="tail10mean", run=run, tag=tag),
                      num(TB, "value", ".4f", agg="max", run=run, tag=tag)])
-    table(["Diagnostic", "Mean of first 10 logs", "Mean of last 10 logs", "Maximum"], rows,
-          "Training diagnostics from TensorBoard (main runs, training seed 0).")
+    table(["Diagnostic", "Mean of first <<DIAG>> logs", "Mean of last <<DIAG>> logs", "Maximum"], rows,
+          "Training diagnostics from TensorBoard (main runs, training seed 0; training logs, no evaluation episodes).")
     fig("09_training_diagnostics", "PPO / A2C / DQN training diagnostics.")
     rows = []
     for r in _df(SENS).itertuples():
@@ -690,9 +720,9 @@ def sec_q10():
         rows.append([r.run, hp, num(SENS, "steps_trained", ",.0f", run=r.run) + (" (short run)" if r.short_run else ""),
                      num(SENS, "heldout_return", ".2f", run=r.run), f"±{num(SENS, 'heldout_return_ci95', '.2f', run=r.run)}",
                      pct(SENS, "heldout_success", run=r.run), num(SENS, "heldout_steps", ".1f", run=r.run)])
-    table(["Run", "Setting", "Training steps", "Held-out return", "95% CI", "Success", "Length"], rows,
-          "Hyperparameter sensitivity (CO5), every run evaluated on the 100 held-out bridges.")
-    fig("12_sensitivity", "Hyperparameter sensitivity (held-out return with 95% CI).")
+    table(["Run", "Setting", "Training steps", "Held-out return", "<<CI>>% CI", "Success", "Length"], rows,
+          "Hyperparameter sensitivity (CO5), every run evaluated on the <<HELDN>> held-out bridges (seeds <<HELD0>>-<<HELD1>>).")
+    fig("12_sensitivity", "Hyperparameter sensitivity (held-out return with <<CI>>% CI).")
     p("**Insight.** "
       f"PPO is healthy: the explained variance rises to {num(TB, 'value', '.3f', agg='tail10mean', run='B', tag='train/explained_variance')}, "
       f"the approximate KL stays small ({num(TB, 'value', '.4f', agg='tail10mean', run='B', tag='train/approx_kl')} at the end) and "
@@ -726,7 +756,7 @@ def sec_findings():
             f"and a higher return than the raster, so the gap comes from the original training seed."
             if (RESULTS / "multiseed_per_seed.csv").exists() and "A" in set(pd.read_csv(RESULTS / "multiseed_per_seed.csv").agent)
             else ""),
-        f"**Low battery favours the learned planner:** at 60% starting battery the raster fails "
+        f"**Low battery favours the learned planner:** at <<BAT>>% starting battery the raster fails "
         f"{sc('S4_battery0.6', 'A', 'raster_low', 'battery_empty_rate', '.0f', 100.0, '%')} of missions, the DQN succeeds in "
         f"{sc('S4_battery0.6', 'A', 'DQN (Agent A)', 'success_rate', '.0f', 100.0, '%')}.",
         f"**Real images break Agent A:** {sc('S1_learned', 'A', 'DQN (Agent A, real-image trained)', 'success_rate', '.0f', 100.0, '%')} "
@@ -773,7 +803,8 @@ def sec_appendix():
     if vf.exists():
         v = pd.read_csv(vf)
         table(["File", "Scenario", "Question", "Metric to watch", "Duration (s)"],
-              [[r.file, r.scenario, r.question, r.metric, f"{r.duration_s:.0f}"] for r in v.itertuples()],
+              [[r.file, r.scenario, r.question, r.metric,
+                num("videos/video_files.csv", "duration_s", ".0f", clip=r.clip)] for r in v.itertuples()],
               "Recorded experimental sessions (see videos/video_index.md for results and insights).")
     h(3, "7.2 File map")
     table(["Path (in Evaluation_Metrics/)", "Content"], [
@@ -797,62 +828,65 @@ def sec_appendix():
 
 # ====================================================================== video index + narration
 NARR = {
-    "V1_env_tour": "This is our simulated bridge inspection task. The bridge surface is a grid of eight by sixteen cells, "
-                   "and about one in five cells has a crack. The drone starts at the base in the top-left corner, at high "
-                   "altitude. High altitude sees a five by five area, but blurry; low altitude sees one cell, but sharp. "
-                   "The colour of each cell is the detector's uncertainty: dark means we are not sure yet. Watch the "
-                   "counters: coverage, mean uncertainty, energy and return. Here a random policy flies around without a "
-                   "plan, so the uncertainty stays high and the energy is wasted. Every metric in our report is measured "
-                   "on this task.",
+    "V1_env_tour": "This is our bridge inspection task: a grid of eight by sixteen cells, and about one cell in five "
+                   "has a crack. The drone starts at the base, top left, at high altitude. From high up it sees a five "
+                   "by five patch, but blurry; from low down it sees one cell, but sharply. The colour of each cell shows "
+                   "how uncertain the crack detector still is. Watch the counters: coverage, mean uncertainty, energy "
+                   "and return. Here a random policy flies without a plan, so the uncertainty stays high and the battery "
+                   "is wasted. {res} Every metric in our report is measured on this task.",
     "V2_agentA_vs_raster_seed1000": "Here Agent A, our DQN, races the dense raster scan on the same bridge. The raster "
-                                    "flies low over every row. The DQN uses higher altitudes where one wide view is enough "
-                                    "and descends only where uncertainty stays high. Watch the step counter and the energy. "
-                                    "{res} The question is: does the agent complete the task, and how efficiently? On "
-                                    "the 100 unseen bridges the DQN needs fewer steps and less energy, but it fails on a "
-                                    "few bridges by running out of battery.",
-    "V3_agentA_vs_raster_heldout2005": "This bridge, seed 2005, was never used in training or model selection. It "
-                                       "tests generalisation. {res} The route is different from the previous bridge "
-                                       "because the defects are in different places, so the agent is not replaying a "
-                                       "memorised path. Over all 100 held-out bridges the DQN succeeds on most of them; "
-                                       "the failures are battery-empty episodes.",
-    "V4_agentA_real_images_seed2000": "Now the same comparison uses the real-image detector: uncertainty comes from a "
-                                      "U-Net run on DeepCrack photographs. Watch the mean uncertainty: it has to drop below "
-                                      "a stricter threshold. {res} Real-image uncertainty is noisier, and high and mid "
-                                      "altitudes give very poor images, so the drone has to fly low almost everywhere. The "
-                                      "dense raster does exactly that and succeeds. Our DQN, even when trained on real "
-                                      "images, succeeds on only a small share of bridges. This is our clearest weak result.",
-    "V5_agentB_nominal_and_hardstart": "Agent B, our PPO refiner, has to reach the best possible view of one cell by "
-                                       "changing distance, angle and side offset. Watch the view quality rise to level "
-                                       "four. The fixed orbit baseline keeps circling and never gets there. {res} The last "
-                                       "part starts from a hard position: far away and at a large angle. PPO still reaches "
-                                       "the best view in a few steps, almost exactly like the privileged scripted upper "
-                                       "bound.",
-    "V6_agentC_mission_seed2000": "Agent C, our A2C supervisor, decides at each step whether to explore, refine or return "
-                                  "home. Watch the timeline of options. {res} Notice that it only chooses explore and "
-                                  "then return: in the original training run it never chooses refine. Refining costs "
-                                  "energy and rarely finds a new defect under our reward, so it is not worth it to the "
-                                  "agent. When we retrained with other seeds, some versions did use refine, with the same "
-                                  "return.",
-    "V7_full_mission_learned_vs_rule": "This is the full system: the supervisor calls Agent A to explore and Agent B to "
-                                       "refine. First, the learned supervisor. {res} The learned hierarchy uses much less "
-                                       "energy, but never calls Agent B. In the second part a rule-based supervisor drives "
-                                       "the same learned Agents A and B, so you can see Agent B working inside the "
-                                       "hierarchy. This combination finds the most defects in our ablation.",
-    "V8_detector_q0_to_q4": "This shows why real images are harder. The same DeepCrack patch is seen at five view "
-                            "qualities, from four pixels to sixty-four pixels wide. At low quality the U-Net misses "
-                            "cracks and its uncertainty stays high; only at the top qualities is the crack mask accurate. "
-                            "In our environment the high and mid altitudes map to the two worst qualities, which is why "
-                            "the navigation task becomes so much harder with real images.",
-    "V9_agentA_density35_seed2013": "Here the bridge has thirty-five percent defective cells instead of twenty. Defects "
-                                    "are more ambiguous for the detector, so the mean uncertainty falls more slowly. {res} "
-                                    "On this bridge the DQN runs out of battery before meeting the threshold, while the "
-                                    "dense raster finishes. Over 100 bridges at this density the DQN's success rate drops, "
-                                    "which shows the limits of a policy trained only at twenty percent density.",
+                                    "flies low over every row. The DQN uses higher altitudes where one wide view is "
+                                    "enough, and only goes down where the uncertainty stays high. Watch the step counter "
+                                    "and the battery. {res} On the hundred unseen bridges this original model needs "
+                                    "fewer steps and less energy than the raster, but it runs out of battery on a few "
+                                    "of them. {seeds}",
+    "V3_agentA_vs_raster_heldout2005": "This bridge, seed two thousand and five, was never used in training or model "
+                                       "selection, so it tests generalisation. {res} The route is different from the "
+                                       "previous bridge because the cracks are in different places, so the agent is not "
+                                       "replaying a memorised path. Over all hundred held-out bridges the original model "
+                                       "succeeds on most of them, and its failures are battery-empty episodes. {seeds}",
+    "V4_agentA_real_images_seed2000": "Now the same comparison uses the real-image detector: the uncertainty comes from "
+                                      "a U-Net that looks at DeepCrack photographs. Watch the mean uncertainty, because it "
+                                      "has to fall below a stricter threshold. {res} Real-image uncertainty is noisier, "
+                                      "and the high and mid altitudes give very poor images, so the drone has to fly low "
+                                      "almost everywhere. The dense raster does exactly that, so it succeeds. Our DQN, "
+                                      "even when trained on real images, succeeds on only a small share of bridges. This "
+                                      "is our clearest weak result.",
+    "V5_agentB_nominal_and_hardstart": "Agent B, our PPO refiner, must reach the best possible view of one suspicious cell "
+                                       "by changing its distance, viewing angle and side offset. Watch the view quality "
+                                       "climb to level four. The fixed orbit baseline keeps circling and never gets there. "
+                                       "{res} The last part starts from a hard position: far away and at a large angle. "
+                                       "PPO still reaches the best view in a few steps, almost exactly like the scripted "
+                                       "upper bound that knows the true geometry.",
+    "V6_agentC_mission_seed2000": "Agent C, our A2C supervisor, decides at every step whether to explore, refine one "
+                                  "cell, or return home. Watch the timeline of options at the bottom. {res} Notice that "
+                                  "it only ever chooses explore and then return: this original model never chooses "
+                                  "refine. Under our reward, refining costs energy and rarely finds a new crack, so it "
+                                  "is hardly worth it. When we retrained with other seeds, some versions did use refine, "
+                                  "and they collected the same return.",
+    "V7_full_mission_learned_vs_rule": "This is the complete system: the supervisor calls Agent A to explore and Agent B "
+                                       "to refine. First the learned supervisor, then a rule supervisor driving the same "
+                                       "learned Agents A and B. {res} The learned hierarchy saves energy but never calls "
+                                       "Agent B. With the rule supervisor, Agent B works inside the hierarchy, and that "
+                                       "combination finds the most cracks.",
+    "V8_detector_q0_to_q4": "This clip shows why real images are harder. The same DeepCrack patch is shown at five "
+                            "view qualities, from four pixels wide up to sixty-four. The middle row is the crack the "
+                            "U-Net predicts; the bottom row is the spread of its dropout passes. Look at the crack patch: "
+                            "at four pixels the network misses the crack completely, yet the spread and the raw entropy "
+                            "printed below are both low, so it is confidently wrong. That is why the environment does not "
+                            "use these raw numbers: it ranks them and forces uncertainty to fall as view quality improves, "
+                            "so a blurry view always counts as uncertain. Since high and middle altitudes give the two "
+                            "worst qualities, the drone must fly low almost everywhere. {res}",
+    "V9_agentA_density35_seed2013": "Here the bridge has thirty-five percent cracked cells instead of twenty. Cracked "
+                                    "cells are more ambiguous for the detector, so the mean uncertainty falls more slowly. "
+                                    "{res} On this bridge the DQN runs out of battery before it meets the threshold, while "
+                                    "the dense raster finishes. Over a hundred bridges at this density the DQN's success "
+                                    "rate drops, which shows the limit of a policy trained only at twenty percent.",
     "V10_agentA_battery0.6_seed2000": "This is our key robustness result. The drone starts with only sixty percent "
-                                      "battery. Watch the battery bar. {res} The dense raster needs more than sixty percent "
-                                      "of the battery for its fixed path, so it always runs out. The DQN sees its battery "
-                                      "level in the observation and is rewarded for battery left, so it finds a cheaper "
-                                      "route and succeeds on most bridges.",
+                                      "battery. Watch the battery bar on each side. {res} The dense raster needs more "
+                                      "than sixty percent of a full battery for its fixed path, so it always runs out. The "
+                                      "DQN sees its battery level in its observation and is rewarded for battery left, so "
+                                      "it chooses a cheaper route and succeeds on most bridges.",
 }
 INSIGHT = {
     "V1_env_tour": "random flight leaves uncertainty high and wastes energy - the reference point for all metrics",
@@ -862,10 +896,18 @@ INSIGHT = {
     "V5_agentB_nominal_and_hardstart": "PPO reaches q=4 in a few steps, even from a hard start",
     "V6_agentC_mission_seed2000": "the original A2C supervisor never chooses REFINE",
     "V7_full_mission_learned_vs_rule": "learned hierarchy saves energy; rule C + learned A/B uses Agent B and finds more defects",
-    "V8_detector_q0_to_q4": "the U-Net is unreliable at low view quality, which explains the real-image results",
+    "V8_detector_q0_to_q4": "at low view quality the U-Net misses the crack while its raw uncertainty stays low (false confidence); the env therefore uses rank-normalised, quality-monotone uncertainty",
     "V9_agentA_density35_seed2013": "at 35% defects the DQN can run out of battery before meeting the threshold",
     "V10_agentA_battery0.6_seed2000": "with a low battery the raster fails and the DQN succeeds",
 }
+SPOKEN = {"Agent A - Viewpoint Planner (DQN)": "the DQN",
+          "Agent A - Viewpoint Planner (DQN) [real-image detector]": "the real-image DQN",
+          "BASELINE Dense raster, LOW altitude (1x1)": "the dense raster",
+          "Agent B - View Refiner (PPO)": "PPO", "BASELINE FixedOrbit": "the fixed orbit",
+          "Agent C - Mission Supervisor (A2C)": "the A2C supervisor", "BASELINE RuleSupervisor": "the rule supervisor",
+          "ALL SCRIPTED": "the all-scripted system",
+          "RULE supervisor (scripted)": "the rule supervisor with learned Agents A and B"}
+WPM = 130                     # calm speaking pace used for the length check
 
 
 def video_docs():
@@ -874,34 +916,78 @@ def video_docs():
         return
     files, runs = pd.read_csv(vf), pd.read_csv(vr) if vr.exists() else pd.DataFrame(columns=["clip"])
 
-    def res_text(cid, sentence=False):
+    def recs(cid):
         r = runs[runs["clip"].astype(str).str.startswith(cid + "_part")]
-        parts = []
+        r = r.drop_duplicates(subset=["label", "seed", "return", "steps"])   # same baseline shown in two parts
+        out = []
         for e in r.to_dict("records"):
-            ok = str(e["success"]).lower() == "true"
-            empty = str(e["battery_empty"]).lower() == "true"
-            out = "succeeded" if ok else ("ran out of battery" if empty else "did not succeed")
-            parts.append(f"{e['label']} (seed {e['seed']}) {out} with return {float(e['return']):.1f} "
-                         f"in {int(e['steps'])} steps, energy {float(e['energy_used']):.2f}")
-        if not parts:
+            e["ok"] = str(e["success"]).lower() == "true"
+            e["empty"] = str(e["battery_empty"]).lower() == "true"
+            e["who"] = SPOKEN.get(e["label"], e["label"])
+            out.append(e)
+        return out
+
+    def table_text(cid):            # compact, for video_index.md
+        return "; ".join(f"{e['who']} (seed {e['seed']}): {'success' if e['ok'] else ('battery empty' if e['empty'] else 'no success')}, "
+                         f"return {float(e['return']):.1f}, {int(e['steps'])} steps, energy {float(e['energy_used']):.2f}"
+                         for e in recs(cid))
+
+    def spoken(cid):                # one or two short sentences for the narration
+        rs = recs(cid)
+        if not rs:
+            rj = sorted((VIDEOS / "raw").glob(f"{cid}_part*/result.json"))
+            if cid.startswith("V1") and rj:
+                res = json.loads(rj[0].read_text())["result"]
+                return f"In this run the random policy flew {int(res['steps'])} steps and collected a return of {res['return']:.1f}."
             return ""
-        return ("In this run, " + "; ".join(parts) + ".") if sentence else "; ".join(parts)
+        if cid.startswith("V5"):
+            ppo = [e for e in rs if e["who"] == "PPO"]
+            orb = [e for e in rs if e["who"] == "the fixed orbit"]
+            return (f"In this run PPO reached the best view in {', '.join(str(int(e['steps'])) for e in ppo[:-1])} and "
+                    f"{int(ppo[-1]['steps'])} steps, the last one from the hard start, while the fixed orbit "
+                    f"{'never did' if not any(e['ok'] for e in orb) else 'sometimes did'} in {int(orb[0]['steps'])} steps.")
+        unit = "decisions" if cid.startswith(("V6", "V7")) else "steps"
+        parts = [f"{e['who']} {'succeeded' if e['ok'] else ('ran out of battery' if e['empty'] else 'did not succeed')} "
+                 f"after {int(e['steps'])} {unit}, using {float(e['energy_used']) * 100:.0f} percent of the battery"
+                 for e in rs]
+        return "In this run, " + "; ".join(parts) + "."
+
+    def seeds_sentence():
+        p_ = RESULTS / "multiseed_per_seed.csv"
+        if not p_.exists():
+            return ""
+        m = pd.read_csv(p_)
+        m = m[(m.agent == "A") & (m.source == "multiseed")]
+        if m.empty:
+            return ""
+        return (f"Three retrained copies of the same DQN do better: they succeed on {m.heldout_success.min() * 100:.0f} to "
+                f"{m.heldout_success.max() * 100:.0f} percent of these bridges.")
 
     lines = ["# Video index", "", "Generated by `scripts/build_report.py` from `videos/video_files.csv` and "
              "`videos/video_runs.csv` (final values read from each recorded run).", "",
              "| File | Scenario | Question | Metric | Result (this run) | Insight |", "|---|---|---|---|---|---|"]
     for f in files.itertuples():
-        lines.append(f"| `{f.file}` | {f.scenario} | {f.question} | {f.metric} | {res_text(f.clip) or 'see clip'} | "
+        lines.append(f"| `{f.file}` | {f.scenario} | {f.question} | {f.metric} | {table_text(f.clip) or 'see clip'} | "
                      f"{INSIGHT.get(f.clip, '')} |")
     (VIDEOS / "video_index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
     nl = ["# Narration script (about 60 seconds per clip)", "",
-          "Simple English voice-over for each clip. Read at a calm pace (about 130 words per minute). The sentence "
-          "starting 'In this run' contains the values read from the recorded run.", ""]
+          f"Simple English voice-over for each clip, written for a calm pace of about {WPM} words per minute. The "
+          "sentence starting 'In this run' contains the values read from the recorded run. Each clip is about one "
+          "minute long, so the voice-over fits the video.", ""]
+    report = []
     for f in files.itertuples():
-        txt = NARR.get(f.clip, "").replace("{res}", res_text(f.clip, True))
-        nl += [f"## {f.clip}  (`{f.file}`, {f.duration_s:.0f} s)", "", f"*Question:* {f.question}  ", f"*Metric:* {f.metric}",
-               "", txt, ""]
+        txt = NARR.get(f.clip, "").replace("{res}", spoken(f.clip)).replace("{seeds}", seeds_sentence())
+        txt = re.sub(r"\s+", " ", txt).strip()
+        words = len(txt.split())
+        secs = 60.0 * words / WPM
+        report.append({"clip": f.clip, "words": words, "speech_s": round(secs), "video_s": f.duration_s})
+        nl += [f"## {f.clip}  (`{f.file}`, video {f.duration_s:.0f} s, voice-over about {secs:.0f} s)", "",
+               f"*Question:* {f.question}  ", f"*Metric:* {f.metric}", "", txt, ""]
     (VIDEOS / "narration_script.md").write_text("\n".join(nl), encoding="utf-8")
+    rep = pd.DataFrame(report)
+    rep.to_csv(VIDEOS / "narration_lengths.csv", index=False)
+    print(rep.to_string(index=False))
 
 
 # ====================================================================== renderers

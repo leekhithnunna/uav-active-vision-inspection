@@ -11,6 +11,7 @@ CwA_energy_vs_rule_pct,-9.390802352583705,100*(C_withA energy - rule energy)/rul
 validation_checks,455.0,rows in validation.csv
 validation_pass,455.0,rows within 1%
 validation_policies,65.0,"distinct (run, policy)"
+validation_metrics,7.0,distinct metrics compared per policy
 validation_max_rel_pct,8.160396510644114e-09,max relative difference (%)
 validation_files,19.0,distinct saved result files checked
 tb_scalars,18466.0,TensorBoard scalar points read

@@ -98,15 +98,47 @@ def test_every_registered_number_matches_its_source():
         assert format(v, r.fmt) == r.text, (r.source, r.column, key, r.text, format(v, r.fmt))
 
 
-def test_no_unregistered_decimal_in_report_text():
+# Identifiers that are names, not measurements (allowed with the reason shown in number_trace.csv)
+IDENTIFIERS = {"08": "team number (Team 08)"}
+
+
+def trace_report_numbers():
+    """Every number (decimal or whole) in the report prose, with where it is traced from.
+    Excluded: code / formula spans, headings, image links, and labels such as Table 3, Figure 2, Q1, S4, V7, Phase 5."""
     md = REPORT_MD.read_text(encoding="utf-8")
-    reg = set(pd.read_csv(EM / "report" / "report_numbers.csv", dtype=str)["text"].str.lstrip("+-"))
+    reg = pd.read_csv(EM / "report" / "report_numbers.csv", dtype=str, keep_default_na=False)
+    reg_texts = {t.lstrip("+-").replace(",", ""): f"{s}:{c}" for t, s, c in zip(reg.text, reg.source, reg.column)}
+    scen_text = " ".join(list(SCENARIOS) + [v["desc"] for v in SCENARIOS.values()])
+    vf = pd.read_csv(EM / "videos" / "video_files.csv")
+    clip_text = " ".join(vf[["file", "scenario", "question", "metric"]].astype(str).values.ravel())
+    num_re = r"(?<![\w.,\-])\d[\d,]*(?:\.\d+)?(?![\w.]|,\d)"
+    defined = {"scenario definition (common.SCENARIOS)": set(re.findall(r"\d+(?:\.\d+)?", scen_text)),
+               "video clip definition (make_videos.CLIPS)": set(re.findall(r"\d+(?:\.\d+)?", clip_text))}
     txt = re.sub(r"```.*?```", "", md, flags=re.S)
     txt = re.sub(r"`[^`]*`", "", txt)
-    txt = "\n".join(l for l in txt.splitlines() if not l.startswith("#") and not l.startswith("!["))
-    allowed = set(re.findall(r"\d+\.\d+", " ".join(list(SCENARIOS) + [v["desc"] for v in SCENARIOS.values()])))
-    bad = sorted({t for t in re.findall(r"(?<![\w.])\d+\.\d+(?![\w.])", txt) if t not in reg and t not in allowed})
-    assert not bad, f"numbers in the report that do not come from a result file: {bad}"
+    rows = []
+    for ln, line in enumerate(txt.splitlines(), 1):
+        if line.startswith("#") or line.startswith("!["):
+            continue
+        line = re.sub(r"\b(Table|Figure|Phase)\s+\d+|\b[QSV]\d+\b", " ", line)
+        for tok in re.findall(num_re, line):
+            t = tok.replace(",", "")
+            src = (reg_texts.get(t) and f"result/constant registry ({reg_texts[t]})") or IDENTIFIERS.get(t)
+            if not src:
+                src = next((k for k, v in defined.items() if t in v), "")
+            rows.append({"line": ln, "number": t, "traced_to": src or "UNTRACED", "context": line.strip()[:120]})
+    df = pd.DataFrame(rows)
+    df.to_csv(EM / "report" / "number_trace.csv", index=False)
+    return df
+
+
+def test_every_number_in_report_text_is_traced():
+    """Whole numbers AND decimals: each must come from the number registry (result files, env constants,
+    method settings), a scenario / clip definition, or a named identifier. Untraced ones are listed."""
+    df = trace_report_numbers()
+    assert len(df) > 200
+    bad = df[df.traced_to == "UNTRACED"]
+    assert bad.empty, "untraced numbers in the report:\n" + bad.to_string(index=False)
 
 
 # ------------------------------------------------------------------ referenced files exist
@@ -132,6 +164,33 @@ def test_referenced_videos_exist_and_meet_limits():
         assert meta.loc[f"videos/{v}", "duration_s"] <= 60, v
     for f in ["video_index.md", "narration_script.md"]:
         assert (EM / "videos" / f).exists()
+
+
+def test_voice_over_fits_each_clip():
+    n = pd.read_csv(EM / "videos" / "narration_lengths.csv")
+    assert len(n) == 10
+    too_long = n[n.speech_s > n.video_s]
+    assert too_long.empty, too_long.to_string(index=False)
+
+
+def test_preview_frames_exist():
+    for mp4 in (EM / "videos").glob("V*.mp4"):
+        for tag in ("mid", "end"):
+            assert (EM / "videos" / "preview_frames" / f"{mp4.stem}_{tag}.png").exists(), (mp4.stem, tag)
+
+
+def test_submission_folder():
+    sub = EM / "SUBMISSION"
+    names = sorted(p.name for p in sub.iterdir())
+    expected = sorted(["Team08_Evaluation_Metrics.pdf", "Team08_Evaluation_Metrics.docx", "video_index.md"]
+                      + [p.name for p in (EM / "videos").glob("V*.mp4")])
+    assert names == expected, names
+    for p in sub.iterdir():
+        assert p.stat().st_size <= 25e6, p.name
+    for name in ["Team08_Evaluation_Metrics.pdf", "Team08_Evaluation_Metrics.docx"]:     # copies are current
+        assert (sub / name).read_bytes() == (EM / "report" / name).read_bytes()
+    for p in (EM / "videos").glob("V*.mp4"):
+        assert (sub / p.name).read_bytes() == p.read_bytes()
 
 
 def test_video_runs_match_evaluation_csvs():

@@ -172,7 +172,7 @@ def result_lines(eps):
     return out
 
 
-MIN_S = 30.0          # short demos are slowed down to at least this length (easier to narrate)
+MIN_S = 55.0          # short demos are slowed down to at least this length, so a ~1 min voice-over fits
 
 
 def render_parts(cid, parts):
@@ -256,6 +256,23 @@ def main(only=None, convert_only=False):
     files = files.sort_values("clip", key=lambda s: s.map(order)).reset_index(drop=True)
     runs.to_csv(VIDEOS / "video_runs.csv", index=False)
     files.to_csv(VIDEOS / "video_files.csv", index=False)
+    export_previews()
+
+
+def export_previews():
+    """One PNG from the middle and one from the end of every final MP4 -> videos/preview_frames/."""
+    import imageio.v2 as imageio
+    out = VIDEOS / "preview_frames"
+    out.mkdir(exist_ok=True)
+    for mp4 in sorted(VIDEOS.glob("V*.mp4")):
+        rd = imageio.get_reader(str(mp4))
+        frames = [f for f in rd]
+        rd.close()
+        n = len(frames)
+        card = int(CARD_S * FPS_OUT)               # the middle frame is taken from the animation, not the card
+        for tag, i in [("mid", card + (n - card) // 2), ("end", n - 1)]:
+            imageio.imwrite(str(out / f"{mp4.stem}_{tag}.png"), frames[i])
+    print(f"preview frames -> {out}")
 
 
 if __name__ == "__main__":

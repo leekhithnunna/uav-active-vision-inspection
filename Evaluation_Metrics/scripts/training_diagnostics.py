@@ -19,10 +19,10 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import (ROOT, RESULTS, RUN_DIRS, MULTISEED, make_env, run_policy, SB3Policy, load_model,  # noqa: E402
+from common import (ROOT, RESULTS, RUN_DIRS, MULTISEED, METHOD, make_env, run_policy, SB3Policy, load_model,  # noqa: E402
                     ci95)
 
-MA = 50
+MA = METHOD["ma_window"]
 N_EVAL = {"A": 10, "B": 20, "C": 10}
 MAIN_STEPS = {"A": 200_000, "B": 100_000, "C": 100_000}
 
@@ -154,7 +154,7 @@ def model_size():
         import time
         obs, _ = make_env({"A": "navigate", "B": "refine"}.get(key, "supervise")).reset(seed=2000)
         ts = []
-        for _ in range(1000):
+        for _ in range(METHOD["latency_calls"]):
             t0 = time.perf_counter()
             m.predict(obs, deterministic=True)
             ts.append(time.perf_counter() - t0)

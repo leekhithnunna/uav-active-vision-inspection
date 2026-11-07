@@ -1,4 +1,6 @@
 text,source,column,fmt,scale,agg,key,value
+8,py:ie.H,,.0f,1.0,,{},8.0
+16,py:ie.W,,.0f,1.0,,{},16.0
 455,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""validation_pass""}",455.0
 455,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""validation_checks""}",455.0
 65,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""validation_policies""}",65.0
@@ -8,7 +10,20 @@ text,source,column,fmt,scale,agg,key,value
 0.282,"py:np.load(CACHE)[""success_unc""]",,.3f,1.0,,{},0.28195226192474365
 13400,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""total_episodes""}",13400.0
 8,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""n_scenarios""}",8.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+1000,py:ORIG_SEED0,,.0f,1.0,,{},1000.0
+7,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""validation_metrics""}",7.0
 0.95,py:ie.InspectionEnv().success_cov,,.2f,1.0,,{},0.95
+200,py:ie.MAX_STEPS['navigate'],,.0f,1.0,,{},200.0
+30,py:ie.MAX_STEPS['refine'],,.0f,1.0,,{},30.0
+40,py:ie.MAX_STEPS['supervise'],,.0f,1.0,,{},40.0
+50,py:METHOD['ma_window'],,.0f,1.0,,{},50.0
+1,py:METHOD['band_std'],,.0f,1.0,,{},1.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+1000,py:METHOD['oob_per'],,.0f,1.0,,{},1000.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
 96,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",96.0
 4,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",3.90784356795581
 96,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",96.0
@@ -64,6 +79,9 @@ text,source,column,fmt,scale,agg,key,value
 0,results/summary_S0_all.csv,success_ci95,.0f,100.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",0.0
 100,results/summary_S0_all.csv,n_success,.0f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",100.0
 100,results/summary_S0_all.csv,n_episodes,.0f,1.0,first,{},100.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
 96,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",96.0
 100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",100.0
 100,results/validation.csv,reproduced,.0f,100.0,,"{""run"": ""A"", ""policy"": ""DQN (Agent A)"", ""metric"": ""success""}",100.0
@@ -71,6 +89,10 @@ text,source,column,fmt,scale,agg,key,value
 100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
 0,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""B"", ""policy"": ""fixed_orbit""}",0.0
 100,results/summary_S0_all.csv,success_rate,.0f,100.0,,"{""group"": ""C"", ""policy"": ""random""}",100.0
+20,py:ORIG_N,,.0f,1.0,,{},20.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+50,py:METHOD['ma_window'],,.0f,1.0,,{},50.0
+1,py:METHOD['band_std'],,.0f,1.0,,{},1.0
 33.65,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",33.649311410399775
 6.50,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",6.498309100792341
 36.30,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",36.30161579072802
@@ -144,6 +166,12 @@ text,source,column,fmt,scale,agg,key,value
 45.56,results/summary_S0_all.csv,return_median,.2f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",45.55749999999993
 0.81,results/summary_S0_all.csv,return_ci95,.2f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",0.8145504506476188
 100,results/summary_S0_all.csv,n_episodes,.0f,1.0,first,{},100.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+50,py:METHOD['ma_window'],,.0f,1.0,,{},50.0
+1,py:METHOD['band_std'],,.0f,1.0,,{},1.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
 "5,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""B""}",5000.0
 5.67,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",5.674704538978887
 5.68,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",5.677299736787688
@@ -206,6 +234,8 @@ nan,results/summary_S0_all.csv,steps_fail_mean,.1f,1.0,,"{""group"": ""C_withA""
 140.8,results/summary_S0_all.csv,time_to_goal_mean,.1f,1.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",140.83
 0.922,results/summary_S0_all.csv,energy_used_mean,.3f,1.0,,"{""group"": ""C_withA"", ""policy"": ""rule_supervisor (Agent A inside)""}",0.9215400000000008
 100,results/summary_S0_all.csv,n_episodes,.0f,1.0,first,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
 "100,000",results/sample_efficiency.csv,steps_to_80pct_success,",.0f",1.0,,"{""run"": ""A""}",100000.0
 "140,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""A""}",140000.0
 "200,000",results/sample_efficiency.csv,steps_trained,",.0f",1.0,,"{""run"": ""A""}",200000.0
@@ -250,6 +280,7 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 109,results/model_size.csv,file_kb,",.0f",1.0,,"{""agent"": ""C_withA""}",109.3935546875
 0.94,results/model_size.csv,latency_ms_median_1000,.2f,1.0,,"{""agent"": ""C_withA""}",0.9383500000694768
 1.93,results/model_size.csv,latency_ms_p95_1000,.2f,1.0,,"{""agent"": ""C_withA""}",1.9286949966044624
+1000,py:METHOD['latency_calls'],,.0f,1.0,,{},1000.0
 91.2,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",91.20833333333331
 123.0,results/summary_S0_all.csv,steps_success_mean,.1f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",123.0
 -26,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""A_steps_vs_raster_pct""}",-25.846883468834704
@@ -264,6 +295,7 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 "10,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""C""}",10000.0
 "140,000",results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"": ""A""}",140000.0
 "500,000",results/sample_efficiency.csv,steps_trained,",.0f",1.0,,"{""run"": ""A_learned""}",500000.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
 1.81,results/summary_S0_all.csv,regret_mean,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",1.809983929534489
 1.29,results/summary_S0_all.csv,regret_ci95,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",1.2910252698060265
 181.0,results/summary_S0_all.csv,regret_cumulative,.1f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",180.9983929534489
@@ -283,16 +315,23 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 0.80,results/summary_S0_all.csv,regret_ci95,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",0.7960503796078517
 -187.7,results/summary_S0_all.csv,regret_cumulative,.1f,1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",-187.65600000000043
 100,results/summary_S0_all.csv,n_episodes,.0f,1.0,first,{},100.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
 0.003,results/summary_S0_all.csv,regret_mean,.3f,1.0,,"{""group"": ""B"", ""policy"": ""PPO (Agent B)""}",0.0025951978088043
 1.81,results/summary_S0_all.csv,regret_mean,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",1.809983929534489
 2.60,results/summary_S0_all.csv,regret_mean,.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",2.598689999999994
 0.22,results/summary_S0_all.csv,regret_mean,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",0.2167300000000225
 0.81,results/summary_S0_all.csv,regret_ci95,.2f,1.0,,"{""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",0.806997858753878
 1.88,results/summary_S0_all.csv,regret_mean,.2f,-1.0,,"{""group"": ""full"", ""policy"": ""ablation: rule C, A + B learned""}",1.876560000000004
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
 0.09,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""A"", ""policy"": ""raster_low""}",0.0864348692215733
 6.50,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)""}",6.498309100792341
 4.43,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",4.434421163813915
 3.91,results/summary_S0_all.csv,return_std,.2f,1.0,,"{""group"": ""C"", ""policy"": ""rule_supervisor""}",3.9117755691545377
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
 4,results/multiseed_summary.csv,n_seeds,.0f,1.0,,"{""agent"": ""A""}",4.0
 36.202,results/multiseed_summary.csv,return_mean,.3f,1.0,,"{""agent"": ""A""}",36.20211270299633
 1.817,results/multiseed_summary.csv,return_std,.3f,1.0,,"{""agent"": ""A""}",1.8172305922194745
@@ -311,6 +350,8 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 0.437,results/multiseed_summary.csv,return_ci95,.3f,1.0,,"{""agent"": ""C""}",0.4373357574173166
 100,results/multiseed_summary.csv,success_mean,.0f,100.0,,"{""agent"": ""C""}",100.0
 18.20,results/multiseed_summary.csv,steps_mean,.2f,1.0,,"{""agent"": ""C""}",18.195
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
 33.649,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 0}",33.649311410399775
 1.289,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""A"", ""train_seed"": 0}",1.289405507444045
 96,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""A"", ""train_seed"": 0}",96.0
@@ -347,6 +388,10 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 40.388,results/multiseed_per_seed.csv,heldout_return,.3f,1.0,,"{""agent"": ""C"", ""train_seed"": 3}",40.38804999999999
 0.860,results/multiseed_per_seed.csv,heldout_return_ci95,.3f,1.0,,"{""agent"": ""C"", ""train_seed"": 3}",0.8596945341369351
 100,results/multiseed_per_seed.csv,heldout_success,.0f,100.0,,"{""agent"": ""C"", ""train_seed"": 3}",100.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
 5.675,results/multiseed_summary.csv,return_mean,.3f,1.0,,"{""agent"": ""B""}",5.674822512616551
 0.001,results/multiseed_summary.csv,return_std,.3f,1.0,,"{""agent"": ""B""}",0.0005092246591106
 40.40,results/multiseed_summary.csv,return_mean,.2f,1.0,,"{""agent"": ""C""}",40.39844999999999
@@ -377,6 +422,8 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 0.166,results/summary_A.csv,pose_coverage_mean,.3f,1.0,,"{""policy"": ""random""}",0.1664322916666665
 0.659,results/summary_A.csv,visit_entropy_mean,.3f,1.0,,"{""policy"": ""random""}",0.6593455773602231
 100,results/summary_A.csv,n_episodes,.0f,1.0,first,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
 94.8,results/summary_S0_all.csv,freq_explore,.1f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",94.80249480249479
 0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.0
 5.2,results/summary_S0_all.csv,freq_return,.1f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",5.1975051975051905
@@ -408,6 +455,8 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",0.0
 3.4,results/summary_S0_all.csv,freq_return,.1f,100.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",3.35570469798657
 100,results/summary_S0_all.csv,n_episodes,.0f,1.0,first,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
 1.0,py:json.load(open(RUN_DIRS['A'] / 'hyperparams.json'))['exploration_initial_eps'],,.1f,1.0,,{},1.0
 0.05,results/tb_scalars.csv,value,.2f,1.0,last,"{""run"": ""A"", ""tag"": ""rollout/exploration_rate""}",0.050000000745058
 30,py:json.load(open(RUN_DIRS['A'] / 'hyperparams.json'))['exploration_fraction'],,.0f,100.0,,{},30.0
@@ -423,6 +472,8 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 18.0,results/derived_metrics.csv,value,.1f,1.0,,"{""name"": ""C_seed1_refine_pct""}",18.01112656467316
 14.1,results/derived_metrics.csv,value,.1f,1.0,,"{""name"": ""C_seed2_refine_pct""}",14.129810453762206
 37.5,results/derived_metrics.csv,value,.1f,1.0,,"{""name"": ""C_seed3_refine_pct""}",37.51724137931034
+1000,py:METHOD['oob_per'],,.0f,1.0,,{},1000.0
+1000,py:METHOD['oob_per'],,.0f,1.0,,{},1000.0
 4,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",4.0
 0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",0.0
 96,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",96.0
@@ -478,6 +529,9 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",0.0
 100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
 100,results/scenario_summary.csv,n_episodes,.0f,1.0,first,{},100.0
+1000,py:METHOD['oob_per'],,.0f,1.0,,{},1000.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
 0.0,results/scenario_summary.csv,oob_per_1000_steps,.1f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",0.0
 192,results/scenario_summary.csv,oob_per_1000_steps,.0f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""random""}",191.6083916083916
 100,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
@@ -486,6 +540,12 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 84,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",84.0
 17,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",17.0
 24,results/scenario_summary.csv,battery_empty_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""C_withA"", ""policy"": ""A2C (C_withA)""}",24.0
+1000,py:METHOD['oob_per'],,.0f,1.0,,{},1000.0
+1000,py:METHOD['oob_per'],,.0f,1.0,,{},1000.0
+60,py:SCENARIOS['S4_battery0.6']['start_battery'] * 100,,.0f,1.0,,{},60.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
 96,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",96.0
 3,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",3.0
 100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S2_density10"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",100.0
@@ -551,6 +611,9 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
 100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
 100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",100.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
 33.65,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S0_nominal"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",33.649311410399775
 7.67,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",7.672342981192039
 36.70,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S2_density10"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",36.69502206331774
@@ -616,6 +679,9 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 42.62,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.05"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",42.62223999999996
 42.62,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S3_noise0.10"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",42.62223999999996
 41.35,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S4_battery0.6"", ""group"": ""full"", ""policy"": ""ALL SCRIPTED (rule + raster + approach)""}",41.34503999999999
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
 +25.98,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S1_learned""}",25.976968429207737
 +93,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S1_learned""}",93.0
 -3.05,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""A"", ""policy"": ""DQN (Agent A)"", ""scenario"": ""S2_density10""}",-3.045710652917961
@@ -666,6 +732,9 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 +0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S3_noise0.10""}",0.0
 +5.06,results/robustness_gap.csv,return_gap,+.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S4_battery0.6""}",5.0579999999999785
 +0,results/robustness_gap.csv,success_gap,+.0f,100.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)"", ""scenario"": ""S4_battery0.6""}",0.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
 3,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",3.0
 7.67,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",7.672342981192039
 190.8,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",190.78
@@ -722,6 +791,9 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 3.51,results/scenario_summary.csv,return_mean,.2f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""random""}",3.51012
 2.6,results/scenario_summary.csv,steps_mean,.1f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""random""}",2.63
 0.060,results/scenario_summary.csv,energy_used_mean,.3f,1.0,,"{""scenario"": ""S1_learned"", ""group"": ""C"", ""policy"": ""random""}",0.05976
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
 3,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A)""}",3.0
 20,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""DQN (Agent A, real-image trained)""}",20.0
 100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S1_learned"", ""group"": ""A"", ""policy"": ""raster_low""}",100.0
@@ -735,6 +807,7 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 100,results/scenario_summary.csv,success_rate,.0f,100.0,,"{""scenario"": ""S5_hardstart"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",100.0
 4.76,results/scenario_summary.csv,steps_mean,.2f,1.0,,"{""scenario"": ""S5_hardstart"", ""group"": ""B"", ""policy"": ""PPO (Agent B)""}",4.76
 4.75,results/scenario_summary.csv,steps_mean,.2f,1.0,,"{""scenario"": ""S5_hardstart"", ""group"": ""B"", ""policy"": ""scripted_approach (upper bound)""}",4.75
+100,py:HELD_N,,.0f,1.0,,{},100.0
 41.34,results/summary_S0_all.csv,return_mean,.2f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",41.34339999999998
 17.2,results/summary_S0_all.csv,steps_mean,.1f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",17.22
 81.1,results/summary_S0_all.csv,low_level_steps_mean,.1f,1.0,,"{""group"": ""full"", ""policy"": ""ALL LEARNED (C + A + B)""}",81.1
@@ -771,6 +844,9 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 0.597,results/summary_S0_all.csv,miou_mean,.3f,1.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",0.5966710976164837
 0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""full"", ""policy"": ""C_withA + A + B (extra)""}",0.0
 100,results/summary_S0_all.csv,n_episodes,.0f,1.0,first,{},100.0
+26,results/episodes_full_S0_nominal.csv,defects_total,.0f,1.0,,"{""seed"": 2000, ""policy"": ""ALL LEARNED (C + A + B)""}",26.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
 -46,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""full_energy_learned_vs_scripted_pct""}",-46.29102478231748
 -49,results/derived_metrics.csv,value,+.0f,1.0,,"{""name"": ""full_decisions_learned_vs_scripted_pct""}",-48.88691006233304
 -0.75,results/derived_metrics.csv,value,+.2f,1.0,,"{""name"": ""full_defects_learned_minus_scripted""}",-0.75
@@ -799,6 +875,8 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 0.8458,results/tb_scalars.csv,value,.4f,1.0,head10mean,"{""run"": ""C"", ""tag"": ""train/explained_variance""}",0.845792931318283
 0.9732,results/tb_scalars.csv,value,.4f,1.0,tail10mean,"{""run"": ""C"", ""tag"": ""train/explained_variance""}",0.9731732964515686
 0.9955,results/tb_scalars.csv,value,.4f,1.0,max,"{""run"": ""C"", ""tag"": ""train/explained_variance""}",0.9955171942710876
+10,py:METHOD['diag_window'],,.0f,1.0,,{},10.0
+10,py:METHOD['diag_window'],,.0f,1.0,,{},10.0
 0.1,results/sensitivity.csv,eps_fraction,g,1.0,,"{""run"": ""A_eps0.1""}",0.1
 "150,000",results/sensitivity.csv,steps_trained,",.0f",1.0,,"{""run"": ""A_eps0.1""}",150000.0
 36.79,results/sensitivity.csv,heldout_return,.2f,1.0,,"{""run"": ""A_eps0.1""}",36.79148104484222
@@ -889,6 +967,11 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 0.88,results/sensitivity.csv,heldout_return_ci95,.2f,1.0,,"{""run"": ""C""}",0.8798853643713137
 100,results/sensitivity.csv,heldout_success,.0f,100.0,,"{""run"": ""C""}",100.0
 19.2,results/sensitivity.csv,heldout_steps,.1f,1.0,,"{""run"": ""C""}",19.24
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
+100,py:HELD_N,,.0f,1.0,,{},100.0
+2000,py:HELD_SEED0,,.0f,1.0,,{},2000.0
+2099,py:HELD_SEED0 + HELD_N - 1,,.0f,1.0,,{},2099.0
+95,py:METHOD['ci_level'],,.0f,1.0,,{},95.0
 0.966,results/tb_scalars.csv,value,.3f,1.0,tail10mean,"{""run"": ""B"", ""tag"": ""train/explained_variance""}",0.9656416654586792
 0.0122,results/tb_scalars.csv,value,.4f,1.0,tail10mean,"{""run"": ""B"", ""tag"": ""train/approx_kl""}",0.012176116136833979
 0.14,results/tb_scalars.csv,value,.2f,1.0,tail10mean,"{""run"": ""B"", ""tag"": ""train/clip_fraction""}",0.13642577901482578
@@ -918,3 +1001,14 @@ nan,results/sample_efficiency.csv,steps_to_100pct_success,",.0f",1.0,,"{""run"":
 0.0,results/summary_S0_all.csv,freq_refine,.1f,100.0,,"{""group"": ""C"", ""policy"": ""A2C (Agent C)""}",0.0
 18,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""C_seed1_refine_pct""}",18.01112656467316
 38,results/derived_metrics.csv,value,.0f,1.0,,"{""name"": ""C_seed3_refine_pct""}",37.51724137931034
+60,py:SCENARIOS['S4_battery0.6']['start_battery'] * 100,,.0f,1.0,,{},60.0
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V1_env_tour""}",57.5
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V2_agentA_vs_raster_seed1000""}",57.6
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V3_agentA_vs_raster_heldout2005""}",57.6
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V4_agentA_real_images_seed2000""}",57.5
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V5_agentB_nominal_and_hardstart""}",57.6
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V6_agentC_mission_seed2000""}",57.5
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V7_full_mission_learned_vs_rule""}",57.6
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V8_detector_q0_to_q4""}",57.5
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V9_agentA_density35_seed2013""}",57.6
+58,videos/video_files.csv,duration_s,.0f,1.0,,"{""clip"": ""V10_agentA_battery0.6_seed2000""}",57.5

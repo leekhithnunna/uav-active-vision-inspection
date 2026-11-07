@@ -13,11 +13,18 @@ changed.
 
 ## What to upload
 
+Everything to upload is copied into **`SUBMISSION/`** by `scripts/make_submission.py`, which also
+prints the file sizes and flags anything over 25 MB:
+
 | Deliverable | File |
 |---|---|
-| Document | `report/Team08_Evaluation_Metrics.docx` (also `.pdf` and `.md`) |
-| Videos | `videos/V1_*.mp4` … `videos/V10_*.mp4` (H.264, ≤ 60 s, < 1 MB each) |
-| Video index / voice-over | `videos/video_index.md`, `videos/narration_script.md` |
+| Document | `Team08_Evaluation_Metrics.pdf` and `.docx` |
+| Videos | `V1_*.mp4` … `V10_*.mp4` (H.264, about 58 s each, about 1 MB or less) |
+| Video index | `video_index.md` |
+
+Not uploaded but useful: `videos/narration_script.md` (a voice-over per clip, checked to fit the clip
+length, see `videos/narration_lengths.csv`) and `videos/preview_frames/` (the middle and end frame of
+every clip, for a quick visual check).
 
 ## How to run
 
