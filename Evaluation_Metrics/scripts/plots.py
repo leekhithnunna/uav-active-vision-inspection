@@ -281,9 +281,9 @@ def p05b_boxplot_seeds():
         ax.plot(range(1, len(seeds) + 1), [x.mean() for x in data], "D", color=INK, ms=5, label="mean")
         ax.set_xticks(range(1, len(seeds) + 1), [f"seed {s}" + (" (orig.)" if s == 0 else "") for s in seeds],
                       fontsize=8)
-        ax.set_title(f"Agent {ag}: held-out return per training seed")
+        ax.set_title(f"Agent {ag}: held-out return per training seed", pad=18)
         ax.set_ylabel("episode return")
-        ax.legend(loc="lower right")
+        ax.legend(loc="lower right", bbox_to_anchor=(1.0, 1.0), borderaxespad=0.2)
     fig.suptitle("Variability across training seeds (100 held-out episodes per seed)", fontweight="bold", color=INK)
     fig.tight_layout()
     save(fig, "05b_boxplot_training_seeds", "Box plot of held-out return per training seed",
@@ -356,9 +356,18 @@ def p08_options():
     rows = s[(s.group.isin(["C", "C_withA", "full"])) & (s.scenario == "S0_nominal")]
     rows = pd.concat([rows, s[(s.scenario == "S1_learned") & (s.policy == "A2C (Agent C, real-image trained)")]])
     rows = rows.drop_duplicates("policy")
+    for f in sorted(RESULTS.glob("multiseed_episodes_C_seed*.csv")):   # extra training seeds (Phase 5)
+        e = pd.read_csv(f)
+        seed = int(e.train_seed.iloc[0])
+        if seed == 0:
+            continue
+        n = e[["n_explore", "n_refine", "n_return"]].sum()
+        rows = pd.concat([rows, pd.DataFrame([{"policy": f"A2C (Agent C) training seed {seed}", "scenario": "S0_nominal",
+                                               "freq_explore": n.n_explore / n.sum(), "freq_refine": n.n_refine / n.sum(),
+                                               "freq_return": n.n_return / n.sum()}])])
     lab = [short(p).replace("\n", " ") + (" [S1]" if sc == "S1_learned" else "")
            for p, sc in zip(rows.policy, rows.scenario)]
-    fig, ax = plt.subplots(figsize=(10, 4.2))
+    fig, ax = plt.subplots(figsize=(10, 0.3 * len(rows) + 1.2))
     y = np.arange(len(rows))
     left = np.zeros(len(rows))
     for col, name, c in [("freq_explore", "EXPLORE (→ Agent A)", BLUE), ("freq_refine", "REFINE (→ Agent B)", ORANGE),
@@ -379,7 +388,7 @@ def p08_options():
                  pad=28)
     fig.tight_layout()
     save(fig, "08_option_frequency", "Agent C option-selection frequency (EXPLORE / REFINE / RETURN) per supervisor",
-         ["scenario_summary.csv"])
+         ["scenario_summary.csv", "multiseed_episodes_C_seed*.csv"])
 
 
 # ------------------------------------------------------------------ 9 diagnostics grid

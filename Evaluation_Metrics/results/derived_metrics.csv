@@ -1,0 +1,24 @@
+name,value,formula
+A_steps_vs_raster_pct,-25.846883468834704,100*(DQN steps_success_mean - raster_low steps_success_mean)/raster_low
+A_energy_vs_raster_pct,-15.05600000000003,100*(DQN energy - raster_low energy)/raster_low energy
+C_energy_vs_rule_pct,-46.322421299397185,100*(A2C energy - rule energy)/rule
+C_decisions_vs_rule_pct,-42.891065598100326,100*(A2C decisions - rule decisions)/rule
+C_return_vs_rule_pct,-6.097028218132131,100*(A2C return - rule return)/rule
+full_energy_learned_vs_scripted_pct,-46.29102478231748,100*(all-learned energy - all-scripted energy)/all-scripted
+full_decisions_learned_vs_scripted_pct,-48.88691006233304,100*(all-learned decisions - all-scripted decisions)/all-scripted
+full_defects_learned_minus_scripted,-0.75,all-learned defects - all-scripted defects
+CwA_energy_vs_rule_pct,-9.390802352583705,100*(C_withA energy - rule energy)/rule
+validation_checks,455.0,rows in validation.csv
+validation_pass,455.0,rows within 1%
+validation_policies,65.0,"distinct (run, policy)"
+validation_max_rel_pct,8.160396510644114e-09,max relative difference (%)
+validation_files,19.0,distinct saved result files checked
+tb_scalars,16594.0,TensorBoard scalar points read
+training_episodes,232540.0,training episodes read from monitor files
+scenario_rows,134.0,rows in scenario_summary.csv
+n_scenarios,8.0,scenarios evaluated (incl. S0)
+total_episodes,13400.0,episodes in all episodes_*.csv files
+C_seed0_refine_pct,0.0,"REFINE share of decisions, multiseed_episodes_C_seed0.csv"
+C_seed1_refine_pct,18.01112656467316,"REFINE share of decisions, multiseed_episodes_C_seed1.csv"
+C_seed2_refine_pct,14.129810453762206,"REFINE share of decisions, multiseed_episodes_C_seed2.csv"
+C_seed3_refine_pct,37.51724137931034,"REFINE share of decisions, multiseed_episodes_C_seed3.csv"
